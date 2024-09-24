@@ -1,30 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   controls.c                                         :+:      :+:    :+:   */
+/*   textures.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 15:35:20 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/09/24 17:40:53 by simarcha         ###   ########.fr       */
+/*   Created: 2024/09/24 17:00:24 by simarcha          #+#    #+#             */
+/*   Updated: 2024/09/24 17:02:46 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#ifndef TEXTURES_H
+# define TEXTURES_H
 
-int	on_destroy(t_vars *vars)
-{
-	mlx_destroy_window(vars->mlx_ptr, vars->win_ptr);
-	free(vars->mlx_ptr);
-	exit(0);
-	return (0);
-}
+# include "cub3d.h"
 
-int	on_keypress(int keysym, t_vars *vars)
-{
-	//(void)vars;
-	printf("Pressed key : %d\n", keysym);
-	if (keysym == ESC)
-		on_destroy(vars);
-	return (0);
-}
+#endif
