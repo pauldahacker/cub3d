@@ -14,6 +14,8 @@
 
 #include "parsing.h"
 
+//This function return 1 if we can read the file, 0 if we don't have the rights
+//to open it
 int	is_readable(char *file)
 {
 	int	fd;
@@ -28,6 +30,7 @@ int	is_readable(char *file)
 	return (flag);
 }
 
+//if the argv[1] is not '.cub', we return 0.
 int	is_format(char *str, char *ext)
 {
 	int	len;
@@ -46,6 +49,7 @@ int	is_format(char *str, char *ext)
 	return (1);
 }
 
+//this functions write the error message when the inputs are not good
 void	handle_error(char *str)
 {
     if (str)
@@ -53,6 +57,7 @@ void	handle_error(char *str)
 	exit(EXIT_FAILURE);
 }
 
+//parsing function that checks all the inputs
 void	check_args(int argc, char **argv)
 {
 	if (argc != 2)

@@ -12,6 +12,7 @@
 # include "../mlx/mlx.h"
 # include "../libft/libft.h"
 # include "parsing.h"
+# include "textures.h"
 
 // Configurations
 # define WINDOW_X 1600
