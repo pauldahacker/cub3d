@@ -56,9 +56,9 @@ void	handle_error(char *str)
 void	check_args(int argc, char **argv)
 {
 	if (argc != 2)
-		handle_error("Error: Too few or too many arguments!\n");
+		handle_error("Error\nToo few or too many arguments!\n");
 	else if (!is_readable(argv[1]))
-		handle_error("Error: Read error!\n");
+		handle_error("Error\nRead error!\n");
 	else if (!is_format(argv[1], MAP_EXTENSION))
-		handle_error("Error: Map has wrong extension!\n");
+		handle_error("Error\nMap has wrong extension!\n");
 }

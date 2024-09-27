@@ -1,6 +1,13 @@
 #ifndef CUB3D_H
 # define CUB3D_H
 
+# ifdef __linux__
+#  include "../mlx/mlx.h"
+
+# elif defined(__APPLE__)
+#  include "../mlx_macOS/mlx.h"
+# endif
+
 # include <fcntl.h>
 # include <limits.h>
 # include <math.h>
@@ -9,7 +16,6 @@
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <unistd.h>
-# include "../mlx/mlx.h"
 # include "../libft/libft.h"
 # include "parsing.h"
 
