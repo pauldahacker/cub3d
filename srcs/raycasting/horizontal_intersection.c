@@ -6,20 +6,16 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/27 19:23:59 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/28 11:52:59 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-typedef struct s_grid
-{
-	double	x;
-	double	y;
-}	t_grid;
+//I've coded the following functions thanks to this reference: 
+//https://permadi.com/1996/05/ray-casting-tutorial-7/
 
 //if the ray is facing up
-
 //we need thee function to know if the ray is facing up or down
 //this function returns 1 if is going up, 0 if it's going down
 int	ray_facing_up(t_ray *ray)
