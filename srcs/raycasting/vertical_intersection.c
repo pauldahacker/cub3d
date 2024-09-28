@@ -6,17 +6,14 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/27 19:26:26 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/28 13:06:40 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-typedef struct s_grid
-{
-	double	x;
-	double	y;
-}	t_grid;
+//I've coded the following functions thanks to this reference: 
+//https://permadi.com/1996/05/ray-casting-tutorial-7/
 
 //we need thee function to know if the ray is facing right or left
 //this function returns 1 if is going right, 0 if it's going left
@@ -69,7 +66,7 @@ t_grid	vertical_coordinate_next_grid_point(t_ray *ray, t_grid previous)
 	return (next);
 }
 
-t_grid	vertical_point_crossing_wall(t_map **map, t_ray *ray)
+t_grid	vertical_point_crossing_wall(t_grid **map, t_ray *ray)
 {
 	t_grid	current;
 	t_grid	next;
@@ -83,4 +80,26 @@ t_grid	vertical_point_crossing_wall(t_map **map, t_ray *ray)
 		current = next;
 	}
 	return (next);
+}
+
+t_ray	init_ray_for_test(t_ray ray)
+{
+	ray.pos_x = 10.5;
+	ray.pos_y = 6.5;
+	ray.ray_from_player_x = 14;
+	ray.ray_from_player_y = 0;
+	ray.angle = 90;
+	return (ray);
+}
+
+int	main(void)
+{
+	// t_grid	a;
+	t_ray	ray;
+	
+	// a.x = 96;
+	// a.y = 224;
+	ray = init_ray_for_test(ray);
+	vertical_point_crossing_wall(map, &ray);
+	return (0);
 }
