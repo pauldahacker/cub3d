@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 17:24:17 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:34:23 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,16 +82,16 @@ t_grid	vertical_point_crossing_wall(char **map, t_ray *ray)
 	return (next);
 }
 
-t_ray	init_ray_for_test(t_ray ray)
+void	init_ray_for_test(t_ray *ray)
 {
-	ray.pos_x = 10.5;
-	ray.pos_y = 6.5;
-	ray.ray_from_player_x = 14;
-	ray.ray_from_player_y = 0;
-	ray.angle = 90;
-	return (ray);
+	ray->pos_x = 10.5;
+	ray->pos_y = 6.5;
+	ray->ray_from_player_x = 14;
+	ray->ray_from_player_y = 0;
+	ray->angle = 90;
+	//return (ray);
 }
-/*
+
 int	main(int argc, char **argv)
 {
 	//t_grid	a;
@@ -101,8 +101,8 @@ int	main(int argc, char **argv)
 	map = fd_into_array(argv[1]);
 	// a.x = 96;
 	// a.y = 224;
-	ray = init_ray_for_test(ray);
+	init_ray_for_test(&ray);
 	vertical_point_crossing_wall(map, &ray);
 	(void)argc;
 	return (0);
-}*/
+}

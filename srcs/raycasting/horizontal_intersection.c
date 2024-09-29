@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 17:22:21 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:41:57 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,14 +86,14 @@ t_grid	convert_pixel_to_grid(t_grid point)
 //This function find the first point, it means where the player is on the map
 //then checks if there is a wall or not. If there is no, we will go on 
 //until finding one to return the point where the wall is
-t_grid	horizontal_point_crossing_wall(t_grid **map, t_ray *ray)
+t_grid	horizontal_point_crossing_wall(char **map, t_ray *ray)
 {
 	t_grid	current;
 	t_grid	next;
 	
 	current = horizontal_coordinate_first_grid_point(ray);//in pixel
 	current = convert_pixel_to_grid(current);//in grid/cub unit
-	while ((map[(int)current.y][(int)current.x]) == 0)
+	while (map[(int)current.y][(int)current.x] == 0)
 	{
 		next = horizontal_coordinate_next_grid_point(ray, current);
 		next = convert_pixel_to_grid(next);

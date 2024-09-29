@@ -36,4 +36,8 @@ char        *trim_end_spaces(char *str);
 int         return_rgb(char *line);
 t_game    *buffer(int fd);
 
+//parsing/fd_into_array.c
+char	**fd_into_array(char *argv_1);
+void	free_array(char **array);
+
 #endif
