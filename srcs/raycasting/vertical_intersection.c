@@ -6,11 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/28 13:06:40 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:24:17 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../../headers/cub3d.h"
 
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
@@ -66,7 +66,7 @@ t_grid	vertical_coordinate_next_grid_point(t_ray *ray, t_grid previous)
 	return (next);
 }
 
-t_grid	vertical_point_crossing_wall(t_grid **map, t_ray *ray)
+t_grid	vertical_point_crossing_wall(char **map, t_ray *ray)
 {
 	t_grid	current;
 	t_grid	next;
@@ -92,15 +92,17 @@ t_ray	init_ray_for_test(t_ray ray)
 	return (ray);
 }
 /*
-int	main(void)
+int	main(int argc, char **argv)
 {
-	// t_grid	a;
+	//t_grid	a;
 	t_ray	ray;
+	char	**map;
 	
+	map = fd_into_array(argv[1]);
 	// a.x = 96;
 	// a.y = 224;
 	ray = init_ray_for_test(ray);
 	vertical_point_crossing_wall(map, &ray);
+	(void)argc;
 	return (0);
-}
-*/
+}*/

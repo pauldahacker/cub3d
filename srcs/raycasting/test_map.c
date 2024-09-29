@@ -6,13 +6,13 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 11:57:22 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/28 13:11:19 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 14:19:23 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/cub3d.h"
 
-int main(int argc, char **argv)
+/*int main(int argc, char **argv)
 {
 	int		fd;
 	int		i;
@@ -48,4 +48,31 @@ int main(int argc, char **argv)
 	printf("0 found in position map[%i][%i]\n", i, j);
 	(void)argc;
 	return (0);
-}
+}*/
+
+// int	main(void)
+// {
+// 	char	*str;
+
+// 	str = NULL;
+// 	str = malloc(5 + 1);
+// 	printf("str memory address = %p\n", str);
+// 	str[0] = 's';
+// 	str[1] = 'i';
+// 	str[2] = 'm';
+// 	str[3] = 'o';
+// 	str[4] = 'n';
+// 	str[5] = '\0';
+// 	printf("\n");
+// 	printf("str memory address = %p\n", str);
+// 	printf("str = %s", str);
+// 	free(str);
+// 	printf("\n");
+// 	printf("str memory address = %p\n", str);
+// 	printf("str = %s", str);
+// 	str = NULL;
+// 	printf("\n");
+// 	printf("str memory address = %p\n", str);
+// 	printf("str = %s", str);
+// 	return (0);
+// }
