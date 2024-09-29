@@ -22,7 +22,6 @@ typedef struct s_buffer
     t_list      *map;
     int			n_rows;
 	int			n_cols;
-
 }				t_buffer;
 
 char	*get_next_line(int fd);

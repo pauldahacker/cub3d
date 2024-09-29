@@ -52,8 +52,10 @@ void    check_add_color(t_buffer *buf, char *line)
         handle_error("Error\nColor Error\n");
     if (!ft_strncmp(line, "F ", 2))
         buf->floor_color = return_rgb(line + 2);
-    if (!ft_strncmp(line, "C ", 2))
-        buf->ceiling_color = return_rgb(line + 2); 
+    else if (!ft_strncmp(line, "C ", 2))
+        buf->ceiling_color = return_rgb(line + 2);
+    else
+        handle_error("Error\nColor Error\n");
 }
 
 /*
