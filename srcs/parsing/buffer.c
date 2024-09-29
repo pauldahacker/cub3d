@@ -22,7 +22,7 @@ void        check_add_texture(t_buffer *buf, char *line)
     char    *texture_path;
 
     if (!line || ft_strlen(line) < 3)
-        handle_error("Error\nTexture Error\n");
+        handle_error("Error\nIncorrect texture format\n");
     i = 3;
     while (line[i] && is_space(line[i]))
         ++i;
@@ -39,7 +39,7 @@ void        check_add_texture(t_buffer *buf, char *line)
     else if (!ft_strncmp(line, "EA ", 3) && is_readable(texture_path))
         buf->east_path = texture_path;
     else
-        handle_error("Error\nTexture Error\n");
+        handle_error("Error\nIncorrect texture format\n");
 }
 
 /*
@@ -49,13 +49,13 @@ It checks if the line is properly formatted (see return_rgb)
 void    check_add_color(t_buffer *buf, char *line)
 {
     if (!line || ft_strlen(line) < 2)
-        handle_error("Error\nColor Error\n");
+        handle_error("Error\nIncorrect color format\n");
     if (!ft_strncmp(line, "F ", 2))
         buf->floor_color = return_rgb(line + 2);
     else if (!ft_strncmp(line, "C ", 2))
         buf->ceiling_color = return_rgb(line + 2);
     else
-        handle_error("Error\nColor Error\n");
+        handle_error("Error\nIncorrect color format\n");
 }
 
 /*
@@ -82,7 +82,7 @@ void        add_textures(int fd, t_buffer *buf)
     if (line)
         free(line);
     if (n_line != N_TEXTURES)
-        handle_error("Error\nTexture Error\n");
+        handle_error("Error\nIncorrect texture format\n");
 }
 
 /*
@@ -109,7 +109,7 @@ void        add_colors(int fd, t_buffer *buf)
     if (line)
         free(line);
     if (n_line != N_COLORS)
-        handle_error("Error\nColor Error\n");
+        handle_error("Error\nIncorrect color format\n");
 }
 
 t_buffer    *buffer(int fd)

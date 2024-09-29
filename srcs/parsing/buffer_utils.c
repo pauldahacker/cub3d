@@ -39,6 +39,6 @@ int     return_rgb(char *line)
     line = ft_strchr(line, ',') + 1;
     b = ft_atoi(line);
     if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255)
-        handle_error("Error\nColor Error\n");
+        handle_error("Error\nIncorrect color format\n");
     return (r << 16 | g << 8 | b);
 }
