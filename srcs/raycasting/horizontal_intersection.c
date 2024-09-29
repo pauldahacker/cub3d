@@ -6,11 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/28 11:52:59 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:22:21 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../../headers/cub3d.h"
 
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
