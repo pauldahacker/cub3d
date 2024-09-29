@@ -1,9 +1,20 @@
 #include "parsing.h"
 
 /*
+BUFFER.C:
+
+This is the first step of parsing, it does all necessary texture and color checks.
+If check was ok
+    - it stores the textures paths in a t_buffer structure.
+    - it converts the floor and ceiling color to decimal and stores them too.
+    - it does not check the map, but stores it as a t_list inside t_buffer. 
+Else, it gives an error.
+*/
+
+/*
 check_add_texture: checks line for errors and adds it as a texture to t_buffer.
 It checks if the line is properly formatted, and if the path exists.
-It will also check for the extension.
+It will also check for the extension (xpm? png?).
 */
 void        check_add_texture(t_buffer *buf, char *line)
 {
@@ -31,6 +42,10 @@ void        check_add_texture(t_buffer *buf, char *line)
         handle_error("Error\nTexture Error\n");
 }
 
+/*
+check_add_color: checks line for errors and adds it as a color to t_buffer.
+It checks if the line is properly formatted (see return_rgb)
+*/
 void    check_add_color(t_buffer *buf, char *line)
 {
     if (!line || ft_strlen(line) < 2)
@@ -43,7 +58,7 @@ void    check_add_color(t_buffer *buf, char *line)
 
 /*
 add_textures: uses get_next_line N_TEXTURES times or upon error.
-For each line, it uses check_and_add and adds the texture to buffer if correct.
+For each line, it uses check_add_texture and adds the texture to buffer if correct.
 */
 void        add_textures(int fd, t_buffer *buf)
 {
@@ -68,6 +83,10 @@ void        add_textures(int fd, t_buffer *buf)
         handle_error("Error\nTexture Error\n");
 }
 
+/*
+add_textures: uses get_next_line N_COLORS times or upon error.
+For each line, it uses check_add_color and adds the color to buffer if correct.
+*/
 void        add_colors(int fd, t_buffer *buf)
 {
     char    *line;
