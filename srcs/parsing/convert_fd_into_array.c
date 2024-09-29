@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 13:11:39 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 17:16:05 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:18:33 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@
 //in the read function, each time we use it, 
 //the buffer's reader head is moving to read each character of the fd.
 //to reset it to the beginning of the file, I close the fd
-int	count_lines_in_map(char *argv_1)
+static int	count_lines_in_map(char *argv_1)
 {
 	int		nb_lines;
 	char	*line;
 	int		fd;
-	
+
 	fd = open(argv_1, O_RDONLY);
 	if (fd == -1)
 		return (write(2, "failed to open the map\n", 23), 1);
@@ -83,7 +83,7 @@ char	**fd_into_array(char *argv_1)
 			return (free_array(map_array), NULL);
 		x++;
 	}
-	map_array[x] = (void *)'\0';//NULL
+	map_array[x] = (void *) '\0';
 	return (map_array);
 }
 
