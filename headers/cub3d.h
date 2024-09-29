@@ -18,6 +18,8 @@
 # include <unistd.h>
 # include "../libft/libft.h"
 # include "parsing.h"
+# include "textures.h"
+# include "raycasting.h"
 
 // Configurations
 # define WINDOW_X 1600

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   controls.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 15:35:20 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/09/23 16:49:55 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/09/24 17:40:53 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	on_destroy(t_vars *vars)
 
 int	on_keypress(int keysym, t_vars *vars)
 {
-	(void)vars;
+	//(void)vars;
 	printf("Pressed key : %d\n", keysym);
 	if (keysym == ESC)
 		on_destroy(vars);
