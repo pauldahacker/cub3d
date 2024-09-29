@@ -1,7 +1,7 @@
-NO ./textures/doom/stone.xpm
-SO ./textures/doom/stone2.xpm
-WE ./textures/wolf/cave.xpm
-EA ./textures/wolf/wood.xpm
+NO ./north_test.xpm
+SO ./south_test.xpm
+WE ./west_test.xpm
+EA ./east_test.xpm
 
 F 112,112,112
 C 56,56,56

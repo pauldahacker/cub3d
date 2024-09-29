@@ -15,10 +15,13 @@
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
-	//int			fd;
+	int			fd;
+	t_buffer	*buf;
 
 	check_args(argc, argv);
-	//fd = open(argv[1], O_RDONLY);
+	fd = open(argv[1], O_RDONLY);
+	buf = buffer(fd);
+	(void)buf;
 	vars.mlx_ptr = mlx_init();
 	if (!vars.mlx_ptr)
 		return (EXIT_FAILURE);

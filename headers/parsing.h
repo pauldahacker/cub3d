@@ -8,6 +8,8 @@
 # endif
 
 # define MAP_EXTENSION ".cub"
+# define N_TEXTURES 4
+# define N_COLORS 2
 
 typedef struct s_buffer
 {
@@ -29,5 +31,10 @@ int     is_readable(char *file);
 int     is_format(char *str, char *ext);
 void	handle_error(char *str);
 void	check_args(int argc, char **argv);
+
+int         is_space(int c);
+char        *trim_end_spaces(char *str);
+int         return_rgb(char *line);
+t_buffer    *buffer(int fd);
 
 #endif
