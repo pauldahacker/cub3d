@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 13:11:39 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 14:07:12 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 14:19:45 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,11 @@ void	free_array(char **array)
 	while (array[x])
 	{
 		free(array[x]);
+		array[x] = NULL;
 		x++;
 	}
 	free(array);
+	array = NULL;
 }
 
 char	**fd_into_array(int fd, int nb_lines)
