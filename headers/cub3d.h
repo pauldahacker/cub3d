@@ -51,4 +51,8 @@ typedef struct s_vars
 int	on_destroy(t_vars *vars);
 int	on_keypress(int keysym, t_vars *vars);
 
+//parsing/fd_into_array.c
+//char	**fd_into_array(int fd, int nb_lines);
+
+
 #endif
