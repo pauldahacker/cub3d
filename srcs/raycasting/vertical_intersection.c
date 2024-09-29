@@ -6,11 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 16:34:56 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/29 17:24:17 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../../headers/cub3d.h"
 
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
@@ -91,7 +91,7 @@ t_ray	init_ray_for_test(t_ray ray)
 	ray.angle = 90;
 	return (ray);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	//t_grid	a;
@@ -105,4 +105,4 @@ int	main(int argc, char **argv)
 	vertical_point_crossing_wall(map, &ray);
 	(void)argc;
 	return (0);
-}
+}*/
