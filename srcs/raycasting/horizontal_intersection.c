@@ -86,7 +86,7 @@ t_grid	convert_pixel_to_grid(t_grid point)
 //This function find the first point, it means where the player is on the map
 //then checks if there is a wall or not. If there is no, we will go on 
 //until finding one to return the point where the wall is
-t_grid	horizontal_point_crossing_wall(t_map **map, t_ray *ray)
+t_grid	horizontal_point_crossing_wall(t_grid **map, t_ray *ray)
 {
 	t_grid	current;
 	t_grid	next;
