@@ -10,29 +10,37 @@
 #                                                                              #
 # **************************************************************************** #
 
-BROWN =	\033[38;2;184;143;29m
-ORANGE = \033[38;5;209m
-BLUE = \033[0;94m
+BROWN =     \033[38;2;184;143;29m
+ORANGE =    \033[38;5;209m
+BLUE =      \033[0;94m
 DEF_COLOR = \033[0;39m
-GREEN =	\033[0;92m
-GREY = \033[38;5;245m
+GREEN =     \033[0;92m
+GREY =      \033[38;5;245m
 
+UNAME = $(shell uname)
 NAME = cub3d
 CC = gcc
 CFLAGS = -Werror -Wextra -Wall -g3
-MLXFLAGS = -Lmlx -lmlx -L/usr/lib/X11 -lXext -lX11
-INCLUDES = -I./headers -I./usr/include -Imlx
 
-HEADER = $(wildcard ./header/*.h)
-
+ifeq ($(UNAME), Darwin)
+MLX_DIR = ./mlx_macOS
+MLX = $(MLX_DIR)/libmlx.a
+MLXFLAGS = -Lmlx -lmlx -lm -framework OpenGL -framework AppKit
+INCLUDES = -I./headers -Imlx
+else ifeq ($(UNAME), Linux)
 MLX_DIR = ./mlx
 MLX = $(MLX_DIR)/libmlx_Linux.a
+MLXFLAGS = -Lmlx -lmlx -L/usr/lib/X11 -lXext -lX11
+INCLUDES = -I./headers -I./usr/include -Imlx
+endif
 
 LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
 LIBFT_HEADER = $(LIBFT_DIR)/libft.h
 
-SRCS_DIR = srcs/
+HEADER = $(wildcard ./headers/*.h) $(LIBFT_HEADER)
+
+SRCS_DIR = srcs
 OBJS_DIR = objs/
 
 SRCS = $(shell find $(SRCS_DIR) -name "*.c")
@@ -40,8 +48,9 @@ OBJS = $(patsubst $(SRCS_DIR)%.c, $(OBJS_DIR)%.o, $(SRCS))
 
 all: $(NAME)
 
-$(NAME): $(LIBFT) $(MLX) $(OBJS_DIR) $(OBJS) $(HEADER) Makefile
-	@$(CC) $(CFLAGS) $(OBJS) $(INCLUDES) $(MLXFLAGS) -o $@ $<
+$(NAME): $(LIBFT) $(MLX) $(OBJS) $(HEADER)
+	@echo "$(BLUE)Linking executable...$(DEF_COLOR)"
+	@$(CC) $(CFLAGS) $(INCLUDES) -o $(NAME) $(OBJS) $(MLXFLAGS) $(LIBFT)
 	@echo "$(GREEN)$(NAME) created$(DEF_COLOR)"
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c $(HEADER) Makefile
@@ -73,6 +82,6 @@ fclean: clean
 	@rm -f $(NAME)
 	@echo "$(GREEN)All binaries removed$(DEF_COLOR)"
 
-re:	fclean all
+re: fclean all
 
-.PHONY:	all clean fclean re
+.PHONY: all clean fclean re

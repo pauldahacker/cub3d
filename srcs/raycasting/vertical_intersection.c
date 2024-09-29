@@ -91,7 +91,7 @@ t_ray	init_ray_for_test(t_ray ray)
 	ray.angle = 90;
 	return (ray);
 }
-
+/*
 int	main(void)
 {
 	// t_grid	a;
@@ -103,3 +103,4 @@ int	main(void)
 	vertical_point_crossing_wall(map, &ray);
 	return (0);
 }
+*/
