@@ -11,7 +11,7 @@
 # define N_TEXTURES 4
 # define N_COLORS 2
 
-typedef struct s_buffer
+typedef struct s_game
 {
 	char		*north_path;
 	char		*south_path;
@@ -19,10 +19,10 @@ typedef struct s_buffer
 	char		*east_path;
     int         floor_color;
     int         ceiling_color;
-    t_list      *map;
-    int			n_rows;
-	int			n_cols;
-}				t_buffer;
+    char		**map;
+}				t_game;
+
+
 
 char	*get_next_line(int fd);
 
@@ -34,6 +34,6 @@ void	check_args(int argc, char **argv);
 int         is_space(int c);
 char        *trim_end_spaces(char *str);
 int         return_rgb(char *line);
-t_buffer    *buffer(int fd);
+t_game    *buffer(int fd);
 
 #endif
