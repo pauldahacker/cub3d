@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/cub3d.h"
+#include "parsing.h"
 
 //Our game map is a file. We want to convert the map of this file into an array.
 //First, we should count how many lines there is in our map to know how
