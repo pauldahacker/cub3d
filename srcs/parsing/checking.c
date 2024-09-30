@@ -1,9 +1,7 @@
-#include "parsing.h"
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check.c                                            :+:      :+:    :+:   */
+/*   checking.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pde-masc <pde-masc@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -14,9 +12,9 @@
 
 #include "parsing.h"
 
-//This function return 1 if we can read the file, 0 if we don't have the rights
+//This function returns 1 if we can read the file, 0 if we don't have the rights
 //to open it
-int	is_readable(char *file)
+int	can_open(char *file)
 {
 	int	fd;
 	int	flag;
@@ -49,20 +47,56 @@ int	is_format(char *str, char *ext)
 	return (1);
 }
 
+/*
+check_id: it checks if a non-empty line has a valid identifier.
+These identifiers can be (for now) "NO ", "SO ", "WE ", "EA ", "F ", or "C ".
+It checks the length of the line first to avoid segfaults.
+If identifier is a texture, it checks if its associated path can be opened.
+*/
+void	check_id(char *str)
+{
+	int	i;
+
+	while (*str && is_space(*str))
+		++str;
+	if (!str || ft_strlen(str) < 2)
+		handle_error("Error\nMap has missing or unknown element\n");
+	if (!ft_strncmp(str, "F ", 2) || !ft_strncmp(str, "C ", 2))
+		return ;
+	if (ft_strlen(str) < 3)
+		handle_error("Error\nMap has missing or unknown element\n");
+	i = 3;
+	while (str[i] && is_space(str[i]))
+		++i;
+	if (!ft_strncmp(str, "NO ", 3) || !ft_strncmp(str, "SO ", 3)
+		|| !ft_strncmp(str, "WE ", 3) || !ft_strncmp(str, "EA ", 3))
+	{
+		if (can_open(str + i))
+			return ;
+		handle_error("Error\nMap has incorrect texture path(s)\n");
+	}
+	handle_error("Error\nMap has missing or unknown element\n");
+}
+
 //this functions write the error message when the inputs are not good
 void	handle_error(char *str)
 {
-    if (str)
-	    write(STDERR_FILENO, str, ft_strlen(str));
+	if (str)
+		write(STDERR_FILENO, str, ft_strlen(str));
 	exit(EXIT_FAILURE);
 }
 
-//parsing function that checks all the inputs
+/*
+check_args: it does an input check for:
+- number of arguments
+- if the given map can be opened
+- if the given map has correct extension (.cub)
+*/
 void	check_args(int argc, char **argv)
 {
 	if (argc != 2)
 		handle_error("Error\nToo few or too many arguments!\n");
-	else if (!is_readable(argv[1]))
+	else if (!can_open(argv[1]))
 		handle_error("Error\nRead error!\n");
 	else if (!is_format(argv[1], MAP_EXTENSION))
 		handle_error("Error\nMap has wrong extension!\n");
