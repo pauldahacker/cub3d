@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/parsing.h"
+#include "parsing.h"
 
 static char	*clean_stash_and_line(char *line_buf)
 {
