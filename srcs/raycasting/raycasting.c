@@ -6,12 +6,12 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:29:01 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/25 16:47:16 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/09/30 19:49:33 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
+/*
 //pour dessiner les rayons tu dois calculer chaque deltas des distances 
 //entre les x et les y jusqu'a trouver un mur
 //ensuite tu dois utiliser la trigo pour que le mur ait une apparence plate et non courbee.
@@ -38,8 +38,8 @@ void	trying_to_draw_pixels(t_ray *ray)
 		x++;
 	}
 
-}
-
+}*/
+/*
 double	calculate_hypotenuse(t_ray *ray)
 {
 	double	pos_ray_x;//correspond a la coordonee en abscisse du rayon qui touce le mur
@@ -47,7 +47,7 @@ double	calculate_hypotenuse(t_ray *ray)
 
 	pos_ray_x = (VARIABLE) - ray->pos_x;
 	
-}
+}*/
 
     // Dimension of the Projection Plane = 320 x 200 units
     // Center of the Projection Plane = (160,100)
@@ -61,7 +61,7 @@ double	calculate_hypotenuse(t_ray *ray)
 //From the first ray drawn (ray[0]) to the second one, we will have to move the
 //angle from 60/320 = 0.1875 degres
 //this until reaching the 320th ray (ray[319])
-double	calculate_every_rays(t_ray *ray)
+/*double	calculate_every_rays(t_ray *ray)
 {
 	int	i;
 
@@ -77,6 +77,6 @@ double	calculate_every_rays(t_ray *ray)
 		i++;
 	}
 }
-
+*/
 
 	

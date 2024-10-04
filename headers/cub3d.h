@@ -17,9 +17,9 @@
 # include <sys/uio.h>
 # include <unistd.h>
 # include "../libft/libft.h"
+# include "raycasting.h"
 # include "parsing.h"
 # include "textures.h"
-# include "raycasting.h"
 
 // Configurations
 # define WINDOW_X 1600
@@ -27,6 +27,11 @@
 
 // Keys
 # define ESC 65307
+
+// Colors
+# define GREY	0x808080
+# define BLACK	0x000000
+# define WHITE	0xFFFFFF
 
 typedef struct s_data
 {
@@ -50,6 +55,10 @@ typedef struct s_vars
 // Control functions
 int	on_destroy(t_vars *vars);
 int	on_keypress(int keysym, t_vars *vars);
+
+//main.c
+void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
+void		draw_game(t_vars vars, t_game *game);
 
 
 

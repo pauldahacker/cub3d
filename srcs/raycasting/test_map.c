@@ -6,11 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 11:57:22 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 14:19:23 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/03 12:52:56 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/cub3d.h"
+#include "../headers/cub3d.h"
 
 /*int main(int argc, char **argv)
 {

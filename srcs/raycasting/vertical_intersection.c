@@ -6,11 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/30 19:09:56 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/04 11:31:22 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/cub3d.h"
+#include "../headers/cub3d.h"
 
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
@@ -42,10 +42,11 @@ t_block	vertical_coordinate_first_block_point(t_ray *ray)
 	else
 		a.x = rounded_down(ray->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
 
-	printf("ray->pos_x = %f\nray->pos_y = %f\na.y        = %f\nray->angle = %f\n\n", 
-			ray->pos_x, ray->pos_y, a.y, ray->angle);
-
+	//ce calcul de coordonne est eventuellement a reverifier
 	a.y = ray->pos_y + (ray->pos_x - a.x) * tan(ray->angle);
+	printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
+			ray->pos_x, ray->pos_y, ray->angle);
+
 	
 	printf("a.x = %f\na.y = %f\n", a.x, a.y);
 
@@ -88,7 +89,7 @@ t_block	vertical_point_crossing_wall(char **map, t_ray *ray)
 
 	current = vertical_coordinate_first_block_point(ray);//in pixel
 	current = convert_pixel_to_block(current);//in block/cub unit
-	printf("current.x = %f\ncurrent.y = %f\n", current.x, current.y);
+	printf("first point converted in block\ncurrent.x = %f\ncurrent.y = %f\n", current.x, current.y);
 	
 	while ((map[(int)current.y][(int)current.x]) == 0)
 	{

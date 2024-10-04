@@ -6,6 +6,7 @@
 		"math.h": "c",
 		"cub3d.h": "c",
 		"cmath": "c",
-		"parsing.h": "c"
+		"parsing.h": "c",
+		"textures.h": "c"
 	}
 }
