@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/04 13:37:30 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/04 16:58:08 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,9 @@ typedef struct raycasting
 	double		pos_x;//player position in abscissa. The unit are the pixels!
 	double		pos_y;//player position in ordinate. The unit are the pixels!
 	double		angle;//angle (in degrees) of our ray starting from the abscissa axis 0 ≤ angle ≤360
+	double		angle_subsequent_ray;
 	double		distance_to_wall;//the distance from the player to the wall
 	
-	// double		fov;//angle of player's field of view (=> should be in radian ?)
-	//double	pov;
 }	t_ray;
 
 //raycasting_utils.c
