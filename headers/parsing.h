@@ -18,11 +18,12 @@ typedef struct s_game
 	char		*south_path;
 	char		*west_path;
 	char		*east_path;
-    int         floor_color;
-    int         ceiling_color;
-    char		**map;
+	int			floor_color;
+	int			ceiling_color;
+	char		**map;
 	int			n_cols;
 	int			n_rows;
+	t_ray		*ray;
 }				t_game;
 
 // parsing/get_next_line.c

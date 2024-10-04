@@ -6,11 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/30 18:50:46 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/02 15:28:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../headers/cub3d.h"
+#include "../headers/cub3d.h"
 
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
@@ -44,20 +44,15 @@ t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 	if (ray_facing_up(ray) == 1)
 	{
 		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
-//		printf("entered in if\n");
+		printf("ray is facing up\n");
 	}
 	else
-	{
 		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
-//		printf("entered in else\n");
-	}
-	printf("ray->pos_x = %f\nray->pos_y = %f\na.y        = %f\nray->angle = %f\n\n", 
-			ray->pos_x, ray->pos_y, a.y, ray->angle);
-	
+	printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
+			ray->pos_x, ray->pos_y, ray->angle);
 	a.x = ray->pos_x + (ray->pos_y - a.y) / tan(ray->angle);
 
 	printf("a.x = %f\na.y = %f\n", a.x, a.y);
-	
 	return (a);
 }
 
@@ -110,6 +105,7 @@ t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
 	
 	current = horizontal_coordinate_first_block_point(ray);//in pixel
 	current = convert_pixel_to_block(current);//in block/cub unit
+	printf("converted in block current.x = %f\ncurrent.y = %f\n", current.x, current.y);
 	while (map[(int)current.y][(int)current.x] == 0)
 	{
 		next = horizontal_coordinate_next_block_point(ray, current);
@@ -139,6 +135,7 @@ int	main(int argc, char **argv)
 	init_ray_for_test(&ray);
 	
 	result = horizontal_point_crossing_wall(map, &ray);
+	(void)result;
 //	printf("result.x = %f\nresult.y = %f\n", result.x, result.y);
 
 	(void)argc;

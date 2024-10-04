@@ -1,14 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/19 11:50:04 by pde-masc          #+#    #+#              #
-#    Updated: 2024/09/19 15:47:20 by pde-masc         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
 
 BROWN =     \033[38;2;184;143;29m
 ORANGE =    \033[38;5;209m
@@ -30,7 +19,7 @@ INCLUDES = -I./headers -Imlx
 else ifeq ($(UNAME), Linux)
 MLX_DIR = ./mlx
 MLX = $(MLX_DIR)/libmlx_Linux.a
-MLXFLAGS = -Lmlx -lmlx -L/usr/lib/X11 -lXext -lX11
+MLXFLAGS = -Lmlx -lmlx -lm -L/usr/lib/X11 -lXext -lX11
 INCLUDES = -I./headers -I./usr/include -Imlx
 endif
 
