@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 11:44:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/04 15:34:50 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/04 19:22:13 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,7 @@ void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 //My goal is to draw the first projection plan row.
 //We have to convert our window in a projection plan
 //Then when we will have the first dimension, we will try to print our first row
-
-//combien de pixel pour faire une colonne de notre plan de projection
-//dans notre cas, 1600/320 = 5
-// int	convert_screen_in_plan_x(void)
-// {
-// 	return (WINDOW_X / PROJECTION_PLANE_X);
-// }
-
-// int	convert_screen_in_plan_y(void)
-// {
-// 	return (WINDOW_Y / PROJECTION_PLANE_Y);
-// }
+//
 
 //il est possile que tu aies besoin des coordonnes du joueurs au lieu des pixels x et y 
 void	draw_game(t_vars vars, t_game *game)
