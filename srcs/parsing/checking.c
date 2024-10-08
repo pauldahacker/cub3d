@@ -53,18 +53,18 @@ These identifiers can be (for now) "NO ", "SO ", "WE ", "EA ", "F ", or "C ".
 It checks the length of the line first to avoid segfaults.
 If identifier is a texture, it checks if its associated path can be opened.
 */
-void	check_id(char *str)
+void	check_id(t_game *game, char *str)
 {
 	int	i;
 
 	while (*str && is_space(*str))
 		++str;
 	if (!str || ft_strlen(str) < 2)
-		handle_error("Error\nMap has missing or unknown element\n");
+		handle_error(game, "Error\nMap has missing or unknown element\n");
 	if (!ft_strncmp(str, "F ", 2) || !ft_strncmp(str, "C ", 2))
 		return ;
 	if (ft_strlen(str) < 3)
-		handle_error("Error\nMap has missing or unknown element\n");
+		handle_error(game, "Error\nMap has missing or unknown element\n");
 	i = 3;
 	while (str[i] && is_space(str[i]))
 		++i;
@@ -73,16 +73,22 @@ void	check_id(char *str)
 	{
 		if (can_open(str + i))
 			return ;
-		handle_error("Error\nMap has incorrect texture path(s)\n");
+		handle_error(game, "Error\nMap has incorrect texture path(s)\n");
 	}
-	handle_error("Error\nMap has missing or unknown element\n");
+	handle_error(game, "Error\nMap has missing or unknown element\n");
 }
 
-//this functions write the error message when the inputs are not good
-void	handle_error(char *str)
+/*
+handle_error: frees game and displays an error message
+Set game to NULL if it has not been created yet.
+Set err to NULL if no message should be provided.
+*/
+void	handle_error(t_game *game, char *err)
 {
-	if (str)
-		write(STDERR_FILENO, str, ft_strlen(str));
+	if (game)
+		destroy_game(game);
+	if (err)
+		write(STDERR_FILENO, err, ft_strlen(err));
 	exit(EXIT_FAILURE);
 }
 
@@ -95,9 +101,9 @@ check_args: it does an input check for:
 void	check_args(int argc, char **argv)
 {
 	if (argc != 2)
-		handle_error("Error\nToo few or too many arguments!\n");
+		handle_error(NULL, "Error\nToo few or too many arguments!\n");
 	else if (!can_open(argv[1]))
-		handle_error("Error\nRead error!\n");
+		handle_error(NULL, "Error\nRead error!\n");
 	else if (!is_format(argv[1], MAP_EXTENSION))
-		handle_error("Error\nMap has wrong extension!\n");
+		handle_error(NULL, "Error\nMap has wrong extension!\n");
 }

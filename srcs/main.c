@@ -15,10 +15,9 @@
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
-	t_game		*game;
+	//t_game		*game;
 
-	game = parse(argc, argv);
-	(void)game;
+	vars.game = parse(argc, argv);
 	vars.mlx_ptr = mlx_init();
 	if (!vars.mlx_ptr)
 		return (EXIT_FAILURE);

@@ -19,10 +19,10 @@ int	is_space(int c)
 }
 
 /*
-Returns str with ending whitespaces removed.
-e.g. "Hello I am Paul  \n \t " --> "Hello I am Paul"
+Returns str with starting and ending whitespaces removed.
+e.g. "   \n  \tHello I am Paul  \n \t " --> "Hello I am Paul"
 */
-char	*trim_end_spaces(char *str)
+char	*trim_spaces(char *str)
 {
 	int	i;
 
@@ -31,13 +31,15 @@ char	*trim_end_spaces(char *str)
 	i = ft_strlen(str);
 	while (is_space(str[--i]))
 		str[i] = '\0';
+	while (*str && is_space(*str))
+		++str;
 	return (str);
 }
 
 /*
 Takes line, which should be formatted like this: "r,g,b"
 Where r,g,b represent numbers in range [0,255].
-Returns color in decimal form, or exits with error if not correctly formatted.
+Returns color in decimal form, or NO_COLOR (=-1) if not correctly formatted.
 
 !!! check atoi for invalid numbers (0 or error)
 */
@@ -53,6 +55,6 @@ int	return_rgb(char *line)
 	line = ft_strchr(line, ',') + 1;
 	b = ft_atoi(line);
 	if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255)
-		handle_error("Error\nIncorrect color format\n");
+		return (NO_COLOR);
 	return (r << 16 | g << 8 | b);
 }

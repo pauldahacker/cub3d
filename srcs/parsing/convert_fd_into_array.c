@@ -9,7 +9,7 @@
 /*   Updated: 2024/09/29 17:20:21 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include "parsing.h"
 
 //Our game map is a file. We want to convert the map of this file into an array.
@@ -87,7 +87,7 @@ char	**fd_into_array(char *argv_1)
 	return (map_array);
 }
 
-/*void	print_map_array(char **map)
+void	print_map_array(char **map)
 {
 	int	x;
 	int	y;
@@ -114,4 +114,5 @@ int	main(int argc, char **argv)
 	free_array(map);
 	(void)argc;
 	return (0);
-}*/
+}
+*/

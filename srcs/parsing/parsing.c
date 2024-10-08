@@ -21,7 +21,9 @@ t_game	*init_game(void)
 
 	new = (t_game *)malloc(sizeof(t_game));
 	if (!new)
-		handle_error("Malloc Error\n");
+		handle_error(NULL, "Malloc Error\n");
+	new->line = NULL;
+	new->stash = NULL;
 	new->north_path = NULL;
 	new->south_path = NULL;
 	new->west_path = NULL;
@@ -35,6 +37,35 @@ t_game	*init_game(void)
 }
 
 /*
+destroy_game: frees game.
+*/
+void	destroy_game(t_game *game)
+{
+	int	i;
+
+	if (game->line)
+		free(game->line);
+	if (game->stash)
+		free(game->stash);
+	if (game->north_path)
+		free(game->north_path);
+	if (game->south_path)
+		free(game->south_path);
+	if (game->west_path)
+		free(game->west_path);
+	if (game->east_path)
+		free(game->east_path);
+	i = -1;
+	if (game->map)
+	{
+		while (++i < game->n_rows)
+			free((game->map)[i]);
+		free(game->map);
+	}
+	free(game);
+}
+
+/*
 check_add_texture: checks line for errors and adds it as a texture to t_game.
 It should always be used after check_id (see check_id in checking.c).
 It checks if the line is properly formatted, and if the path exists.
@@ -45,8 +76,6 @@ void	check_add_texture(t_game *game, char *line)
 	int		i;
 	char	*path;
 
-	while (is_space(*line))
-		++line;
 	if (!ft_strncmp(line, "F ", 2) || !ft_strncmp(line, "C ", 2))
 		return ;
 	i = 3;
@@ -54,7 +83,7 @@ void	check_add_texture(t_game *game, char *line)
 		++i;
 	path = ft_strdup(line + i);
 	if (!path)
-		handle_error("Malloc Error\n");
+		handle_error(game, "Malloc Error\n");
 	if (!ft_strncmp(line, "NO ", 3) && !game->north_path)
 		game->north_path = path;
 	else if (!ft_strncmp(line, "SO ", 3) && !game->south_path)
@@ -64,7 +93,10 @@ void	check_add_texture(t_game *game, char *line)
 	else if (!ft_strncmp(line, "EA ", 3) && !game->east_path)
 		game->east_path = path;
 	else
-		handle_error("Error\nTexture identifier(s) defined more than once\n");
+	{
+		free(path);
+		handle_error(game, "Error\nTexture id(s) defined more than once\n");
+	}
 }
 
 /*
@@ -75,16 +107,22 @@ If not, it exits and prints a descriptive error using handle_error.
 */
 void	check_add_color(t_game *game, char *line)
 {
-	while (is_space(*line))
-		++line;
 	if (ft_strncmp(line, "F ", 2) && ft_strncmp(line, "C ", 2))
 		return ;
 	if (!ft_strncmp(line, "F ", 2) && game->floor_color == NO_COLOR)
+	{
+		if (return_rgb(line + 2) == NO_COLOR)
+			handle_error(game, "Error\nIncorrect color format\n");
 		game->floor_color = return_rgb(line + 2);
+	}
 	else if (!ft_strncmp(line, "C ", 2) && game->ceiling_color == NO_COLOR)
+	{
+		if (return_rgb(line + 2) == NO_COLOR)
+			handle_error(game, "Error\nIncorrect color format\n");
 		game->ceiling_color = return_rgb(line + 2);
+	}
 	else
-		handle_error("Error\nCeiling or floor color defined more than once\n");
+		handle_error(game, "Error\nColor defined more than once\n");
 }
 
 /*
@@ -95,30 +133,29 @@ using check_add_texture and check_add_color (see above).
 */
 void	add_textures_and_colors(int fd, t_game *game)
 {
-	char	*line;
 	int		n_added;
 
 	n_added = 0;
-	line = get_next_line(fd);
-	while (line)
+	game->line = get_next_line(fd, game);
+	while (game->line)
 	{
-		if (*line != '\n')
+		if (*(game->line) != '\n')
 		{
-			check_id(trim_end_spaces(line));
-			check_add_texture(game, trim_end_spaces(line));
-			check_add_color(game, line);
+			check_id(game, trim_spaces(game->line));
+			check_add_texture(game, trim_spaces(game->line));
+			check_add_color(game, game->line);
 			++n_added;
 		}
-		free(line);
+		free(game->line);
 		if (n_added == N_COLORS + N_TEXTURES)
 			break ;
-		line = get_next_line(fd);
+		game->line = get_next_line(fd, game);
 	}
 	if (game->ceiling_color == NO_COLOR || game->floor_color == NO_COLOR)
-		handle_error("Error\nMap has missing color\n");
+		handle_error(game, "Error\nMap has missing color\n");
 	if (!game->north_path || !game->south_path
 		|| !game->west_path || !game->east_path)
-		handle_error("Error\nMap has missing texture\n");
+		handle_error(game, "Error\nMap has missing texture\n");
 }
 
 /*
