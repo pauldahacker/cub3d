@@ -60,6 +60,7 @@ int	on_keypress(int keysym, t_vars *vars);
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
 void		draw_game(t_vars vars, t_game *game);
 
-
+//parsing/convert_fd_into_array.c
+void		print_map_array(char **map);
 
 #endif
