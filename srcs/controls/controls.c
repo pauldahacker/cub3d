@@ -16,6 +16,7 @@ int	on_destroy(t_vars *vars)
 {
 	mlx_destroy_window(vars->mlx_ptr, vars->win_ptr);
 	free(vars->mlx_ptr);
+	destroy_game(vars->game);
 	exit(0);
 	return (0);
 }

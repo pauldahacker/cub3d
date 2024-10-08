@@ -14,6 +14,8 @@
 
 typedef struct s_game
 {
+	char		*line;
+	char		*stash;
 	char		*north_path;
 	char		*south_path;
 	char		*west_path;
@@ -26,13 +28,13 @@ typedef struct s_game
 }				t_game;
 
 // parsing/get_next_line.c
-char	*get_next_line(int fd);
+char	*get_next_line(int fd, t_game *game);
 
 // parsing/checking.c
-void	check_id(char *str);
+void	check_id(t_game *game, char *str);
 int		can_open(char *file);
 int		is_format(char *str, char *ext);
-void	handle_error(char *str);
+void	handle_error(t_game *game, char *err);
 void	check_args(int argc, char **argv);
 
 // parsing/map_parsing.c
@@ -40,10 +42,11 @@ void	find_map_dim(int fd, t_game *game);
 
 // parsing/parsing_utils.c
 int			is_space(int c);
-char		*trim_end_spaces(char *str);
+char		*trim_spaces(char *str);
 int			return_rgb(char *line);
 
 // parsing/parsing.c
+void		destroy_game(t_game *game);
 t_game		*parse(int argc, char **argv);
 
 //parsing/fd_into_array.c

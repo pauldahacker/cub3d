@@ -28,6 +28,8 @@
 // Keys
 # define ESC 65307
 
+typedef struct s_game t_game;
+
 typedef struct s_data
 {
 	void		*img;
@@ -45,6 +47,7 @@ typedef struct s_vars
 	void		*mlx_ptr;
 	void		*win_ptr;
 	t_data		data;
+	t_game		*game;
 }				t_vars;
 
 // Control functions

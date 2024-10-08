@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "parsing.h"
-
+/*
 static char	*clean_stash_and_line(char *line_buf)
 {
 	char	*stash;
@@ -78,5 +78,7 @@ char	*get_next_line(int fd)
 	if (!line)
 		return (NULL);
 	stash = clean_stash_and_line(line);
+	//printf("------------\nSTASH: [%s]\nbytes: %d\n-----------\n", stash, (int)ft_strlen(stash));
 	return (line);
 }
+*/

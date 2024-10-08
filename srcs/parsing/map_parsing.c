@@ -12,18 +12,18 @@
 
 #include "parsing.h"
 
-int is_valid_element(char c)
+int	is_valid_element(char c)
 {
 	return (is_space(c) || c == '0' || c == '1' || c == 'N' || c == 'S'
 		|| c == 'W' || c == 'E');
 }
 
-int is_direction(char c)
+int	is_direction(char c)
 {
 	return (c == 'N' || c == 'S' || c == 'W' || c == 'E');
 }
 
-int is_valid_row(char *row)
+int	is_valid_row(char *row)
 {
 	while (*row && is_valid_element(*row))
 		++row;
@@ -44,25 +44,23 @@ of the game map.
 */
 void	find_map_dim(int fd, t_game *game)
 {
-	char	*line;	
-
-	line = get_next_line(fd);
-	while (line && *line == '\n')
+	game->line = get_next_line(fd, game);
+	while (game->line && *game->line == '\n')
 	{
-		free(line);
-		line = get_next_line(fd);
+		free(game->line);
+		game->line = get_next_line(fd, game);
 	}
-	while (line && is_valid_row(line))
+	while (game->line && is_valid_row(game->line))
 	{
 		++(game->n_rows);
-		if ((int)ft_strlen(line) > game->n_cols)
-			game->n_cols = ft_strlen(line);
-		free(line);
-		line = get_next_line(fd);
+		if ((int)ft_strlen(game->line) > game->n_cols)
+			game->n_cols = ft_strlen(game->line);
+		free(game->line);
+		game->line = get_next_line(fd, game);
 	}
 	close(fd);
-	if (line && !is_valid_row(line))
-		handle_error("Error\nMap has unknown element(s)\n");
-	if (line)
-		free(line);
+	if (game->line && !is_valid_row(game->line))
+		handle_error(game, "Error\nMap has unknown element(s)\n");
+	if (game->line)
+		free(game->line);
 }
