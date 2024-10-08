@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 17:00:06 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/04 17:19:04 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:37:12 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,3 +48,16 @@ void	init_ray_struct(t_ray *ray)
 //It means that instead of drawing pixel by pixel until WINDOWS_X/WINDOWS_Y
 //I want to draw row by row. Because each row will be one angle from our FOV
 //How to convert WINDOWS_X = 1600 into 320 rows
+
+
+//pour tracer les rayons, on va devoir utiliser une boucle while qui commencera 
+//de l'angle le + a gauche et qui finiera a droite.
+//Sachant que notre FOV est de 60°, on prendra la position du joueur:
+//S'il est place au nord   (N): l'angle du personnage sera entre 120° ≤ α ≤ 60°
+//S'il est place a l'ouest (W): l'angle du personnage sera entre 210° ≤ α ≤ 150°
+//S'il est place au sud    (S): l'angle du personnage sera entre 240° ≤ α ≤ 300°
+//S'il est place a l'est   (E): l'angle du personnage sera entre 330° ≤ α ≤ 30° 
+//car α % 360
+//on commencera par dessiner l'angle de gauche (ie: 120) pour terminer a 
+//l'angle de droite (ie 60)
+//Comment tracer le trait jusqu'a ce que le mur ait ete atteint ?

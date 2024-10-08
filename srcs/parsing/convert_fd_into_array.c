@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 13:11:39 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 17:20:21 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/08 15:19:53 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ char	**fd_into_array(char *argv_1)
 	return (map_array);
 }
 
-/*void	print_map_array(char **map)
+void	print_map_array(char **map)
 {
 	int	x;
 	int	y;
@@ -105,7 +105,7 @@ char	**fd_into_array(char *argv_1)
 	}
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	char	**map;
 

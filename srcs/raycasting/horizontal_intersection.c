@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/02 15:28:28 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/08 17:22:42 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,53 +15,36 @@
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
 
-//if the ray is facing up
-//we need thee function to know if the ray is facing up or down
-//this function returns 1 if is going up, 0 if it's going down
-//how to know if the angle is facing up ?
-//We start from the abscissa axis and we go anticlockwise.
-//Basically, we know that angle is facing up if the angle goes from 
-//0° ≤ angle < 180 (everything % 360)
-int	ray_facing_up(t_ray *ray)
-{
-	if (ray->angle >= 0 && ray->angle < 180)
-		return (1);
-	else
-		return (0);
-}
-
 //We want to convert the position of our character (=player) that we have in 
 //pixel into cubs unit.
 //Given that the cubs unit are bigger than pixels, this returns an approximation
 
-//This function gives us the coordinates of the character. But the return value
-//is in pixel. In a second function, we will convert the pixel coordinates into
-//block/cubs unit.
-t_block	horizontal_coordinate_first_block_point(t_ray *ray)
+//This function gives us the coordinates of the character into block/cubs unit.
+static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 {
 	t_block	a;
 
 	if (ray_facing_up(ray) == 1)
 	{
 		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
-		printf("ray is facing up\n");
+	//	printf("ray is facing up\n");
 	}
 	else
 		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
-	printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
-			ray->pos_x, ray->pos_y, ray->angle);
+	// printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
+	// 		ray->pos_x, ray->pos_y, ray->angle);
 	a.x = ray->pos_x + (ray->pos_y - a.y) / tan(ray->angle);
 
-	printf("a.x = %f\na.y = %f\n", a.x, a.y);
+//	printf("a.x = %f\na.y = %f\n", a.x, a.y);
 	return (a);
 }
 
-double	find_horizontal_x_a(t_ray *ray)
+static double	find_horizontal_x_a(t_ray *ray)
 {
 	return ((double)BLOCK_SIZE / tan(ray->angle));
 }
 
-double	find_horizontal_y_a(t_ray *ray)
+static double	find_horizontal_y_a(t_ray *ray)
 {
 	if (ray_facing_up(ray) == 1)
 		return ((double)-BLOCK_SIZE);
@@ -76,19 +59,13 @@ t_block	horizontal_coordinate_next_block_point(t_ray *ray, t_block previous)
 
 	x_a = find_horizontal_x_a(ray);
 	y_a = find_horizontal_y_a(ray);
+	// printf("\nin horizontal_coordinate_next_block_point\n");
+	// printf("x_a = %f && y_a = %f\n", x_a, y_a);
+	// printf("previous.x = %f && previous.y = %f\n", previous.x, previous.y);
 	next.x = previous.x + x_a;
 	next.y = previous.y + y_a;
+//	printf("\nin horizontal_coordinate_next_block_point\n");
 	return (next);
-}
-
-t_block	convert_pixel_to_block(t_block point)
-{
-	t_block	result;
-
-	result.x = point.x / BLOCK_SIZE;
-	result.y = point.y / BLOCK_SIZE;
-	//printf("result.x = %f\nresult.y = %f\n", result.x, result.y);
-	return (result);
 }
 
 //Ensuite on a besoin d'une fonction/condition qui nous dit que s'il y a un mur
@@ -100,32 +77,46 @@ t_block	convert_pixel_to_block(t_block point)
 //until finding one to return the point where the wall is
 t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
 {
-	t_block	current;
-	t_block	next;
-	
-	current = horizontal_coordinate_first_block_point(ray);//in pixel
-	current = convert_pixel_to_block(current);//in block/cub unit
-	printf("converted in block current.x = %f\ncurrent.y = %f\n", current.x, current.y);
-	while (map[(int)current.y][(int)current.x] == 0)
+	t_block	current_in_block;
+	t_block	current_in_px;
+	t_block	next_in_block;
+	t_block	next_in_px;
+		
+	current_in_px = horizontal_coordinate_first_block_point(ray);//in pixel
+	current_in_block = convert_pixel_to_block(current_in_px);//in block/cub unit
+	current_in_block.x = rounded_nearest_nb(current_in_block.x);
+	current_in_block.y = rounded_nearest_nb(current_in_block.y);
+//	printf("current_in_block.x = %f\ncurrent_in_block.y = %f\n", current_in_block.x, current_in_block.y);
+//	printf("map[(int)current_in_block.y][(int)current_in_block.x] = _%c_\n", map[(int)current_in_block.y][(int)current_in_block.x]);
+	while (map[(int)current_in_block.y][(int)current_in_block.x] == 0 || map[(int)current_in_block.y][(int)current_in_block.x] == 'N')
 	{
-		next = horizontal_coordinate_next_block_point(ray, current);
-		next = convert_pixel_to_block(next);
-		current = next;
+//		printf("entered in while loop\n");
+		next_in_px = horizontal_coordinate_next_block_point(ray, current_in_px);
+		printf("next_in_px.x = %f\nnext_in_px.y = %f\n", next_in_px.x, next_in_px.y);
+		next_in_block = convert_pixel_to_block(next_in_px);
+		printf("next_in_block.x = %f\nnext_in_block.y = %f\n", next_in_block.x, next_in_block.y);
+		next_in_block.x = rounded_nearest_nb(next_in_block.x);
+		next_in_block.y = rounded_nearest_nb(next_in_block.y);
+		printf("converted in block next_in_block.x = %f\nnext_in_block.y = %f\n", next_in_block.x, next_in_block.y);
+		current_in_px = next_in_px;
+		current_in_block = next_in_block;
 	}
-	return (next);
+	//printf("current line %i : %s\n", (int)current_in_block.y + 1, map[(int)current_in_block.y]);
+	printf("current point x = %f && y = %f: %c\n", current_in_block.y, current_in_block.x, map[(int)current_in_block.y][(int)current_in_block.x]);
+	return (next_in_px);
 }
 
-/*void	init_ray_for_test(t_ray *ray)
+void	init_ray_for_test(t_ray *ray)
 {
-	ray->pos_x = 96;
-	ray->pos_y = 224;
-	ray->angle = 60;
+	ray->pos_x = 128;//the units have to be in pixels
+	ray->pos_y = 704;
+	ray->angle = 90;
 }
 
 //mon objectif pour le moment est de voir:
 //a.x = 115
 //a.y = 191
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	t_ray	ray;
 	char	**map;

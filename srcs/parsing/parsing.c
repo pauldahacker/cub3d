@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parsing.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:20:44 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/09/30 13:20:48 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/10/08 17:15:17 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,7 +139,7 @@ t_game	*parse(int argc, char **argv)
 	fd = open(argv[1], O_RDONLY);
 	add_textures_and_colors(fd, game);
 	find_map_dim(fd, game);
-	printf("---------GAME INFO---------\n");
+/*	printf("---------GAME INFO---------\n");
 	printf("NORTH: %s\n", game->north_path);
 	printf("SOUTH: %s\n", game->south_path);
 	printf("WEST: %s\n", game->west_path);
@@ -148,6 +148,6 @@ t_game	*parse(int argc, char **argv)
 	printf("CEILING COLOR: %d\n", game->ceiling_color);
 	printf("N_ROWS: %d\n", game->n_rows);
 	printf("N_COLS: %d\n", game->n_cols);
-	printf("---------------------------\n");
+	printf("---------------------------\n");*/
 	return (game);
 }

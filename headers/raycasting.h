@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/04 16:58:08 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:26:25 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,16 @@ typedef struct raycasting
 double		rounded_down(double nb);
 double		rounded_nearest_nb(double nb);
 t_block		convert_pixel_to_block(t_block point);
+int			ray_facing_up(t_ray *ray);
+//t_block		horizontal_coordinate_first_block_point(t_ray *ray);
+//t_block		horizontal_coordinate_next_block_point(t_ray *ray, t_block previous);
+//double		find_horizontal_x_a(t_ray *ray);
+
+//horizontal_instersection.c
+t_block		horizontal_point_crossing_wall(char **map, t_ray *ray);
+void		init_ray_for_test(t_ray *ray);
+
+
+
 
 #endif
