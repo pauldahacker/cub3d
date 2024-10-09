@@ -1,0 +1,9 @@
+#include <limits.h>
+
+int write_line(int fd)
+{
+    int i;
+
+    while (i < INT_MAX - 1)
+        write(fd, "1")
+}
