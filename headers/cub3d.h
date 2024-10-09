@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   cub3d.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/10/09 19:04:30 by simarcha         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef CUB3D_H
 # define CUB3D_H
 
@@ -35,6 +47,7 @@
 
 //maths
 # define PI 	3.14159265358979323846
+typedef struct s_game t_game;
 
 typedef struct s_data
 {
@@ -53,6 +66,7 @@ typedef struct s_vars
 	void		*mlx_ptr;
 	void		*win_ptr;
 	t_data		data;
+	t_game		*game;
 }				t_vars;
 
 // Control functions

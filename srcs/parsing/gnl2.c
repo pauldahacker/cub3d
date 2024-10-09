@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   gnl2.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/15 13:07:07 by simarcha          #+#    #+#             */
-/*   Updated: 2024/09/29 13:36:25 by simarcha         ###   ########.fr       */
+/*   Created: 2024/10/09 15:17:31 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/10/09 15:17:32 by pde-masc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,22 +61,29 @@ static char	*complete_stash_and_line(int fd, char *stash, char *buf)
 	return (stash);
 }
 
-char	*get_next_line(int fd)
+/*
+get_next_line has been modified to take game as an added parameter.
+Helps a lot cause we store the stash (static variable in older version)
+in the t_game structure (see parsing.h).
+This allows to free the stash the moment we read an error in the .cub file,
+instead of having to read the full file even when an error was found.
+*/
+char	*get_next_line2(int fd, t_game *game)
 {
-	static char	*stash;
 	char		*line;
 	char		*buf;
 
 	buf = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
-		return (free(stash), free(buf), stash = NULL, buf = NULL, NULL);
+		return (free(game->stash), free(buf), game->stash = NULL,
+			buf = NULL, NULL);
 	if (!buf)
 		return (NULL);
-	line = complete_stash_and_line(fd, stash, buf);
+	line = complete_stash_and_line(fd, game->stash, buf);
 	free(buf);
 	buf = NULL;
 	if (!line)
 		return (NULL);
-	stash = clean_stash_and_line(line);
+	game->stash = clean_stash_and_line(line);
 	return (line);
 }
