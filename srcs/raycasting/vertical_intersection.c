@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 14:20:51 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:47:13 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,28 +15,13 @@
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
 
-//we need thee function to know if the ray is facing right or left
-//this function returns 1 if is going right, 0 if it's going left
-//how to know if the angle is facing right ?
-//We start from the abscissa axis and we go anticlockwise.
-//Basically, we know that angle is facing right if the angle goes from 
-//-90° ≤ angle ≤ 90 (everything % 360)
-int	ray_facing_right(t_ray *ray)
-{
-	if ((ray->angle >= 0 && ray->angle < 90)
-		|| (ray->angle >= 270 && ray->angle < 360))
-		return (1);
-	else
-		return (0);
-}
-
 t_block	vertical_coordinate_first_block_point(t_ray *ray)
 {
 	t_block	a;
 	
 	printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
 			ray->pos_x, ray->pos_y, ray->angle);
-	if (ray_facing_right(ray) == 1)
+	if (ray_facing_right(ray->angle) == 1)
 	{
 		a.x = rounded_down(ray->pos_x / BLOCK_SIZE) * BLOCK_SIZE;// + BLOCK_SIZE;
 		printf("facing right\n");
@@ -55,7 +40,7 @@ t_block	vertical_coordinate_first_block_point(t_ray *ray)
 
 double	find_vertical_x_a(t_ray *ray)
 {
-	if (ray_facing_right(ray) == 1)
+	if (ray_facing_right(ray->angle) == 1)
 		return ((double)BLOCK_SIZE);
 	return ((double)-BLOCK_SIZE);
 }

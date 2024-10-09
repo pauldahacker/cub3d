@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/08 18:21:30 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:07:34 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,11 +89,35 @@ t_block	convert_pixel_to_block(t_block point)
 //how to know if the angle is facing up ?
 //We start from the abscissa axis and we go anticlockwise.
 //We know that is facing up if the angle goes from 0° ≤ angle < 180 (% 360)
-int	ray_facing_up(t_ray *ray)
+int	ray_facing_up(double angle)
 {
-	if (ray->angle >= 0 && ray->angle < 180)
+
+	if (angle >= 0 && angle < 180)
 		return (1);
 	else
 		return (0);
+}
+
+//we need thee function to know if the ray is facing right or left
+//this function returns 1 if is going right, 0 if it's going left
+//how to know if the angle is facing right ?
+//We start from the abscissa axis and we go anticlockwise.
+//Basically, we know that angle is facing right if the angle goes from 
+//-90° ≤ angle ≤ 90 (everything % 360)
+int	ray_facing_right(double angle)
+{
+	if ((angle >= 0 && angle < 90)
+		|| (angle >= 270 && angle < 360))
+		return (1);
+	else
+		return (0);
+}
+
+void	check_angle_value(t_ray *ray)
+{
+	if (ray_facing_up(ray->angle) == 0 && ((int)ray->angle % 180 == 0))
+		ray->angle = 1;
+	else if (ray_facing_right(ray->angle) == 0 && ((int)ray->angle % 180 == 90))
+		ray->angle = 1;
 }
 
