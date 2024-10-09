@@ -66,4 +66,6 @@ typedef struct s_vars
 int	on_destroy(t_vars *vars);
 int	on_keypress(int keysym, t_vars *vars);
 
+
+
 #endif
