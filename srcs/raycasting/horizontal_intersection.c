@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   horizontal_intersection.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 10:14:40 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/09 14:28:24 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 	//	printf("ray is facing up\n");
 	}
 	else
-		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
+		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE;// + BLOCK_SIZE;
 	// printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
 	// 		ray->pos_x, ray->pos_y, ray->angle);
 	a.x = ray->pos_x + (ray->pos_y - a.y) / tan(ray->angle * (PI / 180));
@@ -43,7 +43,7 @@ static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 
 static double	find_horizontal_x_a(t_ray *ray)
 {
-	return (rounded_down((double)BLOCK_SIZE / tan(ray->angle * (PI / 180))));
+	return (rounded_down((double)BLOCK_SIZE / tan(ray->angle * PI / 180)));
 }
 
 static double	find_horizontal_y_a(t_ray *ray)
@@ -109,8 +109,8 @@ t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
 
 void	init_ray_for_test(t_ray *ray)
 {
-	ray->pos_x = 1 * 64;// = 160 the units have to be in pixels
-	ray->pos_y = (8 * 64) + 10 * 64;// = 672
-	ray->angle = 45;
+	ray->pos_x = 1 * 64;//the units have to be in pixels
+	ray->pos_y = (8 * 64) + 10 * 64;//
+	ray->angle = 270;
 }
 

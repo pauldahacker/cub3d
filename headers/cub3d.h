@@ -34,7 +34,7 @@
 # define WHITE	0xFFFFFF
 
 //maths
-#define PI 		3.14159265358979323846
+# define PI 	3.14159265358979323846
 
 typedef struct s_data
 {

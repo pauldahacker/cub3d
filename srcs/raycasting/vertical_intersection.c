@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vertical_intersection.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 10:15:22 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/09 14:20:51 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,12 @@ int	ray_facing_right(t_ray *ray)
 t_block	vertical_coordinate_first_block_point(t_ray *ray)
 {
 	t_block	a;
-
+	
+	printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
+			ray->pos_x, ray->pos_y, ray->angle);
 	if (ray_facing_right(ray) == 1)
 	{
-		a.x = rounded_down(ray->pos_x / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
+		a.x = rounded_down(ray->pos_x / BLOCK_SIZE) * BLOCK_SIZE;// + BLOCK_SIZE;
 		printf("facing right\n");
 	}
 	else
@@ -47,9 +49,7 @@ t_block	vertical_coordinate_first_block_point(t_ray *ray)
 	printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
 			ray->pos_x, ray->pos_y, ray->angle);
 
-	
 	printf("a.x = %f\na.y = %f\n", a.x, a.y);
-
 	return (a);
 }
 
