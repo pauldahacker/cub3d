@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/08 19:13:07 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 14:04:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,8 @@ int			ray_facing_up(t_ray *ray);
 t_block		horizontal_point_crossing_wall(char **map, t_ray *ray);
 void		init_ray_for_test(t_ray *ray);
 
-
+//vertical_instersection.c
+t_block		vertical_point_crossing_wall(char **map, t_ray *ray);
 
 
 #endif
