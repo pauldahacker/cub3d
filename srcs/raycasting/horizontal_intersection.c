@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   horizontal_intersection.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/08 19:51:16 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 10:14:40 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 //Given that the cubs unit are bigger than pixels, this returns an approximation
 
 //This function gives us the coordinates of the character into block/cubs unit.
+//tan receives an angle in radian but we work in degrees, so we add * (PI / 180)
+//to convert it in radians
 static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 {
 	t_block	a;
@@ -33,7 +35,7 @@ static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	// printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
 	// 		ray->pos_x, ray->pos_y, ray->angle);
-	a.x = ray->pos_x + (ray->pos_y - a.y) / tan(ray->angle);
+	a.x = ray->pos_x + (ray->pos_y - a.y) / tan(ray->angle * (PI / 180));
 
 	//printf("a.x = %f\na.y = %f\n", a.x, a.y);
 	return (a);
@@ -41,7 +43,7 @@ static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 
 static double	find_horizontal_x_a(t_ray *ray)
 {
-	return (rounded_down((double)BLOCK_SIZE / tan(ray->angle)));
+	return (rounded_down((double)BLOCK_SIZE / tan(ray->angle * (PI / 180))));
 }
 
 static double	find_horizontal_y_a(t_ray *ray)
@@ -81,7 +83,7 @@ t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
 	t_block	current_in_px;
 	t_block	next_in_block;
 	t_block	next_in_px;
-
+	int	i = 0;
 
 	current_in_px = horizontal_coordinate_first_block_point(ray);//in pixel
 	current_in_block = convert_pixel_to_block(current_in_px);//in block/cub unit
@@ -89,7 +91,6 @@ t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
 	printf("current point y = %f && x = %f\n", current_in_block.y, current_in_block.x);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
-	int	i = 0;
 	while (map[(int)current_in_block.y][(int)current_in_block.x] == '0'
 			|| map[(int)current_in_block.y][(int)current_in_block.x] == 'N')
 	{
@@ -110,6 +111,6 @@ void	init_ray_for_test(t_ray *ray)
 {
 	ray->pos_x = 1 * 64;// = 160 the units have to be in pixels
 	ray->pos_y = (8 * 64) + 10 * 64;// = 672
-	ray->angle = PI / 4;
+	ray->angle = 45;
 }
 

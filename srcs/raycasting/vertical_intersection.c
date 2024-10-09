@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vertical_intersection.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/04 11:31:22 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 10:15:22 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ t_block	vertical_coordinate_first_block_point(t_ray *ray)
 		a.x = rounded_down(ray->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
 
 	//ce calcul de coordonne est eventuellement a reverifier
-	a.y = ray->pos_y + (ray->pos_x - a.x) * tan(ray->angle);
+	a.y = ray->pos_y + (ray->pos_x - a.x) * tan(ray->angle * (PI / 180));
 	printf("ray->pos_x = %f\nray->pos_y = %f\nray->angle = %f\n\n", 
 			ray->pos_x, ray->pos_y, ray->angle);
 
@@ -66,7 +66,7 @@ double	find_vertical_x_a(t_ray *ray)
 //which is one cube (<=> BLOCK_SIZE unit)
 double	find_vertical_y_a(t_ray *ray)
 {
-	return ((double)BLOCK_SIZE * tan(ray->angle));
+	return ((double)BLOCK_SIZE * tan(ray->angle * (PI / 180)));
 }
 
 t_block	vertical_coordinate_next_block_point(t_ray *ray, t_block previous)
@@ -84,41 +84,37 @@ t_block	vertical_coordinate_next_block_point(t_ray *ray, t_block previous)
 
 t_block	vertical_point_crossing_wall(char **map, t_ray *ray)
 {
-	t_block	current;
-	t_block	next;
+	t_block	current_in_block;
+	t_block	current_in_px;
+	t_block	next_in_block;
+	t_block	next_in_px;
+	int		i = 0;
 
-	current = vertical_coordinate_first_block_point(ray);//in pixel
-	current = convert_pixel_to_block(current);//in block/cub unit
-	printf("first point converted in block\ncurrent.x = %f\ncurrent.y = %f\n", current.x, current.y);
-	
-	while ((map[(int)current.y][(int)current.x]) == 0)
+	current_in_px = vertical_coordinate_first_block_point(ray);//in pixel
+	current_in_block = convert_pixel_to_block(current_in_px);//in block/cub unit
+	printf("current point y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	printf("current point y = %f && x = %f\n", current_in_block.y, current_in_block.x);
+	current_in_block.x = rounded_nearest_nb(current_in_block.x);
+	current_in_block.y = rounded_nearest_nb(current_in_block.y);
+	while (map[(int)current_in_block.y][(int)current_in_block.x] == '0'
+			|| map[(int)current_in_block.y][(int)current_in_block.x] == 'N')
 	{
-		next = vertical_coordinate_next_block_point(ray, current);
-		next = convert_pixel_to_block(next);
-		current = next;
+		printf("i = %i\ncurrent point y = %f && x = %f: _%c_\n", i++, current_in_block.y, current_in_block.x, map[(int)current_in_block.y][(int)current_in_block.x]);
+		next_in_px = vertical_coordinate_next_block_point(ray, current_in_px);
+		next_in_block = convert_pixel_to_block(next_in_px);
+		next_in_block.x = rounded_nearest_nb(next_in_block.x);
+		next_in_block.y = rounded_nearest_nb(next_in_block.y);
+		current_in_px = next_in_px;
+		current_in_block = next_in_block;
 	}
-	return (next);
+	printf("final point y = %f && x = %f: _%c_\n", current_in_block.y, current_in_block.x, map[(int)current_in_block.y][(int)current_in_block.x]);
+	return (next_in_px);
 }
 
 /*void	init_ray_for_test(t_ray *ray)
 {
-	ray->pos_x = 96;
-	ray->pos_y = 224;
-	ray->angle = 60;
-}
-
-int	main(int argc, char **argv)
-{
-	t_ray	ray;
-	char	**map;
-	t_block	result;
-	
-	map = fd_into_array(argv[1]);
-	init_ray_for_test(&ray);
-	
-	result = vertical_point_crossing_wall(map, &ray);
-	printf("result.x = %f\nresult.y = %f\n", result.x, result.y);
-
-	(void)argc;
-	return (0);
+	ray->pos_x = 1 * 64;// = 160 the units have to be in pixels
+	ray->pos_y = (8 * 64) + 10 * 64;// = 672
+	ray->angle = PI / 4;
 }*/
+
