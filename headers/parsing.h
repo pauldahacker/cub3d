@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parsing.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/09 15:17:57 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/10/09 15:17:58 by pde-masc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PARSING_H
 # define PARSING_H
 
@@ -11,6 +23,16 @@
 # define N_TEXTURES 4
 # define N_COLORS 2
 # define NO_COLOR -1
+# define NO_DIRECTION 0
+
+# define VISITED 'V'
+
+typedef struct s_player
+{
+	int			x;
+	int			y;
+	char		direction;
+}				t_player;
 
 typedef struct s_game
 {
@@ -25,10 +47,11 @@ typedef struct s_game
     char		**map;
 	int			n_cols;
 	int			n_rows;
+	t_player	*player;
 }				t_game;
 
-// parsing/get_next_line.c
-char	*get_next_line(int fd, t_game *game);
+// parsing/gnl2.c
+char	*get_next_line2(int fd, t_game *game);
 
 // parsing/checking.c
 void	check_id(t_game *game, char *str);
@@ -38,7 +61,10 @@ void	handle_error(t_game *game, char *err);
 void	check_args(int argc, char **argv);
 
 // parsing/map_parsing.c
+void	print_map_content(t_game *game);
 void	find_map_dim(int fd, t_game *game);
+void	add_map_content(char *file, t_game *game);
+void	flood_fill(t_game *game, int x, int y);
 
 // parsing/parsing_utils.c
 int			is_space(int c);

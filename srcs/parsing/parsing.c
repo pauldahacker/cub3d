@@ -13,6 +13,40 @@
 #include "parsing.h"
 
 /*
+PARSING LOGIC:
+(0) Quick file-check for correct extension and readable file.
+(1) Using get_next_line2, we open and read the file a first time to add
+	the textures, colors and the map dimensions in a t_game structure.
+	ALL texture and color formatting errors are handled here:
+		- Correct identifiers for textures and colors.
+		- Openable paths for textures.
+		- Correct formatting for colors (r,g,b with 0 <= (r,g,b) <= 255).
+		- Empty lines between every type of element are ok.
+		- Textures and colors can be listed then read in any order.
+		- Spaces between each element's information are ok.
+		- No repeated identifiers.
+		- No missing elements.
+		- No unkown identifiers or elements.
+		- Textures and colors must come before the map content.
+	The following map specifics are checked:
+		- Lines between the textures/colors and game map are empty.
+		- Map content consists of only {0,1,N,S,W,E} or spaces.
+		- There is only one player.
+		- No empty lines within the map content.
+		- No unknown element(s) found in the map.
+	If an error is found before the end of file, everything is destroyed,
+	the file is closed, and the program stops here.
+	If no error is found after the end of file, we close the file.
+(2) After finding the map dimensions in (1), we can allocate the right amount 
+	of memory for the map.
+	Using get_next_line2, we open and read the file a second time to add
+	the map content in the t_game structure.
+	We close the file.
+(3) Once the map content has been added, we can check if the map is playable.
+	Flood-filling.
+*/
+
+/*
 init_game: allocates memory for t_game and sets its elements to initial values.
 */
 t_game	*init_game(void)
@@ -33,6 +67,7 @@ t_game	*init_game(void)
 	new->map = NULL;
 	new->n_rows = 0;
 	new->n_cols = 0;
+	new->player = NULL;
 	return (new);
 }
 
@@ -62,6 +97,8 @@ void	destroy_game(t_game *game)
 			free((game->map)[i]);
 		free(game->map);
 	}
+	if (game->player)
+		free(game->player);
 	free(game);
 }
 
@@ -126,30 +163,33 @@ void	check_add_color(t_game *game, char *line)
 }
 
 /*
-add_textures_and_colors: uses get_next_line until all colors and textures
+add_textures_and_colors: uses get_next_line2 until all colors and textures
 have been added or upon error.
 For each non-empty line, it uses check_id then adds the color or texture
 using check_add_texture and check_add_color (see above).
+Each non-empty line is temporarily stored in game->line in order to free
+it upon error or when a new line is read.
 */
 void	add_textures_and_colors(int fd, t_game *game)
 {
 	int		n_added;
 
 	n_added = 0;
-	game->line = get_next_line(fd, game);
+	game->line = get_next_line2(fd, game);
 	while (game->line)
 	{
 		if (*(game->line) != '\n')
 		{
 			check_id(game, trim_spaces(game->line));
 			check_add_texture(game, trim_spaces(game->line));
-			check_add_color(game, game->line);
+			check_add_color(game, trim_spaces(game->line));
 			++n_added;
 		}
 		free(game->line);
+		game->line = NULL;
 		if (n_added == N_COLORS + N_TEXTURES)
 			break ;
-		game->line = get_next_line(fd, game);
+		game->line = get_next_line2(fd, game);
 	}
 	if (game->ceiling_color == NO_COLOR || game->floor_color == NO_COLOR)
 		handle_error(game, "Error\nMap has missing color\n");
@@ -176,15 +216,7 @@ t_game	*parse(int argc, char **argv)
 	fd = open(argv[1], O_RDONLY);
 	add_textures_and_colors(fd, game);
 	find_map_dim(fd, game);
-	printf("---------GAME INFO---------\n");
-	printf("NORTH: %s\n", game->north_path);
-	printf("SOUTH: %s\n", game->south_path);
-	printf("WEST: %s\n", game->west_path);
-	printf("EAST: %s\n", game->east_path);
-	printf("FLOOR COLOR: %d\n", game->floor_color);
-	printf("CEILING COLOR: %d\n", game->ceiling_color);
-	printf("N_ROWS: %d\n", game->n_rows);
-	printf("N_COLS: %d\n", game->n_cols);
-	printf("---------------------------\n");
+	add_map_content(argv[1], game);
+	flood_fill(game, game->player->x, game->player->y);
 	return (game);
 }
