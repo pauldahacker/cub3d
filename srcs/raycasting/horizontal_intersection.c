@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 18:12:04 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:53:30 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 //This function gives us the coordinates of the character into block/cubs unit.
 //tan receives an angle in radian but we work in degrees, so we add * (PI / 180)
 //to convert it in radians
-static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
+static t_block	horizontal_coordinate_first_block_point(t_player *ray)
 {
 	t_block	a;
 
@@ -36,19 +36,19 @@ static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 	return (a);
 }
 
-static double	find_horizontal_x_a(t_ray *ray)
+static double	find_horizontal_x_a(t_player *ray)
 {
 	return (rounded_down((double)BLOCK_SIZE / tan(ray->angle * PI / 180)));
 }
 
-static double	find_horizontal_y_a(t_ray *ray)
+static double	find_horizontal_y_a(t_player *ray)
 {
 	if (ray_facing_up(ray->angle) == 1)
 		return ((double)-BLOCK_SIZE);
 	return ((double)BLOCK_SIZE);
 }
 
-t_block	horizontal_coordinate_next_block_point(t_ray *ray, t_block previous)
+t_block	horizontal_coordinate_next_block_point(t_player *ray, t_block previous)
 {
 	t_block	next;
 	double	x_a;
@@ -64,8 +64,6 @@ t_block	horizontal_coordinate_next_block_point(t_ray *ray, t_block previous)
 	return (next);
 }
 
-
-
 //Ensuite on a besoin d'une fonction/condition qui nous dit que s'il y a un mur
 //au point en (convertit en block) alors, on stop le process
 //Sinon on continue jusqu'a le stopper
@@ -73,7 +71,7 @@ t_block	horizontal_coordinate_next_block_point(t_ray *ray, t_block previous)
 //This function find the first point, it means where the player is on the map
 //then checks if there is a wall or not. If there is no, we will go on 
 //until finding one to return the point where the wall is
-t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
+t_block	horizontal_point_crossing_wall(char **map, t_player *ray)
 {
 	t_block	current_in_block;
 	t_block	current_in_px;
@@ -108,10 +106,10 @@ t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
 }
 //une fois que l'on a next_in_x, on peut calculer la distance en pixel parcourue
 
-void	init_ray_for_test(t_ray *ray)
+void	init_player_for_test(t_player *ray)
 {
 	ray->pos_x = 1 * 64;//the units have to be in pixels
-	ray->pos_y = (8 * 64) + 10 * 64;//
+	ray->pos_y = 10 * 64;//
 	ray->angle = 90;
 }
 

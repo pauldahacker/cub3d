@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 18:11:55 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:43:20 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 //I've coded the following functions thanks to this reference: 
 //https://permadi.com/1996/05/ray-casting-tutorial-7/
 
-t_block	vertical_coordinate_first_block_point(t_ray *ray)
+t_block	vertical_coordinate_first_block_point(t_player *ray)
 {
 	t_block	a;
 	
@@ -37,7 +37,7 @@ t_block	vertical_coordinate_first_block_point(t_ray *ray)
 	return (a);
 }
 
-double	find_vertical_x_a(t_ray *ray)
+double	find_vertical_x_a(t_player *ray)
 {
 	if (ray_facing_right(ray->angle) == 1)
 		return ((double)BLOCK_SIZE);
@@ -48,13 +48,13 @@ double	find_vertical_x_a(t_ray *ray)
 //how to find the hypotenuse ? 
 //We know the angle (ray->ange) and the distance of one side of the triangle
 //which is one cube (<=> BLOCK_SIZE unit)
-double	find_vertical_y_a(t_ray *ray)
+double	find_vertical_y_a(t_player *ray)
 {
 	printf("ray->angle = %f\n", ray->angle);
 	return ((double)BLOCK_SIZE * tan(ray->angle * (PI / 180)));
 }
 
-t_block	vertical_coordinate_next_block_point(t_ray *ray, t_block previous)
+t_block	vertical_coordinate_next_block_point(t_player *ray, t_block previous)
 {
 	t_block	next;
 	double	x_a;
@@ -68,7 +68,7 @@ t_block	vertical_coordinate_next_block_point(t_ray *ray, t_block previous)
 	return (next);
 }
 
-t_block	vertical_point_crossing_wall(char **map, t_ray *ray)
+t_block	vertical_point_crossing_wall(char **map, t_player *ray)
 {
 	t_block	current_in_block;
 	t_block	current_in_px;

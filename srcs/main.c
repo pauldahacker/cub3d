@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 19:03:55 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:56:44 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
-	t_game		*game;
 
 	vars.game = parse(argc, argv);
 	vars.mlx_ptr = mlx_init();
@@ -27,20 +26,10 @@ int	main(int argc, char **argv)
 	vars.data.img = mlx_new_image(vars.mlx_ptr, WINDOW_X, WINDOW_Y);
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
-	draw_game(vars, game);
 	
-	t_ray	ray;
-	char	**map;
-	t_block	result;
-	
-	map = fd_into_array(argv[1]);
-//	print_map_array(map);
-//	printf("\n");
-	init_ray_for_test(&ray);
-	
-	result = vertical_point_crossing_wall(map, &ray);
-	(void)result;
-//	printf("result.x = %f\nresult.y = %f\n", result.x, result.y);
+	draw_game(vars, vars.game);
+	init_player_for_test(vars.game->player);
+	vertical_point_crossing_wall(vars.game->map, vars.game->player);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);

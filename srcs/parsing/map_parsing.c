@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_parsing.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:55:54 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/09/30 17:55:57 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:49:14 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,8 @@ void	check_row(char *row, t_game *game)
 			game->player = (t_player *)malloc(sizeof(t_player));
 			if (!game->player)
 				handle_error(game, "Error\nMalloc Error\n");
-			game->player->x = i;
-			game->player->y = game->n_rows;
+			game->player->pos_x = i;
+			game->player->pos_y = game->n_rows;
 			game->player->direction = row[i];
 		}
 		++i;
@@ -191,8 +191,6 @@ int	is_border(t_game *game, int x, int y)
 
 void	flood_fill(t_game *game, int x, int y)
 {
-	printf("-------\n");
-	print_map_content(game);
 	if (((game->map)[y])[x] == '0')
 	{
 		if (is_border(game, x, y))

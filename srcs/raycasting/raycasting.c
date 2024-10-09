@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:29:01 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/08 19:13:01 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:43:20 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
     //   double rayDirX = dirX + planeX * cameraX;
     //   double rayDirY = dirY + planeY * cameraX;
 
-void	trying_to_draw_pixels(t_ray *ray)
+void	trying_to_draw_pixels(t_player *ray)
 {
 	int		x;
 	double	camera_x;
@@ -40,7 +40,7 @@ void	trying_to_draw_pixels(t_ray *ray)
 
 }*/
 /*
-double	calculate_hypotenuse(t_ray *ray)
+double	calculate_hypotenuse(t_player *ray)
 {
 	double	pos_ray_x;//correspond a la coordonee en abscisse du rayon qui touce le mur
 	double	pos_ray_y;
@@ -61,7 +61,7 @@ double	calculate_hypotenuse(t_ray *ray)
 //From the first ray drawn (ray[0]) to the second one, we will have to move the
 //angle from 60/320 = 0.1875 degres
 //this until reaching the 320th ray (ray[319])
-/*double	calculate_every_rays(t_ray *ray)
+/*double	calculate_every_rays(t_player *ray)
 {
 	int	i;
 
