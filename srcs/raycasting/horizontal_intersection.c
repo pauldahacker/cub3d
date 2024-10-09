@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 15:51:01 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 18:12:04 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,45 +25,19 @@
 static t_block	horizontal_coordinate_first_block_point(t_ray *ray)
 {
 	t_block	a;
-	int		ray_is_up;
 
-	//on doit checker si l'angle est correct/utilisable
-	//pour a.x-> on divise par tan => il faut s'assurer que la diviseur n'est pas 0
-	ray_is_up = ray_facing_up(ray->angle);
-	if (ray_is_up == 1)
+	if (ray_facing_up(ray->angle) == 1)
 		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	else
-		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE;// + BLOCK_SIZE;
+		a.y = rounded_down(ray->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	
 	check_horizontal_angle_value(ray);
-	printf("ready for segfault\n");
-	printf("tan(ray->angle * PI / 180) = %f\n", tan(ray->angle * PI / 180));
-	// if (tan(ray->angle * PI / 180) == 0)
-	// {
-	// 	if (ray_is_up == 1)	
-	// 		ray->angle = 1;
-	// 	else
-	// 		ray->angle = 359;
-	// }
 	a.x = ray->pos_x + (ray->pos_y - a.y) / tan(ray->angle * (PI / 180));
-
 	return (a);
 }
 
 static double	find_horizontal_x_a(t_ray *ray)
 {
-	printf("tan (pi) = %f\n", tan(ray->angle * PI / 180));
-	int	ray_is_up;
-
-	ray_is_up = ray_facing_up(ray->angle);
-	if (tan(ray->angle * PI / 180) == 0)
-	{
-		if (ray_is_up == 1)	
-			ray->angle = 1;
-		else
-			ray->angle = 181;
-	}
-	printf("ray->angle = %f && tan(ray->angle * PI / 180) = %f\n", ray->angle, tan(ray->angle * PI / 180));
 	return (rounded_down((double)BLOCK_SIZE / tan(ray->angle * PI / 180)));
 }
 
@@ -121,6 +95,11 @@ t_block	horizontal_point_crossing_wall(char **map, t_ray *ray)
 		next_in_block = convert_pixel_to_block(next_in_px);
 		next_in_block.x = rounded_nearest_nb(next_in_block.x);
 		next_in_block.y = rounded_nearest_nb(next_in_block.y);
+		if (coordinates_in_map(map, next_in_block) == 0)
+		{
+			printf("final point y = %f && x = %f: _%c_\n", current_in_block.y, current_in_block.x, map[(int)current_in_block.y][(int)current_in_block.x]);
+			return (current_in_px);
+		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
 	}
@@ -133,7 +112,7 @@ void	init_ray_for_test(t_ray *ray)
 {
 	ray->pos_x = 1 * 64;//the units have to be in pixels
 	ray->pos_y = (8 * 64) + 10 * 64;//
-	ray->angle = 0;
+	ray->angle = 90;
 }
 
 //we may need a function that checked if the point that we reached is out of bounds

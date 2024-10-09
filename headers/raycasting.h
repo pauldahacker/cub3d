@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 15:38:38 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 17:31:06 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,9 @@ t_block		convert_pixel_to_block(t_block point);
 int			ray_facing_up(double angle);
 int			ray_facing_right(double angle);
 
-void	check_horizontal_angle_value(t_ray *ray);
+void		check_horizontal_angle_value(t_ray *ray);
+void		check_vertical_angle_value(t_ray *ray);
+int			coordinates_in_map(char **map, t_block current);
 
 
 //horizontal_instersection.c
