@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 15:07:34 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 16:21:58 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,12 +76,11 @@ double	rounded_nearest_nb(double nb)
 
 t_block	convert_pixel_to_block(t_block point)
 {
-	t_block	result;
+	t_block	converted;
 
-	result.x = point.x / BLOCK_SIZE;
-	result.y = point.y / BLOCK_SIZE;
-	//printf("result.x = %f\nresult.y = %f\n", result.x, result.y);
-	return (result);
+	converted.x = point.x / BLOCK_SIZE;
+	converted.y = point.y / BLOCK_SIZE;
+	return (converted);
 }
 
 //we need a function to know if the ray is facing up or down
@@ -111,13 +110,5 @@ int	ray_facing_right(double angle)
 		return (1);
 	else
 		return (0);
-}
-
-void	check_angle_value(t_ray *ray)
-{
-	if (ray_facing_up(ray->angle) == 0 && ((int)ray->angle % 180 == 0))
-		ray->angle = 1;
-	else if (ray_facing_right(ray->angle) == 0 && ((int)ray->angle % 180 == 90))
-		ray->angle = 1;
 }
 

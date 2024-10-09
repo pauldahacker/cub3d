@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 14:20:29 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 18:08:22 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	main(int argc, char **argv)
 //	printf("\n");
 	init_ray_for_test(&ray);
 	
-	result = horizontal_point_crossing_wall(map, &ray);
+	result = vertical_point_crossing_wall(map, &ray);
 	(void)result;
 //	printf("result.x = %f\nresult.y = %f\n", result.x, result.y);
 
