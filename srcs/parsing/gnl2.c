@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   gnl2.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/09 15:17:31 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/10/09 15:17:32 by pde-masc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "parsing.h"
 
 static char	*clean_stash_and_line(char *line_buf)
@@ -49,14 +61,22 @@ static char	*complete_stash_and_line(int fd, char *stash, char *buf)
 	return (stash);
 }
 
-char	*get_next_line(int fd, t_game *game)
+/*
+get_next_line has been modified to take game as an added parameter.
+Helps a lot cause we store the stash (static variable in older version)
+in the t_game structure (see parsing.h).
+This allows to free the stash the moment we read an error in the .cub file,
+instead of having to read the full file even when an error was found.
+*/
+char	*get_next_line2(int fd, t_game *game)
 {
 	char		*line;
 	char		*buf;
 
 	buf = (char *)malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, 0, 0) < 0)
-		return (free(game->stash), free(buf), game->stash = NULL, buf = NULL, NULL);
+		return (free(game->stash), free(buf), game->stash = NULL,
+			buf = NULL, NULL);
 	if (!buf)
 		return (NULL);
 	line = complete_stash_and_line(fd, game->stash, buf);
@@ -65,9 +85,5 @@ char	*get_next_line(int fd, t_game *game)
 	if (!line)
 		return (NULL);
 	game->stash = clean_stash_and_line(line);
-    if (game->stash)
-    {
-        printf("------------\nSTASH: [%s]\nbytes: %d\n-----------\n", game->stash, (int)ft_strlen(game->stash));
-    }
-    return (line);
+	return (line);
 }
