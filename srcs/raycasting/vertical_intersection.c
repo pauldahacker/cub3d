@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 20:08:54 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 20:14:41 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ t_block	vertical_coordinate_first_block_point(t_player *player)
 	
 	printf("player->pos_x = %f\nplayer->pos_y = %f\nplayer->angle = %f\n\n", 
 			player->pos_x, player->pos_y, player->angle);
-	if (player_facing_right(player->angle) == 1)
+	if (ray_facing_right(player->angle) == 1)
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	else
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
@@ -39,7 +39,7 @@ t_block	vertical_coordinate_first_block_point(t_player *player)
 
 double	find_vertical_x_a(t_player *player)
 {
-	if (player_facing_right(player->angle) == 1)
+	if (ray_facing_right(player->angle) == 1)
 		return ((double)BLOCK_SIZE);
 	return ((double)-BLOCK_SIZE);
 }
@@ -90,7 +90,7 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		next_in_block = convert_pixel_to_block(next_in_px);
 		next_in_block.x = rounded_nearest_nb(next_in_block.x);
 		next_in_block.y = rounded_nearest_nb(next_in_block.y);
-		if (coordinates_in_map(vars->game->map, next_in_block) == 0)
+		if (coordinates_in_map(vars, next_in_block) == 0)
 		{
 			printf("final point y = %f && x = %f: _%c_\n", current_in_block.y, current_in_block.x, vars->game->map[(int)current_in_block.y][(int)current_in_block.x]);
 			return (current_in_px);
