@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 20:02:24 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 20:13:04 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@
 
 typedef struct s_game		t_game;
 typedef struct raycasting	t_player;
+typedef struct s_vars		t_vars;
+
 
 //How do we code the map?
 //It should be an array of int with the coordinates x and y
@@ -41,7 +43,7 @@ int			ray_facing_right(double angle);
 
 void		check_horizontal_angle_value(t_player *ray);
 void		check_vertical_angle_value(t_player *ray);
-int			coordinates_in_map(char **map, t_block current);
+int			coordinates_in_map(t_vars *vars, t_block current);
 
 
 //horizontal_instersection.c

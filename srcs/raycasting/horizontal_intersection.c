@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 20:09:13 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 20:14:02 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static t_block	horizontal_coordinate_first_block_point(t_player *player)
 {
 	t_block	a;
 
-	if (player_facing_up(player->angle) == 1)
+	if (ray_facing_up(player->angle) == 1)
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	else
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
@@ -43,7 +43,7 @@ static double	find_horizontal_x_a(t_player *player)
 
 static double	find_horizontal_y_a(t_player *player)
 {
-	if (player_facing_up(player->angle) == 1)
+	if (ray_facing_up(player->angle) == 1)
 		return ((double)-BLOCK_SIZE);
 	return ((double)BLOCK_SIZE);
 }
@@ -93,7 +93,7 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 		next_in_block = convert_pixel_to_block(next_in_px);
 		next_in_block.x = rounded_nearest_nb(next_in_block.x);
 		next_in_block.y = rounded_nearest_nb(next_in_block.y);
-		if (coordinates_in_map(vars->game->map, next_in_block) == 0)
+		if (coordinates_in_map(vars, next_in_block) == 0)
 		{
 			printf("final point y = %f && x = %f: _%c_\n", current_in_block.y, current_in_block.x, vars->game->map[(int)current_in_block.y][(int)current_in_block.x]);
 			return (current_in_px);
