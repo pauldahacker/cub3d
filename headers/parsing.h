@@ -79,4 +79,8 @@ t_game		*parse(int argc, char **argv);
 char	**fd_into_array(char *argv_1);
 void	free_array(char **array);
 
+//parsing/fd_into_array.c
+char	**fd_into_array(char *argv_1);
+void	free_array(char **array);
+
 #endif
