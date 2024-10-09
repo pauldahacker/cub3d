@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 19:46:56 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:59:21 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,22 @@
 //maths
 # define PI 	3.14159265358979323846
 typedef struct s_game t_game;
+
+/*typedef struct s_game
+{
+	char		*line;
+	char		*stash;
+	char		*north_path;
+	char		*south_path;
+	char		*west_path;
+	char		*east_path;
+	int			floor_color;
+	int			ceiling_color;
+	char		**map;
+	int			n_cols;
+	int			n_rows;
+	t_player	*player;
+}				t_game;*/
 
 typedef struct raycasting
 {

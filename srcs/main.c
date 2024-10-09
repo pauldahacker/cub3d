@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 19:56:44 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 20:00:29 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(int argc, char **argv)
 	
 	draw_game(vars, vars.game);
 	init_player_for_test(vars.game->player);
-	vertical_point_crossing_wall(vars.game->map, vars.game->player);
+	vertical_point_crossing_wall(vars);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);

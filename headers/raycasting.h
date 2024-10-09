@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 19:48:02 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 20:02:24 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,11 @@ int			coordinates_in_map(char **map, t_block current);
 
 
 //horizontal_instersection.c
-t_block		horizontal_point_crossing_wall(char **map, t_player *ray);
+t_block		horizontal_point_crossing_wall(t_vars *vars);
 void		init_player_for_test(t_player *ray);
 
 //vertical_instersection.c
-t_block		vertical_point_crossing_wall(char **map, t_player *ray);
+t_block		vertical_point_crossing_wall(t_vars *vars);
 
 
 #endif
