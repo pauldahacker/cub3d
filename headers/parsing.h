@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:17:57 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 19:05:29 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:43:56 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,6 @@
 
 # define VISITED 'V'
 
-typedef struct s_player
-{
-	int			x;
-	int			y;
-	char		direction;
-}				t_player;
-
 typedef struct s_game
 {
 	char		*line;
@@ -47,7 +40,6 @@ typedef struct s_game
 	char		**map;
 	int			n_cols;
 	int			n_rows;
-	t_ray		*ray;
 	t_player	*player;
 }				t_game;
 

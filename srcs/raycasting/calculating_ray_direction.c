@@ -6,20 +6,20 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:55:28 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/07 18:50:10 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:43:20 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-// void	init_ray_for_test(t_ray *ray)
+// void	init_player_for_test(t_player *ray)
 // {
 // 	ray->pos_x = 90;
 // 	ray->pos_y = 224;
 // 	ray->angle = 60;
 // }
 
-// void	calculating_ray_direction(t_ray *ray)
+// void	calculating_ray_direction(t_player *ray)
 // {
 // 	int		x;
 // 	double	camera_x;

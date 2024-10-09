@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:20:44 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 19:05:59 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/09 19:49:31 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -217,6 +217,6 @@ t_game	*parse(int argc, char **argv)
 	add_textures_and_colors(fd, game);
 	find_map_dim(fd, game);
 	add_map_content(argv[1], game);
-	flood_fill(game, game->player->x, game->player->y);
+	flood_fill(game, game->player->pos_x, game->player->pos_y);
 	return (game);
 }
