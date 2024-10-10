@@ -30,11 +30,12 @@ int	main(int argc, char **argv)
 	draw_game(vars, vars.game);
 	printf("position player in the map[%0.f][%0.f] = %c\n", \
 	vars.game->player->pos_x, vars.game->player->pos_y, \
-	vars.game->map[(int)vars.game->player->pos_x][(int)vars.game->player->pos_y]);
-	init_player_for_test(vars.game->player);
+	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x]);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
+	vars.game->player->pos_x *= 64;
+	vars.game->player->pos_y *= 64;
 	vertical_point_crossing_wall(&vars);
-
+	horizontal_point_crossing_wall(&vars);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
 	mlx_loop(vars.mlx_ptr);
