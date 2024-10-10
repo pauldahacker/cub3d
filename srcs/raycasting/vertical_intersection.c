@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/10 14:08:14 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 16:53:45 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ double	find_vertical_x_a(t_player *player)
 //which is one cube (<=> BLOCK_SIZE unit)
 double	find_vertical_y_a(t_player *player)
 {
-	printf("player->angle = %f\n", player->angle);
 	return ((double)BLOCK_SIZE * tan(player->angle * (PI / 180)));
 }
 
@@ -61,7 +60,6 @@ t_block	vertical_coordinate_next_block_point(t_player *player, t_block previous)
 
 	x_a = find_vertical_x_a(player);
 	y_a = find_vertical_y_a(player);
-	printf("y_a find_vertical_y_a = %f\n", y_a);
 	next.x = previous.x + x_a;
 	next.y = previous.y + y_a;
 	return (next);
@@ -122,7 +120,11 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
 	if (check_coordinates_in_map(vars, current_in_block) == 0)
-		return ((printf("final point y = %f && x = %f\n", current_in_px.y, current_in_px.x)), current_in_px);
+	{
+		printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+		printf("vertical final point in \033[1;34mblock\033[0m y = %f && x = %f\n", current_in_block.y, current_in_block.x);
+		return (current_in_px);
+	}
 	while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
 			|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'V')
 	{
@@ -131,9 +133,15 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		next_in_block.x = rounded_nearest_nb(next_in_block.x);
 		next_in_block.y = rounded_nearest_nb(next_in_block.y);
 		if (check_coordinates_in_map(vars, next_in_block) == 0)
-			return ((printf("final point y = %f && x = %f: _%c_\n", current_in_px.y, current_in_px.x, vars->game->map[(int)current_in_px.y][(int)current_in_px.x])), current_in_px);
+		{
+			printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+			printf("vertical final point in \033[1;34mblock\033[0m y = %f && x = %f\n", current_in_block.y, current_in_block.x);
+			return (current_in_px);
+		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
 	}
-	return ((printf("final point y = %f && x = %f: _%c_\n", current_in_px.y, current_in_px.x, vars->game->map[(int)current_in_px.y][(int)current_in_px.x])), current_in_px);
+	printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	printf("vertical final point in \033[1;34mblock\033[0m y = %f && x = %f\n", current_in_block.y, current_in_block.x);
+	return (current_in_px);
 }
