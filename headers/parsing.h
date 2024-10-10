@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:17:57 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 19:43:56 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:28:45 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ typedef struct s_game
 	int			floor_color;
 	int			ceiling_color;
 	char		**map;
-	int			n_cols;
-	int			n_rows;
+	int			n_cols;//vertical
+	int			n_rows;//horizontal
 	t_player	*player;
 }				t_game;
 

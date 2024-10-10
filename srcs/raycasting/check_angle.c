@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:34:01 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 20:12:03 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:33:17 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	check_vertical_angle_value(t_player *ray)
 //x > x_max || y > y_max
 //if map[x][y] is different from 0 || 1
 
-int	coordinates_in_map(t_vars *vars, t_block current)
+int	check_coordinates_in_map(t_vars *vars, t_block current)
 {
 	if (current.y < 0 || current.y > vars->game->n_rows
 		|| current.x < 0 || current.x > vars->game->n_cols)
