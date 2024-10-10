@@ -24,6 +24,25 @@ int	is_direction(char c)
 }
 
 /*
+returns the direction's corresponding angle in degrees
+*/
+void	init_player_angles(t_player *player, char direction)
+{
+	if (direction == 'N')
+		player->angle = 90;
+	else if (direction == 'S')
+		player->angle = 270;
+	else if (direction == 'W')
+		player->angle = 180;
+	else
+		player->angle = 0;
+	player->angle_start = player->angle + 30;
+	player->angle_end = player->angle - 30;
+	if (player->angle_end < 0)
+		player->angle_end += 360;
+}
+
+/*
 is_valid_row: takes a line and checks if it is a valid map row.
 If it consists of anything other than '0', '1', 'N', 'S', 'W', 'E', or spaces,
 it is invalid.
@@ -67,7 +86,7 @@ void	check_row(char *row, t_game *game)
 				handle_error(game, "Error\nMalloc Error\n");
 			game->player->pos_x = i;
 			game->player->pos_y = game->n_rows;
-			game->player->direction = row[i];
+			init_player_angles(game->player, row[i]);
 		}
 		++i;
 	}

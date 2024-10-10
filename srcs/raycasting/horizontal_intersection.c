@@ -107,11 +107,4 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 }
 //une fois que l'on a next_in_x, on peut calculer la distance en pixel parcourue
 
-void	init_player_for_test(t_player *player)
-{
-	player->pos_x *= 64;//the units have to be in pixels
-	player->pos_y *= 64;//
-	player->angle = 270;
-}
-
 //we may need a function that checked if the point that we reached is out of bounds
