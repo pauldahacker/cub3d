@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/10 12:33:25 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 18:18:31 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ typedef struct s_block
 {
 	double	x;
 	double	y;
+	bool	reachable;
 }	t_block;
 
 //raycasting_utils.c
