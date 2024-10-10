@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/10 13:57:22 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 17:13:30 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ t_block	horizontal_coordinate_next_block_point(t_player *player, t_block previou
 //This function find the first point, it means where the player is on the vars->game->map
 //then checks if there is a wall or not. If there is no, we will go on 
 //until finding one to return the point where the wall is
-t_block	horizontal_point_crossing_wall(t_vars *vars)
+/*t_block	horizontal_point_crossing_wall(t_vars *vars)
 {
 	t_block	current_in_block;
 	t_block	current_in_px;
@@ -86,8 +86,10 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	printf("current point y = %f && x = %f\n", current_in_block.y, current_in_block.x);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
+	if (check_coordinates_in_map(vars, current_in_block) == 0)
+		return ((printf("horizontal final point y = %f && x = %f\n", current_in_px.y, current_in_px.x)), current_in_px);
 	while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
-			|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'N')
+			|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'V')
 	{
 		printf("i = %i\ncurrent point y = %f && x = %f: _%c_\n", i++, current_in_block.y, current_in_block.x, vars->game->map[(int)current_in_block.y][(int)current_in_block.x]);
 		next_in_px = horizontal_coordinate_next_block_point(vars->game->player, current_in_px);
@@ -104,7 +106,47 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	}
 	printf("final point y = %f && x = %f: _%c_\n", current_in_block.y, current_in_block.x, vars->game->map[(int)current_in_block.y][(int)current_in_block.x]);
 	return (next_in_px);
-}
+}*/
 //une fois que l'on a next_in_x, on peut calculer la distance en pixel parcourue
+
+t_block	horizontal_point_crossing_wall(t_vars *vars)
+{
+	t_block	current_in_block;
+	t_block	current_in_px;
+	t_block	next_in_block;
+	t_block	next_in_px;
+
+	current_in_px = horizontal_coordinate_first_block_point(vars->game->player);
+	current_in_block = convert_pixel_to_block(current_in_px);
+	current_in_block.x = rounded_nearest_nb(current_in_block.x);
+	current_in_block.y = rounded_nearest_nb(current_in_block.y);
+	if (check_coordinates_in_map(vars, current_in_block) == 0)
+	{
+		printf("1 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+		printf("horizontal final point in \033[1;34mblock\033[0m y = %f && x = %f\n", current_in_block.y, current_in_block.x);
+		return (current_in_px);
+	}
+	while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
+			|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'V')
+	{
+		next_in_px = horizontal_coordinate_next_block_point(vars->game->player, current_in_px);
+		next_in_block = convert_pixel_to_block(next_in_px);
+		next_in_block.x = rounded_nearest_nb(next_in_block.x);
+		next_in_block.y = rounded_nearest_nb(next_in_block.y);
+	//	printf("next_in_block y = %f && x = %f\n", next_in_block.y, next_in_block.x);
+		//printf("map = _%c_\n", vars->game->map[(int)next_in_block.y][(int)next_in_block.x]);
+		if (check_coordinates_in_map(vars, next_in_block) == 0)
+		{
+			printf("2 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+			printf("horizontal final point in \033[1;34mblock\033[0m y = %f && x = %f\n", current_in_block.y, current_in_block.x);
+			return (current_in_px);
+		}
+		current_in_px = next_in_px;
+		current_in_block = next_in_block;
+	}
+	printf("3 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	printf("horizontal final point in \033[1;34mblock\033[0m y = %f && x = %f\n", current_in_block.y, current_in_block.x);
+	return (current_in_px);
+}
 
 //we may need a function that checked if the point that we reached is out of bounds
