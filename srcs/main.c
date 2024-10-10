@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 20:15:11 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:59:14 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,11 @@ int	main(int argc, char **argv)
 			&(vars.data.line_length), &(vars.data.endian));
 	
 	draw_game(vars, vars.game);
+	printf("position player in the map[%0.f][%0.f] = %c\n", \
+	vars.game->player->pos_x, vars.game->player->pos_y, \
+	vars.game->map[(int)vars.game->player->pos_x][(int)vars.game->player->pos_y]);
 	init_player_for_test(vars.game->player);
+	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	vertical_point_crossing_wall(&vars);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);

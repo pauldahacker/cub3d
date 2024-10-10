@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 20:14:02 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 13:57:22 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,6 +79,7 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	t_block	next_in_px;
 	int	i = 0;
 
+	printf("coordonnes du joueur: x = %f, y = %f\n", vars->game->player->pos_x, vars->game->player->pos_y);
 	current_in_px = horizontal_coordinate_first_block_point(vars->game->player);//in pixel
 	current_in_block = convert_pixel_to_block(current_in_px);//in block/cub unit
 	printf("current point y = %f && x = %f\n", current_in_px.y, current_in_px.x);
@@ -93,7 +94,7 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 		next_in_block = convert_pixel_to_block(next_in_px);
 		next_in_block.x = rounded_nearest_nb(next_in_block.x);
 		next_in_block.y = rounded_nearest_nb(next_in_block.y);
-		if (coordinates_in_map(vars, next_in_block) == 0)
+		if (check_coordinates_in_map(vars, next_in_block) == 0)
 		{
 			printf("final point y = %f && x = %f: _%c_\n", current_in_block.y, current_in_block.x, vars->game->map[(int)current_in_block.y][(int)current_in_block.x]);
 			return (current_in_px);
@@ -108,9 +109,9 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 
 void	init_player_for_test(t_player *player)
 {
-	player->pos_x = 1 * 64;//the units have to be in pixels
-	player->pos_y = 10 * 64;//
-	player->angle = 90;
+	player->pos_x *= 64;//the units have to be in pixels
+	player->pos_y *= 64;//
+	player->angle = 270;
 }
 
 //we may need a function that checked if the point that we reached is out of bounds

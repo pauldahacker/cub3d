@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 20:13:04 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/10 12:33:25 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int			ray_facing_right(double angle);
 
 void		check_horizontal_angle_value(t_player *ray);
 void		check_vertical_angle_value(t_player *ray);
-int			coordinates_in_map(t_vars *vars, t_block current);
+int			check_coordinates_in_map(t_vars *vars, t_block current);
 
 
 //horizontal_instersection.c
