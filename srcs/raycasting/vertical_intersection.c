@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 12:31:05 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:30:27 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,15 @@ t_block	vertical_coordinate_first_block_point(t_player *player)
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	else
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
-
-	a.y = player->pos_y + (player->pos_x - a.x) * tan(player->angle * (PI / 180));
+	//a.y = player->pos_y + (player->pos_x - a.x) * tan(player->angle * (PI / 180));
+	a.y = player->pos_y - (a.x - player->pos_x) * tan(player->angle * (PI / 180));
+	// Si le joueur regarde à gauche (angle entre 90° et 270°), inverser le calcul
+    // if (ray_facing_right(player->angle) == 1)
+    //     a.y = player->pos_y + (player->pos_x - a.x) * tan(player->angle * (PI / 180));
+    // else
+	// {
+	// 	a.y = player->pos_y - (a.x - player->pos_x) * tan(player->angle * (PI / 180));
+	// }
 	return (a);
 }
 
@@ -57,7 +64,7 @@ t_block	vertical_coordinate_next_block_point(t_player *player, t_block previous)
 	x_a = find_vertical_x_a(player);
 	y_a = find_vertical_y_a(player);
 	next.x = previous.x + x_a;
-	next.y = previous.y + y_a;
+	next.y = previous.y - y_a;
 	next.reachable = true;
 	return (next);
 }
@@ -69,10 +76,13 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 	t_block	next_in_block;
 	t_block	next_in_px;
 
+	printf("player->angle = %f\n", vars->game->player->angle);
 	current_in_px = vertical_coordinate_first_block_point(vars->game->player);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
+	printf("3 vertical point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	printf("vertical point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 	if (check_coordinates_in_map(vars, current_in_block) == 0)
 	{
 		current_in_px.reachable = false;
@@ -88,10 +98,14 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		if (check_coordinates_in_map(vars, next_in_block) == 0)
 		{
 			current_in_px.reachable = false;
+			printf("3 vertical point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+			printf("vertical point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 			return (current_in_px);
 		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
+		printf("3 vertical point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+		printf("vertical point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 	}
 	return (current_in_px);
 }

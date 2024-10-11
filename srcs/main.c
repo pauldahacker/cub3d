@@ -6,13 +6,45 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/11 11:31:40 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:47:27 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-void	print_result_point(t_vars *vars);
+void	print_result_point(t_vars *vars)
+{
+	t_block	horizontal_pt_px;
+	t_block	horizontal_pt_block;
+
+	vars->game->player->angle = 120;
+	// if (vars->game->player->angle > 180 && vars->game->player->angle < 360)
+	// 	vars->game->player->angle = 360 - vars->game->player->angle;
+	horizontal_pt_px = horizontal_point_crossing_wall(vars);
+	horizontal_pt_block = convert_pixel_to_block(horizontal_pt_px);
+	if (horizontal_pt_px.reachable == 1)
+	{
+		printf("horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", horizontal_pt_px.y, horizontal_pt_px.x);
+		printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", horizontal_pt_block.y, horizontal_pt_block.x);
+	}
+	else
+		printf("\033[1;29mhorizontal final point not reachable\033[0m\n");
+	printf("\n");
+	// t_block	vertical_pt_px;
+	// t_block	vertical_pt_block;
+
+	// if (vars->game->player->angle > 90 && vars->game->player->angle < 270)
+	// 	vars->game->player->angle = 360 - vars->game->player->angle;
+	// vertical_pt_px = vertical_point_crossing_wall(vars);
+	// vertical_pt_block = convert_pixel_to_block(vertical_pt_px);
+	// if (vertical_pt_px.reachable == 1)
+	// {
+	// 	printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", vertical_pt_px.y, vertical_pt_px.x);
+	// 	printf("vertical final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", vertical_pt_block.y, vertical_pt_block.x);
+	// }
+	// else
+	// 	printf("\033[1;29mvertical final point not reachable\033[0m\n");
+}
 
 int	main(int argc, char **argv)
 {
@@ -30,14 +62,14 @@ int	main(int argc, char **argv)
 			&(vars.data.line_length), &(vars.data.endian));
 	
 	draw_game(vars, vars.game);
-	printf("position player in the map[%0.f][%0.f] = %c with angle = %f\n", \
+	printf("position player in the map[%0.f][%0.f] = %c with angle = \n", \
 	vars.game->player->pos_y, vars.game->player->pos_x, \
-	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x], \
-	vars.game->player->angle);
+	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x]/*, \
+	vars.game->player->angle*/);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("\n");
-	vars.game->player->pos_x *= 64;
-	vars.game->player->pos_y *= 64;
+	vars.game->player->pos_x *= BLOCK_SIZE;
+	vars.game->player->pos_y *= BLOCK_SIZE;
 	print_result_point(&vars);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
