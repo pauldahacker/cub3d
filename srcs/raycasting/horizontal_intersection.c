@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 12:07:25 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:48:35 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ static t_block	horizontal_coordinate_first_block_point(t_player *player)
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	else
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
-	
-	a.x = player->pos_x + (player->pos_y - a.y) / tan(player->angle * (PI / 180));
+	// a.x = player->pos_x + (player->pos_y - a.y) / tan(player->angle * (PI / 180));
+	a.x = player->pos_x - (a.y - player->pos_y) / tan(player->angle * (PI / 180));
 	return (a);
 }
 
@@ -57,10 +57,7 @@ t_block	horizontal_coordinate_next_block_point(t_player *player, t_block previou
 
 	x_a = find_horizontal_x_a(player);
 	y_a = find_horizontal_y_a(player);
-	// printf("\nin horizontal_coordinate_next_block_point\n");
-	// printf("x_a = %f && y_a = %f\n", x_a, y_a);
-	// printf("previous.x = %f && previous.y = %f\n", previous.x, previous.y);
-	next.x = previous.x + x_a;
+	next.x = previous.x - x_a;
 	next.y = previous.y + y_a;
 	next.reachable = true;
 	return (next);
@@ -82,10 +79,15 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	t_block	next_in_block;
 	t_block	next_in_px;
 
+	printf("player->angle = %f\n", vars->game->player->angle);
+	printf("player->pos_x = %f\n", vars->game->player->pos_x / 64);
+	printf("player->pos_y = %f\n", vars->game->player->pos_y / 64);
 	current_in_px = horizontal_coordinate_first_block_point(vars->game->player);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
+	printf("3 horizontal point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	printf("horizontal point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 	if (check_coordinates_in_map(vars, current_in_block) == 0)
 	{
 		current_in_px.reachable = false;
@@ -101,49 +103,19 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 		if (check_coordinates_in_map(vars, next_in_block) == 0)
 		{
 			current_in_px.reachable = false;
+			printf("3 horizontal point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+			printf("horizontal point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 			return (current_in_px);
 		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
+		printf("3 horizontal point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+		printf("horizontal point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 	}
 	return (current_in_px);
 }
 
-//we may need a function that checked if the point that we reached is out of bounds
 
 
-void	print_result_point(t_vars *vars)
-{
-	t_block	horizontal_pt_px;
-	t_block	horizontal_pt_block;
-
-	vars->game->player->angle = 60;
-	horizontal_pt_px = horizontal_point_crossing_wall(vars);
-	horizontal_pt_block = convert_pixel_to_block(horizontal_pt_px);
-	if (horizontal_pt_px.reachable == 1)
-	{
-		printf("horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", horizontal_pt_px.y, horizontal_pt_px.x);
-		printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", horizontal_pt_block.y, horizontal_pt_block.x);
-	}
-	else
-		printf("\033[1;29mhorizontal final point not reachable\033[0m\n");
-	printf("\n");
-	t_block	vertical_pt_px;
-	t_block	vertical_pt_block;
-
-	vertical_pt_px = vertical_point_crossing_wall(vars);
-	vertical_pt_block = convert_pixel_to_block(vertical_pt_px);
-	if (vertical_pt_px.reachable == 1)
-	{
-		printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", vertical_pt_px.y, vertical_pt_px.x);
-		printf("vertical final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", vertical_pt_block.y, vertical_pt_block.x);
-	}
-	else
-		printf("\033[1;29mvertical final point not reachable\033[0m\n");
-}
-
-
-
-
-	// printf("3 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
-	// printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
+// printf("3 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+// printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
