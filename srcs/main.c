@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/11 17:23:25 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:00:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@ void	print_result_point(t_vars *vars)
 {
 	t_block	horizontal_pt_px;
 	t_block	horizontal_pt_block;
+	int		angle	=	340;
 
-	vars->game->player->angle = 0;
+	vars->game->player->angle = angle;
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
 	horizontal_pt_block = convert_pixel_to_block(horizontal_pt_px);
 	if (horizontal_pt_px.reachable == 1)
@@ -31,6 +32,7 @@ void	print_result_point(t_vars *vars)
 	t_block	vertical_pt_px;
 	t_block	vertical_pt_block;
 
+	vars->game->player->angle = angle;
 	vertical_pt_px = vertical_point_crossing_wall(vars);
 	vertical_pt_block = convert_pixel_to_block(vertical_pt_px);
 	if (vertical_pt_px.reachable == 1)

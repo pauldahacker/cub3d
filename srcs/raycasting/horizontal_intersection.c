@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 17:21:17 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:51:04 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static t_block	horizontal_coordinate_first_block_point(t_player *player)
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	else
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
-	a.x = player->pos_x + (player->pos_y - a.y) / tan(player->angle * (PI / 180));
+	a.x = player->pos_x + (a.y - player->pos_y) / tan(player->angle * (PI / 180));
 	// a.x = player->pos_x - (a.y - player->pos_y) / tan(player->angle * (PI / 180));
 	return (a);
 }
@@ -82,10 +82,10 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	printf("player->angle = %f\n", vars->game->player->angle);
 	printf("player->pos_x = %f\n", vars->game->player->pos_x / 64);
 	printf("player->pos_y = %f\n", vars->game->player->pos_y / 64);
-	if (vars->game->player->angle >= 180 && vars->game->player->angle < 270)
-	 	vars->game->player->angle = vars->game->player->angle + 90;
-	else if (vars->game->player->angle >= 270 && vars->game->player->angle < 360)
-	 	vars->game->player->angle = vars->game->player->angle - 90;
+	if (vars->game->player->angle > 180 && vars->game->player->angle < 270)
+	 	vars->game->player->angle = 360 - (vars->game->player->angle - 180);
+	else if (vars->game->player->angle > 270 && vars->game->player->angle < 360)
+	 	vars->game->player->angle = 180 + (360 - vars->game->player->angle);
 	current_in_px = horizontal_coordinate_first_block_point(vars->game->player);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
