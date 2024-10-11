@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 11:56:24 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:31:05 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ t_block	vertical_coordinate_first_block_point(t_player *player)
 	t_block	a;
 
 	a.reachable = 1;
+	check_vertical_angle_value(player);
 	if (ray_facing_right(player->angle) == 1)
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	else
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
 
-	check_vertical_angle_value(player);
 	a.y = player->pos_y + (player->pos_x - a.x) * tan(player->angle * (PI / 180));
 	return (a);
 }
@@ -69,7 +69,6 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 	t_block	next_in_block;
 	t_block	next_in_px;
 
-	printf("vars->game->player->angle = %f\n", vars->game->player->angle);
 	current_in_px = vertical_coordinate_first_block_point(vars->game->player);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:34:01 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 11:56:07 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 12:30:43 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@
 //This function checks that ray->angle is not the one that will gives segfault
 void	check_horizontal_angle_value(t_player *ray)
 {
-	int	res;
+	int	rest;
 
-	res = (int)rounded_nearest_nb(ray->angle);
-	if (res == 180)
+	rest = (int)rounded_nearest_nb(ray->angle) % 360;
+	if (rest == 180)
 		ray->angle = 181;
-	else if (res == 0)
+	else if (rest == 0)
 		ray->angle = 1;
 }
 
@@ -50,8 +50,8 @@ void	check_vertical_angle_value(t_player *ray)
 
 int	check_coordinates_in_map(t_vars *vars, t_block current)
 {
-	if (current.y < 0 || current.y > vars->game->n_rows
-		|| current.x < 0 || current.x > vars->game->n_cols)
+	if (current.y < 0 || current.y > vars->game->n_rows - 1
+		|| current.x < 0 || current.x > vars->game->n_cols - 1)
 		return (0);
 	return (1);
 }
