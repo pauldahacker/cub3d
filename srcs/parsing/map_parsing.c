@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:55:54 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/10 17:38:23 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 11:46:07 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ void	init_player_angles(t_player *player, char direction)
 {
 	if (direction == 'N')
 		player->angle = 90;
-	else if (direction == 'S')
-		player->angle = 270;
 	else if (direction == 'W')
 		player->angle = 180;
+	else if (direction == 'S')
+		player->angle = 270;
 	else
 		player->angle = 0;
 	player->angle_start = player->angle + 30;

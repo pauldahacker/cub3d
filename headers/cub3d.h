@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/10 18:18:16 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 11:17:42 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,8 +105,5 @@ int	on_keypress(int keysym, t_vars *vars);
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
 void		draw_game(t_vars vars, t_game *game);
-
-//parsing/convert_fd_into_array.c
-void		print_map_array(char **map);
 
 #endif

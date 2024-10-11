@@ -6,18 +6,13 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/10 18:09:58 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 11:31:40 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-void	init_player_for_test(t_player *player)
-{
-	player->pos_x *= 64;//the units have to be in pixels
-	player->pos_y *= 64;//
-	player->angle = 0;
-}
+void	print_result_point(t_vars *vars);
 
 int	main(int argc, char **argv)
 {
@@ -39,13 +34,11 @@ int	main(int argc, char **argv)
 	vars.game->player->pos_y, vars.game->player->pos_x, \
 	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x], \
 	vars.game->player->angle);
-	printf("\n");
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
+	printf("\n");
 	vars.game->player->pos_x *= 64;
 	vars.game->player->pos_y *= 64;
-	vertical_point_crossing_wall(&vars);
-	printf("\n");
-	horizontal_point_crossing_wall(&vars);
+	print_result_point(&vars);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
