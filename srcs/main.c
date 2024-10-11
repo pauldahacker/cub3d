@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/11 16:47:27 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:23:25 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ void	print_result_point(t_vars *vars)
 	t_block	horizontal_pt_px;
 	t_block	horizontal_pt_block;
 
-	vars->game->player->angle = 120;
-	// if (vars->game->player->angle > 180 && vars->game->player->angle < 360)
-	// 	vars->game->player->angle = 360 - vars->game->player->angle;
+	vars->game->player->angle = 0;
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
 	horizontal_pt_block = convert_pixel_to_block(horizontal_pt_px);
 	if (horizontal_pt_px.reachable == 1)
@@ -30,20 +28,18 @@ void	print_result_point(t_vars *vars)
 	else
 		printf("\033[1;29mhorizontal final point not reachable\033[0m\n");
 	printf("\n");
-	// t_block	vertical_pt_px;
-	// t_block	vertical_pt_block;
+	t_block	vertical_pt_px;
+	t_block	vertical_pt_block;
 
-	// if (vars->game->player->angle > 90 && vars->game->player->angle < 270)
-	// 	vars->game->player->angle = 360 - vars->game->player->angle;
-	// vertical_pt_px = vertical_point_crossing_wall(vars);
-	// vertical_pt_block = convert_pixel_to_block(vertical_pt_px);
-	// if (vertical_pt_px.reachable == 1)
-	// {
-	// 	printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", vertical_pt_px.y, vertical_pt_px.x);
-	// 	printf("vertical final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", vertical_pt_block.y, vertical_pt_block.x);
-	// }
-	// else
-	// 	printf("\033[1;29mvertical final point not reachable\033[0m\n");
+	vertical_pt_px = vertical_point_crossing_wall(vars);
+	vertical_pt_block = convert_pixel_to_block(vertical_pt_px);
+	if (vertical_pt_px.reachable == 1)
+	{
+		printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", vertical_pt_px.y, vertical_pt_px.x);
+		printf("vertical final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", vertical_pt_block.y, vertical_pt_block.x);
+	}
+	else
+		printf("\033[1;29mvertical final point not reachable\033[0m\n");
 }
 
 int	main(int argc, char **argv)
