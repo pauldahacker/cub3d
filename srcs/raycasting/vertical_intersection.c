@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 16:30:27 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 17:22:03 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 	t_block	next_in_px;
 
 	printf("player->angle = %f\n", vars->game->player->angle);
+	if (vars->game->player->angle >= 90 && vars->game->player->angle < 270)
+		vars->game->player->angle = 360 - vars->game->player->angle;
 	current_in_px = vertical_coordinate_first_block_point(vars->game->player);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
