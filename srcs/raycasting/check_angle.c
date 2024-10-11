@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:34:01 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/10 12:33:17 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 11:56:07 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@
 //This function checks that ray->angle is not the one that will gives segfault
 void	check_horizontal_angle_value(t_player *ray)
 {
-	int	rest;
+	int	res;
 
-	rest = (int)rounded_nearest_nb(ray->angle) % 180;
-	if (rest == 180)
+	res = (int)rounded_nearest_nb(ray->angle);
+	if (res == 180)
 		ray->angle = 181;
-	else if (rest == 0)
+	else if (res == 0)
 		ray->angle = 1;
 }
 
