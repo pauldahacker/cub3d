@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/11 11:17:42 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:09:29 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ typedef struct raycasting
 {
 	double		pos_x;//player position in abscissa. The unit are the pixels!
 	double		pos_y;//player position in ordinate. The unit are the pixels!
+	double		initial_angle;
 	double		angle;//angle (in degrees) of our ray starting from the abscissa axis 0 ≤ angle ≤360
 	char		direction;//will determine our FOV
 	double		angle_start;
