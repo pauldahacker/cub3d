@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/12 21:31:27 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/12 21:41:22 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,8 @@ double	calculate_hypotenuse_distance(t_vars *vars, t_block point)
 	t_block	ray_final_point;
 	double	distance;
 
-	// printf("player->pos_x in px = %f\n", vars->game->player->pos_x);
-	// printf("player->pos_y in px = %f\n", vars->game->player->pos_y);
-	// printf("player->pos_x in block = %f\n", vars->game->player->pos_x / BLOCK_SIZE);
-	// printf("player->pos_y in block = %f\n", vars->game->player->pos_y / BLOCK_SIZE);
-	// printf("soustraction.x = %f\n", vars->game->player->pos_x - point.x);
-	// printf("soustraction.y = %f\n", vars->game->player->pos_y - point.y);
 	ray_final_point.x = ft_abs(vars->game->player->pos_x - point.x);
 	ray_final_point.y = ft_abs(vars->game->player->pos_y - point.y);
-	// printf("adjacent_point.x = %f\n", adjacent_point.x);
-	// printf("adjacent_point.y = %f\n", adjacent_point.y);
 	distance = ray_final_point.x * ray_final_point.x + ray_final_point.y * ray_final_point.y;
 	printf("distance before sqrt: %f\n", distance);
 	return (sqrt(distance));
@@ -60,8 +52,8 @@ double	calculate_best_distance(t_vars *vars, double angle)
 		horizontal_distance = calculate_hypotenuse_distance(vars, horizontal_pt_px);
 	else
 		horizontal_distance = NAN;
-	printf("horizontal distance in px = %f\n", horizontal_distance);
-	printf("horizontal distance in block = %f\n", horizontal_distance / BLOCK_SIZE);
+	// printf("horizontal distance in px = %f\n", horizontal_distance);
+	// printf("horizontal distance in block = %f\n", horizontal_distance / BLOCK_SIZE);
 	
 	vars->game->player->angle = angle;
 	vertical_pt_px = vertical_point_crossing_wall(vars);
@@ -69,20 +61,20 @@ double	calculate_best_distance(t_vars *vars, double angle)
 		vertical_distance = calculate_hypotenuse_distance(vars, vertical_pt_px);
 	else
 		vertical_distance = NAN;
-	printf("vertical distance in px = %f\n", vertical_distance);
-	printf("vertical distance in block = %f\n", vertical_distance / BLOCK_SIZE);
+	// printf("vertical distance in px = %f\n", vertical_distance);
+	// printf("vertical distance in block = %f\n", vertical_distance / BLOCK_SIZE);
 	return (fmin(vertical_distance, horizontal_distance));
 }
 
-void	test_calculate_best_distance(t_vars *vars, double angle)
-{
-	double	best_distance;
+// void	test_calculate_best_distance(t_vars *vars, double angle)
+// {
+// 	double	best_distance;
 
-	printf("angle = %f\n", angle);
-	best_distance = calculate_best_distance(vars, angle);
-	printf("best_distance in px = %f\n", best_distance);
-	printf("best_distance in block = %f\n", best_distance / BLOCK_SIZE);
-}
+// 	printf("angle = %f\n", angle);
+// 	best_distance = calculate_best_distance(vars, angle);
+// 	printf("best_distance in px = %f\n", best_distance);
+// 	printf("best_distance in block = %f\n", best_distance / BLOCK_SIZE);
+// }
 
 
 

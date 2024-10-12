@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/12 21:30:46 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/12 21:41:36 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,8 @@ int	main(int argc, char **argv)
 	printf("\n");
 	vars.game->player->pos_x *= BLOCK_SIZE;
 	vars.game->player->pos_y *= BLOCK_SIZE;
-	// test_calculate_best_distance(&vars, vars.game->player->angle);
-	test_calculate_best_distance(&vars, 45.0);
+	test_calculate_best_distance(&vars, vars.game->player->angle);
+	//test_calculate_best_distance(&vars, 45.0);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
