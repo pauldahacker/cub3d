@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vertical_intersection.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 19:13:52 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/12 21:36:44 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
 	}
-	vars->game->player->angle = vars->game->player->initial_angle;
+	printf("3 vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	printf("vertical final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
 	return (current_in_px);
 }
