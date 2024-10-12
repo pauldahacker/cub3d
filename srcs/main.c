@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/11 18:34:00 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/12 19:51:04 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@
 // 	else
 // 		printf("\033[1;29mvertical final point not reachable\033[0m\n");
 // }
+void	test_calculate_adjacent_side(t_vars *vars);
 
 int	main(int argc, char **argv)
 {
@@ -68,6 +69,7 @@ int	main(int argc, char **argv)
 	printf("\n");
 	vars.game->player->pos_x *= BLOCK_SIZE;
 	vars.game->player->pos_y *= BLOCK_SIZE;
+	test_calculate_adjacent_side(&vars);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
