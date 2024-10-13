@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   calculate_best_distance.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/12 21:51:27 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/13 17:39:58 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ double	calculate_hypo_distance(t_vars *vars, t_block point)
 //we have to reset the angle to the initial one because in the funcions 
 //*al_point_crossing_wall, we modify the value of the angle
 //(for correct calculations)
-double	calculate_best_distance(t_vars *vars, double angle)
+t_block	calculate_best_distance(t_vars *vars, double angle)
 {
 	t_block	horizontal_pt_px;
 	double	horizontal_distance;
@@ -63,7 +63,9 @@ double	calculate_best_distance(t_vars *vars, double angle)
 		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
 	else
 		vertical_distance = NAN;
-	return (fmin(vertical_distance, horizontal_distance));
+	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+		return (vertical_pt_px);
+	return (horizontal_pt_px);
 }
 
 // void	test_calculate_best_distance(t_vars *vars, double angle)
