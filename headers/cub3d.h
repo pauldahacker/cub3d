@@ -37,6 +37,10 @@
 // Configurations
 # define WINDOW_X 1600
 # define WINDOW_Y 900
+# define MINIMAP_HEIGHT WINDOW_Y / 5
+# define MINIMAP_LENGTH WINDOW_X / 5
+# define MINIMAP_START_X 5
+# define MINIMAP_START_Y 5
 
 // Keys
 # define ESC 65307
@@ -45,6 +49,8 @@
 # define GREY	0x808080
 # define BLACK	0x000000
 # define WHITE	0xFFFFFF
+# define BLUE	0x0000FF
+# define YELLOW	0xFFFF00
 
 //maths
 # define PI 	3.14159265358979323846
@@ -106,5 +112,6 @@ int	on_keypress(int keysym, t_vars *vars);
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
 void		draw_game(t_vars vars, t_game *game);
+void		draw_minimap(t_vars vars, t_game *game);
 
 #endif

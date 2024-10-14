@@ -59,7 +59,7 @@ int	main(int argc, char **argv)
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
 	
-	draw_game(vars, vars.game);
+	//draw_game(vars, vars.game);
 	printf("position player in the map[%0.f][%0.f] = %c with angle = \n", \
 	vars.game->player->pos_y, vars.game->player->pos_x, \
 	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x]/*, \
@@ -69,7 +69,7 @@ int	main(int argc, char **argv)
 	vars.game->player->pos_x *= BLOCK_SIZE;
 	vars.game->player->pos_y *= BLOCK_SIZE;
 	print_result_point(&vars);
-
+	draw_minimap(vars, vars.game);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
 	mlx_loop(vars.mlx_ptr);

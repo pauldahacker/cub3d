@@ -68,12 +68,4 @@ int			return_rgb(char *line);
 void		destroy_game(t_game *game);
 t_game		*parse(int argc, char **argv);
 
-//parsing/fd_into_array.c
-char	**fd_into_array(char *argv_1);
-void	free_array(char **array);
-
-//parsing/fd_into_array.c
-char	**fd_into_array(char *argv_1);
-void	free_array(char **array);
-
 #endif
