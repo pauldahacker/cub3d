@@ -6,43 +6,13 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/11 18:03:24 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/13 17:42:51 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-void	print_result_point(t_vars *vars)
-{
-	t_block	horizontal_pt_px;
-	t_block	horizontal_pt_block;
-	int		angle	=	205;
-
-	vars->game->player->angle = angle;
-	horizontal_pt_px = horizontal_point_crossing_wall(vars);
-	horizontal_pt_block = convert_pixel_to_block(horizontal_pt_px);
-	if (horizontal_pt_px.reachable == 1)
-	{
-		printf("horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", horizontal_pt_px.y, horizontal_pt_px.x);
-		printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", horizontal_pt_block.y, horizontal_pt_block.x);
-	}
-	else
-		printf("\033[1;29mhorizontal final point not reachable\033[0m\n");
-	printf("\n");
-	t_block	vertical_pt_px;
-	t_block	vertical_pt_block;
-
-	vars->game->player->angle = angle;
-	vertical_pt_px = vertical_point_crossing_wall(vars);
-	vertical_pt_block = convert_pixel_to_block(vertical_pt_px);
-	if (vertical_pt_px.reachable == 1)
-	{
-		printf("vertical final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", vertical_pt_px.y, vertical_pt_px.x);
-		printf("vertical final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", vertical_pt_block.y, vertical_pt_block.x);
-	}
-	else
-		printf("\033[1;29mvertical final point not reachable\033[0m\n");
-}
+//void	test_calculate_best_distance(t_vars *vars, double angle);
 
 int	main(int argc, char **argv)
 {
@@ -68,7 +38,12 @@ int	main(int argc, char **argv)
 	printf("\n");
 	vars.game->player->pos_x *= BLOCK_SIZE;
 	vars.game->player->pos_y *= BLOCK_SIZE;
-	print_result_point(&vars);
+	//test_calculate_best_distance(&vars, vars.game->player->angle);
+	//test_calculate_best_distance(&vars, 45.0);
+	printf("start_angle = %f\n", vars.game->player->angle_end);
+	printf("end_angle = %f\n", vars.game->player->angle_start);
+	printf("initial angle = %f\n", vars.game->player->initial_angle);
+	draw_every_ray(&vars);
 	draw_minimap(vars, vars.game);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
