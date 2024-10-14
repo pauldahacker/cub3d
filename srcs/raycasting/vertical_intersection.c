@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vertical_intersection.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/12 21:40:14 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/14 19:11:08 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,28 +76,28 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
-	if (check_coordinates_in_map(vars, current_in_block) == 0)
+	if (check_coordinates_in_map(vars, current_in_px) == 0)
 	{
 		current_in_px.reachable = false;
-		vars->game->player->angle = vars->game->player->initial_angle;
+		vars->game->player->angle = vars->game->player->middle_angle;
 		return (current_in_px);
 	}
-	while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
-			|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'V')
+	while (check_coordinates_in_map(vars, current_in_px))
 	{
 		next_in_px = vertical_coordinate_next_block_point(vars->game->player, current_in_px);
 		next_in_block = convert_pixel_to_block(next_in_px);
 		next_in_block.x = rounded_nearest_nb(next_in_block.x);
 		next_in_block.y = rounded_nearest_nb(next_in_block.y);
-		if (check_coordinates_in_map(vars, next_in_block) == 0)
+		if (check_coordinates_in_map(vars, next_in_px) == 0)
 		{
-			current_in_px.reachable = false;
-			vars->game->player->angle = vars->game->player->initial_angle;
+			next_in_px.reachable = false;
+			vars->game->player->angle = vars->game->player->middle_angle;
 			return (current_in_px);
 		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
 	}
+	vars->game->player->angle = vars->game->player->middle_angle;
 	return (current_in_px);
 }
 

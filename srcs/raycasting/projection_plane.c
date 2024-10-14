@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 17:00:06 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 19:43:20 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:10:29 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,14 @@ __________ = Projection Plane = __________
 
 //The uppermost left ray (first one) will draw the first row
 
-void	init_player_struct(t_player *ray)
-{
-//    ray->pos_x = ;
-//    ray->pos_y = ;
-	ray->angle = 60;
-	ray->distance_to_wall = (PROJECTION_PLANE_X / 2) / tan(ray->angle / 2);
-	ray->angle_subsequent_player = ray->angle / PROJECTION_PLANE_X;
-}
+// void	init_player_struct(t_player *ray)
+// {
+// //    ray->pos_x = ;
+// //    ray->pos_y = ;
+// 	ray->angle = 60;
+// 	ray->distance_to_wall = (PROJECTION_PLANE_X / 2) / tan(ray->angle / 2);
+// 	ray->angle_subsequent_player = ray->angle / PROJECTION_PLANE_X;
+// }
 
 //I want to convert the whole screen into a projection plane
 //It means that instead of drawing pixel by pixel until WINDOWS_X/WINDOWS_Y

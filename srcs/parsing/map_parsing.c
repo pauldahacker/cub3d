@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:55:54 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/11 18:30:48 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:36:54 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ void	init_player_angles(t_player *player, char direction)
 	player->angle_end = player->angle - 30;
 	if (player->angle_end < 0)
 		player->angle_end += 360;
-	player->initial_angle = player->angle;
+	player->middle_angle = player->angle;
+	player->subsequent_angle = 60.0 / 320.0;
 }
 
 /*

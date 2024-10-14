@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/13 17:39:58 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/14 20:13:09 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,18 @@ double	calculate_hypo_distance(t_vars *vars, t_block point)
 	return (sqrt(distance));
 }
 
+//see: https://permadi.com/1996/05/ray-casting-tutorial-8/
+void	remove_fishbowl_effect(t_vars *vars, t_block *point_to_draw, double angle)
+{
+	double	distortion;
+
+	distortion = vars->game->player->middle_angle - angle;
+	point_to_draw->x = point_to_draw->x * cos(distortion * PI / 180);
+	point_to_draw->y = point_to_draw->y * cos(distortion * PI / 180);
+	// if (check_coordinates_in_map(vars, *point_to_draw) == 0)
+	// 	point_to_draw->reachable = false;
+}
+
 //we calculate both distance between the horizontal intersection and the
 //vertical intersection. Then we choose the minimal distance.
 //we have to reset the angle to the initial one because in the funcions 
@@ -64,7 +76,19 @@ t_block	calculate_best_distance(t_vars *vars, double angle)
 	else
 		vertical_distance = NAN;
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+	{
+		printf("vertical point chosen\n");
+		remove_fishbowl_effect(vars, &vertical_pt_px, angle);
 		return (vertical_pt_px);
+	}
+	printf("horizontal point chosen\n");
+	printf("in calculate_best_distance, angle = %f\n", angle);
+	printf("horizontal_pt_px.x = %f\n", horizontal_pt_px.x);
+	printf("horizontal_pt_px.y = %f\n", horizontal_pt_px.y);
+	remove_fishbowl_effect(vars, &horizontal_pt_px, angle);
+	printf("after removing fishbowl effect\n");
+	printf("horizontal_pt_px.x = %f\n", horizontal_pt_px.x);
+	printf("horizontal_pt_px.y = %f\n", horizontal_pt_px.y);
 	return (horizontal_pt_px);
 }
 
