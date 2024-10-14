@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   horizontal_intersection.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 18:01:53 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/12 21:40:27 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ t_block	horizontal_coordinate_next_block_point(t_player *player, t_block previou
 //until finding one to return the point where the wall is
 
 //une fois que l'on a next_in_x, on peut calculer la distance en pixel parcourue
+//REINITIALISE L'ANGLE UNE FOIS QUE TU AS TERMINE DE L'UTILISER
 t_block	horizontal_point_crossing_wall(t_vars *vars)
 {
 	t_block	current_in_block;
@@ -79,20 +80,16 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	t_block	next_in_block;
 	t_block	next_in_px;
 
-	printf("player->angle = %f\n", vars->game->player->angle);
-	printf("player->pos_x = %f\n", vars->game->player->pos_x / 64);
-	printf("player->pos_y = %f\n", vars->game->player->pos_y / 64);
 	if (vars->game->player->angle > 180 && vars->game->player->angle < 360)
 	 	vars->game->player->angle = 540 - vars->game->player->angle;
 	current_in_px = horizontal_coordinate_first_block_point(vars->game->player);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
-	printf("3 horizontal point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
-	printf("horizontal point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 	if (check_coordinates_in_map(vars, current_in_block) == 0)
 	{
 		current_in_px.reachable = false;
+		vars->game->player->angle = vars->game->player->initial_angle;
 		return (current_in_px);
 	}
 	while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
@@ -105,19 +102,14 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 		if (check_coordinates_in_map(vars, next_in_block) == 0)
 		{
 			current_in_px.reachable = false;
-			printf("3 horizontal point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
-			printf("horizontal point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
+			vars->game->player->angle = vars->game->player->initial_angle;
 			return (current_in_px);
 		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
-		printf("3 horizontal point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
-		printf("horizontal point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n\n", current_in_block.y, current_in_block.x);
 	}
 	return (current_in_px);
 }
-
-
 
 // printf("3 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
 // printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
