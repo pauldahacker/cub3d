@@ -43,7 +43,7 @@ int	main(int argc, char **argv)
 	printf("start_angle = %f\n", vars.game->player->angle_end);
 	printf("end_angle = %f\n", vars.game->player->angle_start);
 	printf("initial angle = %f\n", vars.game->player->initial_angle);
-	//draw_every_ray(&vars);
+	draw_every_ray(&vars);
 	draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
