@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
+/*
 //why 60? 60 is the total field of view angle.
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually
 //considered as a 60 degrees angle horizontal FOV
@@ -31,3 +31,4 @@ void	draw_every_ray(t_vars *vars)
 	}
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
+*/
