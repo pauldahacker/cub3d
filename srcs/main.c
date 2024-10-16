@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/14 19:02:05 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:15:44 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 //void	test_calculate_best_distance(t_vars *vars, double angle);
 void	test_fixing_errors(t_vars *vars);
+void	draw_every_ray(t_vars *vars);
 
 int	main(int argc, char **argv)
 {
@@ -30,11 +31,6 @@ int	main(int argc, char **argv)
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
 	
-	//draw_game(vars, vars.game);
-	printf("position player in the map[%0.f][%0.f] = %c with angle = \n", \
-	vars.game->player->pos_y, vars.game->player->pos_x, \
-	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x]/*, \
-	vars.game->player->angle*/);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("\n");
 	vars.game->player->pos_x *= BLOCK_SIZE;
@@ -43,10 +39,7 @@ int	main(int argc, char **argv)
 	printf("angle_end = %f\n", vars.game->player->angle_end);
 	printf("middle angle = %f\n", vars.game->player->middle_angle);
 	printf("subsequent_angle = %f\n", vars.game->player->subsequent_angle);
-	test_fixing_errors(&vars);
-	//test_calculate_best_distance(&vars, vars.game->player->angle);
-	//test_calculate_best_distance(&vars, 45.0);
-	// draw_every_ray(&vars);
+	draw_every_ray(&vars);
 
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);

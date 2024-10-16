@@ -6,12 +6,12 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/13 17:15:32 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/14 18:23:32 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:38:03 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
+/*
 void	check_pixels_value(t_vars *vars, t_block *point)
 {
 	t_block	max_vision;
@@ -26,7 +26,7 @@ void	check_pixels_value(t_vars *vars, t_block *point)
 		point->x = max_vision.x;
 	else if (point->y > max_vision.y)
 		point->y = max_vision.y;
-}
+}*/
 
 //why 60? 60 is the total field of view angle.
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually

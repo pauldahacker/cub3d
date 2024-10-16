@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/14 18:39:15 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:45:43 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,11 @@
 # define ESC 65307
 
 // Colors
-# define GREY	0x808080
-# define BLACK	0x000000
-# define WHITE	0xFFFFFF
+# define GREY			0x808080
+# define BLACK			0x000000
+# define WHITE			0xFFFFFF
+# define BLUE			0x0000FF
+# define ELECTRIC_BLUE	0x7df9ff
 
 //maths
 # define PI 	3.14159265358979323846
@@ -106,5 +108,7 @@ int	on_keypress(int keysym, t_vars *vars);
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
 void		draw_game(t_vars vars, t_game *game);
+void		draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y);
+
 
 #endif
