@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/14 19:17:50 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:41:57 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	return (current_in_px);
 }
 
-void	test_fixing_errors(t_vars *vars)
+/*void	test_fixing_errors(t_vars *vars)
 {
 //1
 // 	t_block	horizontal_point_in_px;
@@ -139,17 +139,21 @@ void	test_fixing_errors(t_vars *vars)
 	// printf("vertical point.y = %f\n", vertical_point_in_px.y);
 	// printf("vertical point.reachable = %i\n", vertical_point_in_px.reachable);
 //2
-	t_block	wall_point_px;
-	t_block	wall_point_in_block;
-	wall_point_px = calculate_best_distance(vars, vars->game->player->middle_angle);
+	// t_block	wall_point_px;
+	// t_block	wall_point_in_block;
+	double	distance_hypotenuse;
+	distance_hypotenuse = calculate_best_distance(vars, vars->game->player->middle_angle);
 	printf("fin\n");
-	printf("wall_point_px.x = %f\n", wall_point_px.x);
-	printf("wall_point_px.y = %f\n", wall_point_px.y);
-	wall_point_in_block = convert_pixel_to_block(wall_point_px);
-	printf("wall_point_in_block.x = %f\n", rounded_down(wall_point_in_block.x));
-	printf("wall_point_in_block.y = %f\n", rounded_down(wall_point_in_block.y));
+	printf("distance_hypotenuse = %f\n", distance_hypotenuse);
+	printf("distance_hypotenuse in  block = %f\n", distance_hypotenuse / 64);
+	calculate_projected_wall_height(vars, distance_hypotenuse);
+	// printf("wall_point_px.x = %f\n", wall_point_px.x);
+	// printf("wall_point_px.y = %f\n", wall_point_px.y);
+	// wall_point_in_block = convert_pixel_to_block(wall_point_px);
+	// printf("wall_point_in_block.x = %f\n", rounded_down(wall_point_in_block.x));
+	// printf("wall_point_in_block.y = %f\n", rounded_down(wall_point_in_block.y));
 	
-}
+}*/
 
 // printf("3 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
 // printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);

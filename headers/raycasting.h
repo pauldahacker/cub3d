@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/14 16:36:46 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:41:26 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,11 @@ void		init_player_for_test(t_player *ray);
 //vertical_instersection.c
 t_block		vertical_point_crossing_wall(t_vars *vars);
 
-t_block		calculate_best_distance(t_vars *vars, double angle);
+//t_block		calculate_best_distance(t_vars *vars, double angle);
+double		calculate_best_distance(t_vars *vars, double angle);
 void		draw_every_ray(t_vars *vars);
+//double		calculate_projected_wall_height(t_vars *vars, double distance_to_wall);
+
 
 
 #endif

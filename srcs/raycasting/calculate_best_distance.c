@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/14 20:13:09 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 15:15:16 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	remove_fishbowl_effect(t_vars *vars, t_block *point_to_draw, double angle)
 //we have to reset the angle to the initial one because in the funcions 
 //*al_point_crossing_wall, we modify the value of the angle
 //(for correct calculations)
-t_block	calculate_best_distance(t_vars *vars, double angle)
+/*t_block	calculate_best_distance(t_vars *vars, double angle)
 {
 	t_block	horizontal_pt_px;
 	double	horizontal_distance;
@@ -90,6 +90,33 @@ t_block	calculate_best_distance(t_vars *vars, double angle)
 	printf("horizontal_pt_px.x = %f\n", horizontal_pt_px.x);
 	printf("horizontal_pt_px.y = %f\n", horizontal_pt_px.y);
 	return (horizontal_pt_px);
+}*/
+
+double	calculate_best_distance(t_vars *vars, double angle)
+{
+	t_block	horizontal_pt_px;
+	double	horizontal_distance;
+	t_block	vertical_pt_px;
+	double	vertical_distance;
+	
+	vars->game->player->angle = angle;
+	horizontal_pt_px = horizontal_point_crossing_wall(vars);
+	if (horizontal_pt_px.reachable == 1)
+		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
+	else
+		horizontal_distance = NAN;
+	// printf("horizontal distance in px = %f\n", horizontal_distance);
+	// printf("horizontal distance in block = %f\n", horizontal_distance / BLOCK_SIZE);
+	
+	vars->game->player->angle = angle;
+	vertical_pt_px = vertical_point_crossing_wall(vars);
+	if (vertical_pt_px.reachable == 1)
+		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
+	else
+		vertical_distance = NAN;
+	// printf("vertical distance in px = %f\n", vertical_distance);
+	// printf("vertical distance in block = %f\n", vertical_distance / BLOCK_SIZE);
+	return (fmin(vertical_distance, horizontal_distance));
 }
 
 // void	test_calculate_best_distance(t_vars *vars, double angle)
