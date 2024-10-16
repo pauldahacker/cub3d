@@ -41,9 +41,19 @@
 # define MINIMAP_LENGTH WINDOW_X / 5
 # define MINIMAP_START_X 5
 # define MINIMAP_START_Y 5
+# define MOVEMENT_SPEED 8
 
 // Keys
-# define ESC 65307
+# ifdef __linux__
+#  define ESC 65307
+
+# elif defined(__APPLE__)
+#  define ESC 53
+#  define W 13
+#  define A 0
+#  define S 1
+#  define D 2
+# endif
 
 // Colors
 # define GREY	0x808080
@@ -112,6 +122,6 @@ int	on_keypress(int keysym, t_vars *vars);
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
 void		draw_game(t_vars vars, t_game *game);
-void		draw_minimap(t_vars vars, t_game *game);
+void		draw_minimap(t_vars *vars, t_game *game);
 
 #endif
