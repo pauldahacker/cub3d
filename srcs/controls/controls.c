@@ -42,7 +42,6 @@ int	on_move_up(t_vars *vars, int attempted_speed)
 				return (on_move_up(vars, attempted_speed - 1));
 		}
 	}
-	printf("Player coordinates:x: %f\ny: %f\n", vars->game->player->pos_x, vars->game->player->pos_y);
 	vars->game->player->pos_y = vars->game->player->pos_y - attempted_speed;
 	draw_minimap(vars, vars->game);
 	return (0);
@@ -121,7 +120,6 @@ int	on_move_right(t_vars *vars, int attempted_speed)
 				return (on_move_right(vars, attempted_speed - 1));
 		}
 	}
-	printf("Player coordinates:x: %f\ny: %f\n", vars->game->player->pos_x, vars->game->player->pos_y);
 	vars->game->player->pos_x = vars->game->player->pos_x + attempted_speed;
 	draw_minimap(vars, vars->game);
 	return (0);

@@ -37,10 +37,12 @@
 // Configurations
 # define WINDOW_X 1600
 # define WINDOW_Y 900
-# define MINIMAP_HEIGHT WINDOW_Y / 5
-# define MINIMAP_LENGTH WINDOW_X / 5
+
+# define MINIMAP_HEIGHT WINDOW_Y / 2
+# define MINIMAP_LENGTH WINDOW_X / 2
 # define MINIMAP_START_X 5
 # define MINIMAP_START_Y 5
+
 # define MOVEMENT_SPEED 10
 
 // Keys
@@ -60,11 +62,12 @@
 # endif
 
 // Colors
-# define GREY	0x808080
-# define BLACK	0x000000
-# define WHITE	0xFFFFFF
-# define BLUE	0x0000FF
-# define YELLOW	0xFFFF00
+# define GREY		0x808080
+# define BLACK		0x000000
+# define WHITE		0xFFFFFF
+# define BLUE		0x0000FF
+# define YELLOW		0xFFFF00
+# define SKY_BLUE	0xADD8E6
 
 //maths
 # define PI 	3.14159265358979323846

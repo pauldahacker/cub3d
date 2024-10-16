@@ -30,20 +30,20 @@ int	main(int argc, char **argv)
 			&(vars.data.line_length), &(vars.data.endian));
 	
 	//draw_game(vars, vars.game);
-	printf("position player in the map[%0.f][%0.f] = %c with angle = \n", \
+	printf("position player in the map[%0.f][%0.f] = %c\n", \
 	vars.game->player->pos_y, vars.game->player->pos_x, \
 	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x]/*, \
 	vars.game->player->angle*/);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("\n");
-	vars.game->player->pos_x *= BLOCK_SIZE;
-	vars.game->player->pos_y *= BLOCK_SIZE;
+	vars.game->player->pos_x = (vars.game->player->pos_x + 0.25) * BLOCK_SIZE;
+	vars.game->player->pos_y = (vars.game->player->pos_y + 0.25) * BLOCK_SIZE;
 	//test_calculate_best_distance(&vars, vars.game->player->angle);
 	//test_calculate_best_distance(&vars, 45.0);
 	printf("start_angle = %f\n", vars.game->player->angle_end);
 	printf("end_angle = %f\n", vars.game->player->angle_start);
 	printf("initial angle = %f\n", vars.game->player->initial_angle);
-	draw_every_ray(&vars);
+	//draw_every_ray(&vars);
 	draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
