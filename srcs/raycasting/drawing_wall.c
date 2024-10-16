@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 18:26:46 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:58:07 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,11 @@ void	draw_every_ray(t_vars *vars)
 	{
 		distance_to_wall = calculate_best_distance(vars, alpha_angle);
 		projected_wall_height = calculate_projected_wall_height(distance_to_wall);
-		if (projected_wall_height > 150.0)
+		if (projected_wall_height == 32.0)
+		{
 			printf("x = %i y = %i\n", x, y);
+			printf("alpha_angle = %f\n", alpha_angle);
+		}
 		draw_wall(vars, projected_wall_height, &x, &y);
 		alpha_angle -= vars->game->player->subsequent_angle;
 	}

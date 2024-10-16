@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 15:15:16 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 20:03:27 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,9 @@ double	calculate_best_distance(t_vars *vars, double angle)
 		vertical_distance = NAN;
 	// printf("vertical distance in px = %f\n", vertical_distance);
 	// printf("vertical distance in block = %f\n", vertical_distance / BLOCK_SIZE);
-	return (fmin(vertical_distance, horizontal_distance));
+	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+		return (printf("\033[1;31mvertical distance\033[0m chosen\n"), vertical_distance);
+	return (printf("\033[1;34mhorizontal_distance\033[0m chosen\n"), horizontal_distance);
 }
 
 // void	test_calculate_best_distance(t_vars *vars, double angle)

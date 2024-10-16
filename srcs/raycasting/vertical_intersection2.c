@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:24:33 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 19:26:23 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:39:03 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,4 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		current_in_block = next_in_block;
 	}
 	return (current_in_px);
-}
-*/
+}*/

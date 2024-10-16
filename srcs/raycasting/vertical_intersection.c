@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 18:22:16 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 19:26:15 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:52:10 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,8 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 	t_block	next_in_block;
 	t_block	next_in_px;
 
-	if (vars->game->player->angle >= 90 && vars->game->player->angle < 270)
-		vars->game->player->angle = 360 - vars->game->player->angle;
+	// if (vars->game->player->angle >= 90 && vars->game->player->angle < 270)
+	// 	vars->game->player->angle = 360 - vars->game->player->angle;
 	current_in_px = vertical_coordinate_first_block_point(vars->game->player);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
@@ -79,10 +79,12 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 	if (check_coordinates_in_map(vars, current_in_px) == 0)
 	{
 		current_in_px.reachable = false;
-		vars->game->player->angle = vars->game->player->middle_angle;
+		//vars->game->player->angle = vars->game->player->middle_angle;
 		return (current_in_px);
 	}
-	while (check_coordinates_in_map(vars, current_in_px))
+//	while (check_coordinates_in_map(vars, current_in_px))
+	while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
+			|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'V')
 	{
 		next_in_px = vertical_coordinate_next_block_point(vars->game->player, current_in_px);
 		next_in_block = convert_pixel_to_block(next_in_px);
@@ -91,13 +93,13 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		if (check_coordinates_in_map(vars, next_in_px) == 0)
 		{
 			next_in_px.reachable = false;
-			vars->game->player->angle = vars->game->player->middle_angle;
+		//	vars->game->player->angle = vars->game->player->middle_angle;
 			return (current_in_px);
 		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
 	}
-	vars->game->player->angle = vars->game->player->middle_angle;
+	//vars->game->player->angle = vars->game->player->middle_angle;
 	return (current_in_px);
 }
 
