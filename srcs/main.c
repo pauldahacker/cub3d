@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/16 18:15:44 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:29:37 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(int argc, char **argv)
 			&(vars.data.line_length), &(vars.data.endian));
 	
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
-	printf("\n");
+	printf("player position map[%f][%f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
 	vars.game->player->pos_x *= BLOCK_SIZE;
 	vars.game->player->pos_y *= BLOCK_SIZE;
 	printf("angle_start = %f\n", vars.game->player->angle_start);

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 18:14:27 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 18:26:46 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,6 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 			break ;
 	}
 }
-//	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 
 //why 60? 60 is the total field of view angle.
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually
@@ -85,6 +84,8 @@ void	draw_every_ray(t_vars *vars)
 	{
 		distance_to_wall = calculate_best_distance(vars, alpha_angle);
 		projected_wall_height = calculate_projected_wall_height(distance_to_wall);
+		if (projected_wall_height > 150.0)
+			printf("x = %i y = %i\n", x, y);
 		draw_wall(vars, projected_wall_height, &x, &y);
 		alpha_angle -= vars->game->player->subsequent_angle;
 	}

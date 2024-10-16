@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 16:41:57 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:25:20 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 //This function gives us the coordinates of the character into block/cubs unit.
 //tan receives an angle in radian but we work in degrees, so we add * (PI / 180)
 //to convert it in radians
-static t_block	horizontal_coordinate_first_block_point(t_player *player)
+/*static t_block	horizontal_coordinate_first_block_point(t_player *player)
 {
 	t_block	a;
 
@@ -89,7 +89,7 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	if (check_coordinates_in_map(vars, current_in_px) == 0)
 	{
 		current_in_px.reachable = false;
-		printf("horizontal_point_crossing_wall return 1\n");
+//		printf("horizontal_point_crossing_wall return 1\n");
 		vars->game->player->angle = vars->game->player->middle_angle;
 		return (current_in_px);
 	}
@@ -122,7 +122,7 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	// printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
 	vars->game->player->angle = vars->game->player->middle_angle;
 	return (current_in_px);
-}
+}*/
 
 /*void	test_fixing_errors(t_vars *vars)
 {

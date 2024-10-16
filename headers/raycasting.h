@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 16:41:26 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:17:36 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,13 @@
 
 # include "cub3d.h"
 
-# define PROJECTION_PLANE_X 320
-# define PROJECTION_PLANE_Y 200
+# define PROJECTION_PLANE_X	320
+# define PROJECTION_PLANE_Y	200
 # define BLOCK_SIZE			64
 
 typedef struct s_game		t_game;
 typedef struct raycasting	t_player;
 typedef struct s_vars		t_vars;
-
 
 //How do we code the map?
 //It should be an array of int with the coordinates x and y
@@ -46,7 +45,6 @@ void		check_horizontal_angle_value(t_player *ray);
 void		check_vertical_angle_value(t_player *ray);
 int			check_coordinates_in_map(t_vars *vars, t_block current);
 
-
 //horizontal_instersection.c
 t_block		horizontal_point_crossing_wall(t_vars *vars);
 void		init_player_for_test(t_player *ray);
@@ -58,7 +56,5 @@ t_block		vertical_point_crossing_wall(t_vars *vars);
 double		calculate_best_distance(t_vars *vars, double angle);
 void		draw_every_ray(t_vars *vars);
 //double		calculate_projected_wall_height(t_vars *vars, double distance_to_wall);
-
-
 
 #endif
