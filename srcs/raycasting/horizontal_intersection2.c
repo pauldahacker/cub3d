@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:02:23 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 19:23:39 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:55:22 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,11 @@ static t_block	horizontal_coordinate_first_block_point(t_player *player)
 	t_block	a;
 
 	a.reachable = 1;
-	check_horizontal_angle_value(player);
+	//check_horizontal_angle_value(player);
 	if (ray_facing_up(player->angle) == 1)
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	else
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
-	
 	a.x = player->pos_x + (player->pos_y - a.y) / tan(player->angle * (PI / 180));
 	return (a);
 }
