@@ -15,9 +15,7 @@ void    draw_minimap_pixels(t_vars vars, t_game *game, int map_x, int map_y)
     {
         while (--block_size_x >= 0)
         {
-            if ((int)game->player->pos_x / 64 == map_x && (int)game->player->pos_y / 64 == map_y)
-                my_mlx_pixel_put(vars, pixel_x_start + block_size_x, pixel_y_start + block_size_y, YELLOW);
-            else if (game->map[map_y][map_x] == '0' || game->map[map_y][map_x] == 'V')
+            if (game->map[map_y][map_x] == '0' || game->map[map_y][map_x] == 'V')
                 my_mlx_pixel_put(vars, pixel_x_start + block_size_x, pixel_y_start + block_size_y, BLUE);
             else if (game->map[map_y][map_x] == '1')
                 my_mlx_pixel_put(vars, pixel_x_start + block_size_x, pixel_y_start + block_size_y, GREY);
@@ -26,17 +24,42 @@ void    draw_minimap_pixels(t_vars vars, t_game *game, int map_x, int map_y)
     }
 }
 
-void    draw_minimap(t_vars vars, t_game *game)
+void	draw_minimap_player(t_vars vars, t_game *game)
+{
+	int block_size_x;
+    int block_size_y;
+	int	player_x_start;
+	int	player_y_start;
+
+	block_size_x = MINIMAP_LENGTH / game->n_cols;
+    block_size_y = MINIMAP_HEIGHT / game->n_rows;
+	player_x_start = MINIMAP_START_X + game->player->pos_x / BLOCK_SIZE * block_size_x;
+	player_y_start = MINIMAP_START_Y +  game->player->pos_y / BLOCK_SIZE * block_size_y;
+	while (--block_size_y >= 0)
+    {
+        while (--block_size_x >= 0)
+			my_mlx_pixel_put(vars, player_x_start + block_size_x, player_y_start + block_size_y, YELLOW);
+        block_size_x = MINIMAP_LENGTH / game->n_cols;
+	}
+}
+
+void    draw_minimap(t_vars *vars, t_game *game)
 {
     int map_x;
     int map_y;
 
     map_y = -1;
+	printf("minimap called\n");
     while (++map_y < game->n_rows)
     {
         map_x = -1;
         while (++map_x < game->n_cols)
-            draw_minimap_pixels(vars, game, map_x, map_y);
+            draw_minimap_pixels(*vars, game, map_x, map_y);
     }
-    mlx_put_image_to_window(vars.mlx_ptr, vars.win_ptr, vars.data.img, 0, 0);
+	draw_minimap_player(*vars, game);
+    mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
+	vars->data.img = mlx_new_image(vars->mlx_ptr, WINDOW_X, WINDOW_Y);
+	vars->data.addr = mlx_get_data_addr(vars->data.img,
+			&(vars->data.bpp), &(vars->data.line_length),
+			&(vars->data.endian));
 }
