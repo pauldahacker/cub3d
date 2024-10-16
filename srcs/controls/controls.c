@@ -21,64 +21,108 @@ int	on_destroy(t_vars *vars)
 	return (0);
 }
 
-int	on_move_up(t_vars *vars)
+int	on_move_up(t_vars *vars, int attempted_speed)
 {
 	int		player_x;
 	int		player_y;
-	char	**map;
+	int		i;
+	int		j;
 
+	if (!attempted_speed)
+		return (0);
 	player_x = (int)vars->game->player->pos_x;
-	player_y = (int)vars->game->player->pos_y;
-	map = vars->game->map;
+	player_y = (int)vars->game->player->pos_y - attempted_speed;
+	j = -1;
+	while (++j < 32)
+	{
+		i = -1;
+		while (++i < 32)
+		{
+			if (vars->game->map[(player_y + j) / 64][(player_x + i) / 64] == '1')
+				return (on_move_up(vars, attempted_speed - 1));
+		}
+	}
 	printf("Player coordinates:x: %f\ny: %f\n", vars->game->player->pos_x, vars->game->player->pos_y);
-	if ((player_y - MOVEMENT_SPEED) > 0 && map[(player_y - MOVEMENT_SPEED) / 64][player_x / 64] != '1')
-		vars->game->player->pos_y = vars->game->player->pos_y - MOVEMENT_SPEED;
+	vars->game->player->pos_y = vars->game->player->pos_y - attempted_speed;
 	draw_minimap(vars, vars->game);
 	return (0);
 }
 
-int	on_move_left(t_vars *vars)
+int	on_move_left(t_vars *vars, int attempted_speed)
 {
 	int		player_x;
 	int		player_y;
-	char	**map;
+	int		i;
+	int		j;
 
-	player_x = (int)vars->game->player->pos_x;
+	if (!attempted_speed)
+		return (0);
+	player_x = (int)vars->game->player->pos_x - attempted_speed;
 	player_y = (int)vars->game->player->pos_y;
-	map = vars->game->map;
-	if ((player_x - MOVEMENT_SPEED) > 0 && map[player_y / 64][(player_x - MOVEMENT_SPEED) / 64] != '1')
-		vars->game->player->pos_x = vars->game->player->pos_x - MOVEMENT_SPEED;
+	j = -1;
+	while (++j < 32)
+	{
+		i = -1;
+		while (++i < 32)
+		{
+			if (vars->game->map[(player_y + j) / 64][(player_x + i) / 64] == '1')
+				return (on_move_left(vars, attempted_speed - 1));
+		}
+	}
+	vars->game->player->pos_x = vars->game->player->pos_x - attempted_speed;
 	draw_minimap(vars, vars->game);
 	return (0);
 }
 
-int	on_move_down(t_vars *vars)
+int	on_move_down(t_vars *vars, int attempted_speed)
 {
 	int		player_x;
 	int		player_y;
-	char	**map;
+	int		i;
+	int		j;
 
+	if (!attempted_speed)
+		return (0);
 	player_x = (int)vars->game->player->pos_x;
-	player_y = (int)vars->game->player->pos_y;
-	map = vars->game->map;
-	if ((player_y + MOVEMENT_SPEED) / 64 < vars->game->n_rows && map[(player_y + MOVEMENT_SPEED) / 64][player_x / 64] != '1')
-		vars->game->player->pos_y = vars->game->player->pos_y + MOVEMENT_SPEED;
+	player_y = (int)vars->game->player->pos_y + attempted_speed;
+	j = -1;
+	while (++j < 32)
+	{
+		i = -1;
+		while (++i < 32)
+		{
+			if (vars->game->map[(player_y + j) / 64][(player_x + i) / 64] == '1')
+				return (on_move_down(vars, attempted_speed - 1));
+		}
+	}
+	vars->game->player->pos_y = vars->game->player->pos_y + attempted_speed;
 	draw_minimap(vars, vars->game);
 	return (0);
 }
 
-int	on_move_right(t_vars *vars)
+int	on_move_right(t_vars *vars, int attempted_speed)
 {
 	int		player_x;
 	int		player_y;
-	char	**map;
+	int		i;
+	int		j;
 
-	player_x = (int)vars->game->player->pos_x;
+	if (!attempted_speed)
+		return (0);
+	player_x = (int)vars->game->player->pos_x + attempted_speed;
 	player_y = (int)vars->game->player->pos_y;
-	map = vars->game->map;
+	j = -1;
+	while (++j < 32)
+	{
+		i = -1;
+		while (++i < 32)
+		{
+			if (vars->game->map[(player_y + j) / 64][(player_x + i) / 64] == '1')
+				return (on_move_right(vars, attempted_speed - 1));
+		}
+	}
 	printf("Player coordinates:x: %f\ny: %f\n", vars->game->player->pos_x, vars->game->player->pos_y);
-	if ((player_x + MOVEMENT_SPEED) / 64 < vars->game->n_cols && map[player_y / 64][(player_x + MOVEMENT_SPEED) / 64] != '1')
-		vars->game->player->pos_x = vars->game->player->pos_x + MOVEMENT_SPEED;
+	vars->game->player->pos_x = vars->game->player->pos_x + attempted_speed;
 	draw_minimap(vars, vars->game);
 	return (0);
 }
@@ -90,12 +134,12 @@ int	on_keypress(int keysym, t_vars *vars)
 	if (keysym == ESC)
 		on_destroy(vars);
 	if (keysym == W)
-		on_move_up(vars);
+		on_move_up(vars, MOVEMENT_SPEED);
 	if (keysym == A)
-		on_move_left(vars);
+		on_move_left(vars, MOVEMENT_SPEED);
 	if (keysym == S)
-		on_move_down(vars);
+		on_move_down(vars, MOVEMENT_SPEED);
 	if (keysym == D)
-		on_move_right(vars);
+		on_move_right(vars, MOVEMENT_SPEED);
 	return (0);
 }
