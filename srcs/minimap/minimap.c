@@ -12,20 +12,6 @@
 
 #include "cub3d.h"
 
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   draw.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <pde-masc@student.42barcel>       +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/08 21:00:44 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/02/08 21:00:52 by pde-masc         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "cub3d.h"
-
 void	dda(t_vars vars, t_block *block, double dx, double dy)
 {
 	double	steps;
@@ -43,6 +29,8 @@ void	dda(t_vars vars, t_block *block, double dx, double dy)
 	while (i < steps && block->x < (double)WINDOW_X
 		&& block->y < (double)WINDOW_Y)
 	{
+        if (block->x < 0 || block->y < 0)
+            return ;
 		my_mlx_pixel_put(vars, (int)round(block->x),
 			(int)round(block->y), SKY_BLUE);
 		block->x += x_inc;
@@ -61,7 +49,7 @@ void	draw_line(t_vars vars, t_block *p1, t_block *p2)
 	dda(vars, p1, dx, dy);
 }
 
-void    draw_minimap_fov(t_vars *vars, t_game *game)
+void    draw_minimap_fov(t_vars *vars, t_game *game, double angle)
 {
     t_block inter;
     t_block start;
@@ -71,15 +59,24 @@ void    draw_minimap_fov(t_vars *vars, t_game *game)
     size_x = MINIMAP_LENGTH / game->n_cols;
     size_y = MINIMAP_HEIGHT / game->n_rows;
     printf("Player coordinates:x: %f\ny: %f\n", vars->game->player->pos_x, vars->game->player->pos_y);
-    inter = return_intersection(vars, vars->game->player->angle);
+    printf("angle: %f\n", angle);
+    start.x = MINIMAP_START_X + game->player->pos_x / BLOCK_SIZE * size_x;
+    start.y = MINIMAP_START_Y + game->player->pos_y / BLOCK_SIZE * size_y;
+    inter = return_intersection(vars, game->player->angle_start);
     if (inter.y < 0)
         inter.y = 0;
     inter.x = MINIMAP_START_X + inter.x / BLOCK_SIZE * size_x + ((int)inter.x % BLOCK_SIZE) / size_x;
     inter.y = MINIMAP_START_Y + inter.y / BLOCK_SIZE * size_y + ((int)inter.y % BLOCK_SIZE) / size_y;
+    draw_line(*vars, &start, &inter);
     start.x = MINIMAP_START_X + game->player->pos_x / BLOCK_SIZE * size_x;
     start.y = MINIMAP_START_Y + game->player->pos_y / BLOCK_SIZE * size_y;
+    inter = return_intersection(vars, game->player->angle_end);
+    if (inter.y < 0)
+        inter.y = 0;
+    inter.x = MINIMAP_START_X + inter.x / BLOCK_SIZE * size_x + ((int)inter.x % BLOCK_SIZE) / size_x;
+    inter.y = MINIMAP_START_Y + inter.y / BLOCK_SIZE * size_y + ((int)inter.y % BLOCK_SIZE) / size_y;
     draw_line(*vars, &start, &inter);
-    (void)game;
+    vars->game->player->angle = angle;
 }
 
 void    draw_minimap_pixels(t_vars vars, t_game *game, int map_x, int map_y)
@@ -143,7 +140,7 @@ void    draw_minimap(t_vars *vars, t_game *game)
         while (++map_x < game->n_cols)
             draw_minimap_pixels(*vars, game, map_x, map_y);
     }
-    draw_minimap_fov(vars, game);
+    draw_minimap_fov(vars, game, game->player->angle_end);
 	draw_minimap_player(*vars, game);
     mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 	vars->data.img = mlx_new_image(vars->mlx_ptr, WINDOW_X, WINDOW_Y);
