@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 17:32:14 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:39:30 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,15 +58,6 @@ t_block	find_next_horizontal_point(t_vars *vars, t_block current_point)
 	next_in_px.y = current_point.y + y_a;
 	return (next_in_px);
 }
-
-/*int	check_coordinates_in_map(t_vars *vars, t_block px_point)
-{
-	if (vars->game->map[(int)px_point.y][(int)px_point.x] == 'V'
-		|| vars->game->map[(int)px_point.y][(int)px_point.x] == '0'
-		|| vars->game->map[(int)px_point.y][(int)px_point.x] == '1')
-		return (1);
-	return (0);
-}*/
 
 //starting from the character position, we want to cast a ray until we find a
 //wall

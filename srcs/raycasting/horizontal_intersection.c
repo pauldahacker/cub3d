@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 19:25:20 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:38:54 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,15 @@ t_block	horizontal_coordinate_next_block_point(t_player *player, t_block previou
 	next.y = previous.y + y_a;
 	next.reachable = true;
 	return (next);
+}
+
+t_block	convert_pixel_to_block(t_block point)
+{
+	t_block	converted;
+
+	converted.x = rounded_nearest_nb(point.x / BLOCK_SIZE);
+	converted.y = rounded_nearest_nb(point.y / BLOCK_SIZE);
+	return (converted);
 }
 
 //Ensuite on a besoin d'une fonction/condition qui nous dit que s'il y a un mur

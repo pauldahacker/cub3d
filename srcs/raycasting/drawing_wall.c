@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 17:22:57 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:45:46 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,11 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 		while (*y < WINDOW_Y)
 		{
 			if (*y < wall_top_position_y_in_px)
-				my_mlx_pixel_put(*vars, *x, *y, ELECTRIC_BLUE);//imprimer le plafond d'une couleur BLEU
+				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);//imprimer le plafond d'une couleur BLEU
 			else if (*y >= wall_top_position_y_in_px && *y <= wall_lower_position_y_in_px)
-				my_mlx_pixel_put(*vars, *x, *y, GREY);//imprimer le plafond d'une couleur NOIRE
+				my_mlx_pixel_put(*vars, *x, *y, GREY);//imprimer le mur d'une couleur GREY
 			else if (*y > wall_top_position_y_in_px)// ca veut dire que l'on est en dessous du mur
-				my_mlx_pixel_put(*vars, *x, *y, WHITE);//imprimer le sol d'une couleur blanche
+				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);//imprimer le sol d'une couleur blanche
 			(*y)++;
 		}
 		(*x)++;

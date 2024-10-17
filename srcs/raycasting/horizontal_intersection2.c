@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:02:23 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 17:24:42 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:34:34 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 //We want to know the first point that crosses the first blockpoint
 // => even if it's a wall or a empty cell
-
-/*t_block	find_coordinate_first_intersection(t_vars *vars)
+/*
+t_block	find_coordinate_first_intersection(t_vars *vars)
 {
 	t_block	a;
 	
-	if (ray_facing_up(vars->game->player->middle_angle) == 1)
+	a.reachable = 1;
+	if (ray_facing_up(vars->game->player->alpha_angle) == 1)
 		a.y = rounded_down(vars->game->player->pos_x / 64) * 64 - 1;
 	else 
 		a.y = rounded_down(vars->game->player->pos_x / 64) * 64 + 64;
-	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y) / tan (vars->game->player->current_ray * PI / 180);
+	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y) / tan (vars->game->player->alpha_angle * PI / 180);
+	return (a);
 }
 
 
@@ -34,22 +36,22 @@ static t_block	horizontal_coordinate_first_block_point(t_player *player)
 
 	a.reachable = 1;
 	//check_horizontal_angle_value(player);
-	if (ray_facing_up(player->angle) == 1)
+	if (ray_facing_up(player->alpha_angle) == 1)
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	else
 		a.y = rounded_down(player->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
-	a.x = player->pos_x + (player->pos_y - a.y) / tan(player->angle * (PI / 180));
+	a.x = player->pos_x + (player->pos_y - a.y) / tan(player->alpha_angle * (PI / 180));
 	return (a);
 }
 
 static double	find_horizontal_x_a(t_player *player)
 {
-	return (rounded_down((double)BLOCK_SIZE / tan(player->angle * PI / 180)));
+	return (rounded_down((double)BLOCK_SIZE / tan(player->alpha_angle * PI / 180)));
 }
 
 static double	find_horizontal_y_a(t_player *player)
 {
-	if (ray_facing_up(player->angle) == 1)
+	if (ray_facing_up(player->alpha_angle) == 1)
 		return ((double)-BLOCK_SIZE);
 	return ((double)BLOCK_SIZE);
 }
@@ -66,6 +68,15 @@ t_block	horizontal_coordinate_next_block_point(t_player *player, t_block previou
 	next.y = previous.y + y_a;
 	next.reachable = true;
 	return (next);
+}
+
+t_block	convert_pixel_to_block(t_block point)
+{
+	t_block	converted;
+
+	converted.x = rounded_nearest_nb(point.x / BLOCK_SIZE);
+	converted.y = rounded_nearest_nb(point.y / BLOCK_SIZE);
+	return (converted);
 }
 
 //Ensuite on a besoin d'une fonction/condition qui nous dit que s'il y a un mur
@@ -109,5 +120,4 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 		current_in_block = next_in_block;
 	}
 	return (current_in_px);
-}
-*/
+}*/
