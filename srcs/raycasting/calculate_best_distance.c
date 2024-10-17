@@ -115,6 +115,42 @@ t_block	return_intersection(t_vars *vars, double angle)
 	return (horizontal_pt_px);
 }*/
 
+t_block	return_intersection(t_vars *vars, double angle)
+{
+	t_block	horizontal_pt_px;
+	double	horizontal_distance;
+	t_block	vertical_pt_px;
+	double	vertical_distance;
+
+	vars->game->player->angle = angle;
+	horizontal_pt_px = horizontal_point_crossing_wall(vars);
+	if (horizontal_pt_px.reachable == 1)
+		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
+	else
+		horizontal_distance = NAN;
+	vars->game->player->angle = angle;
+	vertical_pt_px = vertical_point_crossing_wall(vars);
+	if (vertical_pt_px.reachable == 1)
+		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
+	else
+		vertical_distance = NAN;
+	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+	{
+		printf("vertical point chosen\n");
+		remove_fishbowl_effect(vars, &vertical_pt_px, angle);
+		return (vertical_pt_px);
+	}
+	printf("horizontal point chosen\n");
+	printf("in calculate_best_distance, angle = %f\n", angle);
+	printf("horizontal_pt_px.x = %f\n", horizontal_pt_px.x);
+	printf("horizontal_pt_px.y = %f\n", horizontal_pt_px.y);
+	remove_fishbowl_effect(vars, &horizontal_pt_px, angle);
+	printf("after removing fishbowl effect\n");
+	printf("horizontal_pt_px.x = %f\n", horizontal_pt_px.x);
+	printf("horizontal_pt_px.y = %f\n", horizontal_pt_px.y);
+	return (horizontal_pt_px);
+}
+
 double	calculate_best_distance(t_vars *vars, double angle)
 {
 	t_block	horizontal_pt_px;

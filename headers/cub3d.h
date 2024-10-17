@@ -46,7 +46,16 @@
 # define MOVEMENT_SPEED 10
 
 // Keys
-# define ESC 65307
+# ifdef __linux__
+#  define ESC 65307
+
+# elif defined(__APPLE__)
+#  define ESC 53
+#  define W 13
+#  define A 0
+#  define S 1
+#  define D 2
+# endif
 
 // Colors
 # define GREY				0x808080
