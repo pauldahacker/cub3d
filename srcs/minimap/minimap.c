@@ -140,7 +140,8 @@ void    draw_minimap(t_vars *vars, t_game *game)
         while (++map_x < game->n_cols)
             draw_minimap_pixels(*vars, game, map_x, map_y);
     }
-    draw_minimap_fov(vars, game, game->player->angle_end);
+    draw_minimap_fov(vars, game, game->player->angle);
+    printf("after fov was added:\nangle: %f\nstart: %f\nend: %f\n", game->player->angle, game->player->angle_start, game->player->angle_end);
 	draw_minimap_player(*vars, game);
     mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 	vars->data.img = mlx_new_image(vars->mlx_ptr, WINDOW_X, WINDOW_Y);
