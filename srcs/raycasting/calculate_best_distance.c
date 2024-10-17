@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 18:55:12 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:06:15 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,8 +103,8 @@ double	calculate_best_distance(t_vars *vars, double angle)
 	
 	vars->game->player->angle = angle;
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
-	printf("horizontal_pt_px.x = %f horizontal_pt_px.y = %f horizontal_pt_px.reachable = %i \n",
-	horizontal_pt_px.x, horizontal_pt_px.y, horizontal_pt_px.reachable);
+//	printf("horizontal_pt_px.x = %f horizontal_pt_px.y = %f horizontal_pt_px.reachable = %i \n",
+//	horizontal_pt_px.x, horizontal_pt_px.y, horizontal_pt_px.reachable);
 	if (horizontal_pt_px.reachable == 1)
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
 	else
