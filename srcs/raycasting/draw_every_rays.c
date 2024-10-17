@@ -27,7 +27,7 @@ void	check_pixels_value(t_vars *vars, t_block *point)
 	else if (point->y > max_vision.y)
 		point->y = max_vision.y;
 }*/
-/*
+
 //why 60? 60 is the total field of view angle.
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually
 //considered as a 60 degrees angle horizontal FOV

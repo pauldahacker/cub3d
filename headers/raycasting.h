@@ -52,9 +52,9 @@ void		init_player_for_test(t_player *ray);
 //vertical_instersection.c
 t_block		vertical_point_crossing_wall(t_vars *vars);
 
-//t_block		calculate_best_distance(t_vars *vars, double angle);
-double		calculate_best_distance(t_vars *vars, double angle);
+//double		calculate_best_distance(t_vars *vars, double angle);
 t_block		return_intersection(t_vars *vars, double angle);
+double		calculate_best_distance(t_vars *vars, double angle);
 void		draw_every_ray(t_vars *vars);
 //double		calculate_projected_wall_height(t_vars *vars, double distance_to_wall);
 

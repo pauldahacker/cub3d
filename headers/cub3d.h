@@ -48,10 +48,6 @@
 // Keys
 # ifdef __linux__
 #  define ESC 65307
-#  define W 119
-#  define A 97
-#  define S 115
-#  define D 100
 
 # elif defined(__APPLE__)
 #  define ESC 53
