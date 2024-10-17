@@ -6,29 +6,29 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:24:33 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 17:23:40 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:34:53 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
-/*t_block	vertical_coordinate_first_block_point(t_player *player)
+/*
+t_block	vertical_coordinate_first_block_point(t_player *player)
 {
 	t_block	a;
 
 	a.reachable = 1;
 	//check_vertical_angle_value(player);
-	if (ray_facing_right(player->angle) == 1)
+	if (ray_facing_right(player->alpha_angle) == 1)
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	else
 		a.x = rounded_down(player->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
-	a.y = player->pos_y + (player->pos_x - a.x) * tan(player->angle * (PI / 180));
+	a.y = player->pos_y + (player->pos_x - a.x) * tan(player->alpha_angle * (PI / 180));
 	return (a);
 }
 
 double	find_vertical_x_a(t_player *player)
 {
-	if (ray_facing_right(player->angle) == 1)
+	if (ray_facing_right(player->alpha_angle) == 1)
 		return ((double)BLOCK_SIZE);
 	return ((double)-BLOCK_SIZE);
 }
@@ -39,7 +39,7 @@ double	find_vertical_x_a(t_player *player)
 //which is one cube (<=> BLOCK_SIZE unit)
 double	find_vertical_y_a(t_player *player)
 {
-	return (rounded_down((double)BLOCK_SIZE * tan(player->angle * (PI / 180))));
+	return (rounded_down((double)BLOCK_SIZE * tan(player->alpha_angle * (PI / 180))));
 }
 
 t_block	vertical_coordinate_next_block_point(t_player *player, t_block previous)
@@ -88,5 +88,4 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		current_in_block = next_in_block;
 	}
 	return (current_in_px);
-}
-*/
+}*/
