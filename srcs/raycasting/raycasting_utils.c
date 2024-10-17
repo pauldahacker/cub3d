@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/09 16:21:58 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:32:20 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,14 +55,14 @@ double	rounded_nearest_nb(double nb)
 	}
 }
 
-t_block	convert_pixel_to_block(t_block point)
+/*t_block	convert_pixel_to_block(t_block point)
 {
 	t_block	converted;
 
 	converted.x = point.x / BLOCK_SIZE;
 	converted.y = point.y / BLOCK_SIZE;
 	return (converted);
-}
+}*/
 
 //we need a function to know if the ray is facing up or down
 //this function returns 1 if is going up, 0 if it's going down
