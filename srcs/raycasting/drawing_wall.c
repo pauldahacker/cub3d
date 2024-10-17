@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 18:56:40 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:17:03 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,28 @@
 
 //see: https://permadi.com/1996/05/ray-casting-tutorial-9/
 //60 because our field of view (FOV) is 60
+//How to calculate the distance from the wall ?
+//tan formula in a triangle is: tan(angle) = opposite_side / adjacent_side
+//                        <=>  adjacent_side = opposite_side / tan(angle)
+//adjacent_side is our distance to the wall
+//angle is our FOV angle which is 60° / 2 = 30°;
+//Why divided by 2. Because we want to know the most straightforward ray, which
+//is the one at the middle. Same for the opposite_side. The opposite_side is 
+//our whole projection plane. But we use only half of it.
+//Thus: opposite_side = PROJECTION_PLANE_X / 2 = 320 / 2 = 160
+/*
+            The most straightforward ray is the one at the middle.
+            To calculate it we use trigonometry in a triangle.
+                As if it should:
+__________ = Projection Plane = __________
+\        /                      \    |
+ \      /                        \   |
+  \    /                          \  |
+   \  /                            \ |
+    \/     = FOV: angle = 60°       \|
+*/
+
+//The uppermost left ray (first one) will draw the first row
 
 void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 {

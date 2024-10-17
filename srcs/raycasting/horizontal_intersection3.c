@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 18:39:30 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:18:56 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,6 @@ double	finding_horizontal_y_a(t_vars *vars)
 double	finding_horizontal_x_a(t_vars *vars)
 {
 	return (BLOCK_SIZE / tan(vars->game->player->alpha_angle * (PI / 180)));
-}
-
-t_block	convert_pixel_to_block(t_block point)
-{
-	t_block	converted;
-
-	converted.x = rounded_nearest_nb(point.x / BLOCK_SIZE);
-	converted.y = rounded_nearest_nb(point.y / BLOCK_SIZE);
-	return (converted);
 }
 
 t_block	find_next_horizontal_point(t_vars *vars, t_block current_point)

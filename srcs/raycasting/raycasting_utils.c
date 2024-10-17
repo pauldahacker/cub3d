@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 16:32:20 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:19:22 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,14 +74,14 @@ double	rounded_nearest_nb(double nb)
 	}
 }
 
-/*t_block	convert_pixel_to_block(t_block point)
+t_block	convert_pixel_to_block(t_block point)
 {
 	t_block	converted;
 
-	converted.x = point.x / BLOCK_SIZE;
-	converted.y = point.y / BLOCK_SIZE;
+	converted.x = rounded_nearest_nb(point.x / BLOCK_SIZE);
+	converted.y = rounded_nearest_nb(point.y / BLOCK_SIZE);
 	return (converted);
-}*/
+}
 
 //we need a function to know if the ray is facing up or down
 //this function returns 1 if is going up, 0 if it's going down
@@ -112,3 +112,10 @@ int	ray_facing_right(double angle)
 		return (0);
 }
 
+int	check_coordinates_in_map(t_vars *vars, t_block current)
+{
+	if (current.y < 0 || current.y > vars->game->n_rows - 1
+		|| current.x < 0 || current.x > vars->game->n_cols - 1)
+		return (0);
+	return (1);
+}
