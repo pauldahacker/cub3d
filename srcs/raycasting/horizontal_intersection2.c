@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 19:02:23 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 19:55:22 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:24:42 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y) / tan (vars->game->player->current_ray * PI / 180);
 }
 
-*/
+
 
 static t_block	horizontal_coordinate_first_block_point(t_player *player)
 {
@@ -62,9 +62,6 @@ t_block	horizontal_coordinate_next_block_point(t_player *player, t_block previou
 
 	x_a = find_horizontal_x_a(player);
 	y_a = find_horizontal_y_a(player);
-	// printf("\nin horizontal_coordinate_next_block_point\n");
-	// printf("x_a = %f && y_a = %f\n", x_a, y_a);
-	// printf("previous.x = %f && previous.y = %f\n", previous.x, previous.y);
 	next.x = previous.x + x_a;
 	next.y = previous.y + y_a;
 	next.reachable = true;
@@ -113,3 +110,4 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	}
 	return (current_in_px);
 }
+*/

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 20:03:27 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 13:55:55 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,12 +101,14 @@ double	calculate_best_distance(t_vars *vars, double angle)
 	
 	vars->game->player->angle = angle;
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
+	printf("horizontal_pt_px.x = %f horizontal_pt_px.y = %f horizontal_pt_px.reachable = %i \n",
+	horizontal_pt_px.x, horizontal_pt_px.y, horizontal_pt_px.reachable);
 	if (horizontal_pt_px.reachable == 1)
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
 	else
 		horizontal_distance = NAN;
-	// printf("horizontal distance in px = %f\n", horizontal_distance);
-	// printf("horizontal distance in block = %f\n", horizontal_distance / BLOCK_SIZE);
+//	printf("horizontal distance in px = %f\n", horizontal_distance);
+//	printf("horizontal distance in block = %f\n", horizontal_distance / BLOCK_SIZE);
 	
 	vars->game->player->angle = angle;
 	vertical_pt_px = vertical_point_crossing_wall(vars);
@@ -116,9 +118,10 @@ double	calculate_best_distance(t_vars *vars, double angle)
 		vertical_distance = NAN;
 	// printf("vertical distance in px = %f\n", vertical_distance);
 	// printf("vertical distance in block = %f\n", vertical_distance / BLOCK_SIZE);
-	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
-		return (printf("\033[1;31mvertical distance\033[0m chosen\n"), vertical_distance);
-	return (printf("\033[1;34mhorizontal_distance\033[0m chosen\n"), horizontal_distance);
+	return (fmin(vertical_distance, horizontal_distance));
+//	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+//		return (printf("\033[1;31mvertical distance\033[0m chosen\n"), vertical_distance);
+//	return (printf("\033[1;34mhorizontal_distance\033[0m chosen\n"), horizontal_distance);
 }
 
 // void	test_calculate_best_distance(t_vars *vars, double angle)
