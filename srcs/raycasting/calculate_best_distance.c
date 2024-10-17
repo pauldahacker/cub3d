@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 13:55:55 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:55:12 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,13 @@ double	calculate_hypo_distance(t_vars *vars, t_block point)
 {
 	t_block	ray_end_pt;
 	double	distance;
+	double	beta;
 
 	ray_end_pt.x = ft_abs(vars->game->player->pos_x - point.x);
 	ray_end_pt.y = ft_abs(vars->game->player->pos_y - point.y);
 	distance = ray_end_pt.x * ray_end_pt.x + ray_end_pt.y * ray_end_pt.y;
-	return (sqrt(distance));
+	beta = vars->game->player->middle_angle - vars->game->player->alpha_angle;
+	return (sqrt(distance) * cos(beta * (PI / 180)));
 }
 
 //see: https://permadi.com/1996/05/ray-casting-tutorial-8/
