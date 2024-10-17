@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 18:45:46 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:56:40 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,15 @@
 
 //see: https://permadi.com/1996/05/ray-casting-tutorial-9/
 //60 because our field of view (FOV) is 60
+
+void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
+{
+	char	*dst;
+
+	dst = vars.data.addr + (y * vars.data.line_length + x
+			* (vars.data.bpp / 8));
+	*(unsigned int *)dst = color;
+}
 
 double	calculate_projected_wall_height(double distance_to_wall)
 {
