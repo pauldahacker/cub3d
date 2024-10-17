@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:34:01 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/11 18:35:20 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 16:59:05 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,22 @@ void	check_vertical_angle_value(t_player *ray)
 //x || y < 0
 //x > x_max || y > y_max
 //if map[x][y] is different from 0 || 1
+/*int	check_coordinates_in_map(t_vars *vars, t_block current_point)
+{
+	// t_block	current_in_block;
+	t_block	max_vision;
+
+	// printf("check_coordinates_in_map\n");
+	// printf("current_point.x = %f\n", current_point.x);
+	// printf("current_point.y = %f\n", current_point.y);
+	max_vision.x = (vars->game->n_rows - 1) * BLOCK_SIZE;
+	max_vision.y = (vars->game->n_cols - 1) * BLOCK_SIZE;
+	if (current_point.y < 0 || current_point.y > max_vision.y
+		|| current_point.x < 0 || current_point.x > max_vision.x)
+		return (0);
+	return (1);
+}*/
+
 int	check_coordinates_in_map(t_vars *vars, t_block current)
 {
 	if (current.y < 0 || current.y > vars->game->n_rows - 1

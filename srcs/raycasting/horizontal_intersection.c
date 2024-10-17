@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   horizontal_intersection.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 17:25:17 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/12 21:40:27 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/17 18:38:54 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 //This function gives us the coordinates of the character into block/cubs unit.
 //tan receives an angle in radian but we work in degrees, so we add * (PI / 180)
 //to convert it in radians
-static t_block	horizontal_coordinate_first_block_point(t_player *player)
+/*static t_block	horizontal_coordinate_first_block_point(t_player *player)
 {
 	t_block	a;
 
@@ -63,6 +63,15 @@ t_block	horizontal_coordinate_next_block_point(t_player *player, t_block previou
 	return (next);
 }
 
+t_block	convert_pixel_to_block(t_block point)
+{
+	t_block	converted;
+
+	converted.x = rounded_nearest_nb(point.x / BLOCK_SIZE);
+	converted.y = rounded_nearest_nb(point.y / BLOCK_SIZE);
+	return (converted);
+}
+
 //Ensuite on a besoin d'une fonction/condition qui nous dit que s'il y a un mur
 //au point en (convertit en block) alors, on stop le process
 //Sinon on continue jusqu'a le stopper
@@ -86,30 +95,74 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	current_in_block = convert_pixel_to_block(current_in_px);
 	current_in_block.x = rounded_nearest_nb(current_in_block.x);
 	current_in_block.y = rounded_nearest_nb(current_in_block.y);
-	if (check_coordinates_in_map(vars, current_in_block) == 0)
+	if (check_coordinates_in_map(vars, current_in_px) == 0)
 	{
 		current_in_px.reachable = false;
-		vars->game->player->angle = vars->game->player->initial_angle;
+//		printf("horizontal_point_crossing_wall return 1\n");
+		vars->game->player->angle = vars->game->player->middle_angle;
 		return (current_in_px);
 	}
-	while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
-			|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'V')
+	// while (vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == '0'
+	// 		|| vars->game->map[(int)current_in_block.y][(int)current_in_block.x] == 'V')
+	while (check_coordinates_in_map(vars, current_in_px))
 	{
 		next_in_px = horizontal_coordinate_next_block_point(vars->game->player, current_in_px);
 		next_in_block = convert_pixel_to_block(next_in_px);
 		next_in_block.x = rounded_nearest_nb(next_in_block.x);
 		next_in_block.y = rounded_nearest_nb(next_in_block.y);
-		if (check_coordinates_in_map(vars, next_in_block) == 0)
+//		printf("horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+//		printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
+	
+		if (check_coordinates_in_map(vars, next_in_px) == 0)
 		{
-			current_in_px.reachable = false;
-			vars->game->player->angle = vars->game->player->initial_angle;
+			next_in_px.reachable = false;
+	// 		printf("horizontal_point_crossing_wall return 2\n");
+	// printf("horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	// printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
+
+			vars->game->player->angle = vars->game->player->middle_angle;
 			return (current_in_px);
 		}
 		current_in_px = next_in_px;
 		current_in_block = next_in_block;
 	}
+	// printf("horizontal_point_crossing_wall return 3\n");
+	// printf("horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
+	// printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);
+	vars->game->player->angle = vars->game->player->middle_angle;
 	return (current_in_px);
-}
+}*/
+
+/*void	test_fixing_errors(t_vars *vars)
+{
+//1
+// 	t_block	horizontal_point_in_px;
+// 	t_block	vertical_point_in_px;
+
+// 	horizontal_point_in_px = horizontal_point_crossing_wall(vars);
+// 	printf("horizontal point.x = %f\n", horizontal_point_in_px.x);
+// 	printf("horizontal point.y = %f\n", horizontal_point_in_px.y);
+// 	printf("horizontal point.reachable = %i\n", horizontal_point_in_px.reachable);
+	// vertical_point_in_px = vertical_point_crossing_wall(vars);
+	// printf("vertical point.x = %f\n", vertical_point_in_px.x);
+	// printf("vertical point.y = %f\n", vertical_point_in_px.y);
+	// printf("vertical point.reachable = %i\n", vertical_point_in_px.reachable);
+//2
+	// t_block	wall_point_px;
+	// t_block	wall_point_in_block;
+	double	distance_hypotenuse;
+	distance_hypotenuse = calculate_best_distance(vars, vars->game->player->middle_angle);
+	printf("fin\n");
+	printf("distance_hypotenuse = %f\n", distance_hypotenuse);
+	printf("distance_hypotenuse in  block = %f\n", distance_hypotenuse / 64);
+	calculate_projected_wall_height(vars, distance_hypotenuse);
+	// printf("wall_point_px.x = %f\n", wall_point_px.x);
+	// printf("wall_point_px.y = %f\n", wall_point_px.y);
+	// wall_point_in_block = convert_pixel_to_block(wall_point_px);
+	// printf("wall_point_in_block.x = %f\n", rounded_down(wall_point_in_block.x));
+	// printf("wall_point_in_block.y = %f\n", rounded_down(wall_point_in_block.y));
+	
+}*/
 
 // printf("3 horizontal final point in \033[1;31mpixels\033[0m y = %f && x = %f\n", current_in_px.y, current_in_px.x);
 // printf("horizontal final point in \033[1;34mblock\033[0m y = %0.f && x = %0.f\n", current_in_block.y, current_in_block.x);

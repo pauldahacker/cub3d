@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 11:44:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/04 19:22:13 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:45:37 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 //
 
 //il est possile que tu aies besoin des coordonnes du joueurs au lieu des pixels x et y 
-void	draw_game(t_vars vars, t_game *game)
+/*void	draw_game(t_vars vars, t_game *game)
 {
 	int	row_from_plan;
 	int	x;
@@ -53,4 +53,4 @@ void	draw_game(t_vars vars, t_game *game)
 	}
 	mlx_put_image_to_window(vars.mlx_ptr, vars.win_ptr, vars.data.img, 0, 0);
 	(void)game;
-}
+}*/
