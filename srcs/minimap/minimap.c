@@ -65,9 +65,11 @@ void    draw_minimap_fov(t_vars *vars, t_game *game, double angle)
     inter = return_intersection(vars, game->player->angle_start);
     if (inter.y < 0)
         inter.y = 0;
+    printf("intersection with start angle:\ninter.x = %f\ninter.y = %f\n", inter.x, inter.y);
     inter.x = MINIMAP_START_X + inter.x / BLOCK_SIZE * size_x + ((int)inter.x % BLOCK_SIZE) / size_x;
     inter.y = MINIMAP_START_Y + inter.y / BLOCK_SIZE * size_y + ((int)inter.y % BLOCK_SIZE) / size_y;
     draw_line(*vars, &start, &inter);
+    /*
     start.x = MINIMAP_START_X + game->player->pos_x / BLOCK_SIZE * size_x;
     start.y = MINIMAP_START_Y + game->player->pos_y / BLOCK_SIZE * size_y;
     inter = return_intersection(vars, game->player->angle_end);
@@ -76,7 +78,8 @@ void    draw_minimap_fov(t_vars *vars, t_game *game, double angle)
     inter.x = MINIMAP_START_X + inter.x / BLOCK_SIZE * size_x + ((int)inter.x % BLOCK_SIZE) / size_x;
     inter.y = MINIMAP_START_Y + inter.y / BLOCK_SIZE * size_y + ((int)inter.y % BLOCK_SIZE) / size_y;
     draw_line(*vars, &start, &inter);
-    vars->game->player->angle = angle;
+    */
+    //vars->game->player->angle = angle;
 }
 
 void    draw_minimap_pixels(t_vars vars, t_game *game, int map_x, int map_y)

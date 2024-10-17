@@ -159,16 +159,23 @@ t_block	return_intersection(t_vars *vars, double angle)
 
 	vars->game->player->angle = angle;
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
+	printf("horizontal_pt_px.x = %f horizontal_pt_px.y = %f horizontal_pt_px.reachable = %i \n",
+	horizontal_pt_px.x, horizontal_pt_px.y, horizontal_pt_px.reachable);
 	if (horizontal_pt_px.reachable == 1)
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
 	else
 		horizontal_distance = NAN;
+//	printf("horizontal distance in px = %f\n", horizontal_distance);
+//	printf("horizontal distance in block = %f\n", horizontal_distance / BLOCK_SIZE);
+	
 	vars->game->player->angle = angle;
 	vertical_pt_px = vertical_point_crossing_wall(vars);
 	if (vertical_pt_px.reachable == 1)
 		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
 	else
 		vertical_distance = NAN;
+	// printf("vertical distance in px = %f\n", vertical_distance);
+	// printf("vertical distance in block = %f\n", vertical_distance / BLOCK_SIZE);
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
 		return (vertical_pt_px);
 	return (horizontal_pt_px);
