@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/16 19:17:36 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:33:08 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 # define PROJECTION_PLANE_X	320
 # define PROJECTION_PLANE_Y	200
-# define BLOCK_SIZE			64
+# define BLOCK_SIZE			64.0
 
 typedef struct s_game		t_game;
 typedef struct raycasting	t_player;
