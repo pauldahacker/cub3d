@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 19:17:03 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:16:11 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,9 +107,13 @@ void	draw_every_ray(t_vars *vars)
 	int		x;
 
 	vars->game->player->alpha_angle = vars->game->player->angle_start;
-	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
 	x = 0;
 	y = 0;
+	if (vars->game->player->angle_end > 300)
+		vars->game->player->angle_end -= 360.0;
+	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
+	printf("vars->game->player->alpha_angle = %f\n", vars->game->player->alpha_angle);
+	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
 	while (vars->game->player->alpha_angle > vars->game->player->angle_end)
 	{
 		distance_to_wall = calculate_best_distance(vars, vars->game->player->alpha_angle);
@@ -123,6 +127,9 @@ void	draw_every_ray(t_vars *vars)
 		draw_wall(vars, projected_wall_height, &x, &y);
 		vars->game->player->alpha_angle -= vars->game->player->subsequent_angle;
 	}
+	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
+	printf("vars->game->player->alpha_angle = %f\n", vars->game->player->alpha_angle);
+	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
 
