@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 19:19:22 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:05:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 //to avoid rounding an already integer number
 double	rounded_down(double nb)
 {
-	if (nb < 0 && nb != (long)nb)
+	if (nb < 0.0 && nb != (long)nb)
 		return ((long)nb - 1);
 	return ((long)nb);
 }
@@ -74,12 +74,13 @@ double	rounded_nearest_nb(double nb)
 	}
 }
 
+//rounded_nearest_nb
 t_block	convert_pixel_to_block(t_block point)
 {
 	t_block	converted;
 
-	converted.x = rounded_nearest_nb(point.x / BLOCK_SIZE);
-	converted.y = rounded_nearest_nb(point.y / BLOCK_SIZE);
+	converted.x = rounded_down(point.x / (double)BLOCK_SIZE);
+	converted.y = rounded_down(point.y / (double)BLOCK_SIZE);
 	return (converted);
 }
 
@@ -91,7 +92,7 @@ t_block	convert_pixel_to_block(t_block point)
 int	ray_facing_up(double angle)
 {
 
-	if (angle >= 0 && angle < 180)
+	if (angle >= 0.0 && angle < 180.0)
 		return (1);
 	else
 		return (0);
@@ -105,8 +106,8 @@ int	ray_facing_up(double angle)
 //-90° ≤ angle ≤ 90 (everything % 360)
 int	ray_facing_right(double angle)
 {
-	if ((angle >= 0 && angle < 90)
-		|| (angle >= 270 && angle < 360))
+	if ((angle >= 0.0 && angle < 90.0)
+		|| (angle >= 270.0 && angle < 360.0))
 		return (1);
 	else
 		return (0);

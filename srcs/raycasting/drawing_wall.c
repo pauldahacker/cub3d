@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/19 17:16:11 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:16:27 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ double	calculate_projected_wall_height(double distance_to_wall)
 	double	projected_wall_height;
 
 	actual_wall_height = BLOCK_SIZE;
-	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan ((60 / 2) * PI / 180));
+	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan ((60 / 2) * PI / 180.0));
 	projected_wall_height = (actual_wall_height / distance_to_wall) * distance_player_projection_plane;
 	projected_wall_height = rounded_nearest_nb(projected_wall_height);
 //	printf("projected_wall_height = %f\n", projected_wall_height);
@@ -83,11 +83,11 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 		while (*y < WINDOW_Y)
 		{
 			if (*y < wall_top_position_y_in_px)
-				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);//imprimer le plafond d'une couleur BLEU
+				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
 			else if (*y >= wall_top_position_y_in_px && *y <= wall_lower_position_y_in_px)
-				my_mlx_pixel_put(*vars, *x, *y, GREY);//imprimer le mur d'une couleur GREY
-			else if (*y > wall_top_position_y_in_px)// ca veut dire que l'on est en dessous du mur
-				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);//imprimer le sol d'une couleur blanche
+				my_mlx_pixel_put(*vars, *x, *y, GREY);
+			else if (*y > wall_top_position_y_in_px)
+				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
 		}
 		(*x)++;
@@ -109,7 +109,7 @@ void	draw_every_ray(t_vars *vars)
 	vars->game->player->alpha_angle = vars->game->player->angle_start;
 	x = 0;
 	y = 0;
-	if (vars->game->player->angle_end > 300)
+	if (vars->game->player->angle_end > 300.0)
 		vars->game->player->angle_end -= 360.0;
 	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
 	printf("vars->game->player->alpha_angle = %f\n", vars->game->player->alpha_angle);
@@ -127,9 +127,6 @@ void	draw_every_ray(t_vars *vars)
 		draw_wall(vars, projected_wall_height, &x, &y);
 		vars->game->player->alpha_angle -= vars->game->player->subsequent_angle;
 	}
-	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
-	printf("vars->game->player->alpha_angle = %f\n", vars->game->player->alpha_angle);
-	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
 

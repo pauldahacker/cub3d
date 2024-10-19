@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/19 17:00:28 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:36:33 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ int	main(int argc, char **argv)
 	printf("middle angle = %f\n", vars.game->player->middle_angle);
 	printf("subsequent_angle = %f\n", vars.game->player->subsequent_angle);
 	draw_every_ray(&vars);
-
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
 	mlx_loop(vars.mlx_ptr);

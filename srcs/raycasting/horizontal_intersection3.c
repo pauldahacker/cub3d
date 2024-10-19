@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 19:18:56 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:19:54 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ t_block	find_coordinate_of_first_horizontal_point(t_vars *vars)
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	else
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
-	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y) / tan(vars->game->player->alpha_angle * (PI / 180));
+	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y) / tan(vars->game->player->alpha_angle * (PI / 180.0));
 	return (a);
 }
 
@@ -34,7 +34,7 @@ double	finding_horizontal_y_a(t_vars *vars)
 
 double	finding_horizontal_x_a(t_vars *vars)
 {
-	return (BLOCK_SIZE / tan(vars->game->player->alpha_angle * (PI / 180)));
+	return ((double)BLOCK_SIZE / tan(vars->game->player->alpha_angle * (PI / 180.0)));
 }
 
 t_block	find_next_horizontal_point(t_vars *vars, t_block current_point)
@@ -42,11 +42,12 @@ t_block	find_next_horizontal_point(t_vars *vars, t_block current_point)
 	t_block	next_in_px;
 	double	x_a;
 	double	y_a;
-	
+
 	x_a = finding_horizontal_x_a(vars);
 	y_a = finding_horizontal_y_a(vars);
 	next_in_px.x = current_point.x + x_a;
 	next_in_px.y = current_point.y + y_a;
+	next_in_px.reachable = true;
 	return (next_in_px);
 }
 
@@ -73,5 +74,5 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 		current_in_block = next_in_block;
 		current_in_px = next_in_px;
 	}
-	return (next_in_px);
+	return (current_in_px);
 }

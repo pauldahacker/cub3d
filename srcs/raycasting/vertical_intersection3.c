@@ -6,15 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 18:39:12 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:33:01 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
-//est_ce que le alpha_angle nous donne sa valeur en fonction de 0 degres ? ou 
-//en fonction de middle angle ?
-t_block	convert_pixel_to_block(t_block point);
 
 t_block	find_coordinate_of_first_vertical_point(t_vars *vars)
 {
@@ -25,7 +21,7 @@ t_block	find_coordinate_of_first_vertical_point(t_vars *vars)
 		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	else
 		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
-	a.y = vars->game->player->pos_y + (vars->game->player->pos_x - a.x) * tan(vars->game->player->alpha_angle * (PI / 180));
+	a.y = vars->game->player->pos_y + (vars->game->player->pos_x - a.x) * tan(vars->game->player->alpha_angle * (PI / 180.0));
 	return (a);
 }
 
@@ -38,7 +34,7 @@ double	finding_vertical_x_a(t_vars *vars)
 
 double	finding_vertical_y_a(t_vars *vars)
 {
-	return (BLOCK_SIZE * tan(vars->game->player->alpha_angle * (PI / 180)));
+	return ((double)BLOCK_SIZE * tan(vars->game->player->alpha_angle * (PI / 180.0)));
 }
 
 t_block	find_next_vertical_point(t_vars *vars, t_block current_point)
@@ -51,6 +47,7 @@ t_block	find_next_vertical_point(t_vars *vars, t_block current_point)
 	y_a = finding_vertical_y_a(vars);
 	next_in_px.x = current_point.x + x_a;
 	next_in_px.y = current_point.y + y_a;
+	next_in_px.reachable = true;
 	return (next_in_px);
 }
 
@@ -77,5 +74,5 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		current_in_block = next_in_block;
 		current_in_px = next_in_px;
 	}
-	return (next_in_px);
+	return (current_in_px);
 }
