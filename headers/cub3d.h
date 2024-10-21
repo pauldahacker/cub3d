@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/17 17:22:46 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/21 16:14:31 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,6 @@ typedef struct raycasting
 	double		angle;//angle (in degrees) of our ray starting from the abscissa axis 0 ≤ angle ≤360
 	char		direction;//will determine our FOV
 	double		angle_start;
-	double		alpha_angle;
 	double		angle_end;
 	double		subsequent_angle;
 	double		distance_to_wall;//the distance from the player to the wall
