@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/19 19:16:27 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/21 15:59:58 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,27 +105,28 @@ void	draw_every_ray(t_vars *vars)
 	double	projected_wall_height;
 	int		y;
 	int		x;
+	double	ray_angle;
 
-	vars->game->player->alpha_angle = vars->game->player->angle_start;
+	ray_angle = vars->game->player->angle_start;
 	x = 0;
 	y = 0;
 	if (vars->game->player->angle_end > 300.0)
 		vars->game->player->angle_end -= 360.0;
 	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
-	printf("vars->game->player->alpha_angle = %f\n", vars->game->player->alpha_angle);
+	printf("ray_angle = %f\n", ray_angle);
 	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
-	while (vars->game->player->alpha_angle > vars->game->player->angle_end)
+	while (ray_angle > vars->game->player->angle_end)
 	{
-		distance_to_wall = calculate_best_distance(vars, vars->game->player->alpha_angle);
+		distance_to_wall = calculate_best_distance(vars, ray_angle);
 		projected_wall_height = calculate_projected_wall_height(distance_to_wall);
 		if (projected_wall_height == 32.0 || projected_wall_height == 174.0)
 		{
 			printf("\033[1;31mHEEEEEEEEEEEEEERE\033[0m\n");
 			printf("x = %i y = %i\n", x, y);
-			printf("vars->game->player->alpha_angle = %f\n", vars->game->player->alpha_angle);
+			printf("ray_angle = %f\n", ray_angle);
 		}
 		draw_wall(vars, projected_wall_height, &x, &y);
-		vars->game->player->alpha_angle -= vars->game->player->subsequent_angle;
+		ray_angle -= vars->game->player->subsequent_angle;
 	}
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
