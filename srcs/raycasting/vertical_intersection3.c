@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/21 15:46:50 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:21:44 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
 	t_block	a;
 
 	a.reachable = 1;
-	if (ray_facing_right(ray_angle) == 1)//ray face right entre 0 et 180(exclus)
+	if (ray_facing_right(ray_angle) == 1)
 		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	else
 		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;

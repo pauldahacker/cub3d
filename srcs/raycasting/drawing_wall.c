@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/21 15:59:58 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:23:57 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,9 @@ double	calculate_projected_wall_height(double distance_to_wall)
 	double	projected_wall_height;
 
 	actual_wall_height = BLOCK_SIZE;
-	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan ((60 / 2) * PI / 180.0));
+	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan((60 / 2) * PI / 180.0));
 	projected_wall_height = (actual_wall_height / distance_to_wall) * distance_player_projection_plane;
 	projected_wall_height = rounded_nearest_nb(projected_wall_height);
-//	printf("projected_wall_height = %f\n", projected_wall_height);
 	return (projected_wall_height);
 }
 
@@ -96,9 +95,11 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 	}
 }
 
-//why 60? 60 is the total field of view angle.
+//60 is the total field of view in degrees.
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually
 //considered as a 60 degrees angle horizontal FOV
+//angle_start starts at the left of our FOV (example: 120)
+//angle_end finishes at the rifght of our FOV (example: 60)
 void	draw_every_ray(t_vars *vars)
 {
 	double	distance_to_wall;
@@ -111,7 +112,7 @@ void	draw_every_ray(t_vars *vars)
 	x = 0;
 	y = 0;
 	if (vars->game->player->angle_end > 300.0)
-		vars->game->player->angle_end -= 360.0;
+		vars->game->player->angle_end -= 360.0;//I do this for E player's position
 	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
 	printf("ray_angle = %f\n", ray_angle);
 	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
@@ -119,75 +120,8 @@ void	draw_every_ray(t_vars *vars)
 	{
 		distance_to_wall = calculate_best_distance(vars, ray_angle);
 		projected_wall_height = calculate_projected_wall_height(distance_to_wall);
-		if (projected_wall_height == 32.0 || projected_wall_height == 174.0)
-		{
-			printf("\033[1;31mHEEEEEEEEEEEEEERE\033[0m\n");
-			printf("x = %i y = %i\n", x, y);
-			printf("ray_angle = %f\n", ray_angle);
-		}
 		draw_wall(vars, projected_wall_height, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*void	draw_wall(t_vars *vars, double projected_wall_height)
-{
-	double	center_projection_plan_y;
-	double	length_column;
-	double	wall_top_position_y;
-	double	wall_lower_position_y;
-	int		i;//x_lines
-	int		j;//y_columns
-
-	length_column = rounded_nearest_nb(WINDOW_X / PROJECTION_PLANE_X);
-	center_projection_plan_y = PROJECTION_PLANE_Y / 2;
-	wall_top_position_y = center_projection_plan_y - projected_wall_height / 2;
-	wall_lower_position_y = center_projection_plan_y + projected_wall_height / 2;
-	while (i < PROJECTION_PLANE_X)
-	{
-		while (j < PROJECTION_PLANE_Y)
-		{
-			if (j < wall_top_position_y)
-				//imprimer le plafond d'une couleur BLEU
-			if (j >= wall_top_position_y && j <= wall_lower_position_y)
-				//imprimer le plafond d'une couleur NOIRE
-			else // ca veut dire que l'on est en dessous du mur
-				;//imprimer le sol d'une couleur blanche
-			y++;
-		}
-		i++;
-	}
-//	my_mlx_pixel_put(*vars, distance_to_px.x, distance_to_px.y, WHITE);
-	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
-
-}*/
