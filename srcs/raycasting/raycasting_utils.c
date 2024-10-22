@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 16:32:20 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 19:05:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 //to avoid rounding an already integer number
 double	rounded_down(double nb)
 {
-	if (nb < 0 && nb != (long)nb)
+	if (nb < 0.0 && nb != (long)nb)
 		return ((long)nb - 1);
 	return ((long)nb);
 }
@@ -55,14 +55,15 @@ double	rounded_nearest_nb(double nb)
 	}
 }
 
-/*t_block	convert_pixel_to_block(t_block point)
+//rounded_nearest_nb
+t_block	convert_pixel_to_block(t_block point)
 {
 	t_block	converted;
 
-	converted.x = point.x / BLOCK_SIZE;
-	converted.y = point.y / BLOCK_SIZE;
+	converted.x = rounded_down(point.x / (double)BLOCK_SIZE);
+	converted.y = rounded_down(point.y / (double)BLOCK_SIZE);
 	return (converted);
-}*/
+}
 
 //we need a function to know if the ray is facing up or down
 //this function returns 1 if is going up, 0 if it's going down
@@ -72,7 +73,7 @@ double	rounded_nearest_nb(double nb)
 int	ray_facing_up(double angle)
 {
 
-	if (angle >= 0 && angle < 180)
+	if (angle >= 0.0 && angle < 180.0)
 		return (1);
 	else
 		return (0);
@@ -86,8 +87,8 @@ int	ray_facing_up(double angle)
 //-90° ≤ angle ≤ 90 (everything % 360)
 int	ray_facing_right(double angle)
 {
-	if ((angle >= 0 && angle < 90)
-		|| (angle >= 270 && angle < 360))
+	if ((angle >= 0.0 && angle < 90.0)
+		|| (angle >= 270.0 && angle < 360.0))
 		return (1);
 	else
 		return (0);
@@ -114,3 +115,10 @@ int	ray_facing_right(double angle)
 // 	return (0);
 // }
 
+int	check_coordinates_in_map(t_vars *vars, t_block current)
+{
+	if (current.y < 0 || current.y > vars->game->n_rows - 1
+		|| current.x < 0 || current.x > vars->game->n_cols - 1)
+		return (0);
+	return (1);
+}

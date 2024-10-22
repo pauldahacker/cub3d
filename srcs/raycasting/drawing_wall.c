@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/17 18:56:40 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/21 15:59:58 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,28 @@
 
 //see: https://permadi.com/1996/05/ray-casting-tutorial-9/
 //60 because our field of view (FOV) is 60
+//How to calculate the distance from the wall ?
+//tan formula in a triangle is: tan(angle) = opposite_side / adjacent_side
+//                        <=>  adjacent_side = opposite_side / tan(angle)
+//adjacent_side is our distance to the wall
+//angle is our FOV angle which is 60° / 2 = 30°;
+//Why divided by 2. Because we want to know the most straightforward ray, which
+//is the one at the middle. Same for the opposite_side. The opposite_side is 
+//our whole projection plane. But we use only half of it.
+//Thus: opposite_side = PROJECTION_PLANE_X / 2 = 320 / 2 = 160
+/*
+            The most straightforward ray is the one at the middle.
+            To calculate it we use trigonometry in a triangle.
+                As if it should:
+__________ = Projection Plane = __________
+\        /                      \    |
+ \      /                        \   |
+  \    /                          \  |
+   \  /                            \ |
+    \/     = FOV: angle = 60°       \|
+*/
+
+//The uppermost left ray (first one) will draw the first row
 
 void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 {
@@ -31,7 +53,7 @@ double	calculate_projected_wall_height(double distance_to_wall)
 	double	projected_wall_height;
 
 	actual_wall_height = BLOCK_SIZE;
-	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan ((60 / 2) * PI / 180));
+	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan ((60 / 2) * PI / 180.0));
 	projected_wall_height = (actual_wall_height / distance_to_wall) * distance_player_projection_plane;
 	projected_wall_height = rounded_nearest_nb(projected_wall_height);
 //	printf("projected_wall_height = %f\n", projected_wall_height);
@@ -61,11 +83,11 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 		while (*y < WINDOW_Y)
 		{
 			if (*y < wall_top_position_y_in_px)
-				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);//imprimer le plafond d'une couleur BLEU
+				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
 			else if (*y >= wall_top_position_y_in_px && *y <= wall_lower_position_y_in_px)
-				my_mlx_pixel_put(*vars, *x, *y, GREY);//imprimer le mur d'une couleur GREY
-			else if (*y > wall_top_position_y_in_px)// ca veut dire que l'on est en dessous du mur
-				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);//imprimer le sol d'une couleur blanche
+				my_mlx_pixel_put(*vars, *x, *y, GREY);
+			else if (*y > wall_top_position_y_in_px)
+				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
 		}
 		(*x)++;
@@ -83,23 +105,28 @@ void	draw_every_ray(t_vars *vars)
 	double	projected_wall_height;
 	int		y;
 	int		x;
+	double	ray_angle;
 
-	vars->game->player->alpha_angle = vars->game->player->angle_start;
-	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
+	ray_angle = vars->game->player->angle_start;
 	x = 0;
 	y = 0;
-	while (vars->game->player->alpha_angle > vars->game->player->angle_end)
+	if (vars->game->player->angle_end > 300.0)
+		vars->game->player->angle_end -= 360.0;
+	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
+	printf("ray_angle = %f\n", ray_angle);
+	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
+	while (ray_angle > vars->game->player->angle_end)
 	{
-		distance_to_wall = calculate_best_distance(vars, vars->game->player->alpha_angle);
+		distance_to_wall = calculate_best_distance(vars, ray_angle);
 		projected_wall_height = calculate_projected_wall_height(distance_to_wall);
 		if (projected_wall_height == 32.0 || projected_wall_height == 174.0)
 		{
 			printf("\033[1;31mHEEEEEEEEEEEEEERE\033[0m\n");
 			printf("x = %i y = %i\n", x, y);
-			printf("vars->game->player->alpha_angle = %f\n", vars->game->player->alpha_angle);
+			printf("ray_angle = %f\n", ray_angle);
 		}
 		draw_wall(vars, projected_wall_height, &x, &y);
-		vars->game->player->alpha_angle -= vars->game->player->subsequent_angle;
+		ray_angle -= vars->game->player->subsequent_angle;
 	}
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
