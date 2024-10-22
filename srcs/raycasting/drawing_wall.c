@@ -128,6 +128,9 @@ void	draw_every_ray(t_vars *vars)
 		draw_wall(vars, projected_wall_height, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
+	if (vars->game->player->angle_end < 0)
+		vars->game->player->angle_end += 360.0;
+	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
 

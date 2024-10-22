@@ -34,7 +34,12 @@ double	finding_horizontal_y_a(double ray_angle)
 
 double	finding_horizontal_x_a(double ray_angle)
 {
-	return ((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
+	double	x_a_iteration;
+
+    x_a_iteration = fabs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
+    if (ray_facing_right(ray_angle) == 1)
+        return (x_a_iteration);
+    return (-x_a_iteration);
 }
 
 t_block	find_next_horizontal_point(t_block current_point, double ray_angle)

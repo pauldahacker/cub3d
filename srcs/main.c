@@ -38,8 +38,8 @@ int	main(int argc, char **argv)
 	draw_every_ray(&vars);
 
 	printf("\n");
-	vars.game->player->pos_x += BLOCK_SIZE / 4;
-	vars.game->player->pos_y += BLOCK_SIZE / 4;
+	vars.game->player->pos_x += BLOCK_SIZE / 2;
+	vars.game->player->pos_y += BLOCK_SIZE / 2;
 	//test_calculate_best_distance(&vars, vars.game->player->angle);
 	//test_calculate_best_distance(&vars, 45.0);
 	draw_minimap(&vars, vars.game);
