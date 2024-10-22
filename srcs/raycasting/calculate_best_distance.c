@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/21 18:20:52 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/22 17:04:02 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,17 +53,41 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 	double	vertical_distance;
 	
 	horizontal_pt_px = horizontal_point_crossing_wall(vars, ray_angle);
+	printf("new_point\n");//////
+	t_block tmp;
+	printf("horizontal_pt_px.x = %f && horizontal_pt_px.y = %f\n", horizontal_pt_px.x, horizontal_pt_px.y);
+	tmp = horizontal_pt_px;
+	horizontal_pt_px = convert_pixel_to_block(horizontal_pt_px);
+	printf("horizontal_pt_block.x = %f && horizontal_pt_block.y = %f\n", horizontal_pt_px.x, horizontal_pt_px.y);
+	horizontal_pt_px = tmp;//TO REMOVE
+	
 	if (horizontal_pt_px.reachable == 1)
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px, ray_angle);
 	else
 		horizontal_distance = NAN;
+
+	printf("horizontal_distance = %f\n", horizontal_distance);//TO REMOVE
+
 	vertical_pt_px = vertical_point_crossing_wall(vars, ray_angle);
+	
+	printf("vertical_pt_px.x = %f && vertical_pt_px.y = %f\n", vertical_pt_px.x, vertical_pt_px.y);//////
+	tmp = vertical_pt_px;
+	vertical_pt_px = convert_pixel_to_block(vertical_pt_px);
+	printf("vertical_pt_block.x = %f && vertical_pt_block.y = %f\n", vertical_pt_px.x, vertical_pt_px.y);
+	vertical_pt_px = tmp;//TO REMOVE
+
 	if (vertical_pt_px.reachable == 1)
 		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px, ray_angle);
 	else
 		vertical_distance = NAN;
-	return (fmin(vertical_distance, horizontal_distance));
-	// if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
-	// 	return (printf("\033[1;31mvertical distance\033[0m chosen\n"), vertical_distance);
-	// return (printf("\033[1;34mhorizontal_distance\033[0m chosen\n"), horizontal_distance);
+//	return (fmin(vertical_distance, horizontal_distance));
+
+	
+	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+	{
+		// return (printf("\033[1;31mvertical distance\033[0m chosen\n\n"), vertical_distance);
+		return (printf("vertical distance chosen\n\n"), vertical_distance);
+	}
+	// return (printf("\033[1;34mhorizontal_distance\033[0m chosen\n\n"), horizontal_distance);
+	return (printf("HORIZONTAL_distance\n\n"), horizontal_distance);
 }

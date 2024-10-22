@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/19 18:36:33 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/22 16:38:31 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,9 @@ int	main(int argc, char **argv)
 	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
-	vars.game->player->pos_x *= BLOCK_SIZE;
-	vars.game->player->pos_y *= BLOCK_SIZE;
+	vars.game->player->pos_x = vars.game->player->pos_x * BLOCK_SIZE + BLOCK_SIZE / 2;
+	vars.game->player->pos_y = vars.game->player->pos_y * BLOCK_SIZE + BLOCK_SIZE / 2;
+	printf("player position: x = %f && y = %f\n", vars.game->player->pos_x, vars.game->player->pos_y);
 	printf("angle_start = %f\n", vars.game->player->angle_start);
 	printf("angle_end = %f\n", vars.game->player->angle_end);
 	printf("middle angle = %f\n", vars.game->player->middle_angle);

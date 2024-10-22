@@ -1,0 +1,2891 @@
+map has 26 rows and 14 columns
+player position map[6][21]
+player position: x = 416.000000 && y = 1376.000000
+angle_start = 120.000000
+angle_end = 60.000000
+middle angle = 90.000000
+subsequent_angle = 0.187500
+vars->game->player->angle_start = 120.000000
+ray_angle = 120.000000
+vars->game->player->angle_end = 60.000000
+new_point
+horizontal_pt_px.x = 359.997024 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1318.842323
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 57.157677
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 360.419470 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1318.407890
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 57.592110
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 360.840334 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1317.968467
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 58.031533
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 361.259635 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1317.523956
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 58.476044
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 361.677390 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1317.074260
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 58.925740
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 362.093616 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1316.619278
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 59.380722
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 362.508332 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1316.158905
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 59.841095
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 362.921553 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1315.693036
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 60.306964
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 363.333297 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1315.221561
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 60.778439
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 363.743581 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1314.744368
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 61.255632
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 364.152420 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1314.261342
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 61.738658
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 364.559831 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1313.772366
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 62.227634
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 364.965831 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1313.277317
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 62.722683
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 365.370435 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1312.776071
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 63.223929
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 365.773660 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1312.268500
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 63.731500
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 366.175520 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1311.754473
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 64.245527
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 366.576031 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1311.233853
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 64.766147
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 366.975209 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1310.706503
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 65.293497
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 367.373069 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1310.172280
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 65.827720
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 367.769626 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1309.631036
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 66.368964
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 368.164894 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1309.082620
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 66.917380
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 368.558888 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1308.526877
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 67.473123
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 368.951623 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1307.963646
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 68.036354
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 369.343114 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1307.392764
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 68.607236
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 369.733373 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1306.814061
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 69.185939
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 370.122417 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1306.227362
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 69.772638
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 370.510258 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1305.632488
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 70.367512
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 370.896910 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1305.029253
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 70.970747
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 371.282388 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1304.417466
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 71.582534
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 371.666704 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1303.796932
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 72.203068
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 372.049872 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1303.167448
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 72.832552
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 372.431905 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1302.528804
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 73.471196
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 372.812818 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1301.880786
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 74.119214
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 373.192621 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1301.223172
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 74.776828
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 373.571330 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1300.555731
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 75.444269
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 373.948955 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1299.878229
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 76.121771
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 374.325511 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1299.190420
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 76.809580
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 374.701010 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1298.492052
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 77.507948
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 375.075463 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1297.782866
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 78.217134
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 375.448884 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1297.062592
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 78.937408
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 375.821284 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1296.330952
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 79.669048
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 376.192677 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1295.587660
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 80.412340
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 376.563073 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1294.832418
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 81.167582
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 376.932485 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1294.064920
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 81.935080
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 377.300924 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1293.284847
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 82.715153
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 377.668403 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1292.491871
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 83.508129
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 378.034932 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1291.685651
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 84.314349
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 378.400523 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1290.865836
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 85.134164
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 378.765189 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1290.032061
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 85.967939
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 379.128939 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1289.183947
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 86.816053
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 379.491785 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1288.321103
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 87.678897
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 379.853739 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1287.443123
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 88.556877
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 380.214811 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1286.549586
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 89.450414
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 380.575012 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1285.640054
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 90.359946
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 380.934353 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1284.714075
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 91.285925
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 381.292845 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1283.771179
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 92.228821
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 381.650498 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1282.810875
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 93.189125
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 382.007324 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1281.832657
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 94.167343
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 382.363332 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1280.835997
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 95.164003
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 382.718533 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1279.820346
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 96.179654
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 383.072937 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1278.785135
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 97.214865
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 383.426554 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1277.729769
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 98.270231
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 383.779396 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1276.653632
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 99.346368
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 278.998178 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1275.556080
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 100.443920
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 280.508487 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1274.436443
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 101.563557
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 282.015587 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1273.294024
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 102.705976
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 283.519521 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1272.128093
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 103.871907
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 285.020331 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1270.937893
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 105.062107
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 286.518058 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1269.722632
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 106.277368
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 288.012745 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1268.481482
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 107.518518
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 289.504433 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1267.213579
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 108.786421
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 290.993162 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1265.918022
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 110.081978
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 292.478973 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1264.593867
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 111.406133
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 293.961906 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1263.240127
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 112.759873
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 295.442001 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1261.855770
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 114.144230
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 296.919298 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1260.439714
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 115.560286
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 298.393837 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1258.990826
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 117.009174
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 299.865656 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1257.507920
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 118.492080
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 301.334795 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1255.989749
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 120.010251
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 302.801293 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1254.435008
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 121.564992
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 304.265187 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1252.842323
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 123.157677
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 305.726516 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1251.210255
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 124.789745
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 307.185318 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1249.537286
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 126.462714
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 308.641631 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1247.821824
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 128.178176
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 310.095491 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1246.062189
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 129.937811
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 311.546938 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1244.256615
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 131.743385
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 312.996006 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1242.403238
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 133.596762
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 314.442734 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1240.500094
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 135.499906
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 315.887157 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1238.545108
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 137.454892
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 317.329313 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1236.536088
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 139.463912
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 318.769237 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 4.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1234.470719
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 141.529281
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 320.206965 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1232.346549
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 143.653451
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 321.642533 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1230.160985
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 145.839015
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 323.075977 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1227.911276
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 148.088724
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 324.507332 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1225.594506
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 150.405494
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 325.936632 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1223.207579
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 152.792421
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 327.363914 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1220.747206
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 155.252794
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 328.789211 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 1218.209890
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 157.790110
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 330.212559 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 904.497418
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 471.502582
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 331.633991 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 896.553353
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 479.446647
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 333.053543 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 888.348069
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = 487.651931
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 334.471247 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 879.868283
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = 496.131717
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 335.887139 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 871.099794
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = 504.900206
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 337.301252 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 862.027405
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = 513.972595
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 338.713618 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 852.634834
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = 523.365166
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 340.124273 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 842.904615
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = 533.095385
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 341.533248 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 832.817988
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = 543.182012
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 342.940578 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 457.063082
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = 918.936918
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 344.346295 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 439.035191
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = 936.964809
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 345.750432 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 420.307292
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = 955.692708
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 347.153021 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 400.837381
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = 975.162619
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 348.554096 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 380.580025
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = 995.419975
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 349.953688 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 359.486006
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = 1016.513994
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 351.351831 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 337.501917
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = 1038.498083
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 352.748555 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 314.569706
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = 1061.430294
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 354.143893 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 290.626163
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = 1085.373837
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 355.537878 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 265.602329
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = 1110.397671
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 356.930540 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 239.422832
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1136.577168
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 358.321911 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 212.005123
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1163.994877
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 359.712024 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 183.258596
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 361.100909 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 639.211851
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 736.788149
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 362.488597 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 620.105034
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 755.894966
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 363.875121 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 599.998201
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 776.001799
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 365.260511 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 578.810267
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 797.189733
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 366.644798 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 255.000000 && vertical_pt_px.y = 15.717868
+vertical_pt_block.x = 3.000000 && vertical_pt_block.y = 0.000000
+vertical_distance = 1360.282132
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 368.028013 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 532.820425
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 8.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 369.410186 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 507.805927
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 370.791350 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 481.281843
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 372.171534 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 453.106648
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 373.550769 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 423.120555
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 374.929085 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 391.142472
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 376.306513 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 356.966330
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 377.683083 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 320.356620
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 379.058825 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 281.042944
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 380.433770 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 238.713304
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1137.286696
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 381.807948 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 319.000000 && vertical_pt_px.y = 193.005782
+vertical_pt_block.x = 4.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1182.994218
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 383.181388 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 5.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 956.695244
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 419.304756
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 384.554121 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 938.390984
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 437.609016
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 385.926177 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 918.425981
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 457.574019
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 387.297585 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 896.562984
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 479.437016
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 388.668376 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 872.517294
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 390.038579 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 845.944275
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 391.408223 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 816.422704
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 12.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 392.777339 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 783.432247
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 12.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 394.145956 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 746.322489
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 11.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 395.514104 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 704.269568
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 11.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 396.881811 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 656.214235
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 10.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 398.249109 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 600.771316
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 775.228684
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 399.616025 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 536.093914
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 8.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 400.982590 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 459.663534
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = 916.336466
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 402.348833 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 367.954280
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = 1008.045720
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 403.714784 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 255.873196
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1120.126804
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 405.080471 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 115.780843
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 1.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 406.445924 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = -64.327608
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = -2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 407.811172 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = -304.460209
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = -5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 409.176244 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = -640.631449
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = -11.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 410.541171 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = -1144.870307
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = -18.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 411.905981 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = -1985.244405
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = -32.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 413.270702 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = -3665.956602
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = -58.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 414.635366 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = -8708.021197
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = -137.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 416.000000 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 383.000000 && vertical_pt_px.y = 538930898655448576.000000
+vertical_pt_block.x = 5.000000 && vertical_pt_block.y = 8420795291491384.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 417.364634 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = -8402.444797
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = -132.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 418.729298 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = -3513.170038
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = -55.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 420.094019 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = -1883.388514
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = -30.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 421.458829 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = -1068.480298
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = -17.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 422.823756 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = -579.521405
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = -10.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 424.188828 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = -253.537172
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = -4.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 425.554076 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = -20.681317
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = -1.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 426.919529 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 153.969302
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 428.285216 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 289.816433
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 429.651167 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 398.501120
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = 977.498880
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 431.017410 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 487.431305
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = 888.568695
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 432.383975 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 561.545613
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 8.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 433.750891 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 624.263094
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 751.736906
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 435.118189 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 678.025925
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 10.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 436.485896 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 724.625036
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 11.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 437.854044 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 765.403626
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 11.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 439.222661 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 801.388846
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 12.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 440.591777 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 833.379592
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 441.961421 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 862.006570
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 443.331624 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 887.774346
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 13.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 444.702415 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 911.091379
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 464.908621
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 446.073823 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 932.291860
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 443.708140
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 447.445879 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 6.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 951.651863
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 14.000000
+vertical_distance = 424.348137
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 448.818612 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 156.204345
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 450.192052 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 205.201598
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1170.798402
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 451.566230 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 250.437909
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1125.562091
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 452.941175 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 292.331161
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 454.316917 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 331.239542
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 455.693487 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 367.471832
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 457.070915 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 401.295643
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 458.449231 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 432.944054
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 459.828466 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 462.621012
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 461.208650 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 490.505741
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 7.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 462.589814 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 516.756381
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 8.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 463.971987 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 541.512998
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 8.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 465.355202 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 24.166826
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 0.000000
+vertical_distance = 1351.833174
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 466.739489 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 587.028718
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 788.971282
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 468.124879 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 607.998219
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 768.001781
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 469.511403 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 512.000000 && vertical_pt_px.y = 627.897766
+vertical_pt_block.x = 8.000000 && vertical_pt_block.y = 9.000000
+vertical_distance = 748.102234
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 470.899091 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 160.679342
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 472.287976 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 190.666928
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 473.678089 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 219.234905
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1156.765095
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 475.069460 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 246.482318
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1129.517682
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 476.462122 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 272.499209
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 477.856107 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 297.367615
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 4.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 479.251445 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 321.162441
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 480.648169 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 343.952216
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 482.046312 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 365.799758
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 5.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 483.445904 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 576.000000 && vertical_pt_px.y = 386.762758
+vertical_pt_block.x = 9.000000 && vertical_pt_block.y = 6.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 484.846979 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 19.252008
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 0.000000
+vertical_distance = 1356.747992
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 486.249568 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 46.340580
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 0.000000
+vertical_distance = 1329.659420
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 487.653705 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 72.396788
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 1.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 489.059422 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 97.479070
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 1.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 490.466752 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 121.641538
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 1.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 491.875727 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 144.934369
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 493.286382 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 167.404153
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 494.698748 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 189.094213
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 2.000000
+vertical_distance = nan
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 496.112861 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 210.044885
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1165.955115
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 497.528753 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 230.293767
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1145.706233
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 498.946457 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 640.000000 && vertical_pt_px.y = 249.875954
+vertical_pt_block.x = 10.000000 && vertical_pt_block.y = 3.000000
+vertical_distance = 1126.124046
+HORIZONTAL_distance used
+
+new_point
+horizontal_pt_px.x = 500.366009 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1217.832034
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 158.167966
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 501.787441 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1220.452757
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 155.547243
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 503.210789 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1222.991408
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 153.008592
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 504.636086 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1225.451836
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 150.548164
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 506.063368 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1227.837652
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 148.162348
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 507.492668 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1230.152248
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 145.847752
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 508.924023 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1232.398813
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 143.601187
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 510.357467 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1234.580349
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 141.419651
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 511.793035 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1236.699684
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 139.300316
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 513.230763 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1238.759485
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 137.240515
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 514.670687 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1240.762267
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 135.237733
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 516.112843 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1242.710407
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 133.289593
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 517.557266 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1244.606152
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 131.393848
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 519.003994 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1246.451625
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 129.548375
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 520.453062 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1248.248839
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 127.751161
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 521.904509 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1249.999699
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 126.000301
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 523.358369 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1251.706011
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 124.293989
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 524.814682 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1253.369490
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 122.630510
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 526.273484 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1254.991762
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 121.008238
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 527.734813 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1256.574374
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 119.425626
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 529.198707 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1258.118795
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 117.881205
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 530.665205 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1259.626423
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 116.373577
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 532.134344 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1261.098589
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 114.901411
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 533.606163 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1262.536559
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 113.463441
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 535.080702 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1263.941541
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 112.058459
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 536.557999 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1265.314686
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 110.685314
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 538.038094 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1266.657093
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 109.342907
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 539.521027 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1267.969810
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 108.030190
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 541.006838 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1269.253840
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 106.746160
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 542.495567 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1270.510137
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 105.489863
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 543.987255 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1271.739618
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 104.260382
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 545.481942 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1272.943158
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 103.056842
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 546.979669 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1274.121594
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 101.878406
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 548.480479 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1275.275727
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 100.724273
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 549.984413 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1276.406326
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 99.593674
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 551.491513 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1277.514127
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 98.485873
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 553.001822 && horizontal_pt_px.y = 959.000000
+horizontal_pt_block.x = 8.000000 && horizontal_pt_block.y = 14.000000
+horizontal_distance = 417.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1278.599835
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 97.400165
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 448.220604 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1279.664128
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 19.000000
+vertical_distance = 96.335872
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 448.573446 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1280.707655
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 95.292345
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 448.927063 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1281.731040
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 94.268960
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 449.281467 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1282.734881
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 93.265119
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 449.636668 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1283.719754
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 92.280246
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 449.992676 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1284.686213
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 91.313787
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 450.349502 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1285.634788
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 90.365212
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 450.707155 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1286.565991
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 89.434009
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 451.065647 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1287.480316
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 88.519684
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 451.424988 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1288.378235
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 87.621765
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 451.785189 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1289.260205
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 86.739795
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 452.146261 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1290.126665
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 85.873335
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 452.508215 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1290.978040
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 85.021960
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 452.871061 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1291.814737
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 84.185263
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 453.234811 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1292.637150
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 83.362850
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 453.599477 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1293.445659
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 82.554341
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 453.965068 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1294.240631
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 81.759369
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 454.331597 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1295.022420
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 80.977580
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 454.699076 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1295.791367
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 80.208633
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 455.067515 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1296.547801
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 79.452199
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 455.436927 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1297.292042
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 78.707958
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 455.807323 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1298.024398
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 77.975602
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 456.178716 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1298.745166
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 77.254834
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 456.551116 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1299.454635
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 76.545365
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 456.924537 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1300.153082
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 75.846918
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 457.298990 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1300.840778
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 75.159222
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 457.674489 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1301.517983
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 74.482017
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 458.051045 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1302.184949
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 73.815051
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 458.428670 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1302.841921
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 73.158079
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 458.807379 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1303.489136
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 72.510864
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 459.187182 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1304.126823
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 71.873177
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 459.568095 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1304.755204
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 71.244796
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 459.950128 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1305.374495
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 70.625505
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 460.333296 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1305.984904
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 70.015096
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 460.717612 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1306.586634
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 69.413366
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 461.103090 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1307.179881
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 68.820119
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 461.489742 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1307.764837
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 68.235163
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 461.877583 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1308.341685
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 67.658315
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 462.266627 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1308.910605
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 67.089395
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 462.656886 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1309.471772
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 66.528228
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 463.048377 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1310.025354
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 65.974646
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 463.441112 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1310.571517
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 65.428483
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 463.835106 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1311.110419
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 64.889581
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 464.230374 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1311.642216
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 64.357784
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 464.626931 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1312.167059
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 63.832941
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 465.024791 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1312.685094
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 63.314906
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 465.423969 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1313.196464
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 62.803536
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 465.824480 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1313.701307
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 62.298693
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 466.226340 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1314.199758
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 61.800242
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 466.629565 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1314.691948
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 61.308052
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 467.034169 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1315.178004
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 60.821996
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 467.440169 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1315.658052
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 60.341948
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 467.847580 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1316.132211
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 59.867789
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 468.256419 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1316.600599
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 59.399401
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 468.666703 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1317.063332
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 58.936668
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 469.078447 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1317.520519
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 58.479481
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 469.491668 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1317.972271
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 58.027729
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 469.906384 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1318.418693
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 57.581307
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 470.322610 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1318.859888
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 57.140112
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 470.740365 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1319.295957
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 56.704043
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 471.159666 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1319.726998
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 56.273002
+vertical distance chosen
+
+new_point
+horizontal_pt_px.x = 471.580530 && horizontal_pt_px.y = 1279.000000
+horizontal_pt_block.x = 7.000000 && horizontal_pt_block.y = 19.000000
+horizontal_distance = 97.000000
+vertical_pt_px.x = 448.000000 && vertical_pt_px.y = 1320.153106
+vertical_pt_block.x = 7.000000 && vertical_pt_block.y = 20.000000
+vertical_distance = 55.846894
+vertical distance chosen
+
+Pressed key : 65307

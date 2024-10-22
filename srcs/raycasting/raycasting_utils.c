@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/19 19:05:52 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/21 19:21:25 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,7 @@ double	rounded_nearest_nb(double nb)
 }
 
 //rounded_nearest_nb
+//you might not need the rounded_down function	
 t_block	convert_pixel_to_block(t_block point)
 {
 	t_block	converted;

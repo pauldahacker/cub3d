@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/21 18:21:17 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/22 16:56:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,12 @@ double	finding_horizontal_y_a(double ray_angle)
 
 double	finding_horizontal_x_a(double ray_angle)
 {
-	return ((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
+	double	y_a_iteration;
+
+	y_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
+	if (ray_facing_right(ray_angle) == 1)
+		return (y_a_iteration);
+	return (-y_a_iteration);
 }
 
 t_block	find_next_horizontal_point(t_block current_point, double ray_angle)
