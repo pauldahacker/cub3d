@@ -34,7 +34,12 @@ double	finding_vertical_x_a(double ray_angle)
 
 double	finding_vertical_y_a(double ray_angle)
 {
-	return ((double)BLOCK_SIZE * tan(ray_angle * (PI / 180.0)));
+	double	y_a_iteration;
+
+    y_a_iteration = fabs((double)BLOCK_SIZE * tan(ray_angle * (PI / 180.0)));
+    if (ray_facing_up(ray_angle) == 1)
+        return (-y_a_iteration);
+    return (y_a_iteration);
 }
 
 t_block	find_next_vertical_point(t_block current_point, double ray_angle)

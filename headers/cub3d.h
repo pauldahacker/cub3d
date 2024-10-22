@@ -42,8 +42,10 @@
 # define MINIMAP_LENGTH WINDOW_X / 2
 # define MINIMAP_START_X 5
 # define MINIMAP_START_Y 5
+# define PLAYER_RADIUS BLOCK_SIZE / 4
 
 # define MOVEMENT_SPEED 10
+# define ROTATE_SPEED 2
 
 // Keys
 # ifdef __linux__
@@ -52,6 +54,8 @@
 #  define A 97
 #  define S 115
 #  define D 100
+#  define LEFT 65361
+#  define RIGHT 65363
 
 # elif defined(__APPLE__)
 #  define ESC 53
@@ -69,6 +73,7 @@
 # define YELLOW		0xFFFF00
 # define SKY_BLUE	0xADD8E6
 # define ELECTRIC_BLUE	0x7df9ff
+# define BROWN		0x964B00
 
 //maths
 # define PI 	3.14159265358979323846
@@ -123,7 +128,18 @@ typedef struct s_vars
 	t_game		*game;
 }				t_vars;
 
-// Control functions
+// controls/movement.c
+int	on_move_up(t_vars *vars, int attempted_speed);
+int	on_move_down(t_vars *vars, int attempted_speed);
+int	on_move_left(t_vars *vars, int attempted_speed);
+int	on_move_right(t_vars *vars, int attempted_speed);
+
+// controls/rotation.c
+double  increment_angle(double angle, double to_add);
+int		on_rotate_left(t_vars *vars, int attempted_speed);
+int		on_rotate_right(t_vars *vars, int attempted_speed);
+
+// controls/controls.c
 int	on_destroy(t_vars *vars);
 int	on_keypress(int keysym, t_vars *vars);
 
