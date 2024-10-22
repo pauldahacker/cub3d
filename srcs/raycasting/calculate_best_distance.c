@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/22 17:04:02 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:16:12 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,10 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 	t_block	vertical_pt_px;
 	double	vertical_distance;
 	
+	printf("ray_angle = %f\n", ray_angle);//TO REMOVE
+	printf("new_point\n");
+	printf("HORIZONTAL\n");
 	horizontal_pt_px = horizontal_point_crossing_wall(vars, ray_angle);
-	printf("new_point\n");//////
 	t_block tmp;
 	printf("horizontal_pt_px.x = %f && horizontal_pt_px.y = %f\n", horizontal_pt_px.x, horizontal_pt_px.y);
 	tmp = horizontal_pt_px;
@@ -67,6 +69,7 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 		horizontal_distance = NAN;
 
 	printf("horizontal_distance = %f\n", horizontal_distance);//TO REMOVE
+	printf("VERTICAL\n");
 
 	vertical_pt_px = vertical_point_crossing_wall(vars, ray_angle);
 	
@@ -82,12 +85,12 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 		vertical_distance = NAN;
 //	return (fmin(vertical_distance, horizontal_distance));
 
-	
+	printf("vertical_distance = %f\n", vertical_distance);//TO REMOVE
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
 	{
 		// return (printf("\033[1;31mvertical distance\033[0m chosen\n\n"), vertical_distance);
 		return (printf("vertical distance chosen\n\n"), vertical_distance);
 	}
 	// return (printf("\033[1;34mhorizontal_distance\033[0m chosen\n\n"), horizontal_distance);
-	return (printf("HORIZONTAL_distance\n\n"), horizontal_distance);
+	return (printf("HORIZONTAL_distance used\n\n"), horizontal_distance);
 }

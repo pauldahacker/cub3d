@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/22 16:57:30 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/22 17:46:26 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually
 //considered as a 60 degrees angle horizontal FOV
 //angle_start starts at the left of our FOV (example: 120)
-//angle_end finishes at the rifght of our FOV (example: 60)
+//angle_end finishes at the right of our FOV (example: 60)
 void	draw_every_ray(t_vars *vars)
 {
 	double	distance_to_wall;
