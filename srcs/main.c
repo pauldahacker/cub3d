@@ -6,15 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/16 18:29:37 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:36:33 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-
-//void	test_calculate_best_distance(t_vars *vars, double angle);
-void	test_fixing_errors(t_vars *vars);
-void	draw_every_ray(t_vars *vars);
 
 int	main(int argc, char **argv)
 {
@@ -30,14 +26,9 @@ int	main(int argc, char **argv)
 	vars.data.img = mlx_new_image(vars.mlx_ptr, WINDOW_X, WINDOW_Y);
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
-	
-	//draw_game(vars, vars.game);
-	printf("position player in the map[%0.f][%0.f] = %c with angle = \n", \
-	vars.game->player->pos_y, vars.game->player->pos_x, \
-	vars.game->map[(int)vars.game->player->pos_y][(int)vars.game->player->pos_x]/*, \
-	vars.game->player->angle*/);
+	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
-	printf("player position map[%f][%f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
+	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
 	vars.game->player->pos_x *= BLOCK_SIZE;
 	vars.game->player->pos_y *= BLOCK_SIZE;
 	printf("angle_start = %f\n", vars.game->player->angle_start);
