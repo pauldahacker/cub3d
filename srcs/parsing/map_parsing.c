@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:55:54 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/21 16:05:25 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/22 16:17:58 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ int	is_direction(char c)
 
 /*
 returns the direction's corresponding angle in degrees
+I think we should write everything depending in our DEFINES
+Projection plane X instead of 320.0
 */
 void	init_player_angles(t_player *player, char direction)
 {
@@ -42,10 +44,6 @@ void	init_player_angles(t_player *player, char direction)
 		player->angle_end += 360;
 	player->middle_angle = player->angle;
 	player->subsequent_angle = 60.0 / 320.0;
-	/**/
-	// player->angle_start = 150;
-	// player->angle_end = 90;
-	// player->middle_angle = 120;
 }
 
 /*

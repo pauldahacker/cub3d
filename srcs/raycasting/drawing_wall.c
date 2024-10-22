@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/21 18:23:57 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/22 16:57:30 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,5 +123,7 @@ void	draw_every_ray(t_vars *vars)
 		draw_wall(vars, projected_wall_height, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
+	if (vars->game->player->angle_end > 300.0)
+		vars->game->player->angle_end -= 360.0;//I do this for E player's position
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
