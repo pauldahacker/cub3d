@@ -44,7 +44,7 @@
 # define MINIMAP_START_Y 5
 
 # define MOVEMENT_SPEED 10
-# define ROTATE_SPEED 3
+# define ROTATE_SPEED 1000
 
 // Keys
 # ifdef __linux__

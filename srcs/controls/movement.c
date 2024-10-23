@@ -13,12 +13,12 @@ int	on_move_up(t_vars *vars, int attempted_speed)
 	player_y = (int)vars->game->player->pos_y - attempted_speed;
 	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
 	j = -1;
-	while (++j < 16)
+	while (++j < BLOCK_SIZE / 4)
 	{
 		i = -1;
-		while (++i < 16)
+		while (++i < BLOCK_SIZE / 4)
 		{
-			if (vars->game->map[(player_y - j) / 64][(player_x + i) / 64] == '1')
+			if (vars->game->map[(player_y - j) / BLOCK_SIZE][(player_x + i) / BLOCK_SIZE] == '1')
 				return (on_move_up(vars, attempted_speed - 1));
 		}
 	}
@@ -41,12 +41,12 @@ int	on_move_left(t_vars *vars, int attempted_speed)
 	player_y = (int)vars->game->player->pos_y;
 	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
 	j = -1;
-	while (++j < 16)
+	while (++j < BLOCK_SIZE / 4)
 	{
 		i = -1;
-		while (++i < 16)
+		while (++i < BLOCK_SIZE / 4)
 		{
-			if (vars->game->map[(player_y + j) / 64][(player_x - i) / 64] == '1')
+			if (vars->game->map[(player_y + j) / BLOCK_SIZE][(player_x - i) / BLOCK_SIZE] == '1')
 				return (on_move_left(vars, attempted_speed - 1));
 		}
 	}
@@ -69,12 +69,12 @@ int	on_move_down(t_vars *vars, int attempted_speed)
 	player_y = (int)vars->game->player->pos_y + attempted_speed;
 	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
 	j = -1;
-	while (++j < 16)
+	while (++j < BLOCK_SIZE / 4)
 	{
 		i = -1;
-		while (++i < 16)
+		while (++i < BLOCK_SIZE / 4)
 		{
-			if (vars->game->map[(player_y + j) / 64][(player_x + i) / 64] == '1')
+			if (vars->game->map[(player_y + j) / BLOCK_SIZE][(player_x + i) / BLOCK_SIZE] == '1')
 				return (on_move_down(vars, attempted_speed - 1));
 		}
 	}
@@ -97,12 +97,12 @@ int	on_move_right(t_vars *vars, int attempted_speed)
 	player_y = (int)vars->game->player->pos_y;
 	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
 	j = -1;
-	while (++j < 16)
+	while (++j < BLOCK_SIZE / 4)
 	{
 		i = -1;
-		while (++i < 16)
+		while (++i < BLOCK_SIZE / 4)
 		{
-			if (vars->game->map[(player_y + j) / 64][(player_x + i) / 64] == '1')
+			if (vars->game->map[(player_y + j) / BLOCK_SIZE][(player_x + i) / BLOCK_SIZE] == '1')
 				return (on_move_right(vars, attempted_speed - 1));
 		}
 	}
