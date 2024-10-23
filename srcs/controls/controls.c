@@ -27,5 +27,17 @@ int	on_keypress(int keysym, t_vars *vars)
 	printf("Pressed key : %d\n", keysym);
 	if (keysym == ESC)
 		on_destroy(vars);
+	if (keysym == W)
+		on_move_up(vars, MOVEMENT_SPEED);
+	if (keysym == A)
+		on_move_left(vars, MOVEMENT_SPEED);
+	if (keysym == S)
+		on_move_down(vars, MOVEMENT_SPEED);
+	if (keysym == D)
+		on_move_right(vars, MOVEMENT_SPEED);
+	if (keysym == LEFT)
+		on_rotate_left(vars, ROTATE_SPEED);
+	if (keysym == RIGHT)
+		on_rotate_right(vars, ROTATE_SPEED);
 	return (0);
 }
