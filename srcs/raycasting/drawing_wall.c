@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/21 15:59:58 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:15:51 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,8 @@ void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 
 	dst = vars.data.addr + (y * vars.data.line_length + x
 			* (vars.data.bpp / 8));
-	*(unsigned int *)dst = color;
+	if (*(unsigned int *)dst != (unsigned int)color)
+		*(unsigned int *)dst = color;
 }
 
 double	calculate_projected_wall_height(double distance_to_wall)
