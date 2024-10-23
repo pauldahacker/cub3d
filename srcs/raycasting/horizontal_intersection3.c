@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/22 18:32:20 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:31:58 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ t_block	find_coordinate_of_first_horizontal_point(t_vars *vars, double ray_angle
 	else
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE) * BLOCK_SIZE + BLOCK_SIZE;
 	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y) / tan(ray_angle * (PI / 180.0));
-	printf("find_coordinate_of_first_horizontal_point first_point a.x = %f && a.y = %f\n", a.x, a.y);	
+	printf("find_coordinate_of_first_horizontal_point first_point a.x = %f && a.y = %f\n", a.x, a.y);
 	return (a);
 }
 
@@ -35,12 +35,13 @@ double	finding_horizontal_y_a(double ray_angle)
 
 double	finding_horizontal_x_a(double ray_angle)
 {
-	double	y_a_iteration;
+	double	x_a_iteration;
 
-	y_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
+	x_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
 	if (ray_facing_right(ray_angle) == 1)
-		return (y_a_iteration);
-	return (-y_a_iteration);
+		return (x_a_iteration);
+	return (-x_a_iteration);
+	// return ((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
 }
 
 t_block	find_next_horizontal_point(t_block current_point, double ray_angle)

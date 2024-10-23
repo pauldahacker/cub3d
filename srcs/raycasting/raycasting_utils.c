@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/21 19:21:25 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:45:42 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,6 @@ t_block	convert_pixel_to_block(t_block point)
 //We know that is facing up if the angle goes from 0° ≤ angle < 180 (% 360)
 int	ray_facing_up(double angle)
 {
-
 	if (angle >= 0.0 && angle < 180.0)
 		return (1);
 	else
@@ -107,7 +106,7 @@ int	ray_facing_up(double angle)
 //-90° ≤ angle ≤ 90 (everything % 360)
 int	ray_facing_right(double angle)
 {
-	if ((angle >= 0.0 && angle < 90.0)
+	if ((angle >= -90.0 && angle < 90.0)
 		|| (angle >= 270.0 && angle < 360.0))
 		return (1);
 	else
