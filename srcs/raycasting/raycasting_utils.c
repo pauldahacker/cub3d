@@ -29,26 +29,7 @@ double	rounded_down(double nb)
 	return ((long)nb);
 }
 
-/*#include <stdio.h>
-int	main(void)
-{
-	double	nb_1 = -10.00;
-	double	nb_2 = -1.10;
-	double	nb_3 = -1.51;
-	double	nb_4 = 0.000;
-	double	nb_5 = 1.31;
-	double	nb_6 = 1.51;
-	double	nb_7 = 4.00;
-
-	printf("nb_1 = %f\n", rounded_down(nb_1));
-	printf("nb_2 = %f\n", rounded_down(nb_2));
-	printf("nb_3 = %f\n", rounded_down(nb_3));
-	printf("nb_4 = %f\n", rounded_down(nb_4));
-	printf("nb_5 = %f\n", rounded_down(nb_5));
-	printf("nb_6 = %f\n", rounded_down(nb_6));
-	printf("nb_7 = %f\n", rounded_down(nb_7));
-	return (0);
-}*/
+#include <stdio.h>
 
 double	rounded_nearest_nb(double nb)
 {
@@ -112,6 +93,27 @@ int	ray_facing_right(double angle)
 	else
 		return (0);
 }
+
+
+// int	main(void)
+// {
+// 	double	nb_1 = -10.00;
+// 	double	nb_2 = -1.10;
+// 	double	nb_3 = -1.51;
+// 	double	nb_4 = 0.000;
+// 	double	nb_5 = 1.31;
+// 	double	nb_6 = 1.51;
+// 	double	nb_7 = 4.00;
+
+// 	printf("nb_1 = %f\n", rounded_nearest_nb(nb_1));
+// 	printf("nb_2 = %f\n", rounded_nearest_nb(nb_2));
+// 	printf("nb_3 = %f\n", rounded_nearest_nb(nb_3));
+// 	printf("nb_4 = %f\n", rounded_nearest_nb(nb_4));
+// 	printf("nb_5 = %f\n", rounded_nearest_nb(nb_5));
+// 	printf("nb_6 = %f\n", rounded_nearest_nb(nb_6));
+// 	printf("nb_7 = %f\n", rounded_nearest_nb(nb_7));
+// 	return (0);
+// }
 
 int	check_coordinates_in_map(t_vars *vars, t_block current)
 {
