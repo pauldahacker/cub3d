@@ -36,12 +36,11 @@ int	main(int argc, char **argv)
 	printf("middle angle = %f\n", vars.game->player->middle_angle);
 	printf("subsequent_angle = %f\n", vars.game->player->subsequent_angle);
 	draw_every_ray(&vars);
-
 	printf("\n");
-	vars.game->player->pos_x += BLOCK_SIZE / 2;
-	vars.game->player->pos_y += BLOCK_SIZE / 2;
 	//test_calculate_best_distance(&vars, vars.game->player->angle);
 	//test_calculate_best_distance(&vars, 45.0);
+	vars.game->player->pos_x += BLOCK_SIZE / 2;
+	vars.game->player->pos_y += BLOCK_SIZE / 2;
 	draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);
