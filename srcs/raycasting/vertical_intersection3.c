@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/22 18:30:33 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 15:38:14 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ double	finding_vertical_y_a(double ray_angle)
 	if (ray_facing_up(ray_angle) == 1)
 		return (-y_a_iteration);
 	return (y_a_iteration);
+	// return ((double)BLOCK_SIZE * tan(ray_angle * (PI / 180.0)));
 }
 
 t_block	find_next_vertical_point(t_block current_point, double ray_angle)
