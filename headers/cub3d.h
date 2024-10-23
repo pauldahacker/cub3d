@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/23 17:19:24 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:41:33 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@
 # define MINIMAP_START_Y 5
 
 # define MOVEMENT_SPEED 10
-# define ROTATE_SPEED 1000
+# define ROTATE_SPEED 3
 
 // Keys
 # ifdef __linux__
@@ -68,14 +68,14 @@
 # define GREY				0x808080
 # define BLACK				0x000000
 # define WHITE				0xFFFFFF
-# define BLUE		0x0000FF
-# define YELLOW		0xFFFF00
-# define SKY_BLUE	0xADD8E6
-# define ELECTRIC_BLUE	0x7df9ff
-# define BROWN		0x964B00
+# define BLUE				0x0000FF
+# define YELLOW				0xFFFF00
+# define SKY_BLUE			0xADD8E6
+# define ELECTRIC_BLUE		0x7df9ff
+# define BROWN				0x964B00
 
 //maths
-# define PI 	3.14159265358979323846
+# define PI 				3.14159265358979323846
 typedef struct s_game t_game;
 
 /*typedef struct s_game
@@ -99,7 +99,6 @@ typedef struct raycasting
 	double		pos_x;//⭐//player position in abscissa. The unit are the pixels!
 	double		pos_y;//⭐//player position in ordinate. The unit are the pixels!
 	double		angle;//⭐//angle (in degrees) of our ray starting from the abscissa axis 0 ≤ angle ≤360
-	char		direction;//will determine our FOV
 	double		angle_start;//⭐
 	double		angle_end;//⭐
 	double		subsequent_angle;//⭐

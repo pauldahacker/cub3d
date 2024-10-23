@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 16:27:34 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 20:02:02 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,23 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 	}
 }
 
+void	convert_angle_modulo_360(t_vars *vars)
+{
+	t_player	*player;
+
+	player = vars->game->player;
+	if (player->angle_start > 360 || player->angle_start < 0)
+	{
+		player->angle_start = (int)rounded_down(player->angle_start) % 360 + 
+		player->angle_start - rounded_down(player->angle_start);
+	}
+	if (player->angle_end > 360 || player->angle_end < 0)
+	{
+		player->angle_end = (int)rounded_down(player->angle_end) % 360 + 
+		player->angle_end - rounded_down(player->angle_end);
+	}
+}
+
 //60 is the total field of view in degrees.
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually
 //considered as a 60 degrees angle horizontal FOV
@@ -109,11 +126,12 @@ void	draw_every_ray(t_vars *vars)
 	int		x;
 	double	ray_angle;
 
+	convert_angle_modulo_360(vars);
 	ray_angle = vars->game->player->angle_start;
 	x = 0;
 	y = 0;
 	if (vars->game->player->angle_end >= 300.0)
-		vars->game->player->angle_end -= 360.0;//I do this for E player's position
+		vars->game->player->angle_end -= 360.0;
 	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
 	printf("ray_angle = %f\n", ray_angle);
 	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
@@ -125,6 +143,6 @@ void	draw_every_ray(t_vars *vars)
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
 	if (vars->game->player->angle_end <= 0)
-		vars->game->player->angle_end += 360.0;//I do this for E player's position
+		vars->game->player->angle_end += 360.0;
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
