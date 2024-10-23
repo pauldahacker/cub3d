@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/23 16:42:59 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 17:19:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ int	main(int argc, char **argv)
 	vars.game->player->pos_y *= BLOCK_SIZE;
 	printf("angle_start = %f\n", vars.game->player->angle_start);
 	printf("angle_end = %f\n", vars.game->player->angle_end);
-	printf("middle angle = %f\n", vars.game->player->middle_angle);
 	printf("subsequent_angle = %f\n", vars.game->player->subsequent_angle);
 	draw_every_ray(&vars);
 
