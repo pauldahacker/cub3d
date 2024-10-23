@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 16:32:06 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 17:09:22 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ double	calculate_hypo_distance(t_vars *vars, t_point point, double ray_angle)
 	ray_end_pt.x = ft_abs(vars->game->player->pos_x - point.x);
 	ray_end_pt.y = ft_abs(vars->game->player->pos_y - point.y);
 	distance = ray_end_pt.x * ray_end_pt.x + ray_end_pt.y * ray_end_pt.y;
+	printf("vars->game->player->middle_angle = %f\n", vars->game->player->middle_angle);
 	beta = vars->game->player->middle_angle - ray_angle;
 	return (sqrt(distance) * cos(beta * (PI / 180.0)));
 }
@@ -46,7 +47,7 @@ double	calculate_hypo_distance(t_vars *vars, t_point point, double ray_angle)
 //we calculate both distance between the horizontal intersection and the
 //vertical intersection. Then we choose the minimal distance.
 //we have to reset the angle to the initial one because in the funcions 
-//*al_point_crossing_wall, we modify the value of the angle
+//*_point_crossing_wall, we modify the value of the angle
 //(for correct calculations)
 double	calculate_best_distance(t_vars *vars, double ray_angle)
 {

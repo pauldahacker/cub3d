@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 16:32:06 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 17:03:36 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ t_point	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
 	else
 		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE) * BLOCK_SIZE - 1;
 	a.y = vars->game->player->pos_y + (vars->game->player->pos_x - a.x) * tan(ray_angle * (PI / 180.0));
-	printf("find_coordinate_of_first_vertical_point first_point a.x = %f && a.y = %f\n", a.x, a.y);
+//	printf("find_coordinate_of_first_vertical_point first_point a.x = %f && a.y = %f\n", a.x, a.y);
 	return (a);
 }
 
@@ -55,7 +55,7 @@ t_point	find_next_vertical_point(t_point current_point, double ray_angle)
 	next_in_px.x = current_point.x + x_a;
 	next_in_px.y = current_point.y + y_a;
 	next_in_px.reachable = true;
-	printf("next_point.x = %f && next_point.y = %f\n", next_in_px.x, next_in_px.y);
+//	printf("next_point.x = %f && next_point.y = %f\n", next_in_px.x, next_in_px.y);
 	return (next_in_px);
 }
 
