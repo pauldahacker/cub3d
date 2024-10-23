@@ -77,8 +77,8 @@ t_point	return_intersection(t_vars *vars, double angle)
 	double	vertical_distance;
 
 	horizontal_pt_px = horizontal_point_crossing_wall(vars, angle);
-//	printf("horizontal_pt_px.x = %f horizontal_pt_px.y = %f horizontal_pt_px.reachable = %i \n",
-//	horizontal_pt_px.x, horizontal_pt_px.y, horizontal_pt_px.reachable);
+	//printf("horizontal_pt_px.x = %f horizontal_pt_px.y = %f horizontal_pt_px.reachable = %i \n",
+	//horizontal_pt_px.x, horizontal_pt_px.y, horizontal_pt_px.reachable);
 	if (horizontal_pt_px.reachable == 1)
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px, angle);
 	else
