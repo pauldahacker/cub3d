@@ -2,7 +2,6 @@ map has 28 rows and 14 columns
 player position map[6][23]
 angle_start = 120.000000
 angle_end = 60.000000
-middle angle = 0.000000
 subsequent_angle = 0.187500
 vars->game->player->angle_start = 120.000000
 ray_angle = 120.000000
@@ -22,4 +21,4966 @@ ray_angle = 120.000000
 vars->game->player->angle_end = 60.000000
 Player coordinates:x: 416.000000
 y: 1504.000000
-Pressed key : 65307
+Pressed key : 65363
+vars->game->player->angle_start = 118.000000
+ray_angle = 118.000000
+vars->game->player->angle_end = 58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 116.000000
+ray_angle = 116.000000
+vars->game->player->angle_end = 56.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 114.000000
+ray_angle = 114.000000
+vars->game->player->angle_end = 54.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 112.000000
+ray_angle = 112.000000
+vars->game->player->angle_end = 52.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 110.000000
+ray_angle = 110.000000
+vars->game->player->angle_end = 50.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 108.000000
+ray_angle = 108.000000
+vars->game->player->angle_end = 48.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 106.000000
+ray_angle = 106.000000
+vars->game->player->angle_end = 46.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 104.000000
+ray_angle = 104.000000
+vars->game->player->angle_end = 44.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 102.000000
+ray_angle = 102.000000
+vars->game->player->angle_end = 42.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 100.000000
+ray_angle = 100.000000
+vars->game->player->angle_end = 40.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 98.000000
+ray_angle = 98.000000
+vars->game->player->angle_end = 38.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 96.000000
+ray_angle = 96.000000
+vars->game->player->angle_end = 36.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 94.000000
+ray_angle = 94.000000
+vars->game->player->angle_end = 34.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 92.000000
+ray_angle = 92.000000
+vars->game->player->angle_end = 32.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 90.000000
+ray_angle = 90.000000
+vars->game->player->angle_end = 30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 88.000000
+ray_angle = 88.000000
+vars->game->player->angle_end = 28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 86.000000
+ray_angle = 86.000000
+vars->game->player->angle_end = 26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 84.000000
+ray_angle = 84.000000
+vars->game->player->angle_end = 24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 82.000000
+ray_angle = 82.000000
+vars->game->player->angle_end = 22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 80.000000
+ray_angle = 80.000000
+vars->game->player->angle_end = 20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 78.000000
+ray_angle = 78.000000
+vars->game->player->angle_end = 18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 76.000000
+ray_angle = 76.000000
+vars->game->player->angle_end = 16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 74.000000
+ray_angle = 74.000000
+vars->game->player->angle_end = 14.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 72.000000
+ray_angle = 72.000000
+vars->game->player->angle_end = 12.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 70.000000
+ray_angle = 70.000000
+vars->game->player->angle_end = 10.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 68.000000
+ray_angle = 68.000000
+vars->game->player->angle_end = 8.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 66.000000
+ray_angle = 66.000000
+vars->game->player->angle_end = 6.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 64.000000
+ray_angle = 64.000000
+vars->game->player->angle_end = 4.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 62.000000
+ray_angle = 62.000000
+vars->game->player->angle_end = 2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 60.000000
+ray_angle = 60.000000
+vars->game->player->angle_end = 0.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 58.000000
+ray_angle = 58.000000
+vars->game->player->angle_end = -2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 56.000000
+ray_angle = 56.000000
+vars->game->player->angle_end = -4.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 54.000000
+ray_angle = 54.000000
+vars->game->player->angle_end = -6.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 52.000000
+ray_angle = 52.000000
+vars->game->player->angle_end = -8.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 50.000000
+ray_angle = 50.000000
+vars->game->player->angle_end = -10.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 48.000000
+ray_angle = 48.000000
+vars->game->player->angle_end = -12.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 46.000000
+ray_angle = 46.000000
+vars->game->player->angle_end = -14.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 44.000000
+ray_angle = 44.000000
+vars->game->player->angle_end = -16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 42.000000
+ray_angle = 42.000000
+vars->game->player->angle_end = -18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 40.000000
+ray_angle = 40.000000
+vars->game->player->angle_end = -20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 40.000000
+ray_angle = 40.000000
+vars->game->player->angle_end = -20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 42.000000
+ray_angle = 42.000000
+vars->game->player->angle_end = -18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 44.000000
+ray_angle = 44.000000
+vars->game->player->angle_end = -16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 46.000000
+ray_angle = 46.000000
+vars->game->player->angle_end = -14.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 48.000000
+ray_angle = 48.000000
+vars->game->player->angle_end = -12.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 50.000000
+ray_angle = 50.000000
+vars->game->player->angle_end = -10.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 52.000000
+ray_angle = 52.000000
+vars->game->player->angle_end = -8.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 54.000000
+ray_angle = 54.000000
+vars->game->player->angle_end = -6.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 56.000000
+ray_angle = 56.000000
+vars->game->player->angle_end = -4.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 58.000000
+ray_angle = 58.000000
+vars->game->player->angle_end = -2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 60.000000
+ray_angle = 60.000000
+vars->game->player->angle_end = 0.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 62.000000
+ray_angle = 62.000000
+vars->game->player->angle_end = 2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 64.000000
+ray_angle = 64.000000
+vars->game->player->angle_end = 4.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 62.000000
+ray_angle = 62.000000
+vars->game->player->angle_end = 2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 60.000000
+ray_angle = 60.000000
+vars->game->player->angle_end = 0.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 58.000000
+ray_angle = 58.000000
+vars->game->player->angle_end = -2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 56.000000
+ray_angle = 56.000000
+vars->game->player->angle_end = -4.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 54.000000
+ray_angle = 54.000000
+vars->game->player->angle_end = -6.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 52.000000
+ray_angle = 52.000000
+vars->game->player->angle_end = -8.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 50.000000
+ray_angle = 50.000000
+vars->game->player->angle_end = -10.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 48.000000
+ray_angle = 48.000000
+vars->game->player->angle_end = -12.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 46.000000
+ray_angle = 46.000000
+vars->game->player->angle_end = -14.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 44.000000
+ray_angle = 44.000000
+vars->game->player->angle_end = -16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 42.000000
+ray_angle = 42.000000
+vars->game->player->angle_end = -18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 40.000000
+ray_angle = 40.000000
+vars->game->player->angle_end = -20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 26.000000
+ray_angle = 26.000000
+vars->game->player->angle_end = -34.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 24.000000
+ray_angle = 24.000000
+vars->game->player->angle_end = -36.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 22.000000
+ray_angle = 22.000000
+vars->game->player->angle_end = -38.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 20.000000
+ray_angle = 20.000000
+vars->game->player->angle_end = -40.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 18.000000
+ray_angle = 18.000000
+vars->game->player->angle_end = -42.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 16.000000
+ray_angle = 16.000000
+vars->game->player->angle_end = -44.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 14.000000
+ray_angle = 14.000000
+vars->game->player->angle_end = -46.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 12.000000
+ray_angle = 12.000000
+vars->game->player->angle_end = -48.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 10.000000
+ray_angle = 10.000000
+vars->game->player->angle_end = -50.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 8.000000
+ray_angle = 8.000000
+vars->game->player->angle_end = -52.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 6.000000
+ray_angle = 6.000000
+vars->game->player->angle_end = -54.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 4.000000
+ray_angle = 4.000000
+vars->game->player->angle_end = -56.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 2.000000
+ray_angle = 2.000000
+vars->game->player->angle_end = -58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 0.000000
+ray_angle = 0.000000
+vars->game->player->angle_end = 300.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 358.000000
+ray_angle = 358.000000
+vars->game->player->angle_end = 298.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 356.000000
+ray_angle = 356.000000
+vars->game->player->angle_end = 296.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 354.000000
+ray_angle = 354.000000
+vars->game->player->angle_end = 294.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 352.000000
+ray_angle = 352.000000
+vars->game->player->angle_end = 292.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 350.000000
+ray_angle = 350.000000
+vars->game->player->angle_end = 290.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 348.000000
+ray_angle = 348.000000
+vars->game->player->angle_end = 288.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 346.000000
+ray_angle = 346.000000
+vars->game->player->angle_end = 286.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 344.000000
+ray_angle = 344.000000
+vars->game->player->angle_end = 284.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 342.000000
+ray_angle = 342.000000
+vars->game->player->angle_end = 282.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 340.000000
+ray_angle = 340.000000
+vars->game->player->angle_end = 280.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 338.000000
+ray_angle = 338.000000
+vars->game->player->angle_end = 278.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 336.000000
+ray_angle = 336.000000
+vars->game->player->angle_end = 276.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 334.000000
+ray_angle = 334.000000
+vars->game->player->angle_end = 274.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 332.000000
+ray_angle = 332.000000
+vars->game->player->angle_end = 272.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 330.000000
+ray_angle = 330.000000
+vars->game->player->angle_end = 270.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 328.000000
+ray_angle = 328.000000
+vars->game->player->angle_end = 268.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 326.000000
+ray_angle = 326.000000
+vars->game->player->angle_end = 266.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 324.000000
+ray_angle = 324.000000
+vars->game->player->angle_end = 264.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 322.000000
+ray_angle = 322.000000
+vars->game->player->angle_end = 262.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 320.000000
+ray_angle = 320.000000
+vars->game->player->angle_end = 260.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 318.000000
+ray_angle = 318.000000
+vars->game->player->angle_end = 258.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 316.000000
+ray_angle = 316.000000
+vars->game->player->angle_end = 256.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 314.000000
+ray_angle = 314.000000
+vars->game->player->angle_end = 254.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 312.000000
+ray_angle = 312.000000
+vars->game->player->angle_end = 252.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 310.000000
+ray_angle = 310.000000
+vars->game->player->angle_end = 250.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 308.000000
+ray_angle = 308.000000
+vars->game->player->angle_end = 248.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 306.000000
+ray_angle = 306.000000
+vars->game->player->angle_end = 246.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 302.000000
+ray_angle = 302.000000
+vars->game->player->angle_end = 242.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 300.000000
+ray_angle = 300.000000
+vars->game->player->angle_end = 240.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 298.000000
+ray_angle = 298.000000
+vars->game->player->angle_end = 238.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 300.000000
+ray_angle = 300.000000
+vars->game->player->angle_end = 240.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 298.000000
+ray_angle = 298.000000
+vars->game->player->angle_end = 238.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 296.000000
+ray_angle = 296.000000
+vars->game->player->angle_end = 236.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 294.000000
+ray_angle = 294.000000
+vars->game->player->angle_end = 234.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 292.000000
+ray_angle = 292.000000
+vars->game->player->angle_end = 232.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 290.000000
+ray_angle = 290.000000
+vars->game->player->angle_end = 230.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 288.000000
+ray_angle = 288.000000
+vars->game->player->angle_end = 228.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 286.000000
+ray_angle = 286.000000
+vars->game->player->angle_end = 226.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 284.000000
+ray_angle = 284.000000
+vars->game->player->angle_end = 224.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 282.000000
+ray_angle = 282.000000
+vars->game->player->angle_end = 222.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 280.000000
+ray_angle = 280.000000
+vars->game->player->angle_end = 220.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 278.000000
+ray_angle = 278.000000
+vars->game->player->angle_end = 218.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 276.000000
+ray_angle = 276.000000
+vars->game->player->angle_end = 216.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 274.000000
+ray_angle = 274.000000
+vars->game->player->angle_end = 214.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 272.000000
+ray_angle = 272.000000
+vars->game->player->angle_end = 212.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 270.000000
+ray_angle = 270.000000
+vars->game->player->angle_end = 210.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 268.000000
+ray_angle = 268.000000
+vars->game->player->angle_end = 208.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 266.000000
+ray_angle = 266.000000
+vars->game->player->angle_end = 206.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 264.000000
+ray_angle = 264.000000
+vars->game->player->angle_end = 204.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 262.000000
+ray_angle = 262.000000
+vars->game->player->angle_end = 202.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 260.000000
+ray_angle = 260.000000
+vars->game->player->angle_end = 200.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 258.000000
+ray_angle = 258.000000
+vars->game->player->angle_end = 198.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 256.000000
+ray_angle = 256.000000
+vars->game->player->angle_end = 196.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 254.000000
+ray_angle = 254.000000
+vars->game->player->angle_end = 194.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 252.000000
+ray_angle = 252.000000
+vars->game->player->angle_end = 192.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 250.000000
+ray_angle = 250.000000
+vars->game->player->angle_end = 190.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 248.000000
+ray_angle = 248.000000
+vars->game->player->angle_end = 188.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 246.000000
+ray_angle = 246.000000
+vars->game->player->angle_end = 186.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 244.000000
+ray_angle = 244.000000
+vars->game->player->angle_end = 184.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 242.000000
+ray_angle = 242.000000
+vars->game->player->angle_end = 182.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 240.000000
+ray_angle = 240.000000
+vars->game->player->angle_end = 180.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 238.000000
+ray_angle = 238.000000
+vars->game->player->angle_end = 178.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 236.000000
+ray_angle = 236.000000
+vars->game->player->angle_end = 176.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 232.000000
+ray_angle = 232.000000
+vars->game->player->angle_end = 172.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 226.000000
+ray_angle = 226.000000
+vars->game->player->angle_end = 166.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 224.000000
+ray_angle = 224.000000
+vars->game->player->angle_end = 164.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 222.000000
+ray_angle = 222.000000
+vars->game->player->angle_end = 162.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 220.000000
+ray_angle = 220.000000
+vars->game->player->angle_end = 160.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 218.000000
+ray_angle = 218.000000
+vars->game->player->angle_end = 158.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 216.000000
+ray_angle = 216.000000
+vars->game->player->angle_end = 156.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 214.000000
+ray_angle = 214.000000
+vars->game->player->angle_end = 154.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 212.000000
+ray_angle = 212.000000
+vars->game->player->angle_end = 152.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 210.000000
+ray_angle = 210.000000
+vars->game->player->angle_end = 150.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 208.000000
+ray_angle = 208.000000
+vars->game->player->angle_end = 148.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 210.000000
+ray_angle = 210.000000
+vars->game->player->angle_end = 150.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 208.000000
+ray_angle = 208.000000
+vars->game->player->angle_end = 148.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 206.000000
+ray_angle = 206.000000
+vars->game->player->angle_end = 146.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 204.000000
+ray_angle = 204.000000
+vars->game->player->angle_end = 144.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 202.000000
+ray_angle = 202.000000
+vars->game->player->angle_end = 142.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 200.000000
+ray_angle = 200.000000
+vars->game->player->angle_end = 140.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 198.000000
+ray_angle = 198.000000
+vars->game->player->angle_end = 138.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 196.000000
+ray_angle = 196.000000
+vars->game->player->angle_end = 136.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 194.000000
+ray_angle = 194.000000
+vars->game->player->angle_end = 134.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 192.000000
+ray_angle = 192.000000
+vars->game->player->angle_end = 132.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 190.000000
+ray_angle = 190.000000
+vars->game->player->angle_end = 130.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 188.000000
+ray_angle = 188.000000
+vars->game->player->angle_end = 128.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 186.000000
+ray_angle = 186.000000
+vars->game->player->angle_end = 126.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 184.000000
+ray_angle = 184.000000
+vars->game->player->angle_end = 124.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 182.000000
+ray_angle = 182.000000
+vars->game->player->angle_end = 122.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 180.000000
+ray_angle = 180.000000
+vars->game->player->angle_end = 120.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 178.000000
+ray_angle = 178.000000
+vars->game->player->angle_end = 118.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 176.000000
+ray_angle = 176.000000
+vars->game->player->angle_end = 116.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 174.000000
+ray_angle = 174.000000
+vars->game->player->angle_end = 114.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 172.000000
+ray_angle = 172.000000
+vars->game->player->angle_end = 112.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 170.000000
+ray_angle = 170.000000
+vars->game->player->angle_end = 110.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 168.000000
+ray_angle = 168.000000
+vars->game->player->angle_end = 108.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 166.000000
+ray_angle = 166.000000
+vars->game->player->angle_end = 106.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 164.000000
+ray_angle = 164.000000
+vars->game->player->angle_end = 104.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 162.000000
+ray_angle = 162.000000
+vars->game->player->angle_end = 102.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 160.000000
+ray_angle = 160.000000
+vars->game->player->angle_end = 100.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 158.000000
+ray_angle = 158.000000
+vars->game->player->angle_end = 98.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 156.000000
+ray_angle = 156.000000
+vars->game->player->angle_end = 96.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 154.000000
+ray_angle = 154.000000
+vars->game->player->angle_end = 94.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 152.000000
+ray_angle = 152.000000
+vars->game->player->angle_end = 92.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 150.000000
+ray_angle = 150.000000
+vars->game->player->angle_end = 90.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 148.000000
+ray_angle = 148.000000
+vars->game->player->angle_end = 88.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 146.000000
+ray_angle = 146.000000
+vars->game->player->angle_end = 86.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 144.000000
+ray_angle = 144.000000
+vars->game->player->angle_end = 84.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 142.000000
+ray_angle = 142.000000
+vars->game->player->angle_end = 82.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 140.000000
+ray_angle = 140.000000
+vars->game->player->angle_end = 80.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 138.000000
+ray_angle = 138.000000
+vars->game->player->angle_end = 78.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 136.000000
+ray_angle = 136.000000
+vars->game->player->angle_end = 76.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 134.000000
+ray_angle = 134.000000
+vars->game->player->angle_end = 74.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 132.000000
+ray_angle = 132.000000
+vars->game->player->angle_end = 72.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 130.000000
+ray_angle = 130.000000
+vars->game->player->angle_end = 70.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 128.000000
+ray_angle = 128.000000
+vars->game->player->angle_end = 68.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 126.000000
+ray_angle = 126.000000
+vars->game->player->angle_end = 66.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 124.000000
+ray_angle = 124.000000
+vars->game->player->angle_end = 64.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 122.000000
+ray_angle = 122.000000
+vars->game->player->angle_end = 62.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 120.000000
+ray_angle = 120.000000
+vars->game->player->angle_end = 60.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 118.000000
+ray_angle = 118.000000
+vars->game->player->angle_end = 58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 116.000000
+ray_angle = 116.000000
+vars->game->player->angle_end = 56.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 118.000000
+ray_angle = 118.000000
+vars->game->player->angle_end = 58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 120.000000
+ray_angle = 120.000000
+vars->game->player->angle_end = 60.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 118.000000
+ray_angle = 118.000000
+vars->game->player->angle_end = 58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 116.000000
+ray_angle = 116.000000
+vars->game->player->angle_end = 56.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 114.000000
+ray_angle = 114.000000
+vars->game->player->angle_end = 54.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 112.000000
+ray_angle = 112.000000
+vars->game->player->angle_end = 52.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 110.000000
+ray_angle = 110.000000
+vars->game->player->angle_end = 50.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 108.000000
+ray_angle = 108.000000
+vars->game->player->angle_end = 48.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 106.000000
+ray_angle = 106.000000
+vars->game->player->angle_end = 46.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 104.000000
+ray_angle = 104.000000
+vars->game->player->angle_end = 44.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 102.000000
+ray_angle = 102.000000
+vars->game->player->angle_end = 42.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 104.000000
+ray_angle = 104.000000
+vars->game->player->angle_end = 44.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 106.000000
+ray_angle = 106.000000
+vars->game->player->angle_end = 46.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 108.000000
+ray_angle = 108.000000
+vars->game->player->angle_end = 48.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 110.000000
+ray_angle = 110.000000
+vars->game->player->angle_end = 50.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 112.000000
+ray_angle = 112.000000
+vars->game->player->angle_end = 52.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 114.000000
+ray_angle = 114.000000
+vars->game->player->angle_end = 54.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 116.000000
+ray_angle = 116.000000
+vars->game->player->angle_end = 56.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 118.000000
+ray_angle = 118.000000
+vars->game->player->angle_end = 58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 120.000000
+ray_angle = 120.000000
+vars->game->player->angle_end = 60.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 122.000000
+ray_angle = 122.000000
+vars->game->player->angle_end = 62.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 124.000000
+ray_angle = 124.000000
+vars->game->player->angle_end = 64.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 126.000000
+ray_angle = 126.000000
+vars->game->player->angle_end = 66.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 128.000000
+ray_angle = 128.000000
+vars->game->player->angle_end = 68.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 126.000000
+ray_angle = 126.000000
+vars->game->player->angle_end = 66.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 124.000000
+ray_angle = 124.000000
+vars->game->player->angle_end = 64.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 122.000000
+ray_angle = 122.000000
+vars->game->player->angle_end = 62.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 120.000000
+ray_angle = 120.000000
+vars->game->player->angle_end = 60.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 118.000000
+ray_angle = 118.000000
+vars->game->player->angle_end = 58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 116.000000
+ray_angle = 116.000000
+vars->game->player->angle_end = 56.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 114.000000
+ray_angle = 114.000000
+vars->game->player->angle_end = 54.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 112.000000
+ray_angle = 112.000000
+vars->game->player->angle_end = 52.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 110.000000
+ray_angle = 110.000000
+vars->game->player->angle_end = 50.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 108.000000
+ray_angle = 108.000000
+vars->game->player->angle_end = 48.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 106.000000
+ray_angle = 106.000000
+vars->game->player->angle_end = 46.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 104.000000
+ray_angle = 104.000000
+vars->game->player->angle_end = 44.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 102.000000
+ray_angle = 102.000000
+vars->game->player->angle_end = 42.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 100.000000
+ray_angle = 100.000000
+vars->game->player->angle_end = 40.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 98.000000
+ray_angle = 98.000000
+vars->game->player->angle_end = 38.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 96.000000
+ray_angle = 96.000000
+vars->game->player->angle_end = 36.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 94.000000
+ray_angle = 94.000000
+vars->game->player->angle_end = 34.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 92.000000
+ray_angle = 92.000000
+vars->game->player->angle_end = 32.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 90.000000
+ray_angle = 90.000000
+vars->game->player->angle_end = 30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 88.000000
+ray_angle = 88.000000
+vars->game->player->angle_end = 28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 86.000000
+ray_angle = 86.000000
+vars->game->player->angle_end = 26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 84.000000
+ray_angle = 84.000000
+vars->game->player->angle_end = 24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 82.000000
+ray_angle = 82.000000
+vars->game->player->angle_end = 22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 80.000000
+ray_angle = 80.000000
+vars->game->player->angle_end = 20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 78.000000
+ray_angle = 78.000000
+vars->game->player->angle_end = 18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 76.000000
+ray_angle = 76.000000
+vars->game->player->angle_end = 16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 74.000000
+ray_angle = 74.000000
+vars->game->player->angle_end = 14.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 72.000000
+ray_angle = 72.000000
+vars->game->player->angle_end = 12.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 70.000000
+ray_angle = 70.000000
+vars->game->player->angle_end = 10.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 68.000000
+ray_angle = 68.000000
+vars->game->player->angle_end = 8.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 66.000000
+ray_angle = 66.000000
+vars->game->player->angle_end = 6.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 64.000000
+ray_angle = 64.000000
+vars->game->player->angle_end = 4.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 62.000000
+ray_angle = 62.000000
+vars->game->player->angle_end = 2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 60.000000
+ray_angle = 60.000000
+vars->game->player->angle_end = 0.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 58.000000
+ray_angle = 58.000000
+vars->game->player->angle_end = -2.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 56.000000
+ray_angle = 56.000000
+vars->game->player->angle_end = -4.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 54.000000
+ray_angle = 54.000000
+vars->game->player->angle_end = -6.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 52.000000
+ray_angle = 52.000000
+vars->game->player->angle_end = -8.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 50.000000
+ray_angle = 50.000000
+vars->game->player->angle_end = -10.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 48.000000
+ray_angle = 48.000000
+vars->game->player->angle_end = -12.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 46.000000
+ray_angle = 46.000000
+vars->game->player->angle_end = -14.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 44.000000
+ray_angle = 44.000000
+vars->game->player->angle_end = -16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 42.000000
+ray_angle = 42.000000
+vars->game->player->angle_end = -18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 40.000000
+ray_angle = 40.000000
+vars->game->player->angle_end = -20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 26.000000
+ray_angle = 26.000000
+vars->game->player->angle_end = -34.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 24.000000
+ray_angle = 24.000000
+vars->game->player->angle_end = -36.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 26.000000
+ray_angle = 26.000000
+vars->game->player->angle_end = -34.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 40.000000
+ray_angle = 40.000000
+vars->game->player->angle_end = -20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 42.000000
+ray_angle = 42.000000
+vars->game->player->angle_end = -18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 44.000000
+ray_angle = 44.000000
+vars->game->player->angle_end = -16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 46.000000
+ray_angle = 46.000000
+vars->game->player->angle_end = -14.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 44.000000
+ray_angle = 44.000000
+vars->game->player->angle_end = -16.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 42.000000
+ray_angle = 42.000000
+vars->game->player->angle_end = -18.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 40.000000
+ray_angle = 40.000000
+vars->game->player->angle_end = -20.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 26.000000
+ray_angle = 26.000000
+vars->game->player->angle_end = -34.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 24.000000
+ray_angle = 24.000000
+vars->game->player->angle_end = -36.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 22.000000
+ray_angle = 22.000000
+vars->game->player->angle_end = -38.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 20.000000
+ray_angle = 20.000000
+vars->game->player->angle_end = -40.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 18.000000
+ray_angle = 18.000000
+vars->game->player->angle_end = -42.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 16.000000
+ray_angle = 16.000000
+vars->game->player->angle_end = -44.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 14.000000
+ray_angle = 14.000000
+vars->game->player->angle_end = -46.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 12.000000
+ray_angle = 12.000000
+vars->game->player->angle_end = -48.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 10.000000
+ray_angle = 10.000000
+vars->game->player->angle_end = -50.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 8.000000
+ray_angle = 8.000000
+vars->game->player->angle_end = -52.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 6.000000
+ray_angle = 6.000000
+vars->game->player->angle_end = -54.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 4.000000
+ray_angle = 4.000000
+vars->game->player->angle_end = -56.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 2.000000
+ray_angle = 2.000000
+vars->game->player->angle_end = -58.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 0.000000
+ray_angle = 0.000000
+vars->game->player->angle_end = 300.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 358.000000
+ray_angle = 358.000000
+vars->game->player->angle_end = 298.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 356.000000
+ray_angle = 356.000000
+vars->game->player->angle_end = 296.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 354.000000
+ray_angle = 354.000000
+vars->game->player->angle_end = 294.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 352.000000
+ray_angle = 352.000000
+vars->game->player->angle_end = 292.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 350.000000
+ray_angle = 350.000000
+vars->game->player->angle_end = 290.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 348.000000
+ray_angle = 348.000000
+vars->game->player->angle_end = 288.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 346.000000
+ray_angle = 346.000000
+vars->game->player->angle_end = 286.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 344.000000
+ray_angle = 344.000000
+vars->game->player->angle_end = 284.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 342.000000
+ray_angle = 342.000000
+vars->game->player->angle_end = 282.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 340.000000
+ray_angle = 340.000000
+vars->game->player->angle_end = 280.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 338.000000
+ray_angle = 338.000000
+vars->game->player->angle_end = 278.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 336.000000
+ray_angle = 336.000000
+vars->game->player->angle_end = 276.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 334.000000
+ray_angle = 334.000000
+vars->game->player->angle_end = 274.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 332.000000
+ray_angle = 332.000000
+vars->game->player->angle_end = 272.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 330.000000
+ray_angle = 330.000000
+vars->game->player->angle_end = 270.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 328.000000
+ray_angle = 328.000000
+vars->game->player->angle_end = 268.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 326.000000
+ray_angle = 326.000000
+vars->game->player->angle_end = 266.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 324.000000
+ray_angle = 324.000000
+vars->game->player->angle_end = 264.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 322.000000
+ray_angle = 322.000000
+vars->game->player->angle_end = 262.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 320.000000
+ray_angle = 320.000000
+vars->game->player->angle_end = 260.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 318.000000
+ray_angle = 318.000000
+vars->game->player->angle_end = 258.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 316.000000
+ray_angle = 316.000000
+vars->game->player->angle_end = 256.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 314.000000
+ray_angle = 314.000000
+vars->game->player->angle_end = 254.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 312.000000
+ray_angle = 312.000000
+vars->game->player->angle_end = 252.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 310.000000
+ray_angle = 310.000000
+vars->game->player->angle_end = 250.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 308.000000
+ray_angle = 308.000000
+vars->game->player->angle_end = 248.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 306.000000
+ray_angle = 306.000000
+vars->game->player->angle_end = 246.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 302.000000
+ray_angle = 302.000000
+vars->game->player->angle_end = 242.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 300.000000
+ray_angle = 300.000000
+vars->game->player->angle_end = 240.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 298.000000
+ray_angle = 298.000000
+vars->game->player->angle_end = 238.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 296.000000
+ray_angle = 296.000000
+vars->game->player->angle_end = 236.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 294.000000
+ray_angle = 294.000000
+vars->game->player->angle_end = 234.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 292.000000
+ray_angle = 292.000000
+vars->game->player->angle_end = 232.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65363
+vars->game->player->angle_start = 290.000000
+ray_angle = 290.000000
+vars->game->player->angle_end = 230.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 292.000000
+ray_angle = 292.000000
+vars->game->player->angle_end = 232.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 294.000000
+ray_angle = 294.000000
+vars->game->player->angle_end = 234.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 296.000000
+ray_angle = 296.000000
+vars->game->player->angle_end = 236.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 298.000000
+ray_angle = 298.000000
+vars->game->player->angle_end = 238.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 300.000000
+ray_angle = 300.000000
+vars->game->player->angle_end = 240.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 302.000000
+ray_angle = 302.000000
+vars->game->player->angle_end = 242.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 65361
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1504.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1494.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1484.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1474.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1464.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1454.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1444.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1434.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1424.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1414.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1404.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1394.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1384.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1374.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1364.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1354.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1344.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1334.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1324.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1314.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1304.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1294.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1284.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1274.000000
+Pressed key : 119
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 302.000000
+ray_angle = 302.000000
+vars->game->player->angle_end = 242.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 300.000000
+ray_angle = 300.000000
+vars->game->player->angle_end = 240.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 298.000000
+ray_angle = 298.000000
+vars->game->player->angle_end = 238.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 296.000000
+ray_angle = 296.000000
+vars->game->player->angle_end = 236.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 294.000000
+ray_angle = 294.000000
+vars->game->player->angle_end = 234.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 292.000000
+ray_angle = 292.000000
+vars->game->player->angle_end = 232.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 290.000000
+ray_angle = 290.000000
+vars->game->player->angle_end = 230.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 288.000000
+ray_angle = 288.000000
+vars->game->player->angle_end = 228.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 286.000000
+ray_angle = 286.000000
+vars->game->player->angle_end = 226.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 284.000000
+ray_angle = 284.000000
+vars->game->player->angle_end = 224.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 282.000000
+ray_angle = 282.000000
+vars->game->player->angle_end = 222.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 280.000000
+ray_angle = 280.000000
+vars->game->player->angle_end = 220.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 278.000000
+ray_angle = 278.000000
+vars->game->player->angle_end = 218.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 276.000000
+ray_angle = 276.000000
+vars->game->player->angle_end = 216.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 274.000000
+ray_angle = 274.000000
+vars->game->player->angle_end = 214.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 272.000000
+ray_angle = 272.000000
+vars->game->player->angle_end = 212.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 270.000000
+ray_angle = 270.000000
+vars->game->player->angle_end = 210.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 268.000000
+ray_angle = 268.000000
+vars->game->player->angle_end = 208.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 266.000000
+ray_angle = 266.000000
+vars->game->player->angle_end = 206.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 264.000000
+ray_angle = 264.000000
+vars->game->player->angle_end = 204.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 262.000000
+ray_angle = 262.000000
+vars->game->player->angle_end = 202.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 260.000000
+ray_angle = 260.000000
+vars->game->player->angle_end = 200.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 258.000000
+ray_angle = 258.000000
+vars->game->player->angle_end = 198.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 256.000000
+ray_angle = 256.000000
+vars->game->player->angle_end = 196.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 254.000000
+ray_angle = 254.000000
+vars->game->player->angle_end = 194.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 252.000000
+ray_angle = 252.000000
+vars->game->player->angle_end = 192.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 250.000000
+ray_angle = 250.000000
+vars->game->player->angle_end = 190.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 248.000000
+ray_angle = 248.000000
+vars->game->player->angle_end = 188.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 246.000000
+ray_angle = 246.000000
+vars->game->player->angle_end = 186.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 244.000000
+ray_angle = 244.000000
+vars->game->player->angle_end = 184.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 242.000000
+ray_angle = 242.000000
+vars->game->player->angle_end = 182.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 240.000000
+ray_angle = 240.000000
+vars->game->player->angle_end = 180.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 238.000000
+ray_angle = 238.000000
+vars->game->player->angle_end = 178.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 236.000000
+ray_angle = 236.000000
+vars->game->player->angle_end = 176.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 232.000000
+ray_angle = 232.000000
+vars->game->player->angle_end = 172.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 226.000000
+ray_angle = 226.000000
+vars->game->player->angle_end = 166.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 224.000000
+ray_angle = 224.000000
+vars->game->player->angle_end = 164.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 222.000000
+ray_angle = 222.000000
+vars->game->player->angle_end = 162.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 220.000000
+ray_angle = 220.000000
+vars->game->player->angle_end = 160.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 218.000000
+ray_angle = 218.000000
+vars->game->player->angle_end = 158.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 216.000000
+ray_angle = 216.000000
+vars->game->player->angle_end = 156.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 214.000000
+ray_angle = 214.000000
+vars->game->player->angle_end = 154.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 212.000000
+ray_angle = 212.000000
+vars->game->player->angle_end = 152.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 210.000000
+ray_angle = 210.000000
+vars->game->player->angle_end = 150.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 208.000000
+ray_angle = 208.000000
+vars->game->player->angle_end = 148.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 206.000000
+ray_angle = 206.000000
+vars->game->player->angle_end = 146.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 204.000000
+ray_angle = 204.000000
+vars->game->player->angle_end = 144.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 202.000000
+ray_angle = 202.000000
+vars->game->player->angle_end = 142.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 200.000000
+ray_angle = 200.000000
+vars->game->player->angle_end = 140.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 198.000000
+ray_angle = 198.000000
+vars->game->player->angle_end = 138.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 196.000000
+ray_angle = 196.000000
+vars->game->player->angle_end = 136.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 194.000000
+ray_angle = 194.000000
+vars->game->player->angle_end = 134.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 192.000000
+ray_angle = 192.000000
+vars->game->player->angle_end = 132.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 190.000000
+ray_angle = 190.000000
+vars->game->player->angle_end = 130.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 188.000000
+ray_angle = 188.000000
+vars->game->player->angle_end = 128.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 186.000000
+ray_angle = 186.000000
+vars->game->player->angle_end = 126.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 184.000000
+ray_angle = 184.000000
+vars->game->player->angle_end = 124.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 182.000000
+ray_angle = 182.000000
+vars->game->player->angle_end = 122.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 180.000000
+ray_angle = 180.000000
+vars->game->player->angle_end = 120.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 178.000000
+ray_angle = 178.000000
+vars->game->player->angle_end = 118.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 176.000000
+ray_angle = 176.000000
+vars->game->player->angle_end = 116.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 174.000000
+ray_angle = 174.000000
+vars->game->player->angle_end = 114.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 172.000000
+ray_angle = 172.000000
+vars->game->player->angle_end = 112.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 170.000000
+ray_angle = 170.000000
+vars->game->player->angle_end = 110.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 168.000000
+ray_angle = 168.000000
+vars->game->player->angle_end = 108.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 166.000000
+ray_angle = 166.000000
+vars->game->player->angle_end = 106.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 164.000000
+ray_angle = 164.000000
+vars->game->player->angle_end = 104.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 166.000000
+ray_angle = 166.000000
+vars->game->player->angle_end = 106.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 168.000000
+ray_angle = 168.000000
+vars->game->player->angle_end = 108.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 170.000000
+ray_angle = 170.000000
+vars->game->player->angle_end = 110.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 172.000000
+ray_angle = 172.000000
+vars->game->player->angle_end = 112.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 174.000000
+ray_angle = 174.000000
+vars->game->player->angle_end = 114.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 176.000000
+ray_angle = 176.000000
+vars->game->player->angle_end = 116.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 178.000000
+ray_angle = 178.000000
+vars->game->player->angle_end = 118.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 180.000000
+ray_angle = 180.000000
+vars->game->player->angle_end = 120.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 182.000000
+ray_angle = 182.000000
+vars->game->player->angle_end = 122.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 184.000000
+ray_angle = 184.000000
+vars->game->player->angle_end = 124.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 182.000000
+ray_angle = 182.000000
+vars->game->player->angle_end = 122.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 180.000000
+ray_angle = 180.000000
+vars->game->player->angle_end = 120.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 178.000000
+ray_angle = 178.000000
+vars->game->player->angle_end = 118.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 176.000000
+ray_angle = 176.000000
+vars->game->player->angle_end = 116.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 174.000000
+ray_angle = 174.000000
+vars->game->player->angle_end = 114.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 172.000000
+ray_angle = 172.000000
+vars->game->player->angle_end = 112.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 170.000000
+ray_angle = 170.000000
+vars->game->player->angle_end = 110.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 168.000000
+ray_angle = 168.000000
+vars->game->player->angle_end = 108.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 166.000000
+ray_angle = 166.000000
+vars->game->player->angle_end = 106.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 164.000000
+ray_angle = 164.000000
+vars->game->player->angle_end = 104.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 162.000000
+ray_angle = 162.000000
+vars->game->player->angle_end = 102.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 160.000000
+ray_angle = 160.000000
+vars->game->player->angle_end = 100.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 158.000000
+ray_angle = 158.000000
+vars->game->player->angle_end = 98.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 156.000000
+ray_angle = 156.000000
+vars->game->player->angle_end = 96.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 154.000000
+ray_angle = 154.000000
+vars->game->player->angle_end = 94.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 152.000000
+ray_angle = 152.000000
+vars->game->player->angle_end = 92.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 150.000000
+ray_angle = 150.000000
+vars->game->player->angle_end = 90.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 148.000000
+ray_angle = 148.000000
+vars->game->player->angle_end = 88.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 146.000000
+ray_angle = 146.000000
+vars->game->player->angle_end = 86.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 144.000000
+ray_angle = 144.000000
+vars->game->player->angle_end = 84.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 142.000000
+ray_angle = 142.000000
+vars->game->player->angle_end = 82.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 140.000000
+ray_angle = 140.000000
+vars->game->player->angle_end = 80.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 138.000000
+ray_angle = 138.000000
+vars->game->player->angle_end = 78.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 136.000000
+ray_angle = 136.000000
+vars->game->player->angle_end = 76.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 134.000000
+ray_angle = 134.000000
+vars->game->player->angle_end = 74.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 132.000000
+ray_angle = 132.000000
+vars->game->player->angle_end = 72.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 130.000000
+ray_angle = 130.000000
+vars->game->player->angle_end = 70.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 128.000000
+ray_angle = 128.000000
+vars->game->player->angle_end = 68.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 126.000000
+ray_angle = 126.000000
+vars->game->player->angle_end = 66.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 124.000000
+ray_angle = 124.000000
+vars->game->player->angle_end = 64.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 122.000000
+ray_angle = 122.000000
+vars->game->player->angle_end = 62.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 120.000000
+ray_angle = 120.000000
+vars->game->player->angle_end = 60.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 118.000000
+ray_angle = 118.000000
+vars->game->player->angle_end = 58.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 116.000000
+ray_angle = 116.000000
+vars->game->player->angle_end = 56.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 114.000000
+ray_angle = 114.000000
+vars->game->player->angle_end = 54.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 112.000000
+ray_angle = 112.000000
+vars->game->player->angle_end = 52.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 110.000000
+ray_angle = 110.000000
+vars->game->player->angle_end = 50.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 108.000000
+ray_angle = 108.000000
+vars->game->player->angle_end = 48.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 106.000000
+ray_angle = 106.000000
+vars->game->player->angle_end = 46.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 104.000000
+ray_angle = 104.000000
+vars->game->player->angle_end = 44.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 102.000000
+ray_angle = 102.000000
+vars->game->player->angle_end = 42.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 100.000000
+ray_angle = 100.000000
+vars->game->player->angle_end = 40.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 98.000000
+ray_angle = 98.000000
+vars->game->player->angle_end = 38.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 96.000000
+ray_angle = 96.000000
+vars->game->player->angle_end = 36.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 94.000000
+ray_angle = 94.000000
+vars->game->player->angle_end = 34.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 92.000000
+ray_angle = 92.000000
+vars->game->player->angle_end = 32.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 90.000000
+ray_angle = 90.000000
+vars->game->player->angle_end = 30.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 88.000000
+ray_angle = 88.000000
+vars->game->player->angle_end = 28.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 86.000000
+ray_angle = 86.000000
+vars->game->player->angle_end = 26.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 84.000000
+ray_angle = 84.000000
+vars->game->player->angle_end = 24.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 82.000000
+ray_angle = 82.000000
+vars->game->player->angle_end = 22.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 80.000000
+ray_angle = 80.000000
+vars->game->player->angle_end = 20.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 78.000000
+ray_angle = 78.000000
+vars->game->player->angle_end = 18.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 76.000000
+ray_angle = 76.000000
+vars->game->player->angle_end = 16.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 74.000000
+ray_angle = 74.000000
+vars->game->player->angle_end = 14.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 72.000000
+ray_angle = 72.000000
+vars->game->player->angle_end = 12.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 70.000000
+ray_angle = 70.000000
+vars->game->player->angle_end = 10.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 68.000000
+ray_angle = 68.000000
+vars->game->player->angle_end = 8.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 66.000000
+ray_angle = 66.000000
+vars->game->player->angle_end = 6.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 64.000000
+ray_angle = 64.000000
+vars->game->player->angle_end = 4.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 62.000000
+ray_angle = 62.000000
+vars->game->player->angle_end = 2.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 60.000000
+ray_angle = 60.000000
+vars->game->player->angle_end = 0.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 58.000000
+ray_angle = 58.000000
+vars->game->player->angle_end = -2.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 56.000000
+ray_angle = 56.000000
+vars->game->player->angle_end = -4.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 54.000000
+ray_angle = 54.000000
+vars->game->player->angle_end = -6.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 52.000000
+ray_angle = 52.000000
+vars->game->player->angle_end = -8.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 50.000000
+ray_angle = 50.000000
+vars->game->player->angle_end = -10.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 48.000000
+ray_angle = 48.000000
+vars->game->player->angle_end = -12.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 46.000000
+ray_angle = 46.000000
+vars->game->player->angle_end = -14.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 44.000000
+ray_angle = 44.000000
+vars->game->player->angle_end = -16.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 42.000000
+ray_angle = 42.000000
+vars->game->player->angle_end = -18.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 40.000000
+ray_angle = 40.000000
+vars->game->player->angle_end = -20.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 26.000000
+ray_angle = 26.000000
+vars->game->player->angle_end = -34.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 24.000000
+ray_angle = 24.000000
+vars->game->player->angle_end = -36.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 22.000000
+ray_angle = 22.000000
+vars->game->player->angle_end = -38.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 20.000000
+ray_angle = 20.000000
+vars->game->player->angle_end = -40.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 18.000000
+ray_angle = 18.000000
+vars->game->player->angle_end = -42.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 16.000000
+ray_angle = 16.000000
+vars->game->player->angle_end = -44.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 14.000000
+ray_angle = 14.000000
+vars->game->player->angle_end = -46.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 12.000000
+ray_angle = 12.000000
+vars->game->player->angle_end = -48.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 10.000000
+ray_angle = 10.000000
+vars->game->player->angle_end = -50.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 8.000000
+ray_angle = 8.000000
+vars->game->player->angle_end = -52.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 6.000000
+ray_angle = 6.000000
+vars->game->player->angle_end = -54.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 4.000000
+ray_angle = 4.000000
+vars->game->player->angle_end = -56.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 2.000000
+ray_angle = 2.000000
+vars->game->player->angle_end = -58.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 0.000000
+ray_angle = 0.000000
+vars->game->player->angle_end = 300.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 358.000000
+ray_angle = 358.000000
+vars->game->player->angle_end = 298.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 356.000000
+ray_angle = 356.000000
+vars->game->player->angle_end = 296.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65363
+vars->game->player->angle_start = 354.000000
+ray_angle = 354.000000
+vars->game->player->angle_end = 294.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 356.000000
+ray_angle = 356.000000
+vars->game->player->angle_end = 296.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 358.000000
+ray_angle = 358.000000
+vars->game->player->angle_end = 298.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 360.000000
+ray_angle = 360.000000
+vars->game->player->angle_end = 300.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 2.000000
+ray_angle = 2.000000
+vars->game->player->angle_end = -58.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 4.000000
+ray_angle = 4.000000
+vars->game->player->angle_end = -56.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 6.000000
+ray_angle = 6.000000
+vars->game->player->angle_end = -54.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 8.000000
+ray_angle = 8.000000
+vars->game->player->angle_end = -52.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 10.000000
+ray_angle = 10.000000
+vars->game->player->angle_end = -50.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 12.000000
+ray_angle = 12.000000
+vars->game->player->angle_end = -48.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 14.000000
+ray_angle = 14.000000
+vars->game->player->angle_end = -46.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 16.000000
+ray_angle = 16.000000
+vars->game->player->angle_end = -44.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 18.000000
+ray_angle = 18.000000
+vars->game->player->angle_end = -42.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 20.000000
+ray_angle = 20.000000
+vars->game->player->angle_end = -40.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 22.000000
+ray_angle = 22.000000
+vars->game->player->angle_end = -38.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 24.000000
+ray_angle = 24.000000
+vars->game->player->angle_end = -36.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 26.000000
+ray_angle = 26.000000
+vars->game->player->angle_end = -34.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 65361
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1264.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1254.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1244.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 416.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 426.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 436.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 446.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 456.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 466.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 476.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 486.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 496.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 506.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 526.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 536.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 546.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 556.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 566.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 576.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 586.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 596.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 606.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 626.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 636.000000
+y: 1234.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 646.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 636.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 626.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 606.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 596.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 586.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 576.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 566.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 556.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 546.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 536.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 526.000000
+y: 1234.000000
+Pressed key : 97
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1234.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1224.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1214.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1204.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1194.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1184.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1174.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1164.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1154.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1144.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1134.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1124.000000
+Pressed key : 119
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 516.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 526.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 536.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 546.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 556.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 566.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 576.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 586.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 596.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 606.000000
+y: 1114.000000
+Pressed key : 100
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1114.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1124.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1134.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1164.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1174.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1184.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1194.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1204.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1214.000000
+Pressed key : 115
+vars->game->player->angle_start = 38.000000
+ray_angle = 38.000000
+vars->game->player->angle_end = -22.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 36.000000
+ray_angle = 36.000000
+vars->game->player->angle_end = -24.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 34.000000
+ray_angle = 34.000000
+vars->game->player->angle_end = -26.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 32.000000
+ray_angle = 32.000000
+vars->game->player->angle_end = -28.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 30.000000
+ray_angle = 30.000000
+vars->game->player->angle_end = -30.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 28.000000
+ray_angle = 28.000000
+vars->game->player->angle_end = -32.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 26.000000
+ray_angle = 26.000000
+vars->game->player->angle_end = -34.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 24.000000
+ray_angle = 24.000000
+vars->game->player->angle_end = -36.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 22.000000
+ray_angle = 22.000000
+vars->game->player->angle_end = -38.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 20.000000
+ray_angle = 20.000000
+vars->game->player->angle_end = -40.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 18.000000
+ray_angle = 18.000000
+vars->game->player->angle_end = -42.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 16.000000
+ray_angle = 16.000000
+vars->game->player->angle_end = -44.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 14.000000
+ray_angle = 14.000000
+vars->game->player->angle_end = -46.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 12.000000
+ray_angle = 12.000000
+vars->game->player->angle_end = -48.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 10.000000
+ray_angle = 10.000000
+vars->game->player->angle_end = -50.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 8.000000
+ray_angle = 8.000000
+vars->game->player->angle_end = -52.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 6.000000
+ray_angle = 6.000000
+vars->game->player->angle_end = -54.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 4.000000
+ray_angle = 4.000000
+vars->game->player->angle_end = -56.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 2.000000
+ray_angle = 2.000000
+vars->game->player->angle_end = -58.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 0.000000
+ray_angle = 0.000000
+vars->game->player->angle_end = 300.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 358.000000
+ray_angle = 358.000000
+vars->game->player->angle_end = 298.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 356.000000
+ray_angle = 356.000000
+vars->game->player->angle_end = 296.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 354.000000
+ray_angle = 354.000000
+vars->game->player->angle_end = 294.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 352.000000
+ray_angle = 352.000000
+vars->game->player->angle_end = 292.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 350.000000
+ray_angle = 350.000000
+vars->game->player->angle_end = 290.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 348.000000
+ray_angle = 348.000000
+vars->game->player->angle_end = 288.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 346.000000
+ray_angle = 346.000000
+vars->game->player->angle_end = 286.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 344.000000
+ray_angle = 344.000000
+vars->game->player->angle_end = 284.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 342.000000
+ray_angle = 342.000000
+vars->game->player->angle_end = 282.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 340.000000
+ray_angle = 340.000000
+vars->game->player->angle_end = 280.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 338.000000
+ray_angle = 338.000000
+vars->game->player->angle_end = 278.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 336.000000
+ray_angle = 336.000000
+vars->game->player->angle_end = 276.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 334.000000
+ray_angle = 334.000000
+vars->game->player->angle_end = 274.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 332.000000
+ray_angle = 332.000000
+vars->game->player->angle_end = 272.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 330.000000
+ray_angle = 330.000000
+vars->game->player->angle_end = 270.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 328.000000
+ray_angle = 328.000000
+vars->game->player->angle_end = 268.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 326.000000
+ray_angle = 326.000000
+vars->game->player->angle_end = 266.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 324.000000
+ray_angle = 324.000000
+vars->game->player->angle_end = 264.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 322.000000
+ray_angle = 322.000000
+vars->game->player->angle_end = 262.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 320.000000
+ray_angle = 320.000000
+vars->game->player->angle_end = 260.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 318.000000
+ray_angle = 318.000000
+vars->game->player->angle_end = 258.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 316.000000
+ray_angle = 316.000000
+vars->game->player->angle_end = 256.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 314.000000
+ray_angle = 314.000000
+vars->game->player->angle_end = 254.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 312.000000
+ray_angle = 312.000000
+vars->game->player->angle_end = 252.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 310.000000
+ray_angle = 310.000000
+vars->game->player->angle_end = 250.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 308.000000
+ray_angle = 308.000000
+vars->game->player->angle_end = 248.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 306.000000
+ray_angle = 306.000000
+vars->game->player->angle_end = 246.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 304.000000
+ray_angle = 304.000000
+vars->game->player->angle_end = 244.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 302.000000
+ray_angle = 302.000000
+vars->game->player->angle_end = 242.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 300.000000
+ray_angle = 300.000000
+vars->game->player->angle_end = 240.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 298.000000
+ray_angle = 298.000000
+vars->game->player->angle_end = 238.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 296.000000
+ray_angle = 296.000000
+vars->game->player->angle_end = 236.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 294.000000
+ray_angle = 294.000000
+vars->game->player->angle_end = 234.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 292.000000
+ray_angle = 292.000000
+vars->game->player->angle_end = 232.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 290.000000
+ray_angle = 290.000000
+vars->game->player->angle_end = 230.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 288.000000
+ray_angle = 288.000000
+vars->game->player->angle_end = 228.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 286.000000
+ray_angle = 286.000000
+vars->game->player->angle_end = 226.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 284.000000
+ray_angle = 284.000000
+vars->game->player->angle_end = 224.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 282.000000
+ray_angle = 282.000000
+vars->game->player->angle_end = 222.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 280.000000
+ray_angle = 280.000000
+vars->game->player->angle_end = 220.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 278.000000
+ray_angle = 278.000000
+vars->game->player->angle_end = 218.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 276.000000
+ray_angle = 276.000000
+vars->game->player->angle_end = 216.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 274.000000
+ray_angle = 274.000000
+vars->game->player->angle_end = 214.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 272.000000
+ray_angle = 272.000000
+vars->game->player->angle_end = 212.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 270.000000
+ray_angle = 270.000000
+vars->game->player->angle_end = 210.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 268.000000
+ray_angle = 268.000000
+vars->game->player->angle_end = 208.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 266.000000
+ray_angle = 266.000000
+vars->game->player->angle_end = 206.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 264.000000
+ray_angle = 264.000000
+vars->game->player->angle_end = 204.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 262.000000
+ray_angle = 262.000000
+vars->game->player->angle_end = 202.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 260.000000
+ray_angle = 260.000000
+vars->game->player->angle_end = 200.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 258.000000
+ray_angle = 258.000000
+vars->game->player->angle_end = 198.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 256.000000
+ray_angle = 256.000000
+vars->game->player->angle_end = 196.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 254.000000
+ray_angle = 254.000000
+vars->game->player->angle_end = 194.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 252.000000
+ray_angle = 252.000000
+vars->game->player->angle_end = 192.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 250.000000
+ray_angle = 250.000000
+vars->game->player->angle_end = 190.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 248.000000
+ray_angle = 248.000000
+vars->game->player->angle_end = 188.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 246.000000
+ray_angle = 246.000000
+vars->game->player->angle_end = 186.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 244.000000
+ray_angle = 244.000000
+vars->game->player->angle_end = 184.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 242.000000
+ray_angle = 242.000000
+vars->game->player->angle_end = 182.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 240.000000
+ray_angle = 240.000000
+vars->game->player->angle_end = 180.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 238.000000
+ray_angle = 238.000000
+vars->game->player->angle_end = 178.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 236.000000
+ray_angle = 236.000000
+vars->game->player->angle_end = 176.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 65363
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1224.000000
+Pressed key : 119
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1214.000000
+Pressed key : 119
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1204.000000
+Pressed key : 119
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1194.000000
+Pressed key : 119
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1184.000000
+Pressed key : 119
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1174.000000
+Pressed key : 119
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1164.000000
+Pressed key : 119
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 232.000000
+ray_angle = 232.000000
+vars->game->player->angle_end = 172.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 226.000000
+ray_angle = 226.000000
+vars->game->player->angle_end = 166.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 224.000000
+ray_angle = 224.000000
+vars->game->player->angle_end = 164.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 222.000000
+ray_angle = 222.000000
+vars->game->player->angle_end = 162.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 220.000000
+ray_angle = 220.000000
+vars->game->player->angle_end = 160.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 218.000000
+ray_angle = 218.000000
+vars->game->player->angle_end = 158.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 216.000000
+ray_angle = 216.000000
+vars->game->player->angle_end = 156.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 214.000000
+ray_angle = 214.000000
+vars->game->player->angle_end = 154.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 212.000000
+ray_angle = 212.000000
+vars->game->player->angle_end = 152.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 210.000000
+ray_angle = 210.000000
+vars->game->player->angle_end = 150.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 65363
+vars->game->player->angle_start = 208.000000
+ray_angle = 208.000000
+vars->game->player->angle_end = 148.000000
+Player coordinates:x: 616.000000
+y: 1154.000000
+Pressed key : 119
+vars->game->player->angle_start = 208.000000
+ray_angle = 208.000000
+vars->game->player->angle_end = 148.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 210.000000
+ray_angle = 210.000000
+vars->game->player->angle_end = 150.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 212.000000
+ray_angle = 212.000000
+vars->game->player->angle_end = 152.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 214.000000
+ray_angle = 214.000000
+vars->game->player->angle_end = 154.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 216.000000
+ray_angle = 216.000000
+vars->game->player->angle_end = 156.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 218.000000
+ray_angle = 218.000000
+vars->game->player->angle_end = 158.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 220.000000
+ray_angle = 220.000000
+vars->game->player->angle_end = 160.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 222.000000
+ray_angle = 222.000000
+vars->game->player->angle_end = 162.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 224.000000
+ray_angle = 224.000000
+vars->game->player->angle_end = 164.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 226.000000
+ray_angle = 226.000000
+vars->game->player->angle_end = 166.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 65361
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1144.000000
+Pressed key : 119
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1134.000000
+Pressed key : 119
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1124.000000
+Pressed key : 119
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1114.000000
+Pressed key : 119
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1104.000000
+Pressed key : 119
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1094.000000
+Pressed key : 119
+vars->game->player->angle_start = 228.000000
+ray_angle = 228.000000
+vars->game->player->angle_end = 168.000000
+Player coordinates:x: 616.000000
+y: 1088.000000
+Pressed key : 119
+Pressed key : 119
+Pressed key : 119
+Pressed key : 119
+Pressed key : 119
+Pressed key : 65361
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 616.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 606.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 596.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 586.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 576.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 566.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 556.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 546.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 536.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 526.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 516.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 506.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 496.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 486.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 476.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 466.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 456.000000
+y: 1088.000000
+Pressed key : 97
+vars->game->player->angle_start = 230.000000
+ray_angle = 230.000000
+vars->game->player->angle_end = 170.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 232.000000
+ray_angle = 232.000000
+vars->game->player->angle_end = 172.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 234.000000
+ray_angle = 234.000000
+vars->game->player->angle_end = 174.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 236.000000
+ray_angle = 236.000000
+vars->game->player->angle_end = 176.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 238.000000
+ray_angle = 238.000000
+vars->game->player->angle_end = 178.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 240.000000
+ray_angle = 240.000000
+vars->game->player->angle_end = 180.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 242.000000
+ray_angle = 242.000000
+vars->game->player->angle_end = 182.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 244.000000
+ray_angle = 244.000000
+vars->game->player->angle_end = 184.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 246.000000
+ray_angle = 246.000000
+vars->game->player->angle_end = 186.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 248.000000
+ray_angle = 248.000000
+vars->game->player->angle_end = 188.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 250.000000
+ray_angle = 250.000000
+vars->game->player->angle_end = 190.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 252.000000
+ray_angle = 252.000000
+vars->game->player->angle_end = 192.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 254.000000
+ray_angle = 254.000000
+vars->game->player->angle_end = 194.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 256.000000
+ray_angle = 256.000000
+vars->game->player->angle_end = 196.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 258.000000
+ray_angle = 258.000000
+vars->game->player->angle_end = 198.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 260.000000
+ray_angle = 260.000000
+vars->game->player->angle_end = 200.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 262.000000
+ray_angle = 262.000000
+vars->game->player->angle_end = 202.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 264.000000
+ray_angle = 264.000000
+vars->game->player->angle_end = 204.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 266.000000
+ray_angle = 266.000000
+vars->game->player->angle_end = 206.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 268.000000
+ray_angle = 268.000000
+vars->game->player->angle_end = 208.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 270.000000
+ray_angle = 270.000000
+vars->game->player->angle_end = 210.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 272.000000
+ray_angle = 272.000000
+vars->game->player->angle_end = 212.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->player->angle_start = 274.000000
+ray_angle = 274.000000
+vars->game->player->angle_end = 214.000000
+Player coordinates:x: 446.000000
+y: 1088.000000
+Pressed key : 65361
+vars->game->playe
