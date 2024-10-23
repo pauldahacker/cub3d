@@ -112,7 +112,7 @@ void	draw_every_ray(t_vars *vars)
 	ray_angle = vars->game->player->angle_start;
 	x = 0;
 	y = 0;
-	if (vars->game->player->angle_end > 300.0)
+	if (vars->game->player->angle_end >= 300.0)
 		vars->game->player->angle_end -= 360.0;//I do this for E player's position
 	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
 	printf("ray_angle = %f\n", ray_angle);
@@ -124,7 +124,7 @@ void	draw_every_ray(t_vars *vars)
 		draw_wall(vars, projected_wall_height, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
-	if (vars->game->player->angle_end > 300.0)
-		vars->game->player->angle_end -= 360.0;//I do this for E player's position
+	if (vars->game->player->angle_end <= 0)
+		vars->game->player->angle_end += 360.0;//I do this for E player's position
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }

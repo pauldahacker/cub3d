@@ -29,8 +29,8 @@ int	main(int argc, char **argv)
 	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
-	vars.game->player->pos_x *= BLOCK_SIZE;
-	vars.game->player->pos_y *= BLOCK_SIZE;
+	vars.game->player->pos_x = (vars.game->player->pos_x + 0.5) * BLOCK_SIZE;
+	vars.game->player->pos_y = (vars.game->player->pos_y + 0.5) * BLOCK_SIZE;
 	printf("angle_start = %f\n", vars.game->player->angle_start);
 	printf("angle_end = %f\n", vars.game->player->angle_end);
 	printf("subsequent_angle = %f\n", vars.game->player->subsequent_angle);
@@ -38,8 +38,6 @@ int	main(int argc, char **argv)
 	printf("\n");
 	//test_calculate_best_distance(&vars, vars.game->player->angle);
 	//test_calculate_best_distance(&vars, 45.0);
-	vars.game->player->pos_x += BLOCK_SIZE / 2;
-	vars.game->player->pos_y += BLOCK_SIZE / 2;
 	draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);

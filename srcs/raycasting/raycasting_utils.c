@@ -88,7 +88,7 @@ int	ray_facing_up(double angle)
 int	ray_facing_right(double angle)
 {
 	if ((angle >= -90.0 && angle < 90.0)
-		|| (angle >= 270.0 && angle < 360.0))
+		|| (angle >= 270.0 && angle <= 360.0))
 		return (1);
 	else
 		return (0);
