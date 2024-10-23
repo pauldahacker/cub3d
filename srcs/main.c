@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/23 17:19:28 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:44:48 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,6 @@ int	main(int argc, char **argv)
 	printf("angle_end = %f\n", vars.game->player->angle_end);
 	printf("subsequent_angle = %f\n", vars.game->player->subsequent_angle);
 	draw_every_ray(&vars);
-	printf("\n");
-	//test_calculate_best_distance(&vars, vars.game->player->angle);
-	//test_calculate_best_distance(&vars, 45.0);
 	draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, 2, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, 17, 0, &on_destroy, &vars);

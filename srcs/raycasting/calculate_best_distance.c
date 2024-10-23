@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 17:19:10 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:40:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ double	ft_abs(double number)
 //then we use pyhagoras theorem
 //to remove the fishbowl effect, we multiply the result with cos(beta)
 //see: https://permadi.com/1996/05/ray-casting-tutorial-8/
-double	calculate_hypo_distance(t_vars *vars, t_point point, double ray_angle)
+double	calculate_hypo_distance(t_vars *vars, t_block point, double ray_angle)
 {
-	t_point	ray_end_pt;
+	t_block	ray_end_pt;
 	double	distance;
 	double	beta;
 
@@ -50,9 +50,9 @@ double	calculate_hypo_distance(t_vars *vars, t_point point, double ray_angle)
 //(for correct calculations)
 double	calculate_best_distance(t_vars *vars, double ray_angle)
 {
-	t_point	horizontal_pt_px;
+	t_block	horizontal_pt_px;
 	double	horizontal_distance;
-	t_point	vertical_pt_px;
+	t_block	vertical_pt_px;
 	double	vertical_distance;
 	
 	horizontal_pt_px = horizontal_point_crossing_wall(vars, ray_angle);
@@ -69,11 +69,11 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 }
 
 //returns the vertical or horizontal intersection with the smallest distance
-t_point	return_intersection(t_vars *vars, double angle)
+t_block	return_intersection(t_vars *vars, double angle)
 {
-	t_point	horizontal_pt_px;
+	t_block	horizontal_pt_px;
 	double	horizontal_distance;
-	t_point	vertical_pt_px;
+	t_block	vertical_pt_px;
 	double	vertical_distance;
 
 	horizontal_pt_px = horizontal_point_crossing_wall(vars, angle);
