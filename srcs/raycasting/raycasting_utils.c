@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 15:45:42 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:32:06 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,9 @@ double	rounded_nearest_nb(double nb)
 
 //rounded_nearest_nb
 //you might not need the rounded_down function	
-t_block	convert_pixel_to_block(t_block point)
+t_point	convert_pixel_to_block(t_point point)
 {
-	t_block	converted;
+	t_point	converted;
 
 	converted.x = rounded_down(point.x / (double)BLOCK_SIZE);
 	converted.y = rounded_down(point.y / (double)BLOCK_SIZE);
@@ -115,7 +115,7 @@ int	ray_facing_right(double angle)
 // 	return (0);
 // }
 
-int	check_coordinates_in_map(t_vars *vars, t_block current)
+int	check_coordinates_in_map(t_vars *vars, t_point current)
 {
 	if (current.y < 0 || current.y > vars->game->n_rows - 1
 		|| current.x < 0 || current.x > vars->game->n_cols - 1)

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:56:54 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/16 13:56:56 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:32:06 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-void	dda(t_vars vars, t_block *block, double dx, double dy)
+void	dda(t_vars vars, t_point *block, double dx, double dy)
 {
 	double	steps;
 	double	x_inc;
@@ -39,7 +39,7 @@ void	dda(t_vars vars, t_block *block, double dx, double dy)
 	}
 }
 
-void	draw_line(t_vars vars, t_block *p1, t_block *p2)
+void	draw_line(t_vars vars, t_point *p1, t_point *p2)
 {
 	double	dx;
 	double	dy;
@@ -51,8 +51,8 @@ void	draw_line(t_vars vars, t_block *p1, t_block *p2)
 
 void    draw_minimap_fov(t_vars *vars, t_game *game)
 {
-    t_block inter;
-    t_block start;
+    t_point inter;
+    t_point start;
     int     size_x;
     int     size_y;
     double  ray_angle;

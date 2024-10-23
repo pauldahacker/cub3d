@@ -6,15 +6,15 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 16:27:53 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/23 16:32:06 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
+t_point	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
 {
-	t_block	a;
+	t_point	a;
 
 	a.reachable = 1;
 	if (ray_facing_right(ray_angle) == 1)
@@ -44,9 +44,9 @@ double	finding_vertical_y_a(double ray_angle)
 	// return ((double)BLOCK_SIZE * tan(ray_angle * (PI / 180.0)));
 }
 
-t_block	find_next_vertical_point(t_block current_point, double ray_angle)
+t_point	find_next_vertical_point(t_point current_point, double ray_angle)
 {
-	t_block	next_in_px;
+	t_point	next_in_px;
 	double	x_a;
 	double	y_a;
 	
@@ -61,12 +61,12 @@ t_block	find_next_vertical_point(t_block current_point, double ray_angle)
 
 //starting from the character position, we want to cast a ray until we find a
 //wall
-t_block	vertical_point_crossing_wall(t_vars *vars, double ray_angle)
+t_point	vertical_point_crossing_wall(t_vars *vars, double ray_angle)
 {
-	t_block	current_in_px;
-	t_block	current_in_block;
-	t_block	next_in_px;
-	t_block	next_in_block;
+	t_point	current_in_px;
+	t_point	current_in_block;
+	t_point	next_in_px;
+	t_point	next_in_block;
 
 	current_in_px = find_coordinate_of_first_vertical_point(vars, ray_angle);
 	current_in_block = convert_pixel_to_block(current_in_px);
