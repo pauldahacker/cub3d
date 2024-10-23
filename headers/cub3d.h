@@ -38,13 +38,13 @@
 # define WINDOW_X 1600
 # define WINDOW_Y 900
 
-# define MINIMAP_HEIGHT WINDOW_Y
-# define MINIMAP_LENGTH WINDOW_X
+# define MINIMAP_HEIGHT WINDOW_Y / 4
+# define MINIMAP_LENGTH WINDOW_X / 4
 # define MINIMAP_START_X 5
 # define MINIMAP_START_Y 5
 
 # define MOVEMENT_SPEED 10
-# define ROTATE_SPEED 2
+# define ROTATE_SPEED 3
 
 // Keys
 # ifdef __linux__
