@@ -73,8 +73,8 @@ void    draw_minimap_fov(t_vars *vars, t_game *game)
             inter = return_intersection(vars, ray_angle);
         if (inter.y < 0)
             inter.y = 0;
-        inter.x = MINIMAP_START_X + inter.x / BLOCK_SIZE * size_x + ((int)inter.x % (int)BLOCK_SIZE) / size_x;
-        inter.y = MINIMAP_START_Y + inter.y / BLOCK_SIZE * size_y + ((int)inter.y % (int)BLOCK_SIZE) / size_y;
+        inter.x = MINIMAP_START_X + inter.x / BLOCK_SIZE * size_x;
+        inter.y = MINIMAP_START_Y + inter.y / BLOCK_SIZE * size_y;
         draw_line(*vars, &start, &inter);
         ray_angle -= game->player->subsequent_angle;
     }
@@ -115,13 +115,14 @@ void	draw_minimap_player(t_vars vars, t_game *game)
 
 	size_x = MINIMAP_LENGTH / game->n_cols;
     size_y = MINIMAP_HEIGHT / game->n_rows;
+    printf("size_x: %d\nsize_y: %d\n", size_x, size_y);
 	start_x = MINIMAP_START_X + game->player->pos_x / BLOCK_SIZE * size_x - size_x / 4;
-	start_y = MINIMAP_START_Y +  game->player->pos_y / BLOCK_SIZE * size_y - size_y / 4;
+	start_y = MINIMAP_START_Y + game->player->pos_y / BLOCK_SIZE * size_y - size_y / 4;
     size_x /= 2;
     size_y /= 2;
-	while (size_y > 0)
+	while (size_y >= 0)
     {
-        while (size_x > 0)
+        while (size_x >= 0)
         {
 			my_mlx_pixel_put(vars, start_x + size_x, start_y + size_y, YELLOW);
             --size_x;
