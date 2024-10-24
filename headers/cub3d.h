@@ -44,7 +44,7 @@
 # define MINIMAP_START_Y 5
 
 # define MOVEMENT_SPEED 10
-# define ROTATE_SPEED 1000
+# define ROTATE_SPEED 3
 
 // Keys
 # ifdef __linux__
@@ -62,6 +62,8 @@
 #  define A 0
 #  define S 1
 #  define D 2
+#  define LEFT 123
+#  define RIGHT 124
 # endif
 
 // Colors
