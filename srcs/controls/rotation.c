@@ -16,7 +16,7 @@ int	on_rotate_left(t_vars *vars, int attempted_speed)
 {
     t_player    *player;
 
-	if (!attempted_speed)
+	if (!attempted_speed || attempted_speed > 360)
 		return (0);
 	player = vars->game->player;
 	player->angle = increment_angle(player->angle, attempted_speed);
@@ -31,7 +31,7 @@ int	on_rotate_right(t_vars *vars, int attempted_speed)
 {
     t_player    *player;
 
-	if (!attempted_speed)
+	if (!attempted_speed || attempted_speed > 360)
 		return (0);
     player = vars->game->player;
     player->angle = increment_angle(player->angle, -attempted_speed);
