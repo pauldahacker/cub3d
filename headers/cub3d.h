@@ -106,6 +106,14 @@ typedef struct s_game t_game;
 	t_player	*player;
 }				t_game;*/
 
+typedef struct s_keys {
+	int w;
+	int a;
+	int s;
+	int d;
+	int left;
+	int right;
+}	t_keys;
 typedef struct raycasting
 {
 	double		pos_x;//⭐//player position in abscissa. The unit are the pixels!
@@ -136,6 +144,7 @@ typedef struct s_vars
 	void		*win_ptr;
 	t_data		data;
 	t_game		*game;
+	t_keys		keys;
 }				t_vars;
 
 // controls/movement_utils.c
@@ -157,6 +166,7 @@ int		on_rotate_right(t_vars *vars, int attempted_speed);
 int	on_destroy(t_vars *vars);
 int	on_keypress(int keysym, t_vars *vars);
 int	on_keyrelease(int keysym, t_vars *vars);
+int	update_player(t_vars *vars);
 
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);

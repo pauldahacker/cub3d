@@ -118,7 +118,7 @@ int	ray_facing_right(double angle)
 int	check_coordinates_in_map(t_vars *vars, t_point current)
 {
 	if (current.y < 0 || current.y > vars->game->n_rows - 1
-		|| current.x < 0 || current.x > vars->game->n_cols - 1)
+		|| current.x < 0 || current.x > vars->game->n_cols)
 		return (0);
 	return (1);
 }

@@ -12,6 +12,16 @@
 
 #include "cub3d.h"
 
+void	init_keys(t_vars *vars)
+{
+	vars->keys.w = 0;
+	vars->keys.a = 0;
+	vars->keys.s = 0;
+	vars->keys.d = 0;
+	vars->keys.left = 0;
+	vars->keys.right = 0;
+}
+
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
@@ -26,6 +36,7 @@ int	main(int argc, char **argv)
 	vars.data.img = mlx_new_image(vars.mlx_ptr, WINDOW_X, WINDOW_Y);
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
+	init_keys(&vars);
 	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
@@ -40,6 +51,8 @@ int	main(int argc, char **argv)
 	//test_calculate_best_distance(&vars, 45.0);
 	draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, X_EVENT_KEY_PRESS, KEY_PRESS_MASK, &on_keypress, &vars);
+	mlx_hook(vars.win_ptr, X_EVENT_KEY_RELEASE, KEY_RELEASE_MASK, &on_keyrelease, &vars);
 	mlx_hook(vars.win_ptr, X_EVENT_DESTROY, NO_MASK, &on_destroy, &vars);
+	mlx_loop_hook(vars.mlx_ptr, &update_player, &vars);
 	mlx_loop(vars.mlx_ptr);
 }
