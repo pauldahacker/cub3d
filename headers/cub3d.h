@@ -46,6 +46,16 @@
 # define MOVEMENT_SPEED 10
 # define ROTATE_SPEED 3
 
+// MLX
+# define X_EVENT_KEY_PRESS		2
+# define X_EVENT_KEY_RELEASE	3
+# define X_EVENT_DESTROY		17
+
+# define KEY_PRESS_MASK			1L<<0
+# define KEY_RELEASE_MASK		1L<<1
+# define NO_MASK				0
+
+
 // Keys
 # ifdef __linux__
 #  define ESC 65307
@@ -146,6 +156,7 @@ int		on_rotate_right(t_vars *vars, int attempted_speed);
 // controls/controls.c
 int	on_destroy(t_vars *vars);
 int	on_keypress(int keysym, t_vars *vars);
+int	on_keyrelease(int keysym, t_vars *vars);
 
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
