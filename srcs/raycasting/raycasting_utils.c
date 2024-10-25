@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/24 17:57:39 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/25 14:49:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,8 @@ t_block	convert_pixel_to_block(t_block point)
 {
 	t_block	converted;
 
-	converted.x = rounded_down(point.x / (double)BLOCK_SIZE);
-	converted.y = rounded_down(point.y / (double)BLOCK_SIZE);
+	converted.x = (point.x / (double)BLOCK_SIZE);
+	converted.y = (point.y / (double)BLOCK_SIZE);
 	return (converted);
 }
 
