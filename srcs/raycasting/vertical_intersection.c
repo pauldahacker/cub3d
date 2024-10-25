@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/25 13:47:01 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/25 14:51:23 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
 	else
 		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE)
 			* BLOCK_SIZE - 1;
-	printf("vars->game->player->pos_y = %f\n", vars->game->player->pos_y);
-	printf("vars->game->player->pos_x = %f\n", vars->game->player->pos_x);
-	printf("a.x = %f\n", a.x);
-	printf("tan(ray_angle * (PI / 180.0)) = %f\n", tan(ray_angle * (PI / 180.0)));
+	// printf("vars->game->player->pos_y = %f\n", vars->game->player->pos_y);
+	// printf("vars->game->player->pos_x = %f\n", vars->game->player->pos_x);
+	// printf("a.x = %f\n", a.x);
+	// printf("tan(ray_angle * (PI / 180.0)) = %f\n", tan(ray_angle * (PI / 180.0)));
 	a.y = vars->game->player->pos_y + (vars->game->player->pos_x - a.x)
 		* tan(ray_angle * (PI / 180.0));
 	printf("find_coordinate_of_first_vertical_point first_block a.x = %f && a.y = %f\n", a.x, a.y);
@@ -45,7 +45,7 @@ double	finding_vertical_y_a(double ray_angle)
 	double	y_a_iteration;
 
 	y_a_iteration = ft_abs((double)BLOCK_SIZE * tan(ray_angle * (PI / 180.0)));
-	printf("vertical y_a iteration value = %f\n", y_a_iteration);
+	// printf("vertical y_a iteration value = %f\n", y_a_iteration);
 	if (ray_facing_up(ray_angle) == 1)
 		return (-y_a_iteration);
 	return (y_a_iteration);
