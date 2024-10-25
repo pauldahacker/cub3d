@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 19:40:52 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/25 13:07:12 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,18 +54,33 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 	double	horizontal_distance;
 	t_block	vertical_pt_px;
 	double	vertical_distance;
-	
+
+	t_block	tmp;//to remove
 	horizontal_pt_px = horizontal_point_crossing_wall(vars, ray_angle);
+	tmp = convert_pixel_to_block(horizontal_pt_px);//to remove
+	printf("horizontal_pt_in_block.x = %f && horizontal_pt_in_block.y = %f\n", tmp.x, tmp.y);//to remove
 	if (horizontal_pt_px.reachable == 1)
+	{
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px, ray_angle);
+		printf("horizontal_distance = %f\n", horizontal_distance);
+	}
 	else
 		horizontal_distance = NAN;
 	vertical_pt_px = vertical_point_crossing_wall(vars, ray_angle);
+	tmp = convert_pixel_to_block(horizontal_pt_px);//to remove
+	printf("vertical_pt_in_block.x = %f && vertical_pt_in_block.y = %f\n", tmp.x, tmp.y);//to remove
 	if (vertical_pt_px.reachable == 1)
+	{
 		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px, ray_angle);
+		printf("vertical distance = %f\n", vertical_distance);
+	}
 	else
 		vertical_distance = NAN;
-	return (fmin(vertical_distance, horizontal_distance));
+	// return (fmin(vertical_distance, horizontal_distance));
+	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+		return (printf("vertical distance chosen\n"), vertical_distance);
+	return (printf("horizontal distance used\n"), horizontal_distance);
+	printf("\n");
 }
 
 //returns the vertical or horizontal intersection with the smallest distance
@@ -77,22 +92,15 @@ t_block	return_intersection(t_vars *vars, double angle)
 	double	vertical_distance;
 
 	horizontal_pt_px = horizontal_point_crossing_wall(vars, angle);
-	//printf("horizontal_pt_px.x = %f horizontal_pt_px.y = %f horizontal_pt_px.reachable = %i \n",
-	//horizontal_pt_px.x, horizontal_pt_px.y, horizontal_pt_px.reachable);
 	if (horizontal_pt_px.reachable == 1)
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px, angle);
 	else
 		horizontal_distance = NAN;
-//	printf("horizontal distance in px = %f\n", horizontal_distance);
-//	printf("horizontal distance in block = %f\n", horizontal_distance / BLOCK_SIZE);
-	
 	vertical_pt_px = vertical_point_crossing_wall(vars, angle);
 	if (vertical_pt_px.reachable == 1)
 		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px, angle);
 	else
 		vertical_distance = NAN;
-	// printf("vertical distance in px = %f\n", vertical_distance);
-	// printf("vertical distance in block = %f\n", vertical_distance / BLOCK_SIZE);
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
 		return (vertical_pt_px);
 	return (horizontal_pt_px);
