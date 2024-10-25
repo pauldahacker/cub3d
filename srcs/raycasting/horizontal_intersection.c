@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/25 14:43:44 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/25 14:51:16 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
 	else
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
 			* BLOCK_SIZE + BLOCK_SIZE;
-	printf("vars->game->player->pos_x = %f\n", vars->game->player->pos_x);
-	printf("vars->game->player->pos_y = %f\n", vars->game->player->pos_y);
-	printf("a.y = %f\n", a.y);
-	printf("tan(ray_angle * (PI / 180.0)) = %f\n", tan(ray_angle * (PI / 180.0)));
+	// printf("vars->game->player->pos_x = %f\n", vars->game->player->pos_x);
+	// printf("vars->game->player->pos_y = %f\n", vars->game->player->pos_y);
+	// printf("a.y = %f\n", a.y);
+	// printf("tan(ray_angle * (PI / 180.0)) = %f\n", tan(ray_angle * (PI / 180.0)));
 	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y)
 		/ tan(ray_angle * (PI / 180.0));
 	printf("find_coordinate_of_first_horizontal_point first_block a.x = %f && a.y = %f\n", a.x, a.y);
@@ -46,7 +46,7 @@ double	finding_horizontal_x_a(double ray_angle)
 	double	x_a_iteration;
 
 	x_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
-	printf("horizontal x_a iteration value = %f\n", x_a_iteration);
+	// printf("horizontal x_a iteration value = %f\n", x_a_iteration);
 	if (ray_facing_right(ray_angle) == 1)
 		return (x_a_iteration);
 	return (-x_a_iteration);
