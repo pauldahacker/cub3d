@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 20:02:02 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/25 12:25:59 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,22 +96,23 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 	}
 }
 
-void	convert_angle_modulo_360(t_vars *vars)
-{
-	t_player	*player;
+// void	convert_angle_modulo_360(t_vars *vars)
+// {
+// 	t_player	*player;
 
-	player = vars->game->player;
-	if (player->angle_start > 360 || player->angle_start < 0)
-	{
-		player->angle_start = (int)rounded_down(player->angle_start) % 360 + 
-		player->angle_start - rounded_down(player->angle_start);
-	}
-	if (player->angle_end > 360 || player->angle_end < 0)
-	{
-		player->angle_end = (int)rounded_down(player->angle_end) % 360 + 
-		player->angle_end - rounded_down(player->angle_end);
-	}
-}
+// 	player = vars->game->player;
+// 	if (player->angle_start > 360 || player->angle_start < 0)
+// 	{
+// 		player->angle_start = (int)rounded_down(player->angle_start) % 360 + 
+// 		player->angle_start - rounded_down(player->angle_start);
+// 	}
+// 	if (player->angle_end > 360 || player->angle_end < 0)
+// 	{
+// 		player->angle_end = (int)rounded_down(player->angle_end) % 360 + 
+// 		player->angle_end - rounded_down(player->angle_end);
+// 	}
+// }
+	// convert_angle_modulo_360(vars);
 
 //60 is the total field of view in degrees.
 //For example the human horizontal FOV is 135. But in a 3D game, it's usually
@@ -126,7 +127,6 @@ void	draw_every_ray(t_vars *vars)
 	int		x;
 	double	ray_angle;
 
-	convert_angle_modulo_360(vars);
 	ray_angle = vars->game->player->angle_start;
 	x = 0;
 	y = 0;
@@ -137,9 +137,13 @@ void	draw_every_ray(t_vars *vars)
 	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
 	while (ray_angle > vars->game->player->angle_end)
 	{
+		printf("\nNEW POINT\n");
+		printf("ray_angle = %f\n", ray_angle);
 		distance_to_wall = calculate_best_distance(vars, ray_angle);
 		projected_wall_height = calculate_projected_wall_height(distance_to_wall);
 		draw_wall(vars, projected_wall_height, &x, &y);
+		// if (x == WINDOW_X / 2)
+		// 	my_mlx_pixel_put(*vars, x, y, WHITE);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
 	if (vars->game->player->angle_end <= 0)

@@ -8,5 +8,6 @@
 		"cmath": "c",
 		"parsing.h": "c",
 		"textures.h": "c"
-	}
+	},
+	"makefile.configureOnOpen": false
 }

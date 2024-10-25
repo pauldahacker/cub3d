@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/23 19:42:59 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/24 17:57:39 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,7 @@ int	ray_facing_up(double angle)
 //We start from the abscissa axis and we go anticlockwise.
 //Basically, we know that angle is facing right if the angle goes from 
 //-90° ≤ angle ≤ 90 (everything % 360)
+//We reduce by 360 in draw_every_ray function, so we have to check -90.0 as well
 int	ray_facing_right(double angle)
 {
 	if ((angle >= -90.0 && angle < 90.0)

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/23 19:44:48 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/25 12:03:14 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int	main(int argc, char **argv)
 	vars.data.img = mlx_new_image(vars.mlx_ptr, WINDOW_X, WINDOW_Y);
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
-	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
 	vars.game->player->pos_x = (vars.game->player->pos_x + 0.5) * BLOCK_SIZE;
