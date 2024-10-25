@@ -5,7 +5,7 @@ double  increment_angle(double angle, double to_add)
     double  res;
 
     res = angle + to_add;
-    if (res > 360)
+    if (res >= 360)
         return (res - 360);
     if (angle + to_add < 0)
         return (res + 360);

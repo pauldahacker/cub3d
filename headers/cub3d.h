@@ -128,6 +128,10 @@ typedef struct s_vars
 	t_game		*game;
 }				t_vars;
 
+// controls/movement_utils.c
+double  return_x_increment(t_vars *vars, double angle, int attempted_speed);
+double  return_y_increment(t_vars *vars, double angle, int attempted_speed);
+
 // controls/movement.c
 int	on_move_up(t_vars *vars, int attempted_speed);
 int	on_move_down(t_vars *vars, int attempted_speed);
