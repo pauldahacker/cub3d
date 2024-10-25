@@ -124,7 +124,7 @@ void	find_map_dim(int fd, t_game *game)
 		check_row(game->line, game);
 		++(game->n_rows);
 		if ((int)ft_strlen(game->line) > game->n_cols)
-			game->n_cols = ft_strlen(game->line);
+			game->n_cols = ft_strlen(game->line) - 1;
 		free(game->line);
 		game->line = get_next_line2(fd, game);
 	}
