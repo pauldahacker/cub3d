@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 20:34:43 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:38:54 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
 			* BLOCK_SIZE + BLOCK_SIZE;
 	else
 		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE)
-			* BLOCK_SIZE - 0.1;
+			* BLOCK_SIZE;
 	a.y = vars->game->player->pos_y + (vars->game->player->pos_x - a.x)
 		* tan(ray_angle * (PI / 180.0));
 	return (a);
