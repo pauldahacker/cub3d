@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 20:32:51 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:39:01 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
 	a.reachable = 1;
 	if (ray_facing_up(ray_angle) == 1)
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
-			* BLOCK_SIZE - 0.1;
+			* BLOCK_SIZE;
 	else
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
 			* BLOCK_SIZE + BLOCK_SIZE;
