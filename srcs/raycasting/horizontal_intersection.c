@@ -6,13 +6,13 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 19:52:30 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:32:51 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-/*t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
+t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
 	double ray_angle)
 {
 	t_block	a;
@@ -20,7 +20,7 @@
 	a.reachable = 1;
 	if (ray_facing_up(ray_angle) == 1)
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
-			* BLOCK_SIZE - 1.0;
+			* BLOCK_SIZE - 0.1;
 	else
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
 			* BLOCK_SIZE + BLOCK_SIZE;
@@ -40,7 +40,7 @@ double	finding_horizontal_x_a(double ray_angle)
 {
 	double	x_a_iteration;
 
-	x_a_iteration = rounded_down(ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0))));//you might need to rounded_down here
+	x_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));//you might need to rounded_down here
 	if (ray_facing_right(ray_angle) == 1)
 		return (x_a_iteration);
 	return (-x_a_iteration);
@@ -54,13 +54,8 @@ t_block	find_next_horizontal_point(t_block current_point, double ray_angle)
 
 	x_a = finding_horizontal_x_a(ray_angle);
 	y_a = finding_horizontal_y_a(ray_angle);
-	next_in_px.x = rounded_down(current_point.x) + x_a;
-	next_in_px.y = rounded_down(current_point.y) + y_a;
-	// next_in_px.y = rounded_down(current_point.y + y_a);
-	// next_in_px.y = rounded_down(current_point.y) + y_a;
-	// next_in_px.y = rounded_down(current_point.y) + rounded_down(y_a);
-	// next_in_px.x = current_point.x + x_a;
-	// next_in_px.y = current_point.y + y_a;
+	next_in_px.x = current_point.x + x_a;
+	next_in_px.y = current_point.y + y_a;
 	next_in_px.reachable = true;
 	return (next_in_px);
 }
@@ -92,4 +87,4 @@ t_block	horizontal_point_crossing_wall(t_vars *vars, double ray_angle)
 		current_in_px = next_in_px;
 	}
 	return (printf("3.h\n"), current_in_px);
-}*/
+}

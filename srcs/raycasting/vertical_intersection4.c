@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:43:31 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 19:57:09 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:11:39 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 //est-ce que vars->game->player->pos_x est un entier ? 
 //Non => est-ce que first_intersected_point.y doit etre rounded_down ?
-t_block	check_vertical_first_pt(t_vars *vars, double ray_angle)
+/*t_block	check_vertical_first_pt(t_vars *vars, double ray_angle)
 {
 	t_block	first_intersected_point;
 	
@@ -89,4 +89,4 @@ t_block	vertical_point_crossing_wall(t_vars *vars, double ray_angle)
 		vertical_first_pt_block = vertical_next_pt_block;
 	}
 	return (vertical_first_pt_px);
-}
+}*/
