@@ -6,13 +6,13 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 18:22:36 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:52:30 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
+/*t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
 	double ray_angle)
 {
 	t_block	a;
@@ -92,4 +92,4 @@ t_block	horizontal_point_crossing_wall(t_vars *vars, double ray_angle)
 		current_in_px = next_in_px;
 	}
 	return (printf("3.h\n"), current_in_px);
-}
+}*/
