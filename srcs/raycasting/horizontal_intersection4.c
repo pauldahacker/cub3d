@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:24:09 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 19:56:14 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 20:00:50 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 //	checking if it's on the map
 //when the point is not fulfulling the condition, return the point
 
-t_block	check_horizontal_first_pt(t_vars *vars, double ray_angle)
+/*t_block	check_horizontal_first_pt(t_vars *vars, double ray_angle)
 {
 	t_block	first_intersected_point;
 	
@@ -92,4 +92,4 @@ t_block	horizontal_point_crossing_wall(t_vars *vars, double ray_angle)
 		horizontal_first_pt_block = horizontal_next_pt_block;
 	}
 	return (horizontal_first_pt_px);
-}
+}*/
