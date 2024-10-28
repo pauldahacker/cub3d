@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/25 14:51:16 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 18:22:36 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,12 @@ t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
 	a.reachable = 1;
 	if (ray_facing_up(ray_angle) == 1)
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
-			* BLOCK_SIZE - 1;
+			* BLOCK_SIZE - 1.0;
 	else
 		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
 			* BLOCK_SIZE + BLOCK_SIZE;
-	// printf("vars->game->player->pos_x = %f\n", vars->game->player->pos_x);
-	// printf("vars->game->player->pos_y = %f\n", vars->game->player->pos_y);
-	// printf("a.y = %f\n", a.y);
-	// printf("tan(ray_angle * (PI / 180.0)) = %f\n", tan(ray_angle * (PI / 180.0)));
 	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y)
 		/ tan(ray_angle * (PI / 180.0));
-	printf("find_coordinate_of_first_horizontal_point first_block a.x = %f && a.y = %f\n", a.x, a.y);
 	return (a);
 }
 
@@ -45,8 +40,7 @@ double	finding_horizontal_x_a(double ray_angle)
 {
 	double	x_a_iteration;
 
-	x_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
-	// printf("horizontal x_a iteration value = %f\n", x_a_iteration);
+	x_a_iteration = rounded_down(ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0))));//you might need to rounded_down here
 	if (ray_facing_right(ray_angle) == 1)
 		return (x_a_iteration);
 	return (-x_a_iteration);
@@ -60,10 +54,14 @@ t_block	find_next_horizontal_point(t_block current_point, double ray_angle)
 
 	x_a = finding_horizontal_x_a(ray_angle);
 	y_a = finding_horizontal_y_a(ray_angle);
-	next_in_px.x = current_point.x + x_a;
-	next_in_px.y = current_point.y + y_a;
+	next_in_px.x = rounded_down(current_point.x) + x_a;
+	next_in_px.y = rounded_down(current_point.y) + y_a;
+	// next_in_px.y = rounded_down(current_point.y + y_a);
+	// next_in_px.y = rounded_down(current_point.y) + y_a;
+	// next_in_px.y = rounded_down(current_point.y) + rounded_down(y_a);
+	// next_in_px.x = current_point.x + x_a;
+	// next_in_px.y = current_point.y + y_a;
 	next_in_px.reachable = true;
-	printf("next_block.x = %f && next_block.y = %f\n", next_in_px.x, next_in_px.y);
 	return (next_in_px);
 }
 
