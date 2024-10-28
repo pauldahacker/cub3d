@@ -6,13 +6,13 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 18:11:13 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/28 19:57:31 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
+/*t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
 {
 	t_block	a;
 
@@ -89,4 +89,4 @@ t_block	vertical_point_crossing_wall(t_vars *vars, double ray_angle)
 		current_in_px = next_in_px;
 	}
 	return (printf("3.v\n"), current_in_px);
-}
+}*/
