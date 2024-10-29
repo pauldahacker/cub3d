@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vertical_intersection.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 20:39:31 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 12:16:15 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,16 +74,16 @@ t_block	vertical_point_crossing_wall(t_vars *vars, double ray_angle)
 	current_in_px = find_coordinate_of_first_vertical_point(vars, ray_angle);
 	current_in_block = convert_pixel_to_block(current_in_px);
 	if (check_coordinates_in_map(vars, current_in_block) == 0)
-		return (printf("1.v\n"), current_in_px.reachable = 0, current_in_px);
+		return (current_in_px.reachable = 0, current_in_px);
 	while (map[(int)current_in_block.y][(int)current_in_block.x] == 'V'
 		|| map[(int)current_in_block.y][(int)current_in_block.x] == '0')
 	{
 		next_in_px = find_next_vertical_point(current_in_px, ray_angle);
 		next_in_block = convert_pixel_to_block(next_in_px);
 		if (check_coordinates_in_map(vars, next_in_block) == 0)
-			return (printf("2.v\n"), current_in_px.reachable = 0, current_in_px);
+			return (current_in_px.reachable = 0, current_in_px);
 		current_in_block = next_in_block;
 		current_in_px = next_in_px;
 	}
-	return (printf("3.v\n"), current_in_px);
+	return (current_in_px);
 }
