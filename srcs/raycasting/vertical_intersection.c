@@ -6,13 +6,14 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 15:11:38 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:51:47 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
+static t_block	find_coordinate_of_first_vertical_point(t_vars *vars,
+	double ray_angle)
 {
 	t_block	a;
 
@@ -28,14 +29,14 @@ t_block	find_coordinate_of_first_vertical_point(t_vars *vars, double ray_angle)
 	return (a);
 }
 
-double	finding_vertical_x_a(double ray_angle)
+static double	finding_vertical_x_a(double ray_angle)
 {
 	if (ray_facing_right(ray_angle) == 1)
 		return (BLOCK_SIZE);
 	return (-BLOCK_SIZE);
 }
 
-double	finding_vertical_y_a(double ray_angle)
+static double	finding_vertical_y_a(double ray_angle)
 {
 	double	y_a_iteration;
 
@@ -45,7 +46,8 @@ double	finding_vertical_y_a(double ray_angle)
 	return (y_a_iteration);
 }
 
-t_block	find_next_vertical_point(t_block current_point, double ray_angle)
+static t_block	find_next_vertical_point(t_block current_point,
+	double ray_angle)
 {
 	t_block	next_in_px;
 	double	x_a;
