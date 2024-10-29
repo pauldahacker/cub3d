@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 12:22:48 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/29 12:33:01 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ double	finding_horizontal_x_a(double ray_angle)
 {
 	double	x_a_iteration;
 
-	x_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));//you might need to rounded_down here
+	x_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
 	if (ray_facing_right(ray_angle) == 1)
 		return (x_a_iteration);
 	return (-x_a_iteration);
