@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/28 20:37:42 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:13:02 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ typedef struct raycasting
 	double		angle_start;//⭐
 	double		angle_end;//⭐
 	double		subsequent_angle;//⭐
-	double		distance_to_wall;//the distance from the player to the wall
+	t_proj		proj_plan;
 }	t_player;
 
 typedef struct s_data

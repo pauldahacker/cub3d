@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 13:54:42 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:24:19 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,15 @@
 //horizontal ray distance and the vertical ray distance
 //for this will use the Pythagoras theorem because each ray are drawn in a 
 //right triangle
+
+t_block	convert_pixel_to_block(t_block point)
+{
+	t_block	converted;
+
+	converted.x = point.x / BLOCK_SIZE;
+	converted.y = point.y / BLOCK_SIZE;
+	return (converted);
+}
 
 double	ft_abs(double number)
 {

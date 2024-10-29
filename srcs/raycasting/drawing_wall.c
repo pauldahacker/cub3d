@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 13:56:30 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 15:33:10 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 //Why divided by 2. Because we want to know the most straightforward ray, which
 //is the one at the middle. Same for the opposite_side. The opposite_side is 
 //our whole projection plane. But we use only half of it.
-//Thus: opposite_side = PROJECTION_PLANE_X / 2 = 320 / 2 = 160
+//Thus: opposite_side = PROJ_PLANE_X / 2 = 320 / 2 = 160
 /*
             The most straightforward ray is the one at the middle.
             To calculate it we use trigonometry in a triangle.
@@ -47,60 +47,58 @@ void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 		*(unsigned int *)dst = color;
 }
 
-t_block	convert_pixel_to_block(t_block point)
-{
-	t_block	converted;
-
-	converted.x = point.x / BLOCK_SIZE;
-	converted.y = point.y / BLOCK_SIZE;
-	return (converted);
-}
-
 double	calculate_projected_wall_height(double dist_to_wall)
 {
 	double	actual_wall_height;
-	double	distance_player_projection_plane;
+	double	distance_player_pplan;
 	double	projected_wall_height;
 
 	actual_wall_height = BLOCK_SIZE;
-	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan((60 / 2) * PI / 180.0));
-	projected_wall_height = (actual_wall_height / dist_to_wall) * distance_player_projection_plane;
+	distance_player_pplan = ((PROJ_PLANE_X / 2) / tan((60 / 2) * PI / 180.0));
+	projected_wall_height = (actual_wall_height / dist_to_wall)
+		* distance_player_pplan;
 	projected_wall_height = rounded_nearest_nb(projected_wall_height);
 	return (projected_wall_height);
+}
+
+void	set_projection_plan(t_proj *proj_plan, double projected_wall_height)
+{
+	proj_plan->length_column = rounded_nearest_nb(WINDOW_X / PROJ_PLANE_X);
+	proj_plan->center_pp_y = PROJ_PLANE_Y / 2;
+	proj_plan->wall_top_pos_y_in_pp = proj_plan->center_pp_y
+		- projected_wall_height / 2;
+	proj_plan->wall_lower_pos_y_in_pp = proj_plan->center_pp_y
+		+ projected_wall_height / 2;
+	proj_plan->wall_top_pos_y_in_px = proj_plan->wall_top_pos_y_in_pp
+		* WINDOW_Y / PROJ_PLANE_Y;
+	proj_plan->wall_lower_pos_y_in_px = proj_plan->wall_lower_pos_y_in_pp
+		* WINDOW_Y / PROJ_PLANE_Y;
 }
 
 //PP means PROJECTION_PLAN
 //this function draws one column of our FOV, starting from (x;y)
 void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 {
-	double	center_projection_plan_y;
-	double	wall_top_position_y_in_PP;
-	double	wall_lower_position_y_in_PP;
-	double	wall_top_position_y_in_px;
-	double	wall_lower_position_y_in_px;
-	int		length_column;
+	t_proj	proj_plan;
 
-	length_column = rounded_nearest_nb(WINDOW_X / PROJECTION_PLANE_X);
-	center_projection_plan_y = PROJECTION_PLANE_Y / 2;
-	wall_top_position_y_in_PP = center_projection_plan_y - projected_wall_height / 2;
-	wall_lower_position_y_in_PP = center_projection_plan_y + projected_wall_height / 2;
-	wall_top_position_y_in_px = wall_top_position_y_in_PP * WINDOW_Y / PROJECTION_PLANE_Y;
-	wall_lower_position_y_in_px = wall_lower_position_y_in_PP * WINDOW_Y / PROJECTION_PLANE_Y;
+	proj_plan = vars->game->player->proj_plan;
+	set_projection_plan(&proj_plan, projected_wall_height);
 	while (*x < WINDOW_X)
 	{
 		*y = 0;
 		while (*y < WINDOW_Y)
 		{
-			if (*y < wall_top_position_y_in_px)
+			if (*y < proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
-			else if (*y >= wall_top_position_y_in_px && *y <= wall_lower_position_y_in_px)
+			else if (*y >= proj_plan.wall_top_pos_y_in_px
+				&& *y <= proj_plan.wall_lower_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, GREY);
-			else if (*y > wall_top_position_y_in_px)
+			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
 		}
 		(*x)++;
-		if (*x % length_column == 0)
+		if (*x % proj_plan.length_column == 0)
 			break ;
 	}
 }
