@@ -3,7 +3,7 @@ SO ./south_test.xpm
         F               0,0,  0100  
         WE      ./west_test.xpm
 EA    ./east_test.xpm
-C       56      ,       56,56     
+C       255      ,       255,255     
 
 
 
