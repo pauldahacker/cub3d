@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   raycasting_utils.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 12:34:39 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/29 13:49:12 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/cub3d.h"
 
 //As long as the position of the character (=player), can be everywhere in the
-//map, and within the map we work with cubes, we have to know where is the character
-//but not in pixel, but in cubes unit.
+//map, and within the map we work with cubes, we have to know where is the
+//character but not in pixel, but in cubes unit.
 //this function rounded_down the position of the player to give us his position
 //in cubes unit
 
@@ -29,12 +29,10 @@ double	rounded_down(double nb)
 	return ((long)nb);
 }
 
-#include <stdio.h>
-
 double	rounded_nearest_nb(double nb)
 {
 	double	nb_2;
-	
+
 	if (nb >= 0.0)
 	{
 		nb_2 = nb - rounded_down(nb);
@@ -74,15 +72,6 @@ double	rounded_nearest_nb(double nb)
 // 	printf("nb_7 = %f\n", rounded_nearest_nb(nb_7));
 // 	return (0);
 // }
-
-t_block	convert_pixel_to_block(t_block point)
-{
-	t_block	converted;
-
-	converted.x = point.x / BLOCK_SIZE;
-	converted.y = point.y / BLOCK_SIZE;
-	return (converted);
-}
 
 //we need a function to know if the ray is facing up or down
 //this function returns 1 if is going up, 0 if it's going down
