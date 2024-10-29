@@ -37,6 +37,8 @@ int	main(int argc, char **argv)
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
 	init_keys(&vars);
+	//system("pkill afplay &");
+	system("afplay ./Empty_7.mp3 &");
 	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);

@@ -1,4 +1,4 @@
-        NO ./north_test.xpm                 
+NO ./north_test.xpm                 
 SO ./south_test.xpm
 F 255,0,0
 WE ./west_test.xpm

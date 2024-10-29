@@ -1,10 +1,10 @@
         NO ./north_test.xpm                 
 SO ./south_test.xpm
-F 255,0,0
+F 0,255,255
 WE ./west_test.xpm
 EA ./east_test.xpm
 
-C 0,0,255     
+C 255,255,0     
 
 1111111111111
 1000000000001

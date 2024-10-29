@@ -30,6 +30,7 @@
 # include <sys/uio.h>
 # include <unistd.h>
 # include "../libft/libft.h"
+# include "colors.h"
 # include "raycasting.h"
 # include "parsing.h"
 # include "textures.h"
@@ -38,12 +39,13 @@
 # define WINDOW_X 1600
 # define WINDOW_Y 900
 
+# define MINIMAP_SHADE	0.65
 # define MINIMAP_HEIGHT WINDOW_Y / 4
 # define MINIMAP_LENGTH WINDOW_X / 4
 # define MINIMAP_START_X 5
 # define MINIMAP_START_Y 5
 
-# define MOVEMENT_SPEED 10
+# define MOVEMENT_SPEED 8
 # define ROTATE_SPEED 3
 
 // MLX
@@ -75,16 +77,6 @@
 #  define LEFT 123
 #  define RIGHT 124
 # endif
-
-// Colors
-# define GREY				0x808080
-# define BLACK				0x000000
-# define WHITE				0xFFFFFF
-# define BLUE		0x0000FF
-# define YELLOW		0xFFFF00
-# define SKY_BLUE	0xADD8E6
-# define ELECTRIC_BLUE	0x7df9ff
-# define BROWN		0x964B00
 
 //maths
 # define PI 	3.14159265358979323846
@@ -147,6 +139,19 @@ typedef struct s_vars
 	t_keys		keys;
 }				t_vars;
 
+// controls/controls.c
+int	on_destroy(t_vars *vars);
+int	on_keypress(int keysym, t_vars *vars);
+int	on_keyrelease(int keysym, t_vars *vars);
+int	update_player(t_vars *vars);
+
+// minimap/minimap_utils.c
+void	draw_fov_line(t_vars vars, t_point *p1, t_point *p2);
+int		add_shade(double opacity, int color);
+
+// minimap/minimap.c
+void	draw_minimap(t_vars *vars, t_game *game);
+
 // controls/movement_utils.c
 double  return_x_increment(t_vars *vars, double angle, int attempted_speed);
 double  return_y_increment(t_vars *vars, double angle, int attempted_speed);
@@ -162,17 +167,9 @@ double  increment_angle(double angle, double to_add);
 int		on_rotate_left(t_vars *vars, int attempted_speed);
 int		on_rotate_right(t_vars *vars, int attempted_speed);
 
-// controls/controls.c
-int	on_destroy(t_vars *vars);
-int	on_keypress(int keysym, t_vars *vars);
-int	on_keyrelease(int keysym, t_vars *vars);
-int	update_player(t_vars *vars);
-
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
 void		draw_game(t_vars vars, t_game *game);
 void		draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y);
-
-void		draw_minimap(t_vars *vars, t_game *game);
 
 #endif

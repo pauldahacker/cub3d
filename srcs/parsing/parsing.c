@@ -100,6 +100,7 @@ void	destroy_game(t_game *game)
 	if (game->player)
 		free(game->player);
 	free(game);
+	system("pkill afplay &");
 }
 
 /*
