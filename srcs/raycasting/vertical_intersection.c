@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   vertical_intersection.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 12:33:06 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/29 15:11:38 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,6 @@ t_block	vertical_point_crossing_wall(t_vars *vars, double ray_angle)
 	t_block	next_in_block;
 	char	**map;
 
-	printf("in vertical\n");
 	map = vars->game->map;
 	current_in_px = find_coordinate_of_first_vertical_point(vars, ray_angle);
 	current_in_block = convert_pixel_to_block(current_in_px);
