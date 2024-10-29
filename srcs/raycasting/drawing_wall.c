@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 19:51:52 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 13:56:30 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,16 @@ void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 		*(unsigned int *)dst = color;
 }
 
-double	calculate_projected_wall_height(double distance_to_wall)
+t_block	convert_pixel_to_block(t_block point)
+{
+	t_block	converted;
+
+	converted.x = point.x / BLOCK_SIZE;
+	converted.y = point.y / BLOCK_SIZE;
+	return (converted);
+}
+
+double	calculate_projected_wall_height(double dist_to_wall)
 {
 	double	actual_wall_height;
 	double	distance_player_projection_plane;
@@ -55,7 +64,7 @@ double	calculate_projected_wall_height(double distance_to_wall)
 
 	actual_wall_height = BLOCK_SIZE;
 	distance_player_projection_plane = ((PROJECTION_PLANE_X / 2) / tan((60 / 2) * PI / 180.0));
-	projected_wall_height = (actual_wall_height / distance_to_wall) * distance_player_projection_plane;
+	projected_wall_height = (actual_wall_height / dist_to_wall) * distance_player_projection_plane;
 	projected_wall_height = rounded_nearest_nb(projected_wall_height);
 	return (projected_wall_height);
 }
@@ -103,7 +112,7 @@ void	draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y)
 //angle_end finishes at the right of our FOV (example: 60)
 void	draw_every_ray(t_vars *vars)
 {
-	double	distance_to_wall;
+	double	dist_to_wall;
 	double	projected_wall_height;
 	int		y;
 	int		x;
@@ -114,15 +123,10 @@ void	draw_every_ray(t_vars *vars)
 	y = 0;
 	if (vars->game->player->angle_end >= 300.0)
 		vars->game->player->angle_end -= 360.0;
-	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
-	printf("ray_angle = %f\n", ray_angle);
-	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
 	while (ray_angle > vars->game->player->angle_end)
 	{
-		printf("\nNEW POINT\n");
-		printf("ray_angle = %f\n", ray_angle);
-		distance_to_wall = calculate_best_distance(vars, ray_angle);
-		projected_wall_height = calculate_projected_wall_height(distance_to_wall);
+		dist_to_wall = calculate_best_distance(vars, ray_angle);
+		projected_wall_height = calculate_projected_wall_height(dist_to_wall);
 		draw_wall(vars, projected_wall_height, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
