@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 15:24:19 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 16:48:26 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ double	ft_abs(double number)
 //then we use pyhagoras theorem
 //to remove the fishbowl effect, we multiply the result with cos(beta)
 //see: https://permadi.com/1996/05/ray-casting-tutorial-8/
-double	calculate_hypo_distance(t_vars *vars, t_block point, double ray_angle)
+static double	calculate_hypo_distance(t_vars *vars, t_block point,
+	double ray_angle)
 {
 	t_block	ray_end_pt;
 	double	distance;

@@ -6,11 +6,21 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/29 15:32:01 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:19:02 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
+
+void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
+{
+	char	*dst;
+
+	dst = vars.data.addr + (y * vars.data.line_length + x
+			* (vars.data.bpp / 8));
+	if (*(unsigned int *)dst != (unsigned int)color)
+		*(unsigned int *)dst = color;
+}
 
 int	main(int argc, char **argv)
 {

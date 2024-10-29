@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   horizontal_intersection.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 12:33:01 by simon            ###   ########.fr       */
+/*   Updated: 2024/10/29 16:49:47 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
+static t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
 	double ray_angle)
 {
 	t_block	a;
@@ -29,14 +29,14 @@ t_block	find_coordinate_of_first_horizontal_point(t_vars *vars,
 	return (a);
 }
 
-double	finding_horizontal_y_a(double ray_angle)
+static double	finding_horizontal_y_a(double ray_angle)
 {
 	if (ray_facing_up(ray_angle) == 1)
 		return (-BLOCK_SIZE);
 	return (BLOCK_SIZE);
 }
 
-double	finding_horizontal_x_a(double ray_angle)
+static double	finding_horizontal_x_a(double ray_angle)
 {
 	double	x_a_iteration;
 
@@ -46,7 +46,8 @@ double	finding_horizontal_x_a(double ray_angle)
 	return (-x_a_iteration);
 }
 
-t_block	find_next_horizontal_point(t_block current_point, double ray_angle)
+static t_block	find_next_horizontal_point(t_block current_point,
+	double ray_angle)
 {
 	t_block	next_in_px;
 	double	x_a;

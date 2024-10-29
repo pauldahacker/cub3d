@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/29 15:13:02 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:19:38 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,9 +142,6 @@ int	on_keypress(int keysym, t_vars *vars);
 
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
-void		draw_game(t_vars vars, t_game *game);
-void		draw_wall(t_vars *vars, double projected_wall_height, int *x, int *y);
-
 void		draw_minimap(t_vars *vars, t_game *game);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 15:29:55 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 17:19:13 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct projection
 	double	wall_lower_pos_y_in_pp;
 	double	wall_top_pos_y_in_px;
 	double	wall_lower_pos_y_in_px;
+	double	distance_player_pplan;
 	int		length_column;
 }	t_proj;
 
@@ -57,12 +58,13 @@ t_block		horizontal_point_crossing_wall(t_vars *vars, double ray_angle);
 //vertical_instersection.c
 t_block		vertical_point_crossing_wall(t_vars *vars, double ray_angle);
 
-t_block		return_intersection(t_vars *vars, double angle);
-double		calculate_best_distance(t_vars *vars, double angle);
-void		draw_every_ray(t_vars *vars);
-
 //calculate_best_distance.c
 t_block		convert_pixel_to_block(t_block point);
 double		ft_abs(double number);
+double		calculate_best_distance(t_vars *vars, double angle);
+t_block		return_intersection(t_vars *vars, double angle);
+
+//draw_wall.c
+void		draw_every_ray(t_vars *vars);
 
 #endif
