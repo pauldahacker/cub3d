@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   raycasting_utils.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/28 20:34:51 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/29 12:15:10 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,8 +79,8 @@ t_block	convert_pixel_to_block(t_block point)
 {
 	t_block	converted;
 
-	converted.x = (point.x / (double)BLOCK_SIZE);
-	converted.y = (point.y / (double)BLOCK_SIZE);
+	converted.x = rounded_down(point.x / (double)BLOCK_SIZE);
+	converted.y = rounded_down(point.y / (double)BLOCK_SIZE);
 	return (converted);
 }
 
