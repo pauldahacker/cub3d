@@ -22,8 +22,6 @@ int	on_rotate_left(t_vars *vars, int attempted_speed)
 	player->angle = increment_angle(player->angle, attempted_speed);
 	player->angle_start = increment_angle(player->angle_start, attempted_speed);
 	player->angle_end = increment_angle(player->angle_end, attempted_speed);
-	draw_every_ray(vars);
-	draw_minimap(vars, vars->game);
     return (0);
 }
 
@@ -37,7 +35,5 @@ int	on_rotate_right(t_vars *vars, int attempted_speed)
     player->angle = increment_angle(player->angle, -attempted_speed);
     player->angle_start = increment_angle(player->angle_start, -attempted_speed);
 	player->angle_end = increment_angle(player->angle_end, -attempted_speed);
-    draw_every_ray(vars);
-	draw_minimap(vars, vars->game);
     return (0);
 }

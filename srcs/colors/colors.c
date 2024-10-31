@@ -3,6 +3,9 @@
 
 int add_shade(double shade, int color)
 {
+    // printf("before adding shade: %d\n", color);
+    // printf("applying: %d | %d\n", (int)(shade * 127.0) << 24, color);
+    // printf("after: %d\n", (int)(shade * 127.0) << 24 | color);
     return ((int)(shade * 0xFF) << 24 | color);
 }
 

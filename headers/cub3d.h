@@ -39,7 +39,7 @@
 # define WINDOW_X 1600
 # define WINDOW_Y 900
 
-# define MINIMAP_SHADE	0.65
+# define MINIMAP_SHADE	0.5
 # define MINIMAP_HEIGHT WINDOW_Y / 4
 # define MINIMAP_LENGTH WINDOW_X / 4
 # define MINIMAP_START_X 5
@@ -60,22 +60,22 @@
 
 // Keys
 # ifdef __linux__
-#  define ESC 65307
-#  define W 119
-#  define A 97
-#  define S 115
-#  define D 100
-#  define LEFT 65361
-#  define RIGHT 65363
+#  define ESC	65307
+#  define W_key	119
+#  define A_key	97
+#  define S_key	115
+#  define D_key	100
+#  define LEFT	65361
+#  define RIGHT	65363
 
 # elif defined(__APPLE__)
-#  define ESC 53
-#  define W 13
-#  define A 0
-#  define S 1
-#  define D 2
-#  define LEFT 123
-#  define RIGHT 124
+#  define ESC	53
+#  define W_key	13
+#  define A_key	0
+#  define S_key	1
+#  define D_key	2
+#  define LEFT	123
+#  define RIGHT	124
 # endif
 
 //maths
@@ -137,6 +137,7 @@ typedef struct s_vars
 	t_data		data;
 	t_game		*game;
 	t_keys		keys;
+	void		*engine;
 }				t_vars;
 
 // controls/controls.c

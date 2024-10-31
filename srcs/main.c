@@ -10,7 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#define MINIAUDIO_IMPLEMENTATION
+
 #include "cub3d.h"
+#include "../miniaudio/miniaudio.h"
 
 void	init_keys(t_vars *vars)
 {
@@ -25,11 +28,15 @@ void	init_keys(t_vars *vars)
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
+	ma_engine	engine;
 
 	vars.game = parse(argc, argv);
 	vars.mlx_ptr = mlx_init();
-	if (!vars.mlx_ptr)
+	if (!vars.mlx_ptr || ma_engine_init(NULL, &engine) != MA_SUCCESS)
 		return (EXIT_FAILURE);
+	vars.engine = (void *)&engine;
+    ma_engine_play_sound(&engine, "Empty_7.mp3", NULL);
+
 	vars.win_ptr = mlx_new_window(vars.mlx_ptr, WINDOW_X, WINDOW_Y, "cub3d");
 	if (!vars.win_ptr)
 		return (free(vars.mlx_ptr), EXIT_FAILURE);
@@ -37,8 +44,6 @@ int	main(int argc, char **argv)
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
 	init_keys(&vars);
-	//system("pkill afplay &");
-	system("afplay ./Empty_7.mp3 &");
 	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
