@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/31 16:56:18 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/31 18:46:39 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,6 +121,11 @@ typedef struct s_data
 	int			center_x;
 	int			center_y;
 }				t_data;
+
+typedef struct textures
+{
+	char		*path;
+}				t_texture;
 
 typedef struct s_vars
 {
