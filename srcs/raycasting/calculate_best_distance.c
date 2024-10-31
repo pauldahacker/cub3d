@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 16:48:26 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/31 15:03:39 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,9 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 				ray_angle);
 	else
 		vertical_distance = NAN;
-	return (fmin(vertical_distance, horizontal_distance));
+	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
+		return (vars->game->player->horizontal_distance_chosen = false, vertical_distance);
+	return (vars->game->player->horizontal_distance_chosen = true, horizontal_distance);
 }
 
 //returns the vertical or horizontal intersection with the smallest distance
