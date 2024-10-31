@@ -3,4 +3,5488 @@ player position map[6][23]
 angle_start = 120.000000
 angle_end = 60.000000
 subsequent_angle = 0.187500
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 119
+player x: 416
+player y: 1494
+Pressed key : 100
+player x: 426
+player y: 1494
+Pressed key : 100
+player x: 436
+player y: 1494
+Pressed key : 100
+player x: 446
+player y: 1494
+Pressed key : 100
+player x: 456
+player y: 1494
+Pressed key : 100
+player x: 466
+player y: 1494
+Pressed key : 100
+player x: 476
+player y: 1494
+Pressed key : 100
+player x: 486
+player y: 1494
+Pressed key : 100
+player x: 496
+player y: 1494
+Pressed key : 100
+player x: 506
+player y: 1494
+Pressed key : 100
+player x: 516
+player y: 1494
+Pressed key : 100
+player x: 526
+player y: 1494
+Pressed key : 100
+player x: 536
+player y: 1494
+Pressed key : 100
+player x: 546
+player y: 1494
+Pressed key : 100
+player x: 556
+player y: 1494
+Pressed key : 100
+player x: 566
+player y: 1494
+Pressed key : 100
+player x: 576
+player y: 1494
+Pressed key : 100
+player x: 586
+player y: 1494
+Pressed key : 100
+player x: 596
+player y: 1494
+Pressed key : 100
+player x: 606
+player y: 1494
+Pressed key : 100
+player x: 616
+player y: 1494
+Pressed key : 100
+player x: 626
+player y: 1494
+Pressed key : 100
+player x: 636
+player y: 1494
+Pressed key : 100
+player x: 646
+player y: 1494
+Pressed key : 100
+player x: 656
+player y: 1494
+Pressed key : 100
+player x: 666
+player y: 1494
+Pressed key : 100
+player x: 676
+player y: 1494
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 100
+player x: 686
+player y: 1494
+Pressed key : 100
+player x: 696
+player y: 1494
+Pressed key : 100
+player x: 706
+player y: 1494
+Pressed key : 100
+player x: 716
+player y: 1494
+Pressed key : 100
+player x: 726
+player y: 1494
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 100
+player x: 736
+player y: 1494
+Pressed key : 100
+player x: 746
+player y: 1494
+Pressed key : 100
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+player x: 752
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 100
+player x: 762
+player y: 1494
+player x: 761
+player y: 1494
+player x: 760
+player y: 1494
+player x: 759
+player y: 1494
+player x: 758
+player y: 1494
+player x: 757
+player y: 1494
+player x: 756
+player y: 1494
+player x: 755
+player y: 1494
+player x: 754
+player y: 1494
+player x: 753
+player y: 1494
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 119
+player x: 752
+player y: 1484
+Pressed key : 119
+player x: 752
+player y: 1474
+Pressed key : 119
+player x: 752
+player y: 1464
+Pressed key : 119
+player x: 752
+player y: 1454
+Pressed key : 119
+player x: 752
+player y: 1444
+Pressed key : 119
+player x: 752
+player y: 1434
+Pressed key : 119
+player x: 752
+player y: 1424
+Pressed key : 119
+player x: 752
+player y: 1414
+Pressed key : 119
+player x: 752
+player y: 1404
+Pressed key : 119
+player x: 752
+player y: 1394
+Pressed key : 119
+player x: 752
+player y: 1384
+Pressed key : 119
+player x: 752
+player y: 1374
+Pressed key : 119
+player x: 752
+player y: 1364
+Pressed key : 119
+player x: 752
+player y: 1354
+Pressed key : 119
+player x: 752
+player y: 1344
+Pressed key : 119
+player x: 752
+player y: 1334
+Pressed key : 119
+player x: 752
+player y: 1324
+Pressed key : 119
+player x: 752
+player y: 1314
+Pressed key : 119
+player x: 752
+player y: 1304
+Pressed key : 119
+player x: 752
+player y: 1294
+Pressed key : 119
+player x: 752
+player y: 1284
+Pressed key : 119
+player x: 752
+player y: 1274
+Pressed key : 119
+player x: 752
+player y: 1264
+Pressed key : 119
+player x: 752
+player y: 1254
+Pressed key : 119
+player x: 752
+player y: 1244
+Pressed key : 119
+player x: 752
+player y: 1234
+Pressed key : 119
+player x: 752
+player y: 1224
+Pressed key : 119
+player x: 752
+player y: 1214
+Pressed key : 119
+player x: 752
+player y: 1204
+Pressed key : 119
+player x: 752
+player y: 1194
+Pressed key : 119
+player x: 752
+player y: 1184
+Pressed key : 119
+player x: 752
+player y: 1174
+Pressed key : 119
+player x: 752
+player y: 1164
+Pressed key : 119
+player x: 752
+player y: 1154
+Pressed key : 119
+player x: 752
+player y: 1144
+Pressed key : 119
+player x: 752
+player y: 1134
+Pressed key : 119
+player x: 752
+player y: 1124
+Pressed key : 119
+player x: 752
+player y: 1114
+Pressed key : 119
+player x: 752
+player y: 1104
+Pressed key : 119
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+player x: 752
+player y: 1103
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 119
+player x: 752
+player y: 1093
+player x: 752
+player y: 1094
+player x: 752
+player y: 1095
+player x: 752
+player y: 1096
+player x: 752
+player y: 1097
+player x: 752
+player y: 1098
+player x: 752
+player y: 1099
+player x: 752
+player y: 1100
+player x: 752
+player y: 1101
+player x: 752
+player y: 1102
+Pressed key : 115
+player x: 752
+player y: 1113
+Pressed key : 115
+player x: 752
+player y: 1123
+Pressed key : 115
+player x: 752
+player y: 1133
+Pressed key : 115
+player x: 752
+player y: 1143
+Pressed key : 115
+player x: 752
+player y: 1153
+Pressed key : 115
+player x: 752
+player y: 1163
+Pressed key : 115
+player x: 752
+player y: 1173
+Pressed key : 115
+player x: 752
+player y: 1183
+Pressed key : 115
+player x: 752
+player y: 1193
+Pressed key : 115
+player x: 752
+player y: 1203
+Pressed key : 115
+player x: 752
+player y: 1213
+Pressed key : 115
+player x: 752
+player y: 1223
+Pressed key : 115
+player x: 752
+player y: 1233
+Pressed key : 115
+player x: 752
+player y: 1243
+Pressed key : 115
+player x: 752
+player y: 1253
+Pressed key : 115
+player x: 752
+player y: 1263
+Pressed key : 115
+player x: 752
+player y: 1273
+Pressed key : 115
+player x: 752
+player y: 1283
+Pressed key : 115
+player x: 752
+player y: 1293
+Pressed key : 115
+player x: 752
+player y: 1303
+Pressed key : 115
+player x: 752
+player y: 1313
+Pressed key : 115
+player x: 752
+player y: 1323
+Pressed key : 115
+player x: 752
+player y: 1333
+Pressed key : 115
+player x: 752
+player y: 1343
+Pressed key : 115
+player x: 752
+player y: 1353
+Pressed key : 115
+player x: 752
+player y: 1363
+Pressed key : 115
+player x: 752
+player y: 1373
+Pressed key : 115
+player x: 752
+player y: 1383
+Pressed key : 115
+player x: 752
+player y: 1393
+Pressed key : 115
+player x: 752
+player y: 1403
+Pressed key : 115
+player x: 752
+player y: 1413
+Pressed key : 115
+player x: 752
+player y: 1423
+Pressed key : 115
+player x: 752
+player y: 1433
+Pressed key : 115
+player x: 752
+player y: 1443
+Pressed key : 115
+player x: 752
+player y: 1453
+Pressed key : 115
+player x: 752
+player y: 1463
+Pressed key : 115
+player x: 752
+player y: 1473
+Pressed key : 115
+player x: 752
+player y: 1483
+Pressed key : 115
+player x: 752
+player y: 1493
+Pressed key : 115
+player x: 752
+player y: 1503
+Pressed key : 115
+player x: 752
+player y: 1513
+Pressed key : 115
+player x: 752
+player y: 1523
+Pressed key : 115
+player x: 752
+player y: 1533
+Pressed key : 115
+player x: 752
+player y: 1543
+Pressed key : 115
+player x: 752
+player y: 1553
+Pressed key : 115
+player x: 752
+player y: 1563
+Pressed key : 115
+player x: 752
+player y: 1573
+Pressed key : 115
+player x: 752
+player y: 1583
+Pressed key : 115
+player x: 752
+player y: 1593
+Pressed key : 115
+player x: 752
+player y: 1603
+Pressed key : 115
+player x: 752
+player y: 1613
+Pressed key : 115
+player x: 752
+player y: 1623
+Pressed key : 115
+player x: 752
+player y: 1633
+Pressed key : 115
+player x: 752
+player y: 1643
+Pressed key : 115
+player x: 752
+player y: 1653
+Pressed key : 115
+player x: 752
+player y: 1663
+Pressed key : 115
+player x: 752
+player y: 1673
+Pressed key : 115
+player x: 752
+player y: 1683
+Pressed key : 115
+player x: 752
+player y: 1693
+Pressed key : 115
+player x: 752
+player y: 1703
+Pressed key : 115
+player x: 752
+player y: 1713
+player x: 752
+player y: 1712
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 115
+player x: 752
+player y: 1722
+player x: 752
+player y: 1721
+player x: 752
+player y: 1720
+player x: 752
+player y: 1719
+player x: 752
+player y: 1718
+player x: 752
+player y: 1717
+player x: 752
+player y: 1716
+player x: 752
+player y: 1715
+player x: 752
+player y: 1714
+player x: 752
+player y: 1713
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65361
+Pressed key : 65363
+Pressed key : 65363
+Pressed key : 65363
 Pressed key : 65307
