@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/31 17:01:01 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/31 19:41:00 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,22 +114,21 @@ void	draw_every_ray(t_vars *vars)
 	double	projected_wall_height;
 	int		y;
 	int		x;
-	double	ray_angle;
 
-	ray_angle = vars->game->player->angle_start;
+	vars->game->player->ray_angle = vars->game->player->angle_start;
 	if (vars->game->player->angle_end >= 300.0)
 		vars->game->player->angle_end -= 360.0;
 	set_data_projection_plan(vars);
 	x = 0;
 	y = 0;
-	while (ray_angle > vars->game->player->angle_end)
+	while (vars->game->player->ray_angle > vars->game->player->angle_end)
 	{
-		vars->game->player->ray_angle = ray_angle;
-		dist_to_wall = calculate_best_distance(vars, ray_angle);
+		vars->game->player->tan_result = tan(vars->game->player->ray_angle * (PI / 180.0));
+		dist_to_wall = calculate_best_distance(vars);
 		projected_wall_height = calculate_projected_wall_height(vars,
 				dist_to_wall);
 		draw_raycasting(vars, projected_wall_height, &x, &y);
-		ray_angle -= vars->game->player->subsequent_angle;
+		vars->game->player->ray_angle -= vars->game->player->subsequent_angle;
 	}
 	if (vars->game->player->angle_end <= 0)
 		vars->game->player->angle_end += 360.0;

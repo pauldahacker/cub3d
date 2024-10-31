@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/31 15:03:39 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/31 19:52:13 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,7 @@ double	ft_abs(double number)
 //then we use pyhagoras theorem
 //to remove the fishbowl effect, we multiply the result with cos(beta)
 //see: https://permadi.com/1996/05/ray-casting-tutorial-8/
-static double	calculate_hypo_distance(t_vars *vars, t_block point,
-	double ray_angle)
+static double	calculate_hypo_distance(t_vars *vars, t_block point)
 {
 	t_block	ray_end_pt;
 	double	distance;
@@ -49,7 +48,7 @@ static double	calculate_hypo_distance(t_vars *vars, t_block point,
 	ray_end_pt.x = ft_abs(vars->game->player->pos_x - point.x);
 	ray_end_pt.y = ft_abs(vars->game->player->pos_y - point.y);
 	distance = ray_end_pt.x * ray_end_pt.x + ray_end_pt.y * ray_end_pt.y;
-	beta = vars->game->player->angle - ray_angle;
+	beta = vars->game->player->angle - vars->game->player->ray_angle;
 	return (sqrt(distance) * cos(beta * (PI / 180.0)));
 }
 
@@ -58,23 +57,21 @@ static double	calculate_hypo_distance(t_vars *vars, t_block point,
 //we have to reset the angle to the initial one because in the funcions 
 //*_point_crossing_wall, we modify the value of the angle
 //(for correct calculations)
-double	calculate_best_distance(t_vars *vars, double ray_angle)
+double	calculate_best_distance(t_vars *vars)
 {
 	t_block	horizontal_pt_px;
 	double	horizontal_distance;
 	t_block	vertical_pt_px;
 	double	vertical_distance;
 
-	horizontal_pt_px = horizontal_point_crossing_wall(vars, ray_angle);
+	horizontal_pt_px = horizontal_point_crossing_wall(vars);
 	if (horizontal_pt_px.reachable == 1)
-		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px,
-				ray_angle);
+		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
 	else
 		horizontal_distance = NAN;
-	vertical_pt_px = vertical_point_crossing_wall(vars, ray_angle);
+	vertical_pt_px = vertical_point_crossing_wall(vars);
 	if (vertical_pt_px.reachable == 1)
-		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px,
-				ray_angle);
+		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
 	else
 		vertical_distance = NAN;
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
@@ -90,16 +87,15 @@ t_block	return_intersection(t_vars *vars, double angle)
 	t_block	vertical_pt_px;
 	double	vertical_distance;
 
-	horizontal_pt_px = horizontal_point_crossing_wall(vars, angle);
+	(void)angle;
+	horizontal_pt_px = horizontal_point_crossing_wall(vars);
 	if (horizontal_pt_px.reachable == 1)
-		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px,
-				angle);
+		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
 	else
 		horizontal_distance = NAN;
-	vertical_pt_px = vertical_point_crossing_wall(vars, angle);
+	vertical_pt_px = vertical_point_crossing_wall(vars);
 	if (vertical_pt_px.reachable == 1)
-		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px,
-				angle);
+		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
 	else
 		vertical_distance = NAN;
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)

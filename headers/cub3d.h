@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/31 18:46:39 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/31 19:21:11 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,6 +107,8 @@ typedef struct raycasting
 	double		subsequent_angle;//⭐
 	double		ray_angle;
 	bool		horizontal_distance_chosen;//or horizontal distance or the vertical one
+	double		tan_result;
+	double		cos_result;
 	t_proj		proj_plan;
 }	t_player;
 
@@ -125,6 +127,8 @@ typedef struct s_data
 typedef struct textures
 {
 	char		*path;
+	int			height;
+	int			width;
 }				t_texture;
 
 typedef struct s_vars
@@ -133,6 +137,7 @@ typedef struct s_vars
 	void		*win_ptr;
 	t_data		data;
 	t_game		*game;
+	t_texture	texture;
 }				t_vars;
 
 // controls/movement.c
