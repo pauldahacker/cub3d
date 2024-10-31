@@ -8,6 +8,7 @@
 		"cmath": "c",
 		"parsing.h": "c",
 		"textures.h": "c",
-		"complex": "c"
+		"complex": "c",
+		"miniaudio.h": "c"
 	}
 }

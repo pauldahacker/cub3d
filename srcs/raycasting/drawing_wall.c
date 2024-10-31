@@ -40,11 +40,24 @@ __________ = Projection Plane = __________
 void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 {
 	char	*dst;
+	int		alpha = (color >> 24) & 0xFF; // Extract alpha from color
+    int		r = (color >> 16) & 0xFF;     // Extract red
+    int		g = (color >> 8) & 0xFF;      // Extract green
+    int		b = color & 0xFF;
 
 	dst = vars.data.addr + (y * vars.data.line_length + x
 			* (vars.data.bpp / 8));
-	if (*(unsigned int *)dst != (unsigned int)color)
-		*(unsigned int *)dst = color;
+	//printf("Input Color: 0x%X | Alpha: %d | R: %d | G: %d | B: %d\n", color, alpha, r, g, b);
+	if (alpha > 0) {
+        r = (r * alpha + ((*(unsigned int *)dst >> 16) & 0xFF) * (255 - alpha)) / 255;
+        g = (g * alpha + ((*(unsigned int *)dst >> 8) & 0xFF) * (255 - alpha)) / 255;
+        b = (b * alpha + (*(unsigned int *)dst & 0xFF) * (255 - alpha)) / 255;
+
+        // Combine back into a single color value
+        color = (0xFF << 24) | (r << 16) | (g << 8) | b; // Set alpha to fully opaque
+	}
+	//printf("color: %d\n", color);
+	*(unsigned int *)dst = color;
 }
 
 double	calculate_projected_wall_height(double distance_to_wall)
@@ -114,9 +127,9 @@ void	draw_every_ray(t_vars *vars)
 	y = 0;
 	if (vars->game->player->angle_end >= 300.0)
 		vars->game->player->angle_end -= 360.0;//I do this for E player's position
-	printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
-	printf("ray_angle = %f\n", ray_angle);
-	printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
+	//printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
+	//printf("ray_angle = %f\n", ray_angle);
+	//printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
 	while (ray_angle > vars->game->player->angle_end)
 	{
 		distance_to_wall = calculate_best_distance(vars, ray_angle);

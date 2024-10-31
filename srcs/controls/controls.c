@@ -11,12 +11,14 @@
 /* ************************************************************************** */
 
 #include "cub3d.h"
+#include "../miniaudio/miniaudio.h"
 
 int	on_destroy(t_vars *vars)
 {
 	mlx_destroy_window(vars->mlx_ptr, vars->win_ptr);
 	free(vars->mlx_ptr);
 	destroy_game(vars->game);
+	ma_engine_uninit((ma_engine *)vars->engine);
 	exit(0);
 	return (0);
 }
@@ -25,13 +27,13 @@ int	on_keypress(int keysym, t_vars *vars)
 {
 	if (keysym == ESC)
 		on_destroy(vars);
-	else if (keysym == W)
+	else if (keysym == W_key)
 		vars->keys.w = 1;
-	else if (keysym == A)
+	else if (keysym == A_key)
 		vars->keys.a = 1;
-	else if (keysym == S)
+	else if (keysym == S_key)
 		vars->keys.s = 1;
-	else if (keysym == D)
+	else if (keysym == D_key)
 		vars->keys.d = 1;
 	else if (keysym == LEFT)
 		vars->keys.left = 1;
@@ -42,13 +44,13 @@ int	on_keypress(int keysym, t_vars *vars)
 
 int	on_keyrelease(int keysym, t_vars *vars)
 {
-	if (keysym == W)
+	if (keysym == W_key)
 		vars->keys.w = 0;
-	else if (keysym == A)
+	else if (keysym == A_key)
 		vars->keys.a = 0;
-	else if (keysym == S)
+	else if (keysym == S_key)
 		vars->keys.s = 0;
-	else if (keysym == D)
+	else if (keysym == D_key)
 		vars->keys.d = 0;
 	else if (keysym == LEFT)
 		vars->keys.left = 0;
@@ -71,5 +73,7 @@ int	update_player(t_vars *vars)
 		on_rotate_left(vars, ROTATE_SPEED);
 	if (vars->keys.right)
 		on_rotate_right(vars, ROTATE_SPEED);
+	draw_every_ray(vars);
+	draw_minimap(vars, vars->game);
 	return (0);
 }
