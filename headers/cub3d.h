@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/29 17:19:38 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/10/31 16:56:18 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,10 @@
 # endif
 
 // Colors
-# define GREY				0x808080
+# define STANDARD_GREY		0x808080
+# define DARK_GREY			0x404040
+# define CLEAR_GREY			0x999999
+# define SILVER_GREY		0x909090
 # define BLACK				0x000000
 # define WHITE				0xFFFFFF
 # define BLUE				0x0000FF
@@ -102,6 +105,8 @@ typedef struct raycasting
 	double		angle_start;//⭐
 	double		angle_end;//⭐
 	double		subsequent_angle;//⭐
+	double		ray_angle;
+	bool		horizontal_distance_chosen;//or horizontal distance or the vertical one
 	t_proj		proj_plan;
 }	t_player;
 
@@ -137,8 +142,11 @@ int		on_rotate_left(t_vars *vars, int attempted_speed);
 int		on_rotate_right(t_vars *vars, int attempted_speed);
 
 // controls/controls.c
-int	on_destroy(t_vars *vars);
-int	on_keypress(int keysym, t_vars *vars);
+int			on_destroy(t_vars *vars);
+int			on_keypress(int keysym, t_vars *vars);
+
+//srcs/textures/draw_textures.c
+void		draw_wall(t_vars *vars, int *x, int *y);
 
 //main.c
 void		my_mlx_pixel_put(t_vars vars, int x, int y, int color);
