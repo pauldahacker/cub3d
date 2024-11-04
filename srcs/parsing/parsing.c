@@ -103,63 +103,17 @@ void	destroy_game(t_game *game)
 }
 
 /*
-check_add_texture: checks line for errors and adds it as a texture to t_game.
-It should always be used after check_id (see check_id in checking.c).
-It checks if the line is properly formatted, and if the path exists.
-If not, it exits and prints a descriptive error using handle_error.
+handle_error: frees game and displays an error message
+Set game to NULL if it has not been created yet.
+Set err to NULL if no message should be provided.
 */
-void	check_add_texture(t_game *game, char *line)
+void	handle_error(t_game *game, char *err)
 {
-	int		i;
-	char	*path;
-
-	if (!ft_strncmp(line, "F ", 2) || !ft_strncmp(line, "C ", 2))
-		return ;
-	i = 3;
-	while (line[i] && is_space(line[i]))
-		++i;
-	path = ft_strdup(line + i);
-	if (!path)
-		handle_error(game, "Malloc Error\n");
-	if (!ft_strncmp(line, "NO ", 3) && !game->north_path)
-		game->north_path = path;
-	else if (!ft_strncmp(line, "SO ", 3) && !game->south_path)
-		game->south_path = path;
-	else if (!ft_strncmp(line, "WE ", 3) && !game->west_path)
-		game->west_path = path;
-	else if (!ft_strncmp(line, "EA ", 3) && !game->east_path)
-		game->east_path = path;
-	else
-	{
-		free(path);
-		handle_error(game, "Error\nTexture id(s) defined more than once\n");
-	}
-}
-
-/*
-check_add_color: checks line for errors and adds it as a color to t_game.
-It should always be used after check_id (see check_id in checking.c).
-It checks if the line is properly formatted (see return_rgb in parsing_utils.c)
-If not, it exits and prints a descriptive error using handle_error.
-*/
-void	check_add_color(t_game *game, char *line)
-{
-	if (ft_strncmp(line, "F ", 2) && ft_strncmp(line, "C ", 2))
-		return ;
-	if (!ft_strncmp(line, "F ", 2) && game->floor_color == NO_COLOR)
-	{
-		if (return_rgb(line + 2) == NO_COLOR)
-			handle_error(game, "Error\nIncorrect color format\n");
-		game->floor_color = return_rgb(line + 2);
-	}
-	else if (!ft_strncmp(line, "C ", 2) && game->ceiling_color == NO_COLOR)
-	{
-		if (return_rgb(line + 2) == NO_COLOR)
-			handle_error(game, "Error\nIncorrect color format\n");
-		game->ceiling_color = return_rgb(line + 2);
-	}
-	else
-		handle_error(game, "Error\nColor defined more than once\n");
+	if (game)
+		destroy_game(game);
+	if (err)
+		write(STDERR_FILENO, err, ft_strlen(err));
+	exit(EXIT_FAILURE);
 }
 
 /*
@@ -170,7 +124,7 @@ using check_add_texture and check_add_color (see above).
 Each non-empty line is temporarily stored in game->line in order to free
 it upon error or when a new line is read.
 */
-void	add_textures_and_colors(int fd, t_game *game)
+static void	add_textures_and_colors(int fd, t_game *game)
 {
 	int		n_added;
 

@@ -1,39 +1,51 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rotation.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/04 15:44:25 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/11/04 15:44:27 by pde-masc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3d.h"
 
-double  increment_angle(double angle, double to_add)
+double	increment_angle(double angle, double to_add)
 {
-    double  res;
+	double	res;
 
-    res = angle + to_add;
-    if (res >= 360)
-        return (res - 360);
-    if (angle + to_add < 0)
-        return (res + 360);
-    return (res);
+	res = angle + to_add;
+	if (res >= 360)
+		return (res - 360);
+	if (angle + to_add < 0)
+		return (res + 360);
+	return (res);
 }
 
-int	on_rotate_left(t_vars *vars, int attempted_speed)
+int	on_rotate_left(t_vars *vars, int speed)
 {
-    t_player    *player;
+	t_player	*player;
 
-	if (!attempted_speed || attempted_speed > 360)
+	if (!speed || speed > 360)
 		return (0);
 	player = vars->game->player;
-	player->angle = increment_angle(player->angle, attempted_speed);
-	player->angle_start = increment_angle(player->angle_start, attempted_speed);
-	player->angle_end = increment_angle(player->angle_end, attempted_speed);
-    return (0);
+	player->angle = increment_angle(player->angle, speed);
+	player->angle_start = increment_angle(player->angle_start, speed);
+	player->angle_end = increment_angle(player->angle_end, speed);
+	return (0);
 }
 
-int	on_rotate_right(t_vars *vars, int attempted_speed)
+int	on_rotate_right(t_vars *vars, int speed)
 {
-    t_player    *player;
+	t_player	*player;
 
-	if (!attempted_speed || attempted_speed > 360)
+	if (!speed || speed > 360)
 		return (0);
-    player = vars->game->player;
-    player->angle = increment_angle(player->angle, -attempted_speed);
-    player->angle_start = increment_angle(player->angle_start, -attempted_speed);
-	player->angle_end = increment_angle(player->angle_end, -attempted_speed);
-    return (0);
+	player = vars->game->player;
+	player->angle = increment_angle(player->angle, -speed);
+	player->angle_start = increment_angle(player->angle_start, -speed);
+	player->angle_end = increment_angle(player->angle_end, -speed);
+	return (0);
 }

@@ -54,7 +54,7 @@ void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
         b = (b * alpha + (*(unsigned int *)dst & 0xFF) * (255 - alpha)) / 255;
 
         // Combine back into a single color value
-        color = (0xFF << 24) | (r << 16) | (g << 8) | b; // Set alpha to fully opaque
+        color = (r << 16) | (g << 8) | b; // Set alpha to fully opaque
 	}
 	//printf("color: %d\n", color);
 	*(unsigned int *)dst = color;

@@ -57,9 +57,9 @@ int	main(int argc, char **argv)
 	//test_calculate_best_distance(&vars, vars.game->player->angle);
 	//test_calculate_best_distance(&vars, 45.0);
 	draw_minimap(&vars, vars.game);
-	mlx_hook(vars.win_ptr, X_EVENT_KEY_PRESS, KEY_PRESS_MASK, &on_keypress, &vars);
-	mlx_hook(vars.win_ptr, X_EVENT_KEY_RELEASE, KEY_RELEASE_MASK, &on_keyrelease, &vars);
-	mlx_hook(vars.win_ptr, X_EVENT_DESTROY, NO_MASK, &on_destroy, &vars);
+	mlx_hook(vars.win_ptr, X_EVENT_KEY_PRESS, 1L<<0, &on_keypress, &vars);
+	mlx_hook(vars.win_ptr, X_EVENT_KEY_RELEASE, 1L<<1, &on_keyrelease, &vars);
+	mlx_hook(vars.win_ptr, X_EVENT_DESTROY, 0, &on_destroy, &vars);
 	mlx_loop_hook(vars.mlx_ptr, &update_player, &vars);
 	mlx_loop(vars.mlx_ptr);
 }

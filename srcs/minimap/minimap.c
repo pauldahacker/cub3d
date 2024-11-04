@@ -1,13 +1,13 @@
 /* ************************************************************************** */
-/*																			*/
-/*														:::	  ::::::::   */
-/*   minimap.c										  :+:	  :+:	:+:   */
-/*													+:+ +:+		 +:+	 */
-/*   By: simarcha <simarcha@student.42barcelona.	+#+  +:+	   +#+		*/
-/*												+#+#+#+#+#+   +#+		   */
-/*   Created: 2024/10/16 13:56:54 by pde-masc		  #+#	#+#			 */
-/*   Updated: 2024/10/23 16:32:06 by simarcha		 ###   ########.fr	   */
-/*																			*/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   minimap.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/04 12:49:23 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/11/04 12:49:25 by pde-masc         ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
@@ -31,53 +31,53 @@ void	draw_minimap_fov(t_vars *vars, t_game *game)
 	double	size_y;
 	double	ray_angle;
 
-	size_x = MINIMAP_LENGTH / game->n_cols;
-	size_y = MINIMAP_HEIGHT / game->n_rows;
+	size_x = WINDOW_X / 4 / game->n_cols;
+	size_y = WINDOW_Y / 4 / game->n_rows;
 	ray_angle = game->player->angle_start;
 	if (game->player->angle_end >= 300)
 		game->player->angle_end -= 360;
 	while (ray_angle > vars->game->player->angle_end)
 	{
-		start.x = MINIMAP_START_X + game->player->pos_x / BLOCK_SIZE * size_x;
-		start.y = MINIMAP_START_Y + game->player->pos_y / BLOCK_SIZE * size_y;
+		start.x = MINI_START_X + game->player->pos_x / BLOCK_SIZE * size_x;
+		start.y = MINI_START_Y + game->player->pos_y / BLOCK_SIZE * size_y;
 		inter = return_intersection(vars, ray_angle);
-		inter.x = MINIMAP_START_X + (long)(inter.x / BLOCK_SIZE * size_x);
-		inter.y = MINIMAP_START_Y + (long)(inter.y / BLOCK_SIZE * size_y);
+		inter.x = MINI_START_X + (long)(inter.x / BLOCK_SIZE * size_x);
+		inter.y = MINI_START_Y + (long)(inter.y / BLOCK_SIZE * size_y);
 		draw_fov_line(*vars, &start, &inter);
 		ray_angle -= game->player->subsequent_angle;
 	}
-	//if (game->player->angle_end < 0)
-	//	game->player->angle_end += 360;
 }
 
 /*
 draw_minimap_tile: Draws a single tile in minimap.
 It draws a size_x * size_y tile representing a floor or a wall
-depending on the position in the map (i.e. map_x and map_y).
+depending on the position in the map.
 If it's a floor, draw a (sixe_x * size_y) BLUE tile.
 If it's a wall, draw a (sixe_x * size_y) BROWN tile.
 */
-void	draw_minimap_tile(t_vars vars, t_game *game, int map_x, int map_y)
+void	draw_minimap_tile(t_vars vars, t_game *game, int x, int y)
 {
 	double	size_x;
 	double	size_y;
 	int		start_x;
 	int		start_y;
 
-	size_x = MINIMAP_LENGTH / game->n_cols;
-	size_y = MINIMAP_HEIGHT / game->n_rows;
-	start_x = MINIMAP_START_X + map_x * size_x;
-	start_y = MINIMAP_START_Y + map_y * size_y;
+	size_x = WINDOW_X / 4 / game->n_cols;
+	size_y = WINDOW_Y / 4 / game->n_rows;
+	start_x = MINI_START_X + x * size_x;
+	start_y = MINI_START_Y + y * size_y;
 	while (--size_y >= 0)
 	{
 		while (--size_x >= 0)
 		{
-			if (game->map[map_y][map_x] == '0' || game->map[map_y][map_x] == 'V')
-				my_mlx_pixel_put(vars, start_x + size_x, start_y + size_y, add_shade(MINIMAP_SHADE, WHITE - return_contrasting(game->ceiling_color)));
-			else if (game->map[map_y][map_x] == '1')
-				my_mlx_pixel_put(vars, start_x + size_x, start_y + size_y, add_shade(MINIMAP_SHADE, return_contrasting(game->ceiling_color)));
+			if (game->map[y][x] == '0' || game->map[y][x] == 'V')
+				my_mlx_pixel_put(vars, start_x + size_x, start_y + size_y,
+					add_shade(SHADE, WHITE - contrasting(game->ceiling_color)));
+			else if (game->map[y][x] == '1')
+				my_mlx_pixel_put(vars, start_x + size_x, start_y + size_y,
+					add_shade(SHADE, contrasting(game->ceiling_color)));
 		}
-		size_x = MINIMAP_LENGTH / game->n_cols;
+		size_x = WINDOW_X / 4 / game->n_cols;
 	}
 }
 
@@ -98,20 +98,23 @@ void	draw_minimap_player(t_vars vars, t_game *game)
 	int		start_x;
 	int		start_y;
 
-	size_x = MINIMAP_LENGTH / game->n_cols;
-	size_y = MINIMAP_HEIGHT / game->n_rows;
-	start_x = MINIMAP_START_X + game->player->pos_x / BLOCK_SIZE * size_x - size_x / 4;
-	start_y = MINIMAP_START_Y +  game->player->pos_y / BLOCK_SIZE * size_y - size_y / 4;
+	size_x = WINDOW_X / 4 / game->n_cols;
+	size_y = WINDOW_Y / 4 / game->n_rows;
+	start_x = MINI_START_X + game->player->pos_x / BLOCK_SIZE * size_x;
+	start_y = MINI_START_Y + game->player->pos_y / BLOCK_SIZE * size_y;
+	start_x -= size_x / 4;
+	start_y -= size_y / 4;
 	size_x /= 2;
 	size_y /= 2;
 	while (size_y > 0)
 	{
 		while (size_x > 0)
 		{
-			my_mlx_pixel_put(vars, start_x + size_x, start_y + size_y, add_shade(MINIMAP_SHADE, return_contrasting(game->ceiling_color)));
+			my_mlx_pixel_put(vars, start_x + size_x, start_y + size_y,
+				add_shade(SHADE, contrasting(game->ceiling_color)));
 			--size_x;
 		}
-		size_x = MINIMAP_LENGTH / game->n_cols / 2;
+		size_x = WINDOW_X / 4 / game->n_cols / 2;
 		--size_y;
 	}
 }

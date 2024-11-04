@@ -1,13 +1,13 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   controls.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 15:35:20 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/09/24 17:40:53 by simarcha         ###   ########.fr       */
-/*                                                                            */
+/*																			*/
+/*														:::	  ::::::::   */
+/*   controls.c										 :+:	  :+:	:+:   */
+/*													+:+ +:+		 +:+	 */
+/*   By: simarcha <simarcha@student.42barcelona.	+#+  +:+	   +#+		*/
+/*												+#+#+#+#+#+   +#+		   */
+/*   Created: 2024/09/23 15:35:20 by pde-masc		  #+#	#+#			 */
+/*   Updated: 2024/09/24 17:40:53 by simarcha		 ###   ########.fr	   */
+/*																			*/
 /* ************************************************************************** */
 
 #include "cub3d.h"
@@ -27,13 +27,13 @@ int	on_keypress(int keysym, t_vars *vars)
 {
 	if (keysym == ESC)
 		on_destroy(vars);
-	else if (keysym == W_key)
+	else if (keysym == W_KEY)
 		vars->keys.w = 1;
-	else if (keysym == A_key)
+	else if (keysym == A_KEY)
 		vars->keys.a = 1;
-	else if (keysym == S_key)
+	else if (keysym == S_KEY)
 		vars->keys.s = 1;
-	else if (keysym == D_key)
+	else if (keysym == D_KEY)
 		vars->keys.d = 1;
 	else if (keysym == LEFT)
 		vars->keys.left = 1;
@@ -44,13 +44,13 @@ int	on_keypress(int keysym, t_vars *vars)
 
 int	on_keyrelease(int keysym, t_vars *vars)
 {
-	if (keysym == W_key)
+	if (keysym == W_KEY)
 		vars->keys.w = 0;
-	else if (keysym == A_key)
+	else if (keysym == A_KEY)
 		vars->keys.a = 0;
-	else if (keysym == S_key)
+	else if (keysym == S_KEY)
 		vars->keys.s = 0;
-	else if (keysym == D_key)
+	else if (keysym == D_KEY)
 		vars->keys.d = 0;
 	else if (keysym == LEFT)
 		vars->keys.left = 0;
