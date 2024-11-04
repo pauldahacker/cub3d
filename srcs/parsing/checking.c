@@ -12,8 +12,12 @@
 
 #include "parsing.h"
 
-//This function returns 1 if we can read the file, 0 if we don't have the rights
-//to open it
+int	is_space(int c)
+{
+	return (c == '\t' || c == '\n' || c == ' '
+		|| c == '\f' || c == '\r' || c == '\v');
+}
+
 int	can_open(char *file)
 {
 	int	fd;
@@ -79,20 +83,6 @@ void	check_id(t_game *game, char *str)
 }
 
 /*
-handle_error: frees game and displays an error message
-Set game to NULL if it has not been created yet.
-Set err to NULL if no message should be provided.
-*/
-void	handle_error(t_game *game, char *err)
-{
-	if (game)
-		destroy_game(game);
-	if (err)
-		write(STDERR_FILENO, err, ft_strlen(err));
-	exit(EXIT_FAILURE);
-}
-
-/*
 check_args: it does an input check for:
 - number of arguments
 - if the given map can be opened
@@ -102,8 +92,8 @@ void	check_args(int argc, char **argv)
 {
 	if (argc != 2)
 		handle_error(NULL, "Error\nToo few or too many arguments!\n");
-	else if (!can_open(argv[1]))
-		handle_error(NULL, "Error\nRead error!\n");
-	else if (!is_format(argv[1], MAP_EXTENSION))
+	if (!is_format(argv[1], MAP_EXTENSION))
 		handle_error(NULL, "Error\nMap has wrong extension!\n");
+	if (!can_open(argv[1]))
+		handle_error(NULL, "Error\nRead error!\n");
 }

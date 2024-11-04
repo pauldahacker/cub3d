@@ -12,12 +12,6 @@
 
 #include "parsing.h"
 
-int	is_space(int c)
-{
-	return (c == '\t' || c == '\n' || c == ' '
-		|| c == '\f' || c == '\r' || c == '\v');
-}
-
 /*
 Returns str with starting and ending whitespaces removed.
 e.g. "   \n  \tHello I am Paul  \n \t " --> "Hello I am Paul"
@@ -46,7 +40,7 @@ It checks that the r, g, or b in rgb is formatted as:
 		-> '\0' for the b in rgb (last)
 If good format, returns 1, else returns 0.
 */
-int	is_color_format(char *line, char next_separator)
+static int	is_color_format(char *line, char next_separator)
 {
 	int	i;
 
@@ -90,4 +84,64 @@ int	return_rgb(char *line)
 	if (r < 0 || r > 255 || g < 0 || g > 255 || b < 0 || b > 255)
 		return (NO_COLOR);
 	return (r << 16 | g << 8 | b);
+}
+
+/*
+check_add_color: checks line for errors and adds it as a color to t_game.
+It should always be used after check_id (see check_id in checking.c).
+It checks if the line is properly formatted (see return_rgb in parsing_utils.c)
+If not, it exits and prints a descriptive error using handle_error.
+*/
+void	check_add_color(t_game *game, char *line)
+{
+	if (ft_strncmp(line, "F ", 2) && ft_strncmp(line, "C ", 2))
+		return ;
+	if (!ft_strncmp(line, "F ", 2) && game->floor_color == NO_COLOR)
+	{
+		if (return_rgb(line + 2) == NO_COLOR)
+			handle_error(game, "Error\nIncorrect color format\n");
+		game->floor_color = return_rgb(line + 2);
+	}
+	else if (!ft_strncmp(line, "C ", 2) && game->ceiling_color == NO_COLOR)
+	{
+		if (return_rgb(line + 2) == NO_COLOR)
+			handle_error(game, "Error\nIncorrect color format\n");
+		game->ceiling_color = return_rgb(line + 2);
+	}
+	else
+		handle_error(game, "Error\nColor defined more than once\n");
+}
+
+/*
+check_add_texture: checks line for errors and adds it as a texture to t_game.
+It should always be used after check_id (see check_id in checking.c).
+It checks if the line is properly formatted, and if the path exists.
+If not, it exits and prints a descriptive error using handle_error.
+*/
+void	check_add_texture(t_game *game, char *line)
+{
+	int		i;
+	char	*path;
+
+	if (!ft_strncmp(line, "F ", 2) || !ft_strncmp(line, "C ", 2))
+		return ;
+	i = 3;
+	while (line[i] && is_space(line[i]))
+		++i;
+	path = ft_strdup(line + i);
+	if (!path)
+		handle_error(game, "Malloc Error\n");
+	if (!ft_strncmp(line, "NO ", 3) && !game->north_path)
+		game->north_path = path;
+	else if (!ft_strncmp(line, "SO ", 3) && !game->south_path)
+		game->south_path = path;
+	else if (!ft_strncmp(line, "WE ", 3) && !game->west_path)
+		game->west_path = path;
+	else if (!ft_strncmp(line, "EA ", 3) && !game->east_path)
+		game->east_path = path;
+	else
+	{
+		free(path);
+		handle_error(game, "Error\nTexture id(s) defined more than once\n");
+	}
 }

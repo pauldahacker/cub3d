@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   colors.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/04 14:21:31 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/11/04 14:21:33 by pde-masc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef COLORS_H
 # define COLORS_H
 
@@ -29,14 +41,14 @@
 
 typedef struct s_rgb
 {
-    double  r;
-    double  g;
-    double  b;
+	double	r;
+	double	g;
+	double	b;
 }			t_rgb;
 
 // colors/colors.c
-double linearize(int val);
-int r_g_or_b(t_rgb rgb);
-int	return_contrasting(int color);
+double	linearize(int val);
+int		r_g_or_b(t_rgb rgb);
+int		contrasting(int color);
 
 #endif

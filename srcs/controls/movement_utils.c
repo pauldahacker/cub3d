@@ -1,35 +1,48 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   movement_utils.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/04 15:41:13 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/11/04 15:41:15 by pde-masc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3d.h"
 
-double  return_x_increment(t_vars *vars, double angle, int attempted_speed)
+static int	is_in_wall(t_game *game, double pos_x, double pos_y)
 {
-    double		player_x;
+	double	x;
+	double	y;
 
-    if (!attempted_speed)
-        return (0);
-    if (angle < 0)
-        angle += 360;
-    if (angle >= 360)
-        angle -= 360;
-    player_x = (vars->game->player->pos_x + cos(angle * PI / 180) * attempted_speed);
-    if (vars->game->map[(int)(vars->game->player->pos_y / BLOCK_SIZE - 0.25)][(int)(player_x / BLOCK_SIZE - 0.25)] == '1'
-			|| vars->game->map[(int)(vars->game->player->pos_y / BLOCK_SIZE + 0.25)][(int)(player_x / BLOCK_SIZE - 0.25)] == '1'
-				|| vars->game->map[(int)(vars->game->player->pos_y / BLOCK_SIZE - 0.25)][(int)(player_x / BLOCK_SIZE + 0.25)] == '1'
-					|| vars->game->map[(int)(vars->game->player->pos_y / BLOCK_SIZE + 0.25)][(int)(player_x / BLOCK_SIZE + 0.25)] == '1')
-		return (return_x_increment(vars, angle, attempted_speed - 1));
-    return (cos(angle * PI / 180) * attempted_speed);  
+	x = pos_x / BLOCK_SIZE;
+	y = pos_y / BLOCK_SIZE;
+	if (game->map[(int)(y - 0.25)][(int)(x - 0.25)] == '1'
+		|| game->map[(int)(y + 0.25)][(int)(x - 0.25)] == '1'
+			|| game->map[(int)(y - 0.25)][(int)(x + 0.25)] == '1'
+				|| game->map[(int)(y + 0.25)][(int)(x + 0.25)] == '1')
+		return (1);
+	return (0);
 }
 
-double  return_y_increment(t_vars *vars, double angle, int attempted_speed)
+double	return_x_increment(t_vars *vars, double angle, int speed)
 {
-    double		player_y;
+	double	pos_x;
 
-    if (!attempted_speed)
-        return (0);
-    player_y = (vars->game->player->pos_y - sin(angle * PI / 180) * attempted_speed);
-    if (vars->game->map[(int)(player_y / BLOCK_SIZE - 0.25)][(int)(vars->game->player->pos_x / BLOCK_SIZE - 0.25)] == '1'
-			|| vars->game->map[(int)(player_y / BLOCK_SIZE + 0.25)][(int)(vars->game->player->pos_x / BLOCK_SIZE - 0.25)] == '1'
-				|| vars->game->map[(int)(player_y / BLOCK_SIZE - 0.25)][(int)(vars->game->player->pos_x / BLOCK_SIZE + 0.25)] == '1'
-					|| vars->game->map[(int)(player_y / BLOCK_SIZE + 0.25)][(int)(vars->game->player->pos_x / BLOCK_SIZE + 0.25)] == '1')
-		return (return_y_increment(vars, angle, attempted_speed - 1));
-    return (-sin(angle * PI / 180) * attempted_speed);  
+	pos_x = (vars->game->player->pos_x + cos(angle * PI / 180) * speed);
+	while (speed && is_in_wall(vars->game, pos_x, vars->game->player->pos_y))
+		pos_x = (vars->game->player->pos_x + cos(angle * PI / 180) * --speed);
+	return (cos(angle * PI / 180) * speed);
+}
+
+double	return_y_increment(t_vars *vars, double angle, int speed)
+{
+	double	pos_y;
+
+	pos_y = (vars->game->player->pos_y - sin(angle * PI / 180) * speed);
+	while (speed && is_in_wall(vars->game, vars->game->player->pos_x, pos_y))
+		pos_y = (vars->game->player->pos_y - sin(angle * PI / 180) * --speed);
+	return (-sin(angle * PI / 180) * speed);
 }
