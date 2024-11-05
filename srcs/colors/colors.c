@@ -36,7 +36,7 @@ A = 255 (or 11111111 in binary or 0xFF in hex)
 */
 int	add_shade(double shade, int color)
 {
-	return ((int)(shade * 0xFF) << 24 | color);
+	return ((int)((1 - shade) * 0xFF) << 24 | color);
 }
 
 /*
@@ -104,6 +104,8 @@ int	contrasting(int color)
 	rgb.b = linearize(color & 0xFF);
 	max_val = fmax(fmax(rgb.r, rgb.g), rgb.b);
 	min_val = fmin(fmin(rgb.r, rgb.g), rgb.b);
+	if (max_val == 0)
+		return (WHITE);
 	sat = (max_val - min_val) / max_val;
 	if (sat > 0.5)
 	{

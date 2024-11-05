@@ -39,7 +39,7 @@
 # define WINDOW_X 1600
 # define WINDOW_Y 900
 
-# define SHADE	0.7
+# define SHADE	0.6
 # define MINI_START_X 5
 # define MINI_START_Y 5
 
