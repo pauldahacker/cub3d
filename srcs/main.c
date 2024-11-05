@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 12:29:08 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/05 12:44:12 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,6 @@ void	init_keys(t_vars *vars)
 	vars->keys.d = 0;
 	vars->keys.left = 0;
 	vars->keys.right = 0;
-}
-
-void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
-{
-	char	*dst;
-
-	dst = vars.data.addr + (y * vars.data.line_length + x
-			* (vars.data.bpp / 8));
-	if (*(unsigned int *)dst != (unsigned int)color)
-		*(unsigned int *)dst = color;
 }
 
 int	main(int argc, char **argv)
