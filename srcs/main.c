@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 12:44:12 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/05 13:49:07 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	init_keys(t_vars *vars)
 	vars->keys.left = 0;
 	vars->keys.right = 0;
 }
-// connard
+
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
@@ -35,8 +35,7 @@ int	main(int argc, char **argv)
 	if (!vars.mlx_ptr || ma_engine_init(NULL, &engine) != MA_SUCCESS)
 		return (EXIT_FAILURE);
 	vars.engine = (void *)&engine;
-    ma_engine_play_sound(&engine, "Empty_7.mp3", NULL);
-
+	ma_engine_play_sound(&engine, "Empty_7.mp3", NULL);
 	vars.win_ptr = mlx_new_window(vars.mlx_ptr, WINDOW_X, WINDOW_Y, "cub3d");
 	if (!vars.win_ptr)
 		return (free(vars.mlx_ptr), EXIT_FAILURE);
