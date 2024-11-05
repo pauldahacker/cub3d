@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 13:56:05 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/05 20:47:51 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,6 +115,7 @@ typedef struct raycasting
 	double		cos_result;
 	t_proj		proj_plan;
 	t_block		point_hit;
+	double		projected_wall_height;
 }	t_player;
 
 typedef struct s_data

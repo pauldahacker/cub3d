@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 13:49:07 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/05 21:20:11 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,28 @@ void	init_keys(t_vars *vars)
 	vars->keys.left = 0;
 	vars->keys.right = 0;
 }
+void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
+{
+	char	*dst;
+	int		alpha = (color >> 24) & 0xFF; // Extract alpha from color
+    int		r = (color >> 16) & 0xFF;     // Extract red
+    int		g = (color >> 8) & 0xFF;      // Extract green
+    int		b = color & 0xFF;
+
+	dst = vars.data.addr + (y * vars.data.line_length + x
+			* (vars.data.bpp / 8));
+	//printf("Input Color: 0x%X | Alpha: %d | R: %d | G: %d | B: %d\n", color, alpha, r, g, b);
+	if (alpha > 0) {
+        r = (r * alpha + ((*(unsigned int *)dst >> 16) & 0xFF) * (255 - alpha)) / 255;
+        g = (g * alpha + ((*(unsigned int *)dst >> 8) & 0xFF) * (255 - alpha)) / 255;
+        b = (b * alpha + (*(unsigned int *)dst & 0xFF) * (255 - alpha)) / 255;
+
+        // Combine back into a single color value
+        color = (r << 16) | (g << 8) | b; // Set alpha to fully opaque
+	}
+	//printf("color: %d\n", color);
+	*(unsigned int *)dst = color;
+}
 
 t_texture	init_texture(t_vars *vars, char *texture_path)
 {
@@ -34,7 +56,7 @@ t_texture	init_texture(t_vars *vars, char *texture_path)
 	tex.img = mlx_xpm_file_to_image(vars->mlx_ptr,
 		texture_path, &tex.width, &tex.height);
 	 if (!tex.img)
-        handle_error(vars->game, "One of the textures failed to open\n");
+		handle_error(vars->game, "One of the textures failed to open\n");
 	tex.data = (unsigned char *)mlx_get_data_addr(tex.img, 
 		&tex.bpp, &tex.size_line, &tex.endian);
 	return (tex);
@@ -59,23 +81,16 @@ int	main(int argc, char **argv)
 		return (EXIT_FAILURE);
 	vars.engine = (void *)&engine;
     ma_engine_play_sound(&engine, "Polynomial_C.mp3", NULL);
-
 	vars.win_ptr = mlx_new_window(vars.mlx_ptr, WINDOW_X, WINDOW_Y, "cub3d");
 	if (!vars.win_ptr)
 		return (free(vars.mlx_ptr), EXIT_FAILURE);
+	init_all_textures(&vars);
 	vars.data.img = mlx_new_image(vars.mlx_ptr, WINDOW_X, WINDOW_Y);
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
 	init_keys(&vars);
-	init_all_textures(&vars);
-	//print_map_content(vars.game);
-	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
-	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);
 	vars.game->player->pos_x = (vars.game->player->pos_x + 0.5) * BLOCK_SIZE;
 	vars.game->player->pos_y = (vars.game->player->pos_y + 0.5) * BLOCK_SIZE;
-	printf("angle_start = %f\n", vars.game->player->angle_start);
-	printf("angle_end = %f\n", vars.game->player->angle_end);
-	printf("subsequent_angle = %f\n", vars.game->player->subsequent_angle);
 	draw_every_ray(&vars);
 	draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, X_EVENT_KEY_PRESS, 1L<<0, &on_keypress, &vars);

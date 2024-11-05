@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/05 12:37:43 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/05 21:19:55 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,31 +34,7 @@ __________ = Projection Plane = __________
    \  /                            \ |
     \/     = FOV: angle = 60°       \|
 */
-
 //The uppermost left ray (first one) will draw the first row
-
-void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
-{
-	char	*dst;
-	int		alpha = (color >> 24) & 0xFF; // Extract alpha from color
-    int		r = (color >> 16) & 0xFF;     // Extract red
-    int		g = (color >> 8) & 0xFF;      // Extract green
-    int		b = color & 0xFF;
-
-	dst = vars.data.addr + (y * vars.data.line_length + x
-			* (vars.data.bpp / 8));
-	//printf("Input Color: 0x%X | Alpha: %d | R: %d | G: %d | B: %d\n", color, alpha, r, g, b);
-	if (alpha > 0) {
-        r = (r * alpha + ((*(unsigned int *)dst >> 16) & 0xFF) * (255 - alpha)) / 255;
-        g = (g * alpha + ((*(unsigned int *)dst >> 8) & 0xFF) * (255 - alpha)) / 255;
-        b = (b * alpha + (*(unsigned int *)dst & 0xFF) * (255 - alpha)) / 255;
-
-        // Combine back into a single color value
-        color = (r << 16) | (g << 8) | b; // Set alpha to fully opaque
-	}
-	//printf("color: %d\n", color);
-	*(unsigned int *)dst = color;
-}
 
 double	calculate_projected_wall_height(t_vars *vars, double dist_to_wall)
 {
@@ -101,14 +77,12 @@ static void	draw_raycasting(t_vars *vars, double projected_wall_height, int *x,
 		{
 			if (*y < proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
-				//draw_ceiling(vars, *x, *y, vars->game->ceiling_color);
 			else if (*y >= proj_plan.wall_top_pos_y_in_px
 				&& *y <= proj_plan.wall_lower_pos_y_in_px)
 				draw_wall(vars, x, y);
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
-				//draw_floor(vars, *x, *y, vars->game->floor_color);
-			(*y)++;		
+			(*y)++;
 		}
 		(*x)++;
 		if (*x % proj_plan.length_column == 0)
@@ -144,14 +118,13 @@ void	draw_every_ray(t_vars *vars)
 	set_data_projection_plan(vars);
 	x = 0;
 	y = 0;
-	if (vars->game->player->angle_end >= 300.0)
-		vars->game->player->angle_end -= 360.0;//I do this for E player's position
 	while (ray_angle > vars->game->player->angle_end)
 	{
 		vars->game->player->ray_angle = ray_angle;
 		dist_to_wall = calculate_best_distance(vars, ray_angle);
 		projected_wall_height = calculate_projected_wall_height(vars,
 				dist_to_wall);
+		vars->game->player->projected_wall_height = projected_wall_height;
 		draw_raycasting(vars, projected_wall_height, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
