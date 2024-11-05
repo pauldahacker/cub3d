@@ -83,7 +83,7 @@ void	draw_minimap_tile(t_vars vars, t_game *game, int x, int y)
 
 /*
 draw_minimap_player: Draws the player on the minimap.
-It draws a (size_x / 2) * (size_y / 2) YELLOW tile representing the player.
+It draws a (size_x / 2) * (size_y / 2) contrasting tile representing the player.
 These dimensions are equal to 1/2 of a wall or floor tile. Decreasing its size
 allows the player to move more freely in tight spaces.
 Since player's starting position is set as the center of the starting tile,

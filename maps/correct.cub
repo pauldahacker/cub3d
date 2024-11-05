@@ -1,8 +1,8 @@
-  NO  ./north_test.xpm                 
-SO ./south_test.xpm
+  NO  ./textures/wall_1.xpm                 
+SO ./textures/wall_2.xpm   
         F               255,0,  255  
-        WE      ./west_test.xpm
-EA    ./east_test.xpm
+        WE      ./textures/wall_3.xpm   
+EA    ./textures/wall_4.xpm   
 C       122, 141, 153
 
 111111111111111111111
