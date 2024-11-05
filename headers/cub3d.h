@@ -131,8 +131,12 @@ typedef struct s_data
 typedef struct textures
 {
 	char		*path;
-	int			height;
 	int			width;
+	int			height;
+	int			endian;
+	int			bpp;
+	int			size_line;
+	char		*data;
 }				t_texture;
 
 typedef struct s_vars
