@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minimap_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:49:36 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/04 12:49:39 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/11/05 12:33:10 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 DDA Algorithm to trace a line in any color.
 */
-void	dda(t_vars vars, t_point *block, t_point d, int color)
+void	dda(t_vars vars, t_block *block, t_block d, int color)
 {
 	double	steps;
 	double	x_inc;
@@ -49,9 +49,9 @@ For the line to have a nice and visible color, we see if the minimap floor
 has been colored in BLACK OR WHITE. If so, we draw the FOV in YELLOW.
 Else, we draw the FOV in WHITE.
 */
-void	draw_fov_line(t_vars vars, t_point *p1, t_point *p2)
+void	draw_fov_line(t_vars vars, t_block *p1, t_block *p2)
 {
-	t_point	d;
+	t_block	d;
 	t_rgb	rgb;
 
 	rgb.r = linearize((vars.game->ceiling_color >> 16) & 0xFF);
