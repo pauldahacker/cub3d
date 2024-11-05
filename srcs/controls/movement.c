@@ -1,113 +1,59 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   movement.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/04 15:45:19 by pde-masc          #+#    #+#             */
+/*   Updated: 2024/11/04 15:45:21 by pde-masc         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3d.h"
 
-int	on_move_up(t_vars *vars, int attempted_speed)
+int	on_move_up(t_vars *vars, int speed)
 {
-	int		player_x;
-	int		player_y;
-	int		i;
-	int		j;
+	double	angle;
 
-	if (!attempted_speed)
-		return (0);
-	player_x = (int)vars->game->player->pos_x;
-	player_y = (int)vars->game->player->pos_y - attempted_speed;
-	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
-	j = -1;
-	while (++j < BLOCK_SIZE / 4)
-	{
-		i = -1;
-		while (++i < BLOCK_SIZE / 4)
-		{
-			if (vars->game->map[(player_y - j) / BLOCK_SIZE][(player_x + i) / BLOCK_SIZE] == '1')
-				return (on_move_up(vars, attempted_speed - 1));
-		}
-	}
-	vars->game->player->pos_y = vars->game->player->pos_y - attempted_speed;
-	draw_every_ray(vars);
-	draw_minimap(vars, vars->game);
+	angle = vars->game->player->angle;
+	vars->game->player->pos_x += return_x_increment(vars, angle, speed);
+	vars->game->player->pos_y += return_y_increment(vars, angle, speed);
 	return (0);
 }
 
-int	on_move_left(t_vars *vars, int attempted_speed)
+int	on_move_left(t_vars *vars, int speed)
 {
-	int		player_x;
-	int		player_y;
-	int		i;
-	int		j;
+	double	angle;
 
-	if (!attempted_speed)
-		return (0);
-	player_x = (int)vars->game->player->pos_x - attempted_speed;
-	player_y = (int)vars->game->player->pos_y;
-	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
-	j = -1;
-	while (++j < BLOCK_SIZE / 4)
-	{
-		i = -1;
-		while (++i < BLOCK_SIZE / 4)
-		{
-			if (vars->game->map[(player_y + j) / BLOCK_SIZE][(player_x - i) / BLOCK_SIZE] == '1')
-				return (on_move_left(vars, attempted_speed - 1));
-		}
-	}
-	vars->game->player->pos_x = vars->game->player->pos_x - attempted_speed;
-	draw_every_ray(vars);
-	draw_minimap(vars, vars->game);
+	angle = vars->game->player->angle + 90;
+	if (angle >= 360)
+		angle -= 360;
+	vars->game->player->pos_x += return_x_increment(vars, angle, speed);
+	vars->game->player->pos_y += return_y_increment(vars, angle, speed);
 	return (0);
 }
 
-int	on_move_down(t_vars *vars, int attempted_speed)
+int	on_move_down(t_vars *vars, int speed)
 {
-	int		player_x;
-	int		player_y;
-	int		i;
-	int		j;
+	double	angle;
 
-	if (!attempted_speed)
-		return (0);
-	player_x = (int)vars->game->player->pos_x;
-	player_y = (int)vars->game->player->pos_y + attempted_speed;
-	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
-	j = -1;
-	while (++j < BLOCK_SIZE / 4)
-	{
-		i = -1;
-		while (++i < BLOCK_SIZE / 4)
-		{
-			if (vars->game->map[(player_y + j) / BLOCK_SIZE][(player_x + i) / BLOCK_SIZE] == '1')
-				return (on_move_down(vars, attempted_speed - 1));
-		}
-	}
-	vars->game->player->pos_y = vars->game->player->pos_y + attempted_speed;
-	draw_every_ray(vars);
-	draw_minimap(vars, vars->game);
+	angle = vars->game->player->angle + 180;
+	if (angle >= 360)
+		angle -= 360;
+	vars->game->player->pos_x += return_x_increment(vars, angle, speed);
+	vars->game->player->pos_y += return_y_increment(vars, angle, speed);
 	return (0);
 }
 
-int	on_move_right(t_vars *vars, int attempted_speed)
+int	on_move_right(t_vars *vars, int speed)
 {
-	int		player_x;
-	int		player_y;
-	int		i;
-	int		j;
+	double	angle;
 
-	if (!attempted_speed)
-		return (0);
-	player_x = (int)vars->game->player->pos_x + attempted_speed;
-	player_y = (int)vars->game->player->pos_y;
-	printf("player x: %d\nplayer y: %d\n", player_x, player_y);
-	j = -1;
-	while (++j < BLOCK_SIZE / 4)
-	{
-		i = -1;
-		while (++i < BLOCK_SIZE / 4)
-		{
-			if (vars->game->map[(player_y + j) / BLOCK_SIZE][(player_x + i) / BLOCK_SIZE] == '1')
-				return (on_move_right(vars, attempted_speed - 1));
-		}
-	}
-	vars->game->player->pos_x = vars->game->player->pos_x + attempted_speed;
-	draw_every_ray(vars);
-	draw_minimap(vars, vars->game);
+	angle = vars->game->player->angle - 90;
+	if (angle < 0)
+		angle += 360;
+	vars->game->player->pos_x += return_x_increment(vars, angle, speed);
+	vars->game->player->pos_y += return_y_increment(vars, angle, speed);
 	return (0);
 }

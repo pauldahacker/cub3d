@@ -21,6 +21,7 @@ MLX_DIR = ./mlx
 MLX = $(MLX_DIR)/libmlx_Linux.a
 MLXFLAGS = -Lmlx -lmlx -lm -L/usr/lib/X11 -lXext -lX11
 INCLUDES = -I./headers -I./usr/include -Imlx
+LINK_FLAGS = -ldl -lm -lpthread
 endif
 
 LIBFT_DIR = ./libft
@@ -39,7 +40,7 @@ all: $(NAME)
 
 $(NAME): $(LIBFT) $(MLX) $(OBJS) $(HEADER)
 	@echo "$(BLUE)Linking executable...$(DEF_COLOR)"
-	@$(CC) $(CFLAGS) $(INCLUDES) -o $(NAME) $(OBJS) $(MLXFLAGS) $(LIBFT)
+	@$(CC) $(CFLAGS) $(INCLUDES) -o $(NAME) $(OBJS) $(MLXFLAGS) $(LIBFT) $(LINK_FLAGS)
 	@echo "$(GREEN)$(NAME) created$(DEF_COLOR)"
 
 $(OBJS_DIR)%.o: $(SRCS_DIR)%.c $(HEADER) Makefile

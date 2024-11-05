@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/31 19:21:11 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/05 12:32:38 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@
 # include <sys/uio.h>
 # include <unistd.h>
 # include "../libft/libft.h"
+# include "colors.h"
 # include "raycasting.h"
 # include "parsing.h"
 # include "textures.h"
@@ -38,30 +39,36 @@
 # define WINDOW_X 1600
 # define WINDOW_Y 900
 
-# define MINIMAP_HEIGHT WINDOW_Y / 4
-# define MINIMAP_LENGTH WINDOW_X / 4
-# define MINIMAP_START_X 5
-# define MINIMAP_START_Y 5
+# define SHADE	0.6
+# define MINI_START_X 5
+# define MINI_START_Y 5
 
-# define MOVEMENT_SPEED 10
+# define MOVEMENT_SPEED 8
 # define ROTATE_SPEED 3
+
+// MLX EVENTS
+# define X_EVENT_KEY_PRESS		2
+# define X_EVENT_KEY_RELEASE	3
+# define X_EVENT_DESTROY		17
 
 // Keys
 # ifdef __linux__
-#  define ESC 65307
-#  define W 119
-#  define A 97
-#  define S 115
-#  define D 100
-#  define LEFT 65361
-#  define RIGHT 65363
+#  define ESC	65307
+#  define W_KEY	119
+#  define A_KEY	97
+#  define S_KEY	115
+#  define D_KEY	100
+#  define LEFT	65361
+#  define RIGHT	65363
 
 # elif defined(__APPLE__)
-#  define ESC 53
-#  define W 13
-#  define A 0
-#  define S 1
-#  define D 2
+#  define ESC	53
+#  define W_KEY	13
+#  define A_KEY	0
+#  define S_KEY	1
+#  define D_KEY	2
+#  define LEFT	123
+#  define RIGHT	124
 # endif
 
 // Colors
@@ -81,27 +88,24 @@
 # define PI 				3.14159265358979323846
 typedef struct s_game t_game;
 
-/*typedef struct s_game
+typedef struct s_game	t_game;
+
+typedef struct s_keys
 {
-	char		*line;
-	char		*stash;
-	char		*north_path;
-	char		*south_path;
-	char		*west_path;
-	char		*east_path;
-	int			floor_color;
-	int			ceiling_color;
-	char		**map;
-	int			n_cols;
-	int			n_rows;
-	t_player	*player;
-}				t_game;*/
+	int	w;
+	int	a;
+	int	s;
+	int	d;
+	int	left;
+	int	right;
+}	t_keys;
 
 typedef struct raycasting
 {
 	double		pos_x;//⭐//player position in abscissa. The unit are the pixels!
 	double		pos_y;//⭐//player position in ordinate. The unit are the pixels!
-	double		angle;//⭐//angle (in degrees) of our ray starting from the abscissa axis 0 ≤ angle ≤360
+	double		angle;//⭐//angle [0-360) of ray starting from abscissa axis
+	char		direction;//will determine our FOV
 	double		angle_start;//⭐
 	double		angle_end;//⭐
 	double		subsequent_angle;//⭐
@@ -138,13 +142,32 @@ typedef struct s_vars
 	t_data		data;
 	t_game		*game;
 	t_texture	texture;
+	t_keys		keys;
+	void		*engine;
 }				t_vars;
 
+// controls/controls.c
+int		on_destroy(t_vars *vars);
+int		on_keypress(int keysym, t_vars *vars);
+int		on_keyrelease(int keysym, t_vars *vars);
+int		update_player(t_vars *vars);
+
+// minimap/minimap_utils.c
+void	draw_fov_line(t_vars vars, t_block *p1, t_block *p2);
+int		add_shade(double opacity, int color);
+
+// minimap/minimap.c
+void	draw_minimap(t_vars *vars, t_game *game);
+
+// controls/movement_utils.c
+double	return_x_increment(t_vars *vars, double angle, int speed);
+double	return_y_increment(t_vars *vars, double angle, int speed);
+
 // controls/movement.c
-int	on_move_up(t_vars *vars, int attempted_speed);
-int	on_move_down(t_vars *vars, int attempted_speed);
-int	on_move_left(t_vars *vars, int attempted_speed);
-int	on_move_right(t_vars *vars, int attempted_speed);
+int		on_move_up(t_vars *vars, int speed);
+int		on_move_down(t_vars *vars, int speed);
+int		on_move_left(t_vars *vars, int speed);
+int		on_move_right(t_vars *vars, int speed);
 
 // controls/rotation.c
 double  increment_angle(double angle, double to_add);
