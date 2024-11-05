@@ -24,7 +24,7 @@ void	init_keys(t_vars *vars)
 	vars->keys.left = 0;
 	vars->keys.right = 0;
 }
-
+// connard
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
