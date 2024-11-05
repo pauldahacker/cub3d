@@ -26,49 +26,27 @@ void	init_keys(t_vars *vars)
 	vars->keys.left = 0;
 	vars->keys.right = 0;
 }
-// connard
-/*
-int main() {
-    void *mlx;
-	void *win;
-    t_texture *texture;
-    int width, height;
-	int bpp, size_line, endian;
 
-    mlx = mlx_init();
-	win = mlx_new_window(mlx, 800, 600, "Affichage d'une image XPM");
-    texture = mlx_xpm_file_to_image(mlx, "./textures/wall_1.xpm", &width, &height);
-	char *data = mlx_get_data_addr(texture, &bpp, &size_line, &endian);
-	mlx_put_image_to_window(mlx,win,texture,0,0);
-	printf("bpp: %d, size line: %d, endian: %d\n", bpp, size_line, endian);
-    // Dans textures/wall_1.xpm, il y a le caractere '3' a la position 0,0.
-	// Le '3' correspond normalement a la couleur #C7C7C7, donc avec:
-	// R = C7 (hex) = 124, G = C7 (hex) = 124 et B = C7 (hex) = 124
-	int i=-1;
-	while (++i < 64)
-		 printf("Color at (%d): %d\n", i, (unsigned int)data[i]);
-    printf("Color at (0): %d\n", (unsigned int)data[0]);
-	printf("Color at (1): %d\n", (unsigned int)data[1]);
-	printf("Color at (2): %d\n", (unsigned int)data[2]);
-	printf("Color at (3): %d\n", (unsigned int)data[3]);
+t_texture	init_texture(t_vars *vars, char *texture_path)
+{
+	t_texture	tex;
 
-	// Dans textures/wall_1.xpm, il y a le caractere '%' a la position 5,2.
-	// Le '%' correspond normalement a la couleur #483818, donc avec:
-	// R = 48 (hex) = 72, G = 38 (hex) = 56 et B = 18 (hex) = 24
-	printf("Color at ((2 * size_line) + (5 * sizeof(int))): %d\n", (unsigned int)data[(2 * size_line) + (5 * sizeof(int))]);
-	printf("Color at ((2 * size_line) + (5 * sizeof(int))) + 1: %d\n", (unsigned int)data[((2 * size_line) + (5 * sizeof(int))) + 1]);
-	printf("Color at ((2 * size_line) + (5 * sizeof(int))) + 2: %d\n", (unsigned int)data[((2 * size_line) + (5 * sizeof(int))) + 2]);
-	printf("Color at ((2 * size_line) + (5 * sizeof(int))) + 3: %d\n", (unsigned int)data[((2 * size_line) + (5 * sizeof(int))) + 3]);
-	// Donc comme on peut voir sur le output:
-	// apres avoir appele mlx_get_data_addr() sur texture, on peut recup les donnees du xpm:
-	// elles sont stockees dans une liste (char *) et sont representees en RGBA.
-	// pour retrouver ces valeurs RGBA, il suffit de cast le caractere a un (unsigned int).
-	mlx_loop(mlx);
-    mlx_destroy_image(mlx, texture);
-    mlx_destroy_window(mlx, win); // Assuming you have created a window
-    return 0;
+	tex.img = mlx_xpm_file_to_image(vars->mlx_ptr,
+		texture_path, &tex.width, &tex.height);
+	 if (!tex.img)
+        handle_error(vars->game, "One of the textures failed to open\n");
+	tex.data = (unsigned char *)mlx_get_data_addr(tex.img, 
+		&tex.bpp, &tex.size_line, &tex.endian);
+	return (tex);
 }
-*/
+
+void	init_all_textures(t_vars *vars)
+{
+	vars->north_tex = init_texture(vars, vars->game->north_path);
+	vars->south_tex = init_texture(vars, vars->game->south_path);
+	vars->west_tex = init_texture(vars, vars->game->west_path);
+	vars->east_tex = init_texture(vars, vars->game->east_path);
+}
 
 int	main(int argc, char **argv)
 {
@@ -89,6 +67,7 @@ int	main(int argc, char **argv)
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
 	init_keys(&vars);
+	init_all_textures(&vars);
 	//print_map_content(vars.game);
 	printf("map has %i rows and %i columns\n", vars.game->n_rows, vars.game->n_cols);
 	printf("player position map[%0.f][%0.f]\n", vars.game->player->pos_x, vars.game->player->pos_y);

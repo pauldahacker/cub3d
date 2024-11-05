@@ -131,13 +131,14 @@ typedef struct s_data
 
 typedef struct textures
 {
-	char		*path;
-	int			width;
-	int			height;
-	int			endian;
-	int			bpp;
-	int			size_line;
-	char		*data;
+	char			*path;
+	void			*img;
+	int				width;
+	int				height;
+	int				endian;
+	int				bpp;
+	int				size_line;
+	unsigned char	*data;
 }				t_texture;
 
 typedef struct s_vars
@@ -146,7 +147,10 @@ typedef struct s_vars
 	void		*win_ptr;
 	t_data		data;
 	t_game		*game;
-	t_texture	texture;
+	t_texture	north_tex;
+	t_texture	south_tex;
+	t_texture	west_tex;
+	t_texture	east_tex;
 	t_keys		keys;
 	void		*engine;
 }				t_vars;
