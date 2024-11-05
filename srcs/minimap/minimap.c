@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 12:49:23 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/04 12:49:25 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/11/05 12:23:12 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,8 +141,4 @@ void	draw_minimap(t_vars *vars, t_game *game)
 	draw_minimap_fov(vars, game);
 	draw_minimap_player(*vars, game);
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
-	vars->data.img = mlx_new_image(vars->mlx_ptr, WINDOW_X, WINDOW_Y);
-	vars->data.addr = mlx_get_data_addr(vars->data.img,
-			&(vars->data.bpp), &(vars->data.line_length),
-			&(vars->data.endian));
 }
