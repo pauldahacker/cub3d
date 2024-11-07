@@ -73,16 +73,24 @@ void	draw_complete_texture(t_var *var)
 	while (y < FENETRE_Y)
 	{
 		x = 0;
-		tex_y = (y / scale_y) % var->tex.height;
+//		tex_y = (y / scale_y) % var->tex.height;
+		tex_x = 0;
 		while (x < FENETRE_X)
 		{
-			tex_x = (x / scale_x) % var->tex.width;
-			color = *(int *)(var->tex.data + (tex_y * var->tex.line_length) + (tex_x * (var->tex.bpp / 8)));
-			my_mlx_pixel_put2(var, x, y, color);
+			if (tex_x < scale_x)
+			{
+				color = *(int *)(var->tex.data + (y * var->tex.line_length) + (tex_x * (var->tex.bpp / 8)));
+				my_mlx_pixel_put2(var, x, y, color);
+				tex_x++;
+			}
+			else
+				break ;
 			x++;
 		}
 		y++;
 	}
+	(void)scale_y;
+	(void)tex_y;
 	mlx_put_image_to_window(var->mlx, var->win, var->tex.img, 0, 0);
 }
 
