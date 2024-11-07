@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 20:47:51 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/07 21:24:07 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,12 +133,12 @@ typedef struct s_data
 typedef struct textures
 {
 	char			*path;
-	void			*img;
+	void			*img;//qu'est ce que c'est ?
 	int				width;
 	int				height;
-	int				endian;
+	int				endian;//qu'est ce que c'est ?
 	int				bpp;
-	int				size_line;
+	int				size_line;//quelle est la difference entre size_line/width/height ?
 	unsigned char	*data;
 }				t_texture;
 
