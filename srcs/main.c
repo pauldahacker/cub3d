@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/07 22:14:15 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/07 22:14:53 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	init_all_textures(t_vars *vars)
 	vars->east_tex = init_texture(vars, vars->game->east_path);
 }
 
-int	main(int argc, char **argv)
+/*int	main(int argc, char **argv)
 {
 	t_vars		vars;
 	ma_engine	engine;
@@ -98,4 +98,4 @@ int	main(int argc, char **argv)
 	mlx_hook(vars.win_ptr, X_EVENT_DESTROY, 0, &on_destroy, &vars);
 	mlx_loop_hook(vars.mlx_ptr, &update_player, &vars);
 	mlx_loop(vars.mlx_ptr);
-}
+}*/

@@ -1,5 +1,5 @@
-# define FENETRE_X	800
-# define FENETRE_Y	600
+# define FENETRE_X	128
+# define FENETRE_Y	128
 
 #include <mlx.h>
 #include <stdio.h>
@@ -55,7 +55,7 @@ void	my_mlx_pixel_put2(t_var *var, int x, int y, int color)
 //on veut creer une fonction, qui au lieu de dessiner la texture 64 par 64
 //elle la dessine FENETRE_X par FENETRE_Y
 //	var->tex.img = mlx_xpm_file_to_image(var->mlx, "./textures/wall_4.xpm", &var->tex.width, &var->tex.height);
-/*void	draw_complete_texture(t_var *var)
+void	draw_complete_texture(t_var *var)
 {
 	int	scale_x;
 	int	scale_y;
@@ -77,37 +77,33 @@ void	my_mlx_pixel_put2(t_var *var, int x, int y, int color)
 		while (x < FENETRE_X)
 		{
 			tex_x = (x / scale_x) % var->tex.width;
-			if (tex_x >= 0 && tex_x < var->tex.width && tex_y >= 0 && tex_y < var->tex.height)
-			{
-				color = *(int *)(var->tex.data + (tex_y * var->tex.line_length) + (tex_x * (var->tex.bpp / 8)));
-				my_mlx_pixel_put2(var, x, y, color);
-			}
+			color = *(int *)(var->tex.data + (tex_y * var->tex.line_length) + (tex_x * (var->tex.bpp / 8)));
+			my_mlx_pixel_put2(var, x, y, color);
 			x++;
 		}
 		y++;
 	}
 	mlx_put_image_to_window(var->mlx, var->win, var->tex.img, 0, 0);
-}*/
+}
 
 //	var.tex.img = mlx_new_image(var.mlx, FENETRE_X, FENETRE_Y);
-/*int	main(void)
+int	main(void)
 {
 	t_var	var;
 
 	var.mlx = mlx_init();
 	var.win = mlx_new_window(var.mlx, FENETRE_X, FENETRE_Y, "textures");
-	var.tex.path = ft_strdup("./textures/wall_1.xpm");
+	var.tex.path = ft_strdup("./textures/texture_simon.xpm");
 	var.tex.img = mlx_xpm_file_to_image(var.mlx, var.tex.path, &var.tex.width, &var.tex.height);
 //	mlx_put_image_to_window(var.mlx, var.win, var.tex.img, 0, 0);
 	// printf("avant mlx_get_data_addr\n");
 	// printf("var.tex.data = %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
 	// *(int *)var.tex.data, var.tex.bpp, var.tex.line_length, var.tex.endian);
-	var.tex.data = mlx_get_data_addr(var.tex.img, &(var.tex.bpp), &(var.tex.line_length), &(var.tex.endian));
+//	var.tex.data = mlx_get_data_addr(var.tex.img, &(var.tex.bpp), &(var.tex.line_length), &(var.tex.endian));
 	// printf("apres mlx_get_data_addr\n");
 	// printf("var.tex.data = %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
 	// *(int *)var.tex.data, var.tex.bpp, var.tex.line_length, var.tex.endian);
-//	draw_complete_texture(&var);
-	mlx_put_image_to_window(var.mlx, var.win, var.tex.img, 0, 0);
+	draw_complete_texture(&var);
 	mlx_loop(var.mlx);
 	return (0);
-}*/
+}
