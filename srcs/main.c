@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/08 12:34:59 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/08 20:16:07 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ t_texture	init_texture(t_vars *vars, char *texture_path)
 		handle_error(vars->game, "One of the textures failed to open\n");
 	tex.data = (unsigned char *)mlx_get_data_addr(tex.img, 
 		&tex.bpp, &tex.size_line, &tex.endian);
+	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, tex.img, 0, 0);
 	return (tex);
 }
 
@@ -70,7 +71,7 @@ void	init_all_textures(t_vars *vars)
 	vars->east_tex = init_texture(vars, vars->game->east_path);
 }
 
-/*int	main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	t_vars		vars;
 	ma_engine	engine;
@@ -98,4 +99,4 @@ void	init_all_textures(t_vars *vars)
 	mlx_hook(vars.win_ptr, X_EVENT_DESTROY, 0, &on_destroy, &vars);
 	mlx_loop_hook(vars.mlx_ptr, &update_player, &vars);
 	mlx_loop(vars.mlx_ptr);
-}*/
+}
