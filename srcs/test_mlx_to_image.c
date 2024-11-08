@@ -68,7 +68,6 @@ void	draw_complete_texture(t_var *var)
 	int	x;
 	int	y;
 	int	color;
-//	int	tex_x;
 
 	scale_x = FENETRE_X / var->tex.width;
 	scale_y = FENETRE_Y / var->tex.height;
@@ -78,9 +77,6 @@ void	draw_complete_texture(t_var *var)
 		x = 0;
 		while (x < FENETRE_X)
 		{
-			//tex_x = x / scale_x % var->tex.width;
-			//color = *(int *)(var->tex.texture_addr + ((y / scale_y) * var->tex.line_length) + ((x / scale_x) * (var->tex.bpp / 8)));
-			//printf("x = %i\n", x);
 			color = *(int *)(var->tex.texture_addr + ((y /scale_y) * var->tex.line_length + (x / scale_x) * (var->tex.bpp / 8)));
 			my_mlx_pixel_put2(var, x, y, color);
 			x++;
@@ -94,7 +90,7 @@ void	draw_complete_texture(t_var *var)
 // printf("apres mlx_get_data_addr\n");
 // printf("var.tex.texture_addr = _%s_ <=> %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
 // var.tex.texture_addr, *(int *)var.tex.texture_addr, var.tex.bpp, var.tex.line_length, var.tex.endian);
-int	main(void)
+/*int	main(void)
 {
 	t_var	var;
 
@@ -110,4 +106,4 @@ int	main(void)
 	draw_complete_texture(&var);
 	mlx_loop(var.mlx);
 	return (0);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:15:43 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/05 21:18:46 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/08 20:17:46 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,6 @@ void	draw_texture(t_vars *vars, int x, int y, t_texture tex)
 
 void	draw_wall(t_vars *vars, int *x, int *y)
 {
-	int	texture_x;
-
-	(void)y;
-	if (vars->game->player->horizontal_distance_chosen == true)
-		texture_x = (int)vars->game->player->point_hit.x % 64;
-	else
-		texture_x = (int)vars->game->player->point_hit.y % 64;
 	if (ray_facing_up(vars->game->player->ray_angle) == 1
 		&& vars->game->player->horizontal_distance_chosen == true)
 		draw_texture(vars, *x, *y, vars->south_tex);
@@ -44,7 +37,6 @@ void	draw_wall(t_vars *vars, int *x, int *y)
 	else if (ray_facing_right(vars->game->player->ray_angle) == 0
 		&& vars->game->player->horizontal_distance_chosen == false)
 		draw_texture(vars, *x, *y, vars->east_tex);
-	(void)texture_x;
 }
 
 // void	draw_ceiling(t_vars *vars, int *x, int *y)
