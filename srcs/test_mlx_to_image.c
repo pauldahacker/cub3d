@@ -1,5 +1,6 @@
-# define FENETRE_X	128
-# define FENETRE_Y	128
+# define FENETRE_X	800
+# define FENETRE_Y	600
+# define WHITE		0xFFFFFF
 
 #include <mlx.h>
 #include <stdio.h>
@@ -17,7 +18,6 @@
 	unsigned char	*data;
 	void			*img;//qu'est ce que c'est ?
 }				t_texture;*/
-
 
 typedef struct texture
 {
@@ -63,48 +63,48 @@ void	my_mlx_pixel_put2(t_var *var, int x, int y, int color)
 //	var->tex.img = mlx_xpm_file_to_image(var->mlx, "./textures/wall_4.xpm", &var->tex.width, &var->tex.height);
 void	draw_complete_texture(t_var *var)
 {
-	// int	scale_x;
-	// int	scale_y;
+	int	scale_x;
+	int	scale_y;
 	int	x;
 	int	y;
 	int	color;
-	int	check_x;
+//	int	tex_x;
 
-	// scale_x = FENETRE_X / var->tex.width;
-	// scale_y = FENETRE_Y / var->tex.height;
+	scale_x = FENETRE_X / var->tex.width;
+	scale_y = FENETRE_Y / var->tex.height;
 	y = 0;
 	while (y < FENETRE_Y)
 	{
 		x = 0;
-		check_x = 0;
 		while (x < FENETRE_X)
 		{
-			if (check_x < 2)
-			{
-				color = *(int *)(var->data.data_addr + (y * var->data.line_length) + (x * (var->data.bpp / 8)));
-				my_mlx_pixel_put2(var, x, y, color);
-				check_x++;
-			}
+			//tex_x = x / scale_x % var->tex.width;
+			//color = *(int *)(var->tex.texture_addr + ((y / scale_y) * var->tex.line_length) + ((x / scale_x) * (var->tex.bpp / 8)));
+			//printf("x = %i\n", x);
+			color = *(int *)(var->tex.texture_addr + ((y /scale_y) * var->tex.line_length + (x / scale_x) * (var->tex.bpp / 8)));
+			my_mlx_pixel_put2(var, x, y, color);
 			x++;
 		}
 		y++;
 	}
-	mlx_put_image_to_window(var->mlx, var->win, var->tex.img, 0, 0);
+	mlx_put_image_to_window(var->mlx, var->win, var->data.img, 0, 0);
 }
 
 //	var.tex.img = mlx_new_image(var.mlx, FENETRE_X, FENETRE_Y);
-	// printf("apres mlx_get_data_addr\n");
-	// printf("var.tex.texture_addr = _%s_ <=> %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
-	// var.tex.texture_addr, *(int *)var.tex.texture_addr, var.tex.bpp, var.tex.line_length, var.tex.endian);
+// printf("apres mlx_get_data_addr\n");
+// printf("var.tex.texture_addr = _%s_ <=> %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
+// var.tex.texture_addr, *(int *)var.tex.texture_addr, var.tex.bpp, var.tex.line_length, var.tex.endian);
 int	main(void)
 {
 	t_var	var;
 
 	var.mlx = mlx_init();
 	var.win = mlx_new_window(var.mlx, FENETRE_X, FENETRE_Y, "textures");
-	var.tex.path = ft_strdup("./textures/texture_simon.xpm");
+	var.tex.path = ft_strdup("./textures/wall_2.xpm");
 	var.tex.img = mlx_xpm_file_to_image(var.mlx, var.tex.path, &var.tex.width, &var.tex.height);
 	var.tex.texture_addr = mlx_get_data_addr(var.tex.img, &(var.tex.bpp), &(var.tex.line_length), &(var.tex.endian));
+	mlx_put_image_to_window(var.mlx, var.win, var.tex.img, 0, 0);
+	sleep(2);
 	var.data.img = mlx_new_image(var.mlx, FENETRE_X, FENETRE_Y);
 	var.data.data_addr = mlx_get_data_addr(var.data.img, &(var.data.bpp), &(var.data.line_length), &(var.data.endian));
 	draw_complete_texture(&var);
