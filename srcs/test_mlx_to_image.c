@@ -44,12 +44,9 @@ void	my_mlx_pixel_put2(t_var *var, int x, int y, int color)
 {
 	char	*dst;
 
-	printf("pixel_put 1");
 	dst = var->tex.data + (y * var->tex.line_length + x
 			* (var->tex.bpp / 8));
-	printf("pixel_put 2");
 	*(unsigned int *)dst = color;
-	printf("pixel_put 3\n");
 }
 
 //on veut creer une fonction, qui au lieu de dessiner la texture 64 par 64
@@ -57,40 +54,26 @@ void	my_mlx_pixel_put2(t_var *var, int x, int y, int color)
 //	var->tex.img = mlx_xpm_file_to_image(var->mlx, "./textures/wall_4.xpm", &var->tex.width, &var->tex.height);
 void	draw_complete_texture(t_var *var)
 {
-	int	scale_x;
-	int	scale_y;
+	// int	scale_x;
+	// int	scale_y;
 	int	x;
 	int	y;
-	int	tex_x;
-	int	tex_y;
 	int	color;
-	// static int i = 0;
-	// int			j = 1;
 
-	scale_x = FENETRE_X / var->tex.width;
-	scale_y = FENETRE_Y / var->tex.height;
+	// scale_x = FENETRE_X / var->tex.width;
+	// scale_y = FENETRE_Y / var->tex.height;
 	y = 0;
 	while (y < FENETRE_Y)
 	{
 		x = 0;
-//		tex_y = (y / scale_y) % var->tex.height;
-		tex_x = 0;
 		while (x < FENETRE_X)
 		{
-			if (tex_x < scale_x)
-			{
-				color = *(int *)(var->tex.data + (y * var->tex.line_length) + (tex_x * (var->tex.bpp / 8)));
-				my_mlx_pixel_put2(var, x, y, color);
-				tex_x++;
-			}
-			else
-				break ;
+			color = *(int *)(var->tex.data + (y * var->tex.line_length) + (x * (var->tex.bpp / 8)));
+			my_mlx_pixel_put2(var, x, y, color);
 			x++;
 		}
 		y++;
 	}
-	(void)scale_y;
-	(void)tex_y;
 	mlx_put_image_to_window(var->mlx, var->win, var->tex.img, 0, 0);
 }
 
@@ -103,14 +86,10 @@ int	main(void)
 	var.win = mlx_new_window(var.mlx, FENETRE_X, FENETRE_Y, "textures");
 	var.tex.path = ft_strdup("./textures/texture_simon.xpm");
 	var.tex.img = mlx_xpm_file_to_image(var.mlx, var.tex.path, &var.tex.width, &var.tex.height);
-//	mlx_put_image_to_window(var.mlx, var.win, var.tex.img, 0, 0);
-	// printf("avant mlx_get_data_addr\n");
-	// printf("var.tex.data = %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
-	// *(int *)var.tex.data, var.tex.bpp, var.tex.line_length, var.tex.endian);
-//	var.tex.data = mlx_get_data_addr(var.tex.img, &(var.tex.bpp), &(var.tex.line_length), &(var.tex.endian));
-	// printf("apres mlx_get_data_addr\n");
-	// printf("var.tex.data = %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
-	// *(int *)var.tex.data, var.tex.bpp, var.tex.line_length, var.tex.endian);
+	var.tex.data = mlx_get_data_addr(var.tex.img, &(var.tex.bpp), &(var.tex.line_length), &(var.tex.endian));
+	printf("apres mlx_get_data_addr\n");
+	printf("var.tex.data = %i\n var.tex.bpp = %i, var.tex.line_length = %i, var.tex.endian = %i\n",
+	*(int *)var.tex.data, var.tex.bpp, var.tex.line_length, var.tex.endian);
 	draw_complete_texture(&var);
 	mlx_loop(var.mlx);
 	return (0);
