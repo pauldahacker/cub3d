@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   movement.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:45:19 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/04 15:45:21 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/11/09 14:06:56 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	on_move_up(t_vars *vars, int speed)
 {
 	double	angle;
 
-	angle = vars->game->player->angle;
+	angle = vars->game->player->middle_fov_angle;
 	vars->game->player->pos_x += return_x_increment(vars, angle, speed);
 	vars->game->player->pos_y += return_y_increment(vars, angle, speed);
 	return (0);
@@ -26,7 +26,7 @@ int	on_move_left(t_vars *vars, int speed)
 {
 	double	angle;
 
-	angle = vars->game->player->angle + 90;
+	angle = vars->game->player->middle_fov_angle + 90;
 	if (angle >= 360)
 		angle -= 360;
 	vars->game->player->pos_x += return_x_increment(vars, angle, speed);
@@ -38,7 +38,7 @@ int	on_move_down(t_vars *vars, int speed)
 {
 	double	angle;
 
-	angle = vars->game->player->angle + 180;
+	angle = vars->game->player->middle_fov_angle + 180;
 	if (angle >= 360)
 		angle -= 360;
 	vars->game->player->pos_x += return_x_increment(vars, angle, speed);
@@ -50,7 +50,7 @@ int	on_move_right(t_vars *vars, int speed)
 {
 	double	angle;
 
-	angle = vars->game->player->angle - 90;
+	angle = vars->game->player->middle_fov_angle - 90;
 	if (angle < 0)
 		angle += 360;
 	vars->game->player->pos_x += return_x_increment(vars, angle, speed);

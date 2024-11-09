@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rotation.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:44:25 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/04 15:44:27 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/11/09 14:08:05 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ int	on_rotate_left(t_vars *vars, int speed)
 	if (!speed || speed > 360)
 		return (0);
 	player = vars->game->player;
-	player->angle = increment_angle(player->angle, speed);
+	player->middle_fov_angle = increment_angle(player->middle_fov_angle,
+			speed);
 	player->angle_start = increment_angle(player->angle_start, speed);
 	player->angle_end = increment_angle(player->angle_end, speed);
 	return (0);
@@ -44,7 +45,8 @@ int	on_rotate_right(t_vars *vars, int speed)
 	if (!speed || speed > 360)
 		return (0);
 	player = vars->game->player;
-	player->angle = increment_angle(player->angle, -speed);
+	player->middle_fov_angle = increment_angle(player->middle_fov_angle,
+			-speed);
 	player->angle_start = increment_angle(player->angle_start, -speed);
 	player->angle_end = increment_angle(player->angle_end, -speed);
 	return (0);
