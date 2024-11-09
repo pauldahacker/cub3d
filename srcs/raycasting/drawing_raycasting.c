@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/05 21:19:55 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/09 14:17:57 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,9 @@ static void	draw_raycasting(t_vars *vars, double projected_wall_height, int *x,
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
 			else if (*y >= proj_plan.wall_top_pos_y_in_px
 				&& *y <= proj_plan.wall_lower_pos_y_in_px)
-				draw_wall(vars, x, y);
+				{
+					draw_wall(vars, x, y);
+				}
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
@@ -130,5 +132,7 @@ void	draw_every_ray(t_vars *vars)
 	}
 	if (vars->game->player->angle_end <= 0)
 		vars->game->player->angle_end += 360.0;
+	// printf("vars->game->player->proj_plan.wall_top_pos_y_in_px = %f\n", vars->game->player->proj_plan.wall_top_pos_y_in_px);
+	// printf("vars->game->player->proj_plan.wall_lower_pos_y_in_px = %f\n", vars->game->player->proj_plan.wall_lower_pos_y_in_px);
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }

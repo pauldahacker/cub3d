@@ -6,7 +6,7 @@
 /*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:17:10 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 12:36:19 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/09 14:07:20 by simon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,15 @@ Projection plane X instead of 320.0
 void	init_player_angles(t_player *player, char direction)
 {
 	if (direction == 'N')
-		player->angle = 90;
+		player->middle_fov_angle = 90;
 	else if (direction == 'W')
-		player->angle = 180;
+		player->middle_fov_angle = 180;
 	else if (direction == 'S')
-		player->angle = 270;
+		player->middle_fov_angle = 270;
 	else
-		player->angle = 0;
-	player->angle_start = player->angle + 30;
-	player->angle_end = player->angle - 30;
+		player->middle_fov_angle = 0;
+	player->angle_start = player->middle_fov_angle + 30;
+	player->angle_end = player->middle_fov_angle - 30;
 	if (player->angle_end < 0)
 		player->angle_end += 360;
 	player->subsequent_angle = 60.0 / 320.0;
