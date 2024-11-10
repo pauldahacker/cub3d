@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/10 13:39:13 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/10 16:45:40 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,6 +114,7 @@ typedef struct raycasting
 	t_block		point_hit;
 	double		projected_wall_height;
 	double		distance_to_wall;
+	double		wall_height_in_px;
 }	t_player;
 
 typedef struct s_data
@@ -130,6 +131,7 @@ typedef struct s_data
 
 typedef struct textures
 {
+	// char			**colors_texture;
 	char			*path;
 	void			*img;//qu'est ce que c'est ?
 	int				width;

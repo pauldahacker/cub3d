@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:15:43 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/10 14:55:31 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:44:06 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	draw_texture(t_vars *vars, int x, int y, t_texture tex)
 {
 	int	color;
 	
-	color = BLACK;
+	color = ORANGE;
 	(void)tex;
 	my_mlx_pixel_put(*vars, x, y, color);
 	if (y == vars->game->player->proj_plan.wall_top_pos_y_in_px)
@@ -26,36 +26,52 @@ void	draw_texture(t_vars *vars, int x, int y, t_texture tex)
 	}
 }
 
-void	draw_permadi_wall(t_vars *vars, int x, int y, t_texture tex)
+//we are still drawing column by column
+//firstly we need to know the complete column(y) length of our wall
+//then we need to scale it in function of the texture size
+void	draw_scaled_texture(t_vars *vars, int x, int *y, t_texture tex)
 {
-	int			texture_offset_x;
-	int			texture_y;
-	int			start_y;
-	int			end_y;
+
 	t_player	*player;
+	double		offset_y;
 	int			color;
+	// static int	tex_x = 0;
 
 	player = vars->game->player;
-	if (vars->game->player->horizontal_distance_chosen == true)
-		texture_offset_x = (int)vars->game->player->point_hit.x % tex.width;
-	else
-		texture_offset_x = (int)vars->game->player->point_hit.x % tex.height;
-	start_y = vars->game->player->proj_plan.wall_top_pos_y_in_px;
-	end_y = vars->game->player->proj_plan.wall_lower_pos_y_in_px;
-	while (start_y < end_y)
+
+	offset_y = *y + player->wall_height_in_px / (double)tex.height;
+	// printf("player->wall_height_in_px = %f\n", player->wall_height_in_px);
+	// printf("offset_y = %f\n", offset_y);
+	// printf("before loop: y = %i\n", *y);
+	color = array_colors[*y][x];
+	//color = *(unsigned int *)vars->data.addr + (*y * tex.size_line + x * (tex.bpp / 8));
+	// printf("color = %i\n", color);
+	while (*y < offset_y)
 	{
-		texture_y = (y - start_y) * BLOCK_SIZE / player->projected_wall_height;
-		color = get_color_from_texture(&tex, texture_offset_x, texture_y);
-		my_mlx_pixel_put(*vars, x, y, color);
-		y++;
+		my_mlx_pixel_put(*vars, x, *y, color);
+		(*y)++;
 	}
+	// printf("after loop: = %i\n", *y);
+	// if (tex_x > 100000)
+	// 	exit(0);
+	// if (tex_x == 64)
+	// {
+	// 	tex_x = 0;
+	// 	if (tex_y == 64)
+	// 		tex_y = 0;
+	// 	else
+	// 		tex_y++;
+	// }
+	// else
+	// 	tex_x++;
 }
 
 void	draw_wall(t_vars *vars, int *x, int *y)
 {
 	if (ray_facing_up(vars->game->player->ray_angle) == 1
 		&& vars->game->player->horizontal_distance_chosen == true)
-		draw_permadi_wall(vars, *x, *y, vars->south_tex);
+		draw_scaled_texture(vars, *x, y, vars->south_tex);
+		//draw_texture(vars, *x, *y, vars->south_tex);	
 	else if (ray_facing_up(vars->game->player->ray_angle) == 0
 		&& vars->game->player->horizontal_distance_chosen == true)
 		draw_texture(vars, *x, *y, vars->north_tex);
