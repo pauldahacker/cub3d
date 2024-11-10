@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/10 13:47:47 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/10 13:52:55 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,7 @@ static void	set_data_projection_plan(t_vars *vars)
 //considered as a 60 degrees angle horizontal FOV
 //angle_start starts at the left of our FOV (example: 120)
 //angle_end finishes at the right of our FOV (example: 60)
+//You should/could withdraw ray_angle variable; You don't really need it to duplicate it
 void	draw_every_ray(t_vars *vars)
 {
 	int			y;
@@ -126,7 +127,7 @@ void	draw_every_ray(t_vars *vars)
 	while (ray_angle > vars->game->player->angle_end)
 	{
 		vars->game->player->ray_angle = ray_angle;
-		player->distance_to_wall = calculate_best_distance(vars, ray_angle);
+		player->distance_to_wall = calculate_best_distance(vars, ray_angle);//you can withdraw ray_angle and use vars->game->player->ray_angle
 		player->projected_wall_height = calculate_projected_wall_height(vars);
 		draw_raycasting(vars, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
