@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/10 13:52:55 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/10 17:52:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,9 @@ static double	calculate_projected_wall_height(t_vars *vars)
 static void	set_calculus_projection_plan(t_proj *proj_plan,
 	double projected_wall_height)
 {
+	// static int	i = 0;
+	// double		wall_height_in_px;
+
 	proj_plan->wall_top_pos_y_in_pp = proj_plan->center_pp_y
 		- projected_wall_height / 2;
 	proj_plan->wall_lower_pos_y_in_pp = proj_plan->center_pp_y
@@ -61,6 +64,13 @@ static void	set_calculus_projection_plan(t_proj *proj_plan,
 		* WINDOW_Y / PROJ_PLANE_Y;
 	proj_plan->wall_lower_pos_y_in_px = proj_plan->wall_lower_pos_y_in_pp
 		* WINDOW_Y / PROJ_PLANE_Y;
+	// printf("i = %i\n", i++);
+	// printf("wall_lower_pos_y_in_pp = %f\n", proj_plan->wall_lower_pos_y_in_pp);
+	// printf("wall_top_pos_y_in_pp = %f\n", proj_plan->wall_top_pos_y_in_pp);
+	// printf("wall_lower_pos_y_in_px = %f\n", proj_plan->wall_lower_pos_y_in_px);
+	// printf("wall_top_pos_y_in_px = %f\n", proj_plan->wall_top_pos_y_in_px);
+	// wall_height_in_px = proj_plan->wall_lower_pos_y_in_px - proj_plan->wall_top_pos_y_in_px;
+	// printf("wall_height_in_px = %f\n\n", wall_height_in_px);
 }
 
 //PP means PROJECTION_PLAN
@@ -79,15 +89,22 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 		while (*y < WINDOW_Y)
 		{
 			if (*y < proj_plan.wall_top_pos_y_in_px)
+			{
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
+				(*y)++;
+			}
 			else if (*y >= proj_plan.wall_top_pos_y_in_px
 				&& *y <= proj_plan.wall_lower_pos_y_in_px)
 				{
+					player->wall_height_in_px = proj_plan.wall_lower_pos_y_in_px - proj_plan.wall_top_pos_y_in_px;
+					//printf("wall_height_in_px = %f\n", wall_height_in_px);
 					draw_wall(vars, x, y);
 				}
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
+			{
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
-			(*y)++;
+				(*y)++;
+			}
 		}
 		(*x)++;
 		if (*x % proj_plan.length_column == 0)
