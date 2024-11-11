@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 13:07:12 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:32:18 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,11 +80,12 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 	t_proj		proj_plan;
 	t_player	*player;
 
-	proj_plan = vars->game->player->proj_plan;
 	player = vars->game->player;
-	set_calculus_projection_plan(&proj_plan, player->projected_wall_height);
+	set_calculus_projection_plan(&vars->game->player->proj_plan, player->projected_wall_height);
+	proj_plan = vars->game->player->proj_plan;
 	while (*x < WINDOW_X)
 	{
+		player->wall_height_in_px = proj_plan.wall_lower_pos_y_in_px - proj_plan.wall_top_pos_y_in_px;
 		*y = 0;
 		while (*y < WINDOW_Y)
 		{
@@ -92,10 +93,7 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
 			else if (*y >= proj_plan.wall_top_pos_y_in_px
 				&& *y <= proj_plan.wall_lower_pos_y_in_px)
-				{
-					player->wall_height_in_px = proj_plan.wall_lower_pos_y_in_px - proj_plan.wall_top_pos_y_in_px;
 					draw_wall(vars, x, y);
-				}
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
