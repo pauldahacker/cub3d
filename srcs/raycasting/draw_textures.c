@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:15:43 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 18:30:18 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:44:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ void	draw_texture(t_vars *vars, int x, int *y, t_texture tex)
 	t_player		*player;
 	unsigned int	color;
 	int				pixel_offset;
-	double			offset_y;
 
 	player = vars->game->player;
 	if (player->former_block_touched.reachable == false)//it means that this is the first ray and former_block_touched is not set yet
@@ -39,24 +38,22 @@ void	draw_texture(t_vars *vars, int x, int *y, t_texture tex)
 	pixel_offset = (*y % 64) * tex.size_line + (x % 64) * (tex.bpp / 8);
 	color = (tex.data[pixel_offset]) << 16 | (tex.data[pixel_offset + 1]) << 8
 		|(tex.data[pixel_offset + 2]);
-	offset_y = *y + player->wall_height_in_px / (double)tex.height;
 	if (rounded_down(player->block_touched.x) == rounded_down(player->former_block_touched.x)
 		&& rounded_down(player->block_touched.y) == rounded_down(player->former_block_touched.y))
-	{
 		my_mlx_pixel_put(*vars, x, *y, color);
-	}
-	//my_mlx_pixel_put(*vars, x, *y, color);
 	else
 	{
-		if (rounded_down(player->block_touched.x) != rounded_down(player->former_block_touched.x))
-			printf("player->block_touched.x = %f\n && player->former_block_touched.x = %f\n\n", rounded_down(player->block_touched.x), rounded_down(player->former_block_touched.x));
-		else
-			printf("player->block_touched.y = %f\n && player->former_block_touched.y = %f\n\n", rounded_down(player->block_touched.y), rounded_down(player->former_block_touched.y));
-		my_mlx_pixel_put(*vars, x, *y, WHITE);
+		player->proj_plan.wall_upper_left_x_in_px = player->former_block_touched.x;
+		player->proj_plan.wall_upper_right_x_in_px = player->block_touched.x;
+		// if (rounded_down(player->block_touched.x) != rounded_down(player->former_block_touched.x))
+		// 	printf("player->block_touched.x = %f\n && player->former_block_touched.x = %f\n\n", rounded_down(player->block_touched.x), rounded_down(player->former_block_touched.x));
+		// else
+		// 	printf("player->block_touched.y = %f\n && player->former_block_touched.y = %f\n\n", rounded_down(player->block_touched.y), rounded_down(player->former_block_touched.y));
+		color = WHITE;
+		while (*y <= player->proj_plan.wall_lower_pos_y_in_px)
+			my_mlx_pixel_put(*vars, x, (*y)++, color);
 	}
 	player->former_block_touched = player->block_touched;
-	(void)offset_y;
-	(void)color;
 }
 
 //we are still drawing column by column

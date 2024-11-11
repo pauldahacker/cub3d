@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 14:57:16 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:22:56 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,12 @@ typedef struct s_vars		t_vars;
 typedef struct projection
 {
 	double	center_pp_y;
-	double	wall_top_pos_y_in_pp;
-	double	wall_lower_pos_y_in_pp;
 	double	wall_top_pos_y_in_px;
 	double	wall_lower_pos_y_in_px;
+	double	wall_upper_left_x_in_px;//this is the start of the block
+	double	wall_upper_right_x_in_px;//this is the start of it's following block
+	double	wall_top_pos_y_in_pp;
+	double	wall_lower_pos_y_in_pp;
 	double	distance_player_pplan;
 	int		length_column;
 }	t_proj;

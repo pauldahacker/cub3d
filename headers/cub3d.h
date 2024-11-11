@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/11 15:38:15 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:43:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,8 +115,8 @@ typedef struct raycasting
 	double		projected_wall_height;
 	double		distance_to_wall;
 	double		wall_height_in_px;
-	t_block		former_block_touched;
 	t_block		block_touched;//gave us the block touched by the ray in block
+	t_block		former_block_touched;
 }	t_player;
 
 typedef struct s_data
