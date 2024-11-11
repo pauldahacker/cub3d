@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3d.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 20:47:51 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/11 12:55:57 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,18 +104,17 @@ typedef struct raycasting
 {
 	double		pos_x;//⭐//player position in abscissa. The unit are the pixels!
 	double		pos_y;//⭐//player position in ordinate. The unit are the pixels!
-	double		angle;//⭐//angle [0-360) of ray starting from abscissa axis
-	char		direction;//will determine our FOV
-	double		angle_start;//⭐
-	double		angle_end;//⭐
-	double		subsequent_angle;//⭐
-	double		ray_angle;
+	double		angle_start;//⭐//starting angle from our FOV
+	double		angle_end;//⭐//ending angle from our FOV
+	double		middle_fov_angle;//⭐//middle angle between angle_start & angle_end
+	double		ray_angle;//angle of the current ray drawn
+	double		subsequent_angle;//⭐//degrees variations between 2 rays
 	bool		horizontal_distance_chosen;//or horizontal distance or the vertical one
-	double		tan_result;
-	double		cos_result;
 	t_proj		proj_plan;
 	t_block		point_hit;
 	double		projected_wall_height;
+	double		distance_to_wall;
+	double		wall_height_in_px;
 }	t_player;
 
 typedef struct s_data
@@ -132,13 +131,14 @@ typedef struct s_data
 
 typedef struct textures
 {
+	// char			**colors_texture;
 	char			*path;
-	void			*img;
+	void			*img;//qu'est ce que c'est ?
 	int				width;
 	int				height;
-	int				endian;
+	int				endian;//qu'est ce que c'est ?
 	int				bpp;
-	int				size_line;
+	int				size_line;//quelle est la difference entre size_line/width/height ?
 	unsigned char	*data;
 }				t_texture;
 

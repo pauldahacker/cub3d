@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   calculate_best_distance.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/05 21:14:02 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/11 13:05:18 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static double	calculate_hypo_distance(t_vars *vars, t_block point,
 	ray_end_pt.x = ft_abs(vars->game->player->pos_x - point.x);
 	ray_end_pt.y = ft_abs(vars->game->player->pos_y - point.y);
 	distance = ray_end_pt.x * ray_end_pt.x + ray_end_pt.y * ray_end_pt.y;
-	beta = vars->game->player->angle - ray_angle;
+	beta = vars->game->player->middle_fov_angle - ray_angle;
 	return (sqrt(distance) * cos(beta * (PI / 180.0)));
 }
 
