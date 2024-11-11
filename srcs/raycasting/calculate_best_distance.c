@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 14:37:12 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 15:41:40 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,11 +77,14 @@ double	calculate_best_distance(t_vars *vars, double ray_angle)
 				ray_angle);
 	else
 		vertical_distance = NAN;
+	vars->game->player->block_touched.reachable = true;
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
 		return (vars->game->player->horizontal_distance_chosen = false,
-			vars->game->player->point_hit = vertical_pt_px, vertical_distance);
+			vars->game->player->point_hit = vertical_pt_px,
+			vars->game->player->block_touched = convert_pixel_to_block(vertical_pt_px), vertical_distance);
 	return (vars->game->player->horizontal_distance_chosen = true,
-		vars->game->player->point_hit = horizontal_pt_px, horizontal_distance);
+		vars->game->player->point_hit = horizontal_pt_px, 
+		vars->game->player->block_touched = convert_pixel_to_block(horizontal_pt_px), horizontal_distance);
 }
 
 //returns the vertical or horizontal intersection with the smallest distance

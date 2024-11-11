@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 14:36:08 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 15:42:19 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ static void	set_calculus_projection_plan(t_proj *proj_plan,
 		* WINDOW_Y / PROJ_PLANE_Y;
 	proj_plan->wall_lower_pos_y_in_px = proj_plan->wall_lower_pos_y_in_pp
 		* WINDOW_Y / PROJ_PLANE_Y;
+	
 	// printf("i = %i\n", i++);
 	// printf("wall_lower_pos_y_in_pp = %f\n", proj_plan->wall_lower_pos_y_in_pp);
 	// printf("wall_top_pos_y_in_pp = %f\n", proj_plan->wall_top_pos_y_in_pp);
@@ -131,12 +132,15 @@ void	draw_every_ray(t_vars *vars)
 	if (vars->game->player->angle_end >= 300.0)
 		vars->game->player->angle_end -= 360.0;
 	set_data_projection_plan(vars);
+	player->former_block_touched.reachable = false;
+	player->block_touched.reachable = false;
 	x = 0;
 	y = 0;
 	while (ray_angle > vars->game->player->angle_end)
 	{
 		vars->game->player->ray_angle = ray_angle;
 		player->distance_to_wall = calculate_best_distance(vars, ray_angle);//you can withdraw ray_angle and use vars->game->player->ray_angle
+//		printf("block_touched.x = %f\nblock_touched.y = %f\n", rounded_down(vars->game->player->block_touched.x), rounded_down(vars->game->player->block_touched.y));
 		player->projected_wall_height = calculate_projected_wall_height(vars);
 		draw_raycasting(vars, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
