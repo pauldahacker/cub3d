@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:15:43 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 14:36:45 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 15:56:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,18 +34,26 @@ void	draw_texture(t_vars *vars, int x, int *y, t_texture tex)
 	double			offset_y;
 
 	player = vars->game->player;
+	if (player->former_block_touched.reachable == false)//it means that this is the first ray and former_block_touched is not set yet
+		player->former_block_touched = player->block_touched;//we set it
 	pixel_offset = (*y % 64) * tex.size_line + (x % 64) * (tex.bpp / 8);
 	color = (tex.data[pixel_offset]) << 16 | (tex.data[pixel_offset + 1]) << 8
 		|(tex.data[pixel_offset + 2]);
 	offset_y = *y + player->wall_height_in_px / (double)tex.height;
-		my_mlx_pixel_put(*vars, x, *y, color);
-	(void)offset_y;
-/*	while (*y < offset_y)
+	if (player->block_touched.x == player->former_block_touched.x
+		&& player->block_touched.y == player->former_block_touched.y)
 	{
-		if (*y + 1 == offset_y)
-			break ;
-		(*y)++;
-	}*/
+		my_mlx_pixel_put(*vars, x, *y, color);
+	}
+	//my_mlx_pixel_put(*vars, x, *y, color);
+	// if (player->block_touched.x != player->former_block_touched.x
+	// 	|| player->block_touched.y != player->former_block_touched.y)
+	else
+	{
+		my_mlx_pixel_put(*vars, x, *y, WHITE);
+	}
+	player->former_block_touched = player->block_touched;
+	(void)offset_y;
 }
 
 //we are still drawing column by column

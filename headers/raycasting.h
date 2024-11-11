@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 14:36:20 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:57:16 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct s_game		t_game;
 typedef struct raycasting	t_player;
 typedef struct s_vars		t_vars;
 
+//PP means PROJECTION_PLAN
 typedef struct projection
 {
 	double	center_pp_y;
