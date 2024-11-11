@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:15:43 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 15:56:52 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:30:18 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,20 +40,23 @@ void	draw_texture(t_vars *vars, int x, int *y, t_texture tex)
 	color = (tex.data[pixel_offset]) << 16 | (tex.data[pixel_offset + 1]) << 8
 		|(tex.data[pixel_offset + 2]);
 	offset_y = *y + player->wall_height_in_px / (double)tex.height;
-	if (player->block_touched.x == player->former_block_touched.x
-		&& player->block_touched.y == player->former_block_touched.y)
+	if (rounded_down(player->block_touched.x) == rounded_down(player->former_block_touched.x)
+		&& rounded_down(player->block_touched.y) == rounded_down(player->former_block_touched.y))
 	{
 		my_mlx_pixel_put(*vars, x, *y, color);
 	}
 	//my_mlx_pixel_put(*vars, x, *y, color);
-	// if (player->block_touched.x != player->former_block_touched.x
-	// 	|| player->block_touched.y != player->former_block_touched.y)
 	else
 	{
+		if (rounded_down(player->block_touched.x) != rounded_down(player->former_block_touched.x))
+			printf("player->block_touched.x = %f\n && player->former_block_touched.x = %f\n\n", rounded_down(player->block_touched.x), rounded_down(player->former_block_touched.x));
+		else
+			printf("player->block_touched.y = %f\n && player->former_block_touched.y = %f\n\n", rounded_down(player->block_touched.y), rounded_down(player->former_block_touched.y));
 		my_mlx_pixel_put(*vars, x, *y, WHITE);
 	}
 	player->former_block_touched = player->block_touched;
 	(void)offset_y;
+	(void)color;
 }
 
 //we are still drawing column by column
