@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:15:43 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 12:32:40 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 12:52:20 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	draw_scaled_texture(t_vars *vars, int x, int *y, t_texture tex)
 	// printf("player->wall_height_in_px = %f\n", player->wall_height_in_px);
 	// printf("offset_y = %f\n", offset_y);
 	// printf("before loop: y = %i\n", *y);
-	color = array_colors[*y][x];
+	// color = array_colors[*y][x];
 	//color = *(unsigned int *)vars->data.addr + (*y * tex.size_line + x * (tex.bpp / 8));
 	// printf("color = %i\n", color);
 	while (*y < offset_y)
