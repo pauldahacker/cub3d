@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/08 20:16:07 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/11 18:16:10 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ int	main(int argc, char **argv)
 	vars.game->player->pos_x = (vars.game->player->pos_x + 0.5) * BLOCK_SIZE;
 	vars.game->player->pos_y = (vars.game->player->pos_y + 0.5) * BLOCK_SIZE;
 	draw_every_ray(&vars);
-	draw_minimap(&vars, vars.game);
+	// draw_minimap(&vars, vars.game);
 	mlx_hook(vars.win_ptr, X_EVENT_KEY_PRESS, 1L<<0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, X_EVENT_KEY_RELEASE, 1L<<1, &on_keyrelease, &vars);
 	mlx_hook(vars.win_ptr, X_EVENT_DESTROY, 0, &on_destroy, &vars);

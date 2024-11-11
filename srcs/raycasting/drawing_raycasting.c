@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 15:42:19 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:30:32 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
+			//player->former_block_touched = player->block_touched;
 		}
 		(*x)++;
 		if (*x % proj_plan.length_column == 0)
