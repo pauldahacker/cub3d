@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   drawing_raycasting.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/05 21:19:55 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/11 13:07:12 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,16 @@ __________ = Projection Plane = __________
 */
 //The uppermost left ray (first one) will draw the first row
 
-double	calculate_projected_wall_height(t_vars *vars, double dist_to_wall)
+static double	calculate_projected_wall_height(t_vars *vars)
 {
-	double	actual_wall_height;
-	double	projected_wall_height;
+	double		actual_wall_height;
+	double		projected_wall_height;
+	t_player	*player;
 
 	actual_wall_height = BLOCK_SIZE;
-	projected_wall_height = (actual_wall_height / dist_to_wall)
-		* vars->game->player->proj_plan.distance_player_pplan;
+	player = vars->game->player;
+	projected_wall_height = (actual_wall_height / player->distance_to_wall)
+		* player->proj_plan.distance_player_pplan;
 	projected_wall_height = rounded_nearest_nb(projected_wall_height);
 	return (projected_wall_height);
 }
@@ -51,6 +53,9 @@ double	calculate_projected_wall_height(t_vars *vars, double dist_to_wall)
 static void	set_calculus_projection_plan(t_proj *proj_plan,
 	double projected_wall_height)
 {
+	// static int	i = 0;
+	// double		wall_height_in_px;
+
 	proj_plan->wall_top_pos_y_in_pp = proj_plan->center_pp_y
 		- projected_wall_height / 2;
 	proj_plan->wall_lower_pos_y_in_pp = proj_plan->center_pp_y
@@ -59,17 +64,25 @@ static void	set_calculus_projection_plan(t_proj *proj_plan,
 		* WINDOW_Y / PROJ_PLANE_Y;
 	proj_plan->wall_lower_pos_y_in_px = proj_plan->wall_lower_pos_y_in_pp
 		* WINDOW_Y / PROJ_PLANE_Y;
+	// printf("i = %i\n", i++);
+	// printf("wall_lower_pos_y_in_pp = %f\n", proj_plan->wall_lower_pos_y_in_pp);
+	// printf("wall_top_pos_y_in_pp = %f\n", proj_plan->wall_top_pos_y_in_pp);
+	// printf("wall_lower_pos_y_in_px = %f\n", proj_plan->wall_lower_pos_y_in_px);
+	// printf("wall_top_pos_y_in_px = %f\n", proj_plan->wall_top_pos_y_in_px);
+	// wall_height_in_px = proj_plan->wall_lower_pos_y_in_px - proj_plan->wall_top_pos_y_in_px;
+	// printf("wall_height_in_px = %f\n\n", wall_height_in_px);
 }
 
 //PP means PROJECTION_PLAN
 //this function draws one column of our FOV, starting from (x;y)
-static void	draw_raycasting(t_vars *vars, double projected_wall_height, int *x,
-	int *y)
+static void	draw_raycasting(t_vars *vars, int *x, int *y)
 {
-	t_proj	proj_plan;
+	t_proj		proj_plan;
+	t_player	*player;
 
 	proj_plan = vars->game->player->proj_plan;
-	set_calculus_projection_plan(&proj_plan, projected_wall_height);
+	player = vars->game->player;
+	set_calculus_projection_plan(&proj_plan, player->projected_wall_height);
 	while (*x < WINDOW_X)
 	{
 		*y = 0;
@@ -79,7 +92,10 @@ static void	draw_raycasting(t_vars *vars, double projected_wall_height, int *x,
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
 			else if (*y >= proj_plan.wall_top_pos_y_in_px
 				&& *y <= proj_plan.wall_lower_pos_y_in_px)
-				draw_wall(vars, x, y);
+				{
+					player->wall_height_in_px = proj_plan.wall_lower_pos_y_in_px - proj_plan.wall_top_pos_y_in_px;
+					draw_wall(vars, x, y);
+				}
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
@@ -104,14 +120,15 @@ static void	set_data_projection_plan(t_vars *vars)
 //considered as a 60 degrees angle horizontal FOV
 //angle_start starts at the left of our FOV (example: 120)
 //angle_end finishes at the right of our FOV (example: 60)
+//You should/could withdraw ray_angle variable; You don't really need it to duplicate it
 void	draw_every_ray(t_vars *vars)
 {
-	double	dist_to_wall;
-	double	projected_wall_height;
-	int		y;
-	int		x;
-	double	ray_angle;
+	int			y;
+	int			x;
+	double		ray_angle;
+	t_player	*player;
 
+	player = vars->game->player;
 	ray_angle = vars->game->player->angle_start;
 	if (vars->game->player->angle_end >= 300.0)
 		vars->game->player->angle_end -= 360.0;
@@ -121,14 +138,14 @@ void	draw_every_ray(t_vars *vars)
 	while (ray_angle > vars->game->player->angle_end)
 	{
 		vars->game->player->ray_angle = ray_angle;
-		dist_to_wall = calculate_best_distance(vars, ray_angle);
-		projected_wall_height = calculate_projected_wall_height(vars,
-				dist_to_wall);
-		vars->game->player->projected_wall_height = projected_wall_height;
-		draw_raycasting(vars, projected_wall_height, &x, &y);
+		player->distance_to_wall = calculate_best_distance(vars, ray_angle);//you can withdraw ray_angle and use vars->game->player->ray_angle
+		player->projected_wall_height = calculate_projected_wall_height(vars);
+		draw_raycasting(vars, &x, &y);
 		ray_angle -= vars->game->player->subsequent_angle;
 	}
 	if (vars->game->player->angle_end <= 0)
 		vars->game->player->angle_end += 360.0;
+	// printf("vars->game->player->proj_plan.wall_top_pos_y_in_px = %f\n", vars->game->player->proj_plan.wall_top_pos_y_in_px);
+	// printf("vars->game->player->proj_plan.wall_lower_pos_y_in_px = %f\n", vars->game->player->proj_plan.wall_lower_pos_y_in_px);
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
