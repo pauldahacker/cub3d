@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 18:17:49 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 18:38:29 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:51:11 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 //otherwise we stop. The ray will stop and will draw a wall.
 //If the ray is facing up, we check the walls with reference the upper left one
 //else, we check the walls with reference the lower right one
+//if the configuration is not set in ascending diagonal like above, we return 1
 int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
 {
 	char	**map;
@@ -31,21 +32,21 @@ int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
 	map = vars->game->map;
 	if (ray_facing_up(vars->game->player->ray_angle) == 1)
 	{
-		if ((int)current.y < vars->game->n_rows - 1 && (int)current.x < vars->game->n_cols &&
-		(map[(int)current.y][(int)current.x] == 'V' || map[(int)current.y][(int)current.x] == '0') &&
-		map[(int)current.y + 1][(int)current.x] == '1' &&
-		map[(int)current.y][(int)current.x + 1] == '1' &&
-		(map[(int)current.y + 1][(int)current.x + 1] == 'V' || map[(int)current.y + 1][(int)current.x + 1] == '0'))
+		if ((int)current.y < vars->game->n_rows - 1
+			&& (int)current.x < vars->game->n_cols
+			&& (map[(int)current.y][(int)current.x] == 'V')
+			&& map[(int)current.y + 1][(int)current.x] == '1'
+			&& map[(int)current.y][(int)current.x + 1] == '1'
+			&& (map[(int)current.y + 1][(int)current.x + 1] == 'V'))
 			return (0);
 	}
 	else
 	{
-		if ((int)current.y > 0 && (int)current.x > 0 &&
-		(map[(int)current.y][(int)current.x] == 'V' || map[(int)current.y][(int)current.x] == '0') &&
-		map[(int)current.y - 1][(int)current.x] == '1' &&
-		map[(int)current.y][(int)current.x - 1] == '1' &&
-		(map[(int)current.y - 1][(int)current.x - 1] == 'V' || map[(int)current.y - 1][(int)current.x - 1] == '0')
-		)
+		if ((int)current.y > 0 && (int)current.x > 0
+			&& (map[(int)current.y][(int)current.x] == 'V')
+			&& map[(int)current.y - 1][(int)current.x] == '1'
+			&& map[(int)current.y][(int)current.x - 1] == '1'
+			&& (map[(int)current.y - 1][(int)current.x - 1] == 'V'))
 			return (0);
 	}
 	return (1);
