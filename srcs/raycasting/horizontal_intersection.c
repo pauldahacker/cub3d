@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 16:23:34 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:16:44 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,31 +58,6 @@ static t_block	find_next_horizontal_point(t_block current_point,
 	next_in_px.y = current_point.y + y_a;
 	next_in_px.reachable = true;
 	return (next_in_px);
-}
-
-//we have a specific problem when we are looking the walls exactly in front of
-//them, when they are configured in ascending diagonal
-//01
-//10
-//because for each block, we look at the point (0,0) <=> the very first pixel
-//What is happening if we are strictly looking in front of them ?
-//We will see a blank line. Whereas we want to see both wall touched
-//to avoid this, we check that we wall are not configured in ascending diagonal
-//if there are not, then we can continue on our *_point_crossing_wall while loop
-//otherwise we stop. The ray will stop and will draw a wall.
-int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
-{
-	char	**map;
-
-	map = vars->game->map;
-	if ((int)current.y > 0 && (int)current.x > 0 && 
-		(map[(int)current.y][(int)current.x] == 'V' || map[(int)current.y][(int)current.x] == '0') &&
-		map[(int)current.y - 1][(int)current.x] == '1' && 
-		map[(int)current.y][(int)current.x - 1] == '1' &&
-		(map[(int)current.y - 1][(int)current.x - 1] == 'V' || map[(int)current.y - 1][(int)current.x - 1] == '0')
-		)
-		return (0);
-	return (1);
 }
 
 //starting from the character position, we want to cast a ray until we find a
