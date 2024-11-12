@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minimap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simon <simon@student.42.fr>                +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:56:54 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/05 12:36:11 by simon            ###   ########.fr       */
+/*   Updated: 2024/11/12 11:00:37 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	draw_minimap_fov(t_vars *vars, t_game *game)
 	{
 		start.x = MINI_START_X + game->player->pos_x / BLOCK_SIZE * size_x;
 		start.y = MINI_START_Y + game->player->pos_y / BLOCK_SIZE * size_y;
-		inter = return_intersection(vars, ray_angle);
+		inter = return_intersection(vars);
 		inter.x = MINI_START_X + (long)(inter.x / BLOCK_SIZE * size_x);
 		inter.y = MINI_START_Y + (long)(inter.y / BLOCK_SIZE * size_y);
 		draw_fov_line(*vars, &start, &inter);
