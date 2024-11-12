@@ -74,6 +74,6 @@ int	update_player(t_vars *vars)
 	if (vars->keys.right)
 		on_rotate_right(vars, ROTATE_SPEED);
 	draw_every_ray(vars);
-	//draw_minimap(vars, vars->game);
+	draw_minimap(vars, vars->game);
 	return (0);
 }
