@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 19:44:03 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 10:59:53 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
-			//player->former_block_touched = player->block_touched;
+			//player-> = player->block_touched;
 		}
 		(*x)++;
 		if (*x % proj_plan.length_column == 0)
@@ -125,30 +125,30 @@ void	draw_every_ray(t_vars *vars)
 {
 	int			y;
 	int			x;
-	double		ray_angle;
 	t_player	*player;
 
 	player = vars->game->player;
-	ray_angle = vars->game->player->angle_start;
+	// printf("vars->game->player->ray_angle = %f\n", vars->game->player->ray_angle);
+	// printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
+	// printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
+	// exit(0);
+	vars->game->player->ray_angle = vars->game->player->angle_start;
 	if (vars->game->player->angle_end >= 300.0)
 		vars->game->player->angle_end -= 360.0;
 	set_data_projection_plan(vars);
 	player->former_block_touched.reachable = false;
 	player->block_touched.reachable = false;
+	player->next_block_touched.reachable = false;
 	x = 0;
 	y = 0;
-	while (ray_angle > vars->game->player->angle_end)
+	while (vars->game->player->ray_angle > vars->game->player->angle_end)
 	{
-		vars->game->player->ray_angle = ray_angle;
-		player->distance_to_wall = calculate_best_distance(vars, ray_angle);//you can withdraw ray_angle and use vars->game->player->ray_angle
-//		printf("block_touched.x = %f\nblock_touched.y = %f\n", rounded_down(vars->game->player->block_touched.x), rounded_down(vars->game->player->block_touched.y));
+		player->distance_to_wall = calculate_best_distance(vars);//you can withdraw ray_angle and use vars->game->player->ray_angle
 		player->projected_wall_height = calculate_projected_wall_height(vars);
 		draw_raycasting(vars, &x, &y);
-		ray_angle -= vars->game->player->subsequent_angle;
+		vars->game->player->ray_angle -= vars->game->player->subsequent_angle;
 	}
 	if (vars->game->player->angle_end <= 0)
 		vars->game->player->angle_end += 360.0;
-	// printf("vars->game->player->proj_plan.wall_top_pos_y_in_px = %f\n", vars->game->player->proj_plan.wall_top_pos_y_in_px);
-	// printf("vars->game->player->proj_plan.wall_lower_pos_y_in_px = %f\n", vars->game->player->proj_plan.wall_lower_pos_y_in_px);
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }

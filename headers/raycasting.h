@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/11 19:22:56 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 11:00:17 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,16 +56,16 @@ int			ray_facing_right(double angle);
 int			check_coordinates_in_map(t_vars *vars, t_block current);
 
 //horizontal_instersection.c
-t_block		horizontal_point_crossing_wall(t_vars *vars, double ray_angle);
+t_block		horizontal_point_crossing_wall(t_vars *vars);
 
 //vertical_instersection.c
-t_block		vertical_point_crossing_wall(t_vars *vars, double ray_angle);
+t_block		vertical_point_crossing_wall(t_vars *vars);
 
 //calculate_best_distance.c
 t_block		convert_pixel_to_block(t_block point);
 double		ft_abs(double number);
-double		calculate_best_distance(t_vars *vars, double angle);
-t_block		return_intersection(t_vars *vars, double angle);
+double		calculate_best_distance(t_vars *vars);
+t_block		return_intersection(t_vars *vars);
 
 //draw_wall.c
 void		draw_every_ray(t_vars *vars);
