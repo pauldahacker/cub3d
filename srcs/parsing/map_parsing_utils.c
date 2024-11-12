@@ -80,7 +80,7 @@ void	rowcpy(t_game *game, char *dest)
 	int	i;
 
 	i = -1;
-	while (++i < (int)ft_strlen(game->line))
+	while (++i < (int)ft_strlen(game->line) - 1)
 	{
 		if (is_space(game->line[i]))
 			dest[i] = '1';
