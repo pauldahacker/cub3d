@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 10:59:53 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 11:04:25 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,8 +82,8 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 	t_player	*player;
 
 	player = vars->game->player;
-	set_calculus_projection_plan(&vars->game->player->proj_plan, player->projected_wall_height);
-	proj_plan = vars->game->player->proj_plan;
+	set_calculus_projection_plan(&player->proj_plan, player->projected_wall_height);
+	proj_plan = player->proj_plan;
 	while (*x < WINDOW_X)
 	{
 		player->wall_height_in_px = proj_plan.wall_lower_pos_y_in_px - proj_plan.wall_top_pos_y_in_px;
@@ -120,7 +120,6 @@ static void	set_data_projection_plan(t_vars *vars)
 //considered as a 60 degrees angle horizontal FOV
 //angle_start starts at the left of our FOV (example: 120)
 //angle_end finishes at the right of our FOV (example: 60)
-//You should/could withdraw ray_angle variable; You don't really need it to duplicate it
 void	draw_every_ray(t_vars *vars)
 {
 	int			y;
@@ -128,27 +127,23 @@ void	draw_every_ray(t_vars *vars)
 	t_player	*player;
 
 	player = vars->game->player;
-	// printf("vars->game->player->ray_angle = %f\n", vars->game->player->ray_angle);
-	// printf("vars->game->player->angle_start = %f\n", vars->game->player->angle_start);
-	// printf("vars->game->player->angle_end = %f\n", vars->game->player->angle_end);
-	// exit(0);
-	vars->game->player->ray_angle = vars->game->player->angle_start;
-	if (vars->game->player->angle_end >= 300.0)
-		vars->game->player->angle_end -= 360.0;
+	player->ray_angle = player->angle_start;
+	if (player->angle_end >= 300.0)
+		player->angle_end -= 360.0;
 	set_data_projection_plan(vars);
 	player->former_block_touched.reachable = false;
 	player->block_touched.reachable = false;
 	player->next_block_touched.reachable = false;
 	x = 0;
 	y = 0;
-	while (vars->game->player->ray_angle > vars->game->player->angle_end)
+	while (player->ray_angle > player->angle_end)
 	{
-		player->distance_to_wall = calculate_best_distance(vars);//you can withdraw ray_angle and use vars->game->player->ray_angle
+		player->distance_to_wall = calculate_best_distance(vars);
 		player->projected_wall_height = calculate_projected_wall_height(vars);
 		draw_raycasting(vars, &x, &y);
-		vars->game->player->ray_angle -= vars->game->player->subsequent_angle;
+		player->ray_angle -= player->subsequent_angle;
 	}
-	if (vars->game->player->angle_end <= 0)
-		vars->game->player->angle_end += 360.0;
+	if (player->angle_end <= 0)
+		player->angle_end += 360.0;
 	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }
