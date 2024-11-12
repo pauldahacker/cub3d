@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 13:19:09 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 17:05:28 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,13 +92,16 @@ double	calculate_best_distance(t_vars *vars)
 }
 
 //returns the vertical or horizontal intersection with the smallest distance
-t_block	return_intersection(t_vars *vars)
+t_block	return_intersection(t_vars *vars, double angle)
 {
 	t_block	horizontal_pt_px;
 	double	horizontal_distance;
 	t_block	vertical_pt_px;
 	double	vertical_distance;
+	double	ray_angle_tmp;
 
+	ray_angle_tmp = vars->game->player->ray_angle;
+	vars->game->player->ray_angle = angle;
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
 	if (horizontal_pt_px.reachable == 1)
 		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
@@ -109,6 +112,7 @@ t_block	return_intersection(t_vars *vars)
 		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
 	else
 		vertical_distance = NAN;
+	vars->game->player->ray_angle = ray_angle_tmp;
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
 		return (vertical_pt_px);
 	return (horizontal_pt_px);

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 13:19:01 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 16:48:19 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,7 +108,8 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 
 static void	set_data_projection_plan(t_vars *vars)
 {
-	vars->game->player->proj_plan.length_column = rounded_nearest_nb(WINDOW_X / PROJ_PLANE_X);
+	vars->game->player->proj_plan.length_column
+		  = rounded_nearest_nb(WINDOW_X / PROJ_PLANE_X);
 	vars->game->player->proj_plan.center_pp_y = PROJ_PLANE_Y / 2;
 	vars->game->player->proj_plan.distance_player_pplan = ((PROJ_PLANE_X / 2)
 			/ tan((60 / 2) * PI / 180.0));

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 16:40:38 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 17:01:31 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ t_block		vertical_point_crossing_wall(t_vars *vars);
 t_block		convert_pixel_to_block(t_block point);
 double		ft_abs(double number);
 double		calculate_best_distance(t_vars *vars);
-t_block		return_intersection(t_vars *vars);
+t_block		return_intersection(t_vars *vars, double angle);
 
 //draw_wall.c
 void		draw_every_ray(t_vars *vars);
