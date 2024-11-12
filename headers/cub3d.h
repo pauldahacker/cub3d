@@ -115,6 +115,7 @@ typedef struct raycasting
 	double		projected_wall_height;
 	double		distance_to_wall;
 	double		wall_height_in_px;
+
 	t_block		former_block_touched;
 	t_block		block_touched;//gave us the block touched by the ray in block
 	t_block		next_block_touched;//gave us the next one (with block_touched as reference)
