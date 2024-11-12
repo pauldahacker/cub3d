@@ -9,7 +9,7 @@ GREY =      \033[38;5;245m
 UNAME = $(shell uname)
 NAME = cub3d
 CC = gcc
-CFLAGS = -Werror -Wextra -Wall -g3
+CFLAGS = -Werror -Wextra -Wall -g3 -fsanitize=address
 
 ifeq ($(UNAME), Darwin)
 MLX_DIR = ./mlx_macOS

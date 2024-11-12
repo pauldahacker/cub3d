@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 21:29:36 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/08 17:18:09 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 17:18:57 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,14 @@ int	is_format(char *str, char *ext)
 	int	formatlen;
 	int	i;
 
+	if (!str || !ext)
+		return (0);
 	len = ft_strlen(str);
 	formatlen = ft_strlen(ext);
+	if (len == 0 || formatlen == 0 || formatlen > len)
+		return (0);
 	i = 1;
-	while (str[len - i] && ext[formatlen - i])
+	while (i <= formatlen && str[len - i] && ext[formatlen - i])
 	{
 		if (str[len - i] != ext[formatlen - i])
 			return (0);
