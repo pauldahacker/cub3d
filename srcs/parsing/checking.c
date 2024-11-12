@@ -43,16 +43,14 @@ int	is_format(char *str, char *ext)
 		return (0);
 	len = ft_strlen(str);
 	formatlen = ft_strlen(ext);
-	if (len == 0 || formatlen == 0)
+	if (len == 0 || formatlen == 0 || formatlen > len)
 		return (0);
 	i = 1;
-	while (str[len - i] && ext[formatlen - i])
+	while (i <= formatlen && str[len - i] && ext[formatlen - i])
 	{
 		if (str[len - i] != ext[formatlen - i])
 			return (0);
 		i++;
-		if (i > len || i > formatlen)
-			return (0);
 	}
 	return (1);
 }
