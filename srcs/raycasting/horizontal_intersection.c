@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:05:25 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 18:16:44 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:58:13 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,14 +78,9 @@ t_block	horizontal_point_crossing_wall(t_vars *vars)
 	while ((map[(int)current_in_block.y][(int)current_in_block.x] == 'V'
 		|| map[(int)current_in_block.y][(int)current_in_block.x] == '0')
 		&& wall_not_in_ascending_diagonal(vars, current_in_block) == 1)
-		// && ((int)current_in_block.y > 0 && (int)current_in_block.x > 0
-		// && (((map[(int)current_in_block.y - 1][(int)current_in_block.x] == 'V'
-		// || map[(int)current_in_block.y][(int)current_in_block.x - 1] == 'V'))
-		// || ((map[(int)current_in_block.y - 1][(int)current_in_block.x] == '0'
-		// || map[(int)current_in_block.y][(int)current_in_block.x - 1] == '0')))))
 	{
 		next_in_px = find_next_horizontal_point(current_in_px,
-			vars->game->player->ray_angle);
+				vars->game->player->ray_angle);
 		next_in_block = convert_pixel_to_block(next_in_px);
 		if (check_coordinates_in_map(vars, next_in_block) == 0)
 			return (current_in_px.reachable = 0, current_in_px);

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/12 12:39:06 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:57:58 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int	main(int argc, char **argv)
 	ma_engine	engine;
 
 	vars.game = parse(argc, argv);
+	//print_la map recu
 	vars.mlx_ptr = mlx_init();
 	if (!vars.mlx_ptr || ma_engine_init(NULL, &engine) != MA_SUCCESS)
 		return (EXIT_FAILURE);

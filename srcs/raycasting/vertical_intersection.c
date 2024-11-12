@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:02:55 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 16:17:48 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:57:23 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ t_block	vertical_point_crossing_wall(t_vars *vars)
 		&& wall_not_in_ascending_diagonal(vars, current_in_block) == 1)
 	{
 		next_in_px = find_next_vertical_point(current_in_px,
-			vars->game->player->ray_angle);
+				vars->game->player->ray_angle);
 		next_in_block = convert_pixel_to_block(next_in_px);
 		if (check_coordinates_in_map(vars, next_in_block) == 0)
 			return (current_in_px.reachable = 0, current_in_px);
