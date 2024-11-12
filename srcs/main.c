@@ -26,27 +26,52 @@ void	init_keys(t_vars *vars)
 	vars->keys.left = 0;
 	vars->keys.right = 0;
 }
-void	my_mlx_pixel_put(t_vars vars, int x, int y, int color)
+/*
+my_mlx_pixel_put: draws the pixel (x,y) in the given color.
+Since it's cool to display transparent colors, we read colors in ARGB.
+Thus we first have to extract the ARGB components of the given color (C):
+|    C=    |        A        |        R        |        G        |        B        |
+|_______|_______________|_______________|_______________|_______________|
+|BINARY |    xxxxxxxx    |    xxxxxxxxx    |    xxxxxxxxx    |    xxxxxxxxx    |
+|_______|_______________|_______________|_______________|_______________|
+|DECIMAL|    [0, 255]    |    [0, 255]    |    [0, 255]    |    [0, 255]    |
+|_______|_______________|_______________|_______________|_______________|
+|HOW TO    |C >> 24 & 0xFF |C >> 16 & 0XFF | C >> 8 & 0XFF |    C & 0XFF    |
+|_______|_______________|_______________|_______________|_______________|
+We can use the Alpha (A) value to perform alpha blending.
+
+ALPHA BLENDING:
+When we want to draw a pixel in a transparent color, we have to 
+"blend" it to the color that already exists at that pixel.
+The ratio between the new color and the color that existed will depend
+on the alpha value we extracted from the new color.
+
+We divide A by 0xFF (=255) to get a value between 0 and 1.
+This will represent how much transparency we want (a percentage).
+If A > 0, we have to blend each RGB component of the given color to
+each RGB component of the color that exists at this pixel.
+*/
+void    my_mlx_pixel_put(t_vars vars, int x, int y, int color)
 {
-	char	*dst;
-	int		alpha = (color >> 24) & 0xFF; // Extract alpha from color
-    int		r = (color >> 16) & 0xFF;     // Extract red
-    int		g = (color >> 8) & 0xFF;      // Extract green
-    int		b = color & 0xFF;
+    char    *dst;
+    double    alpha;
+    int        r;
+    int        g;
+    int        b;
 
-	dst = vars.data.addr + (y * vars.data.line_length + x
-			* (vars.data.bpp / 8));
-	//printf("Input Color: 0x%X | Alpha: %d | R: %d | G: %d | B: %d\n", color, alpha, r, g, b);
-	if (alpha > 0) {
-        r = (r * alpha + ((*(unsigned int *)dst >> 16) & 0xFF) * (255 - alpha)) / 255;
-        g = (g * alpha + ((*(unsigned int *)dst >> 8) & 0xFF) * (255 - alpha)) / 255;
-        b = (b * alpha + (*(unsigned int *)dst & 0xFF) * (255 - alpha)) / 255;
-
-        // Combine back into a single color value
-        color = (r << 16) | (g << 8) | b; // Set alpha to fully opaque
-	}
-	//printf("color: %d\n", color);
-	*(unsigned int *)dst = color;
+    dst = vars.data.addr + (y * vars.data.line_length + x
+            * (vars.data.bpp / 8));
+    alpha = ((color >> 24) & 0xFF) / 255.0;
+    r = (color >> 16) & 0xFF;
+    g = (color >> 8) & 0xFF;
+    b = color & 0xFF;
+    if (alpha > 0) {
+        r = (r * alpha + ((*(unsigned int *)dst >> 16) & 0xFF) * (1 - alpha));
+        g = (g * alpha + ((*(unsigned int *)dst >> 8) & 0xFF) * (1 - alpha));
+        b = (b * alpha + (*(unsigned int *)dst & 0xFF) * (1 - alpha));
+        color = (r << 16) | (g << 8) | b;
+    }
+    *(unsigned int *)dst = color;
 }
 
 t_texture	init_texture(t_vars *vars, char *texture_path)
