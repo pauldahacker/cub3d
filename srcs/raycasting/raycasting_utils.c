@@ -6,72 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/10/29 13:49:12 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:57:36 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../headers/cub3d.h"
-
-//As long as the position of the character (=player), can be everywhere in the
-//map, and within the map we work with cubes, we have to know where is the
-//character but not in pixel, but in cubes unit.
-//this function rounded_down the position of the player to give us his position
-//in cubes unit
-
-//this functions round the nb to the nearest down integer
-//for this function there is 2 cases. If the number is > 0 or < 0
-//if it's < 0, we have to be sure that it contains a decimal value < 0.0
-//to avoid rounding an already integer number
-double	rounded_down(double nb)
-{
-	if (nb < 0.0 && nb != (long)nb)
-		return ((long)nb - 1);
-	return ((long)nb);
-}
-
-double	rounded_nearest_nb(double nb)
-{
-	double	nb_2;
-
-	if (nb >= 0.0)
-	{
-		nb_2 = nb - rounded_down(nb);
-		if (nb_2 == 0)
-			return (nb);
-		if (nb_2 > 0.50)
-			return ((double)(rounded_down(nb) + 1));
-		return ((double)(rounded_down(nb)));
-	}
-	else
-	{
-		nb_2 = nb - (long)nb;
-		if (nb_2 == 0)
-			return (nb);
-		if (nb_2 > -0.50)
-			return ((double)(rounded_down(nb) + 1));
-		return ((double)(rounded_down(nb)));
-	}
-}
-
-// int	main(void)
-// {
-// 	double	nb_1 = -10.00;
-// 	double	nb_2 = -1.10;
-// 	double	nb_3 = -1.51;
-// 	double	nb_4 = 0.000;
-// 	double	nb_5 = 1.31;
-// 	double	nb_6 = 1.51;
-// 	double	nb_7 = 4.00;
-
-// 	printf("nb_1 = %f\n", rounded_nearest_nb(nb_1));
-// 	printf("nb_2 = %f\n", rounded_nearest_nb(nb_2));
-// 	printf("nb_3 = %f\n", rounded_nearest_nb(nb_3));
-// 	printf("nb_4 = %f\n", rounded_nearest_nb(nb_4));
-// 	printf("nb_5 = %f\n", rounded_nearest_nb(nb_5));
-// 	printf("nb_6 = %f\n", rounded_nearest_nb(nb_6));
-// 	printf("nb_7 = %f\n", rounded_nearest_nb(nb_7));
-// 	return (0);
-// }
 
 //we need a function to know if the ray is facing up or down
 //this function returns 1 if is going up, 0 if it's going down
@@ -107,5 +46,45 @@ int	check_coordinates_in_map(t_vars *vars, t_block current)
 	if (current.y < 0 || current.y > vars->game->n_rows - 1
 		|| current.x < 0 || current.x > vars->game->n_cols)
 		return (0);
+	return (1);
+}
+
+//we have a specific problem when we are looking the walls exactly in front of
+//them, when they are configured in ascending diagonal
+//01
+//10
+//because for each block, we look at the point (0,0) <=> the very first pixel
+//What is happening if we are strictly looking in front of them ?
+//We will see a blank line. Whereas we want to see both wall touched
+//to avoid this, we check that we wall are not configured in ascending diagonal
+//if there are not, then we can continue on our *_point_crossing_wall while loop
+//otherwise we stop. The ray will stop and will draw a wall.
+//If the ray is facing up, we check the walls with reference the upper left one
+//else, we check the walls with reference the lower right one
+//if the configuration is not set in ascending diagonal like above, we return 1
+int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
+{
+	char	**map;
+
+	map = vars->game->map;
+	if (ray_facing_up(vars->game->player->ray_angle) == 1)
+	{
+		if ((int)current.y < vars->game->n_rows - 1
+			&& (int)current.x < vars->game->n_cols
+			&& (map[(int)current.y][(int)current.x] == 'V')
+			&& map[(int)current.y + 1][(int)current.x] == '1'
+			&& map[(int)current.y][(int)current.x + 1] == '1'
+			&& (map[(int)current.y + 1][(int)current.x + 1] == 'V'))
+			return (0);
+	}
+	else
+	{
+		if ((int)current.y > 0 && (int)current.x > 0
+			&& (map[(int)current.y][(int)current.x] == 'V')
+			&& map[(int)current.y - 1][(int)current.x] == '1'
+			&& map[(int)current.y][(int)current.x - 1] == '1'
+			&& (map[(int)current.y - 1][(int)current.x - 1] == 'V'))
+			return (0);
+	}
 	return (1);
 }
