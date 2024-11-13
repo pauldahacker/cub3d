@@ -43,8 +43,8 @@
 # define MINI_START_X 5
 # define MINI_START_Y 5
 
-# define MOVEMENT_SPEED 8
-# define ROTATE_SPEED 3
+# define MOVEMENT_SPEED 10
+# define ROTATE_SPEED 5
 
 // MLX EVENTS
 # define X_EVENT_KEY_PRESS		2
