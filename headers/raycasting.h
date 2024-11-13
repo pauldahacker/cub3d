@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 17:01:31 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 18:59:17 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ typedef struct projection
 	double	center_pp_y;
 	double	wall_top_pos_y_in_px;
 	double	wall_lower_pos_y_in_px;
-	double	wall_upper_left_x_in_px;//this is the start of the block
-	double	wall_upper_right_x_in_px;//this is the start of it's following block
 	double	wall_top_pos_y_in_pp;
 	double	wall_lower_pos_y_in_pp;
 	double	distance_player_pplan;
@@ -49,11 +47,10 @@ typedef struct s_block
 }	t_block;
 
 //raycasting_utils.c
-double		rounded_down(double nb);
-double		rounded_nearest_nb(double nb);
 int			ray_facing_up(double angle);
 int			ray_facing_right(double angle);
 int			check_coordinates_in_map(t_vars *vars, t_block current);
+int			wall_not_in_ascending_diagonal(t_vars *vars, t_block current);
 
 //horizontal_instersection.c
 t_block		horizontal_point_crossing_wall(t_vars *vars);
@@ -70,7 +67,8 @@ t_block		return_intersection(t_vars *vars, double angle);
 //draw_wall.c
 void		draw_every_ray(t_vars *vars);
 
-int			wall_not_in_ascending_diagonal(t_vars *vars, t_block current);
-
+//annex.c
+double		rounded_down(double nb);
+double		rounded_nearest_nb(double nb);
 
 #endif

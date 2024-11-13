@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:17:57 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/29 15:13:34 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 19:08:45 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 
 # include "cub3d.h"
 
-# ifndef BUFFER_SIZE 
-#  define BUFFER_SIZE 42
-# endif
+# define BUFFER_SIZE 42
 
 # define MAP_EXTENSION ".cub"
 # define N_TEXTURES 4
@@ -27,6 +25,8 @@
 
 # define VISITED 'V'
 
+// int			n_cols;//vertical
+// int			n_rows;//horizontal
 typedef struct s_game
 {
 	char		*line;
@@ -38,8 +38,8 @@ typedef struct s_game
 	int			floor_color;
 	int			ceiling_color;
 	char		**map;
-	int			n_cols;//vertical
-	int			n_rows;//horizontal
+	int			n_cols;
+	int			n_rows;
 	t_player	*player;
 }				t_game;
 

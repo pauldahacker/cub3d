@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 16:48:19 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 18:59:48 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,6 @@ static double	calculate_projected_wall_height(t_vars *vars)
 static void	set_calculus_projection_plan(t_proj *proj_plan,
 	double projected_wall_height)
 {
-	// static int	i = 0;
-	// double		wall_height_in_px;
-
 	proj_plan->wall_top_pos_y_in_pp = proj_plan->center_pp_y
 		- projected_wall_height / 2;
 	proj_plan->wall_lower_pos_y_in_pp = proj_plan->center_pp_y
@@ -64,14 +61,6 @@ static void	set_calculus_projection_plan(t_proj *proj_plan,
 		* WINDOW_Y / PROJ_PLANE_Y;
 	proj_plan->wall_lower_pos_y_in_px = proj_plan->wall_lower_pos_y_in_pp
 		* WINDOW_Y / PROJ_PLANE_Y;
-	
-	// printf("i = %i\n", i++);
-	// printf("wall_lower_pos_y_in_pp = %f\n", proj_plan->wall_lower_pos_y_in_pp);
-	// printf("wall_top_pos_y_in_pp = %f\n", proj_plan->wall_top_pos_y_in_pp);
-	// printf("wall_lower_pos_y_in_px = %f\n", proj_plan->wall_lower_pos_y_in_px);
-	// printf("wall_top_pos_y_in_px = %f\n", proj_plan->wall_top_pos_y_in_px);
-	// wall_height_in_px = proj_plan->wall_lower_pos_y_in_px - proj_plan->wall_top_pos_y_in_px;
-	// printf("wall_height_in_px = %f\n\n", wall_height_in_px);
 }
 
 //PP means PROJECTION_PLAN
@@ -82,11 +71,11 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 	t_player	*player;
 
 	player = vars->game->player;
-	set_calculus_projection_plan(&player->proj_plan, player->projected_wall_height);
+	set_calculus_projection_plan(&player->proj_plan,
+		player->projected_wall_height);
 	proj_plan = player->proj_plan;
 	while (*x < WINDOW_X)
 	{
-		player->wall_height_in_px = proj_plan.wall_lower_pos_y_in_px - proj_plan.wall_top_pos_y_in_px;
 		*y = 0;
 		while (*y < WINDOW_Y)
 		{
@@ -94,11 +83,10 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->ceiling_color);
 			else if (*y >= proj_plan.wall_top_pos_y_in_px
 				&& *y <= proj_plan.wall_lower_pos_y_in_px)
-					draw_wall(vars, x, y);
+				draw_wall(vars, x, y);
 			else if (*y > proj_plan.wall_top_pos_y_in_px)
 				my_mlx_pixel_put(*vars, *x, *y, vars->game->floor_color);
 			(*y)++;
-			//player-> = player->block_touched;
 		}
 		(*x)++;
 		if (*x % proj_plan.length_column == 0)
@@ -109,7 +97,7 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 static void	set_data_projection_plan(t_vars *vars)
 {
 	vars->game->player->proj_plan.length_column
-		  = rounded_nearest_nb(WINDOW_X / PROJ_PLANE_X);
+		= rounded_nearest_nb(WINDOW_X / PROJ_PLANE_X);
 	vars->game->player->proj_plan.center_pp_y = PROJ_PLANE_Y / 2;
 	vars->game->player->proj_plan.distance_player_pplan = ((PROJ_PLANE_X / 2)
 			/ tan((60 / 2) * PI / 180.0));
@@ -131,9 +119,6 @@ void	draw_every_ray(t_vars *vars)
 	if (player->angle_end >= 300.0)
 		player->angle_end -= 360.0;
 	set_data_projection_plan(vars);
-	player->former_block_touched.reachable = false;
-	player->block_touched.reachable = false;
-	player->next_block_touched.reachable = false;
 	x = 0;
 	y = 0;
 	while (player->ray_angle > player->angle_end)
