@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:35 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 18:57:36 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 19:29:07 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,8 @@ int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
 	char	**map;
 
 	map = vars->game->map;
-	if (ray_facing_up(vars->game->player->ray_angle) == 1)
+	if (ray_facing_up(vars->game->player->ray_angle) == 1
+		&& ray_facing_right(vars->game->player->ray_angle) == 0)
 	{
 		if ((int)current.y < vars->game->n_rows - 1
 			&& (int)current.x < vars->game->n_cols
@@ -77,7 +78,8 @@ int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
 			&& (map[(int)current.y + 1][(int)current.x + 1] == 'V'))
 			return (0);
 	}
-	else
+	else if (ray_facing_up(vars->game->player->ray_angle) == 0
+		&& ray_facing_right(vars->game->player->ray_angle) == 1)
 	{
 		if ((int)current.y > 0 && (int)current.x > 0
 			&& (map[(int)current.y][(int)current.x] == 'V')
