@@ -1,77 +1,110 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/11/13 16:39:49 by simarcha          #+#    #+#              #
+#    Updated: 2024/11/13 18:14:10 by simarcha         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-BROWN =     \033[38;2;184;143;29m
-ORANGE =    \033[38;5;209m
-BLUE =      \033[0;94m
-DEF_COLOR = \033[0;39m
-GREEN =     \033[0;92m
-GREY =      \033[38;5;245m
+#This Makefile works only on Linux. It won't work on MacOS nor Windows.
+#SETUP
+CC					= gcc
+CFLAGS				= -Wall -Werror -Wextra #-fsanitize=address
+NAME				= cub3d
+RM					= rm -rf
 
-UNAME = $(shell uname)
-NAME = cub3d
-CC = gcc
-CFLAGS = -Werror -Wextra -Wall -g3# -fsanitize=address
+#FILES AND PATHS
+#HEADER
+INCLUDE_DIR			= headers/
+INCLUDE_FILES		= colors.h \
+					cub3d.h \
+					parsing.h \
+					raycasting.h \
+					textures.h
+INCLUDE				= $(addprefix $(INCLUDE_DIR), $(INCLUDE_FILES))
 
-ifeq ($(UNAME), Darwin)
-MLX_DIR = ./mlx_macOS
-MLX = $(MLX_DIR)/libmlx.a
-MLXFLAGS = -Lmlx -lmlx -lm -framework OpenGL -framework AppKit
-INCLUDES = -I./headers -Imlx
-else ifeq ($(UNAME), Linux)
-MLX_DIR = ./mlx
-MLX = $(MLX_DIR)/libmlx_Linux.a
-MLXFLAGS = -Lmlx -lmlx -lm -L/usr/lib/X11 -lXext -lX11
-INCLUDES = -I./headers -I./usr/include -Imlx
-LINK_FLAGS = -ldl -lm -lpthread
-endif
+#AUDIO - The audio file that we used for this project
+AUDIO_DIR			= miniaudio/
+AUDIO_FILES			= miniaudio.h
+AUDIO				= $(addprefix $(AUDIO_DIR), $(AUDIO_FILES))
 
-LIBFT_DIR = ./libft
-LIBFT = $(LIBFT_DIR)/libft.a
-LIBFT_HEADER = $(LIBFT_DIR)/libft.h
+#SRCS - Where the main files for this project are located
+SRCS_DIR			= srcs/
+SRCS_FILES			= main.c \
+					colors/colors.c \
+					controls/controls.c \
+					controls/movement_utils.c \
+					controls/movement.c \
+					controls/rotation.c \
+					minimap/minimap_utils.c \
+					minimap/minimap.c \
+					parsing/checking.c \
+					parsing/gnl2.c \
+					parsing/map_parsing_utils.c \
+					parsing/map_parsing.c \
+					parsing/parsing_utils.c \
+					parsing/parsing.c \
+					raycasting/annex.c \
+					raycasting/calculate_best_distance.c \
+					raycasting/draw_textures.c \
+					raycasting/drawing_raycasting.c \
+					raycasting/horizontal_intersection.c \
+					raycasting/raycasting_utils.c \
+					raycasting/vertical_intersection.c
 
-HEADER = $(wildcard ./headers/*.h) $(LIBFT_HEADER)
+SRCS				= $(addprefix $(SRCS_DIR), $(SRCS_FILES))
+OBJ_SRCS			= $(SRCS:.c=.o)
 
-SRCS_DIR = srcs
-OBJS_DIR = objs/
+#MINILIB
+MINILIB_DIR			= mlx/
+MINILIB_ARCHIVE		= $(addprefix $(MINILIB_DIR), libmlx.a)
+MINILIB_FLAGS		= -Lmlx -lmlx -lm -L/usr/lib/X11 -lXext -lX11
 
-SRCS = $(shell find $(SRCS_DIR) -name "*.c")
-OBJS = $(patsubst $(SRCS_DIR)%.c, $(OBJS_DIR)%.o, $(SRCS))
+#LIBFT 
+LIBFT_DIR			= libft/
+LIBFT_ARCHIVE		= $(addprefix $(LIBFT_DIR), libft.a)
 
-all: $(NAME)
+#RULES AND COMMANDS
+all:				$(LIBFT_ARCHIVE) $(MINILIB_ARCHIVE) $(NAME)
 
-$(NAME): $(LIBFT) $(MLX) $(OBJS) $(HEADER)
-	@echo "$(BLUE)Linking executable...$(DEF_COLOR)"
-	@$(CC) $(CFLAGS) $(INCLUDES) -o $(NAME) $(OBJS) $(MLXFLAGS) $(LIBFT) $(LINK_FLAGS)
-	@echo "$(GREEN)$(NAME) created$(DEF_COLOR)"
+%.o:				%.c Makefile $(INCLUDE)
+					@$(CC) $(CFLAGS) -I$(INCLUDE_DIR) -I$(MINILIB_DIR) -c $< -o $@
 
-$(OBJS_DIR)%.o: $(SRCS_DIR)%.c $(HEADER) Makefile
-	@mkdir -p $(dir $@)
-	@echo "$(BROWN)Compiling   ${BLUE}→   $(ORANGE)$< $(DEF_COLOR)"
-	@$(CC) -c $(CFLAGS) $(INCLUDES) $< -o $@
-$(OBJS_DIR):
-	@mkdir -p $@
+$(NAME):			$(OBJ_SRCS) $(LIBFT_ARCHIVE) Makefile
+					@$(CC) $(CFLAGS) $(OBJ_SRCS) -L$(LIBFT_DIR) -lft $(MINILIB_FLAGS) $(MINILIB_ARCHIVE) -o $(NAME)
+					@echo "\033[1;32mReady to play!\033[0m"
 
-$(LIBFT): $(LIBFT_HEADER)
-	@echo "$(GREY)Compiling libft$(DEF_COLOR)"
-	@$(MAKE) -s -C $(LIBFT_DIR)
+$(LIBFT_ARCHIVE):
+					@$(MAKE) -s -C $(LIBFT_DIR)
+#					@echo "Compiled $(LIBFT_ARCHIVE)."
 
-$(MLX):
-	@echo "$(GREY)Compiling mlx$(DEF_COLOR)"
-	@$(MAKE) -s -C $(MLX_DIR)
-	@echo "$(GREEN)mlx compiled successfully$(DEF_COLOR)"
+$(MINILIB_ARCHIVE):
+					@$(MAKE) -s -C $(MINILIB_DIR)
+					@echo "\033[1;35mCompiled $(MINILIB_ARCHIVE).\033[0m"
+					@echo "\033[1;37mWait few seconds\033[0m"
 
 clean:
-	@$(MAKE) -s -C $(LIBFT_DIR) clean
-	@rm -rf $(MLX_DIR)/obj
-	@echo "$(BROWN)mlx: $(GREEN)removed objects!$(DEF_COLOR)"
-	@rm -rf $(OBJS_DIR)
-	@echo "$(GREEN)All objects removed$(DEF_COLOR)"
+					@echo "\033[1;31m\033[1mDeleting every object files\033[0m" 
+					@echo "\033[1mCleaning the object srcs files\033[0m"
+					$(RM) $(OBJ_AUDIO) $(OBJ_SRCS)
+					@echo ""
+					@echo "\033[1mCleaning the object libft files\033[0m"
+					@$(MAKE) clean -C $(LIBFT_DIR)
+					@echo ""
+					@echo "\033[1mCleaning the mlx (aka minilibX) object and archive files\033[0m"
+					@$(MAKE) clean -C $(MINILIB_DIR)
 
-fclean: clean
-	@$(MAKE) -s -C $(MLX_DIR) clean
-	@rm -f $(LIBFT)
-	@rm -f $(NAME)
-	@echo "$(GREEN)All binaries removed$(DEF_COLOR)"
+fclean:				clean
+					@echo "\033[1;31m\033[1mDeleting the executable and archive files\033[0m" 
+					$(RM) $(NAME)
+					@echo ""
+					@echo "\033[1;31m\033[1mCleaning the libft object and archive files\033[0m"
+					$(MAKE) fclean -C $(LIBFT_DIR)
 
-re: fclean all
+re:					fclean all
 
-.PHONY: all clean fclean re
+.PHONY:				all clean fclean re
