@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/12 18:57:58 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 18:38:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ int	main(int argc, char **argv)
 	if (!vars.mlx_ptr || ma_engine_init(NULL, &engine) != MA_SUCCESS)
 		return (EXIT_FAILURE);
 	vars.engine = (void *)&engine;
-	ma_engine_play_sound(&engine, "Polynomial_C.mp3", NULL);
+	ma_engine_play_sound(&engine, "miniaudio/Polynomial_C.mp3", NULL);
 	vars.win_ptr = mlx_new_window(vars.mlx_ptr, WINDOW_X, WINDOW_Y, "cub3d");
 	if (!vars.win_ptr)
 		return (free(vars.mlx_ptr), EXIT_FAILURE);
