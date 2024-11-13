@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 19:11:56 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 19:00:15 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,6 @@ double	calculate_best_distance(t_vars *vars)
 	t_block	vertical_pt_px;
 	double	vertical_distance;
 
-	vars->game->player->block_touched.reachable = true;
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
 	horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
 	vertical_pt_px = vertical_point_crossing_wall(vars);
@@ -75,14 +74,12 @@ double	calculate_best_distance(t_vars *vars)
 	{
 		vars->game->player->horizontal_distance_chosen = false;
 		vars->game->player->point_hit = vertical_pt_px;
-		vars->game->player->block_touched = convert_pixel_to_block(vertical_pt_px);
 		return (vertical_distance);
 	}
 	else
 	{
 		vars->game->player->horizontal_distance_chosen = true;
 		vars->game->player->point_hit = horizontal_pt_px;
-		vars->game->player->block_touched = convert_pixel_to_block(horizontal_pt_px);
 		return (horizontal_distance);
 	}
 }
