@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 14:15:43 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/13 18:43:25 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 19:06:00 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,9 @@ void	draw_texture(t_vars *vars, int x, int *y, t_texture tex)
 		tex_x = fmod(vars->game->player->point_hit.x, BLOCK_SIZE)
 			/ BLOCK_SIZE * tex.width;
 	}
-	pixel_offset =  (int)(((*y - top_y) / (low_y - top_y)) * tex.width)
-		* tex.size_line + (int)tex_x * (tex.bpp / 8);
+	pixel_offset = (int)((*y - top_y)
+			/ (low_y - top_y) * tex.width) *tex.size_line
+		+ (int)tex_x * (tex.bpp / 8);
 	color = (tex.data[pixel_offset]) << 16 | (tex.data[pixel_offset + 1]) << 8
 		| (tex.data[pixel_offset + 2]);
 	my_mlx_pixel_put(*vars, x, *y, color);
