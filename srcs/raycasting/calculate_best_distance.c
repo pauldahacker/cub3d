@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 18:57:03 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/12 17:05:28 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 19:00:15 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ static double	calculate_hypo_distance(t_vars *vars, t_block point)
 	double	distance;
 	double	beta;
 
+	if (point.reachable == false)
+		return (NAN);
 	ray_end_pt.x = ft_abs(vars->game->player->pos_x - point.x);
 	ray_end_pt.y = ft_abs(vars->game->player->pos_y - point.y);
 	distance = ray_end_pt.x * ray_end_pt.x + ray_end_pt.y * ray_end_pt.y;
@@ -65,28 +67,19 @@ double	calculate_best_distance(t_vars *vars)
 	double	vertical_distance;
 
 	horizontal_pt_px = horizontal_point_crossing_wall(vars);
-	if (horizontal_pt_px.reachable == 1)
-		horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
-	else
-		horizontal_distance = NAN;
+	horizontal_distance = calculate_hypo_distance(vars, horizontal_pt_px);
 	vertical_pt_px = vertical_point_crossing_wall(vars);
-	if (vertical_pt_px.reachable == 1)
-		vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
-	else
-		vertical_distance = NAN;
-	vars->game->player->block_touched.reachable = true;
+	vertical_distance = calculate_hypo_distance(vars, vertical_pt_px);
 	if (fmin(vertical_distance, horizontal_distance) == vertical_distance)
 	{
 		vars->game->player->horizontal_distance_chosen = false;
 		vars->game->player->point_hit = vertical_pt_px;
-		vars->game->player->block_touched = convert_pixel_to_block(vertical_pt_px);
 		return (vertical_distance);
 	}
 	else
 	{
 		vars->game->player->horizontal_distance_chosen = true;
 		vars->game->player->point_hit = horizontal_pt_px;
-		vars->game->player->block_touched = convert_pixel_to_block(horizontal_pt_px);
 		return (horizontal_distance);
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/12 10:48:00 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/13 19:18:38 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,8 +85,7 @@
 # define BROWN				0x964B00
 
 //maths
-# define PI 				3.14159265358979323846
-typedef struct s_game t_game;
+# define PI					3.14159265358979323846
 
 typedef struct s_game	t_game;
 
@@ -100,24 +99,38 @@ typedef struct s_keys
 	int	right;
 }	t_keys;
 
+// typedef struct raycasting
+// {
+// 	double		pos_x;//player position in abscissa. The unit are the pixels!
+// 	double		pos_y;//player position in ordinate. The unit are the pixels!
+// 	double		angle_start;//starting angle from our FOV
+// 	double		angle_end;//ending angle from our FOV
+// 	double		middle_fov_angle;//middle angle between angle_start & angle_end
+// 	double		ray_angle;//angle of the current ray drawn
+// 	double		subsequent_angle;//degrees variations between 2 rays
+// 	bool		horizontal_distance_chosen;//or horizontal or vertical distance
+// 	t_proj		proj_plan;
+// 	t_block		point_hit;
+// 	double		projected_wall_height;
+// 	double		distance_to_wall;
+// 	double		wall_height_in_px;
+// 	double		horizontal_wall_size_in_px;
+// }	t_player;
+
 typedef struct raycasting
 {
-	double		pos_x;//⭐//player position in abscissa. The unit are the pixels!
-	double		pos_y;//⭐//player position in ordinate. The unit are the pixels!
-	double		angle_start;//⭐//starting angle from our FOV
-	double		angle_end;//⭐//ending angle from our FOV
-	double		middle_fov_angle;//⭐//middle angle between angle_start & angle_end
-	double		ray_angle;//angle of the current ray drawn
-	double		subsequent_angle;//⭐//degrees variations between 2 rays
-	bool		horizontal_distance_chosen;//or horizontal distance or the vertical one
+	double		pos_x;
+	double		pos_y;
+	double		angle_start;
+	double		angle_end;
+	double		middle_fov_angle;
+	double		ray_angle;
+	double		subsequent_angle;
+	bool		horizontal_distance_chosen;
 	t_proj		proj_plan;
 	t_block		point_hit;
 	double		projected_wall_height;
 	double		distance_to_wall;
-	double		wall_height_in_px;
-	t_block		former_block_touched;
-	t_block		block_touched;//gave us the block touched by the ray in block
-	t_block		next_block_touched;//gave us the next one (with block_touched as reference)
 	double		horizontal_wall_size_in_px;
 }	t_player;
 
@@ -135,14 +148,13 @@ typedef struct s_data
 
 typedef struct textures
 {
-	// char			**colors_texture;
 	char			*path;
-	void			*img;//qu'est ce que c'est ?
+	void			*img;
 	int				width;
 	int				height;
-	int				endian;//qu'est ce que c'est ?
+	int				endian;
 	int				bpp;
-	int				size_line;//quelle est la difference entre size_line/width/height ?
+	int				size_line;
 	unsigned char	*data;
 }				t_texture;
 
@@ -161,32 +173,32 @@ typedef struct s_vars
 }				t_vars;
 
 // controls/controls.c
-int		on_destroy(t_vars *vars);
-int		on_keypress(int keysym, t_vars *vars);
-int		on_keyrelease(int keysym, t_vars *vars);
-int		update_player(t_vars *vars);
+int			on_destroy(t_vars *vars);
+int			on_keypress(int keysym, t_vars *vars);
+int			on_keyrelease(int keysym, t_vars *vars);
+int			update_player(t_vars *vars);
 
 // minimap/minimap_utils.c
-void	draw_fov_line(t_vars vars, t_block *p1, t_block *p2);
-int		add_shade(double opacity, int color);
+void		draw_fov_line(t_vars vars, t_block *p1, t_block *p2);
+int			add_shade(double opacity, int color);
 
 // minimap/minimap.c
-void	draw_minimap(t_vars *vars, t_game *game);
+void		draw_minimap(t_vars *vars, t_game *game);
 
 // controls/movement_utils.c
-double	return_x_increment(t_vars *vars, double angle, int speed);
-double	return_y_increment(t_vars *vars, double angle, int speed);
+double		return_x_increment(t_vars *vars, double angle, int speed);
+double		return_y_increment(t_vars *vars, double angle, int speed);
 
 // controls/movement.c
-int		on_move_up(t_vars *vars, int speed);
-int		on_move_down(t_vars *vars, int speed);
-int		on_move_left(t_vars *vars, int speed);
-int		on_move_right(t_vars *vars, int speed);
+int			on_move_up(t_vars *vars, int speed);
+int			on_move_down(t_vars *vars, int speed);
+int			on_move_left(t_vars *vars, int speed);
+int			on_move_right(t_vars *vars, int speed);
 
 // controls/rotation.c
-double  increment_angle(double angle, double to_add);
-int		on_rotate_left(t_vars *vars, int attempted_speed);
-int		on_rotate_right(t_vars *vars, int attempted_speed);
+double		increment_angle(double angle, double to_add);
+int			on_rotate_left(t_vars *vars, int attempted_speed);
+int			on_rotate_right(t_vars *vars, int attempted_speed);
 
 // controls/controls.c
 int			on_destroy(t_vars *vars);
