@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/14 19:00:08 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 19:32:46 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # define PROJ_PLANE_X	WINDOW_X
 # define PROJ_PLANE_Y	WINDOW_Y
 # define BLOCK_SIZE		64
-# define FOV			60
+# define FOV			60.0
 
 typedef struct s_game		t_game;
 typedef struct raycasting	t_player;

@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/13 19:18:46 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 19:38:38 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,6 @@ t_texture	init_texture(t_vars *vars, char *texture_path)
 		handle_error(vars->game, "One of the textures failed to open\n");
 	tex.data = (unsigned char *)mlx_get_data_addr(tex.img,
 			&tex.bpp, &tex.size_line, &tex.endian);
-	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, tex.img, 0, 0);
 	return (tex);
 }
 
