@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/13 18:59:17 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:47:49 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 # include "cub3d.h"
 
-# define PROJ_PLANE_X	320
-# define PROJ_PLANE_Y	200
+# define PROJ_PLANE_X	WINDOW_X
+# define PROJ_PLANE_Y	WINDOW_Y
 # define BLOCK_SIZE		64
 
 typedef struct s_game		t_game;

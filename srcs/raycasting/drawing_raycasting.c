@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/13 18:59:48 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 16:53:02 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static double	calculate_projected_wall_height(t_vars *vars)
 	player = vars->game->player;
 	projected_wall_height = (actual_wall_height / player->distance_to_wall)
 		* player->proj_plan.distance_player_pplan;
-	projected_wall_height = rounded_nearest_nb(projected_wall_height);
+	// projected_wall_height = projected_wall_height;
 	return (projected_wall_height);
 }
 
