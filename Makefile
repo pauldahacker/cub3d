@@ -6,7 +6,7 @@
 #    By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/13 16:39:49 by simarcha          #+#    #+#              #
-#    Updated: 2024/11/13 18:14:10 by simarcha         ###   ########.fr        #
+#    Updated: 2024/11/14 19:50:13 by simarcha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,11 +27,6 @@ INCLUDE_FILES		= colors.h \
 					textures.h
 INCLUDE				= $(addprefix $(INCLUDE_DIR), $(INCLUDE_FILES))
 
-#AUDIO - The audio file that we used for this project
-AUDIO_DIR			= miniaudio/
-AUDIO_FILES			= miniaudio.h
-AUDIO				= $(addprefix $(AUDIO_DIR), $(AUDIO_FILES))
-
 #SRCS - Where the main files for this project are located
 SRCS_DIR			= srcs/
 SRCS_FILES			= main.c \
@@ -48,7 +43,6 @@ SRCS_FILES			= main.c \
 					parsing/map_parsing.c \
 					parsing/parsing_utils.c \
 					parsing/parsing.c \
-					raycasting/annex.c \
 					raycasting/calculate_best_distance.c \
 					raycasting/draw_textures.c \
 					raycasting/drawing_raycasting.c \
@@ -90,7 +84,7 @@ $(MINILIB_ARCHIVE):
 clean:
 					@echo "\033[1;31m\033[1mDeleting every object files\033[0m" 
 					@echo "\033[1mCleaning the object srcs files\033[0m"
-					$(RM) $(OBJ_AUDIO) $(OBJ_SRCS)
+					$(RM) $(OBJ_SRCS)
 					@echo ""
 					@echo "\033[1mCleaning the object libft files\033[0m"
 					@$(MAKE) clean -C $(LIBFT_DIR)

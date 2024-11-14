@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/14 19:42:53 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 19:49:08 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,14 @@
 # include "textures.h"
 
 // Configurations
-# define WINDOW_X 1600
-# define WINDOW_Y 900
-
-# define SHADE	0.6
-# define MINI_START_X 5
-# define MINI_START_Y 5
+# define WINDOW_X		1600
+# define WINDOW_Y		900
+# define SHADE			0.6
+# define MINI_START_X	5
+# define MINI_START_Y	5
 
 # define MOVEMENT_SPEED 8
-# define ROTATE_SPEED 5
+# define ROTATE_SPEED 	5
 
 // MLX EVENTS
 # define X_EVENT_KEY_PRESS		2
