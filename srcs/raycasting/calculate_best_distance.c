@@ -26,13 +26,6 @@ t_block	convert_pixel_to_block(t_block point)
 	return (converted);
 }
 
-double	ft_abs(double number)
-{
-	if (number >= 0.0)
-		return (number);
-	return (number * -1.0);
-}
-
 //This functions has to calculate the hypotenuse distance
 //to find the adjacent distance, we will calculate the difference between both
 //x points same for the opposite distance side, but with y coordinate
@@ -47,8 +40,8 @@ static double	calculate_hypo_distance(t_vars *vars, t_block point)
 
 	if (point.reachable == false)
 		return (NAN);
-	ray_end_pt.x = ft_abs(vars->game->player->pos_x - point.x);
-	ray_end_pt.y = ft_abs(vars->game->player->pos_y - point.y);
+	ray_end_pt.x = fabs(vars->game->player->pos_x - point.x);
+	ray_end_pt.y = fabs(vars->game->player->pos_y - point.y);
 	distance = ray_end_pt.x * ray_end_pt.x + ray_end_pt.y * ray_end_pt.y;
 	beta = vars->game->player->middle_fov_angle - vars->game->player->ray_angle;
 	return (sqrt(distance) * cos(beta * (PI / 180.0)));

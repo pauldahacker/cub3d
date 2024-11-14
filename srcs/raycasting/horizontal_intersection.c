@@ -18,10 +18,10 @@ static t_block	find_coordinate_of_first_horizontal_point(t_vars *vars)
 
 	a.reachable = 1;
 	if (ray_facing_up(vars->game->player->ray_angle) == 1)
-		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
+		a.y = floor(vars->game->player->pos_y / BLOCK_SIZE)
 			* BLOCK_SIZE - 0.000001;
 	else
-		a.y = rounded_down(vars->game->player->pos_y / BLOCK_SIZE)
+		a.y = floor(vars->game->player->pos_y / BLOCK_SIZE)
 			* BLOCK_SIZE + BLOCK_SIZE;
 	a.x = vars->game->player->pos_x + (vars->game->player->pos_y - a.y)
 		/ tan(vars->game->player->ray_angle * (PI / 180.0));
@@ -39,7 +39,7 @@ static double	finding_horizontal_x_a(double ray_angle)
 {
 	double	x_a_iteration;
 
-	x_a_iteration = ft_abs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
+	x_a_iteration = fabs((double)BLOCK_SIZE / tan(ray_angle * (PI / 180.0)));
 	if (ray_facing_right(ray_angle) == 1)
 		return (x_a_iteration);
 	return (-x_a_iteration);

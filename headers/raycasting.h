@@ -60,15 +60,10 @@ t_block		vertical_point_crossing_wall(t_vars *vars);
 
 //calculate_best_distance.c
 t_block		convert_pixel_to_block(t_block point);
-double		ft_abs(double number);
 double		calculate_best_distance(t_vars *vars);
 t_block		return_intersection(t_vars *vars, double angle);
 
 //draw_wall.c
 void		draw_every_ray(t_vars *vars);
-
-//annex.c
-double		rounded_down(double nb);
-double		rounded_nearest_nb(double nb);
 
 #endif
