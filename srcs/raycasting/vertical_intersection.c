@@ -18,10 +18,10 @@ static t_block	find_coordinate_of_first_vertical_point(t_vars *vars)
 
 	a.reachable = 1;
 	if (ray_facing_right(vars->game->player->ray_angle) == 1)
-		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE)
+		a.x = floor(vars->game->player->pos_x / BLOCK_SIZE)
 			* BLOCK_SIZE + BLOCK_SIZE;
 	else
-		a.x = rounded_down(vars->game->player->pos_x / BLOCK_SIZE)
+		a.x = floor(vars->game->player->pos_x / BLOCK_SIZE)
 			* BLOCK_SIZE - 0.000001;
 	a.y = vars->game->player->pos_y + (vars->game->player->pos_x - a.x)
 		* tan(vars->game->player->ray_angle * (PI / 180.0));
@@ -39,7 +39,7 @@ static double	finding_vertical_y_a(double ray_angle)
 {
 	double	y_a_iteration;
 
-	y_a_iteration = ft_abs((double)BLOCK_SIZE * tan(ray_angle * (PI / 180.0)));
+	y_a_iteration = fabs((double)BLOCK_SIZE * tan(ray_angle * (PI / 180.0)));
 	if (ray_facing_up(ray_angle) == 1)
 		return (-y_a_iteration);
 	return (y_a_iteration);
