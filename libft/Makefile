@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+         #
+#    By: pde-masc <pde-masc@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/18 13:58:35 by pde-masc          #+#    #+#              #
-#    Updated: 2024/11/14 19:06:16 by simarcha         ###   ########.fr        #
+#    Updated: 2024/09/19 15:08:23 by pde-masc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
