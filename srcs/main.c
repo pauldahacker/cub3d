@@ -6,15 +6,12 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/14 19:38:38 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 19:43:39 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# define MINIAUDIO_IMPLEMENTATION
-
 #include "cub3d.h"
 #include "mlx.h"
-#include "../miniaudio/miniaudio.h"
 
 void	init_keys(t_vars *vars)
 {
@@ -78,14 +75,11 @@ void	init_all_textures(t_vars *vars)
 int	main(int argc, char **argv)
 {
 	t_vars		vars;
-	ma_engine	engine;
 
 	vars.game = parse(argc, argv);
 	vars.mlx_ptr = mlx_init();
-	if (!vars.mlx_ptr || ma_engine_init(NULL, &engine) != MA_SUCCESS)
+	if (!vars.mlx_ptr)
 		return (EXIT_FAILURE);
-	vars.engine = (void *)&engine;
-	ma_engine_play_sound(&engine, "miniaudio/Polynomial_C.mp3", NULL);
 	vars.win_ptr = mlx_new_window(vars.mlx_ptr, WINDOW_X, WINDOW_Y, "cub3d");
 	if (!vars.win_ptr)
 		return (free(vars.mlx_ptr), EXIT_FAILURE);

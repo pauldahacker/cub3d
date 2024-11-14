@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/14 17:54:11 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 19:42:53 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,7 +169,6 @@ typedef struct s_vars
 	t_texture	west_tex;
 	t_texture	east_tex;
 	t_keys		keys;
-	void		*engine;
 }				t_vars;
 
 // controls/controls.c
