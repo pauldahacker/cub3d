@@ -6,7 +6,7 @@
 #    By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/13 16:39:49 by simarcha          #+#    #+#              #
-#    Updated: 2024/11/14 19:50:13 by simarcha         ###   ########.fr        #
+#    Updated: 2024/11/14 20:28:11 by simarcha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,8 @@ SRCS_FILES			= main.c \
 					raycasting/drawing_raycasting.c \
 					raycasting/horizontal_intersection.c \
 					raycasting/raycasting_utils.c \
-					raycasting/vertical_intersection.c
+					raycasting/vertical_intersection.c \
+					raycasting/checking_calculating_next_point.c
 
 SRCS				= $(addprefix $(SRCS_DIR), $(SRCS_FILES))
 OBJ_SRCS			= $(SRCS:.c=.o)

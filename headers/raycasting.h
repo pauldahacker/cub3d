@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/14 19:32:46 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 20:10:30 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,5 +66,7 @@ t_block		return_intersection(t_vars *vars, double angle);
 
 //draw_wall.c
 void		draw_every_ray(t_vars *vars);
+
+int			wall_not_in_diagonal(t_vars *vars, t_block current);
 
 #endif
