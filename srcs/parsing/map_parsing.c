@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:17:10 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/14 17:47:28 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 19:00:41 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	init_player_angles(t_player *player, char direction)
 	player->angle_end = player->middle_fov_angle - 30;
 	if (player->angle_end < 0)
 		player->angle_end += 360;
-	player->subsequent_angle = 60.0 / PROJ_PLANE_X;
+	player->subsequent_angle = FOV / PROJ_PLANE_X;
 }
 
 /*
