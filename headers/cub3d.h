@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:18:15 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/14 17:51:50 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:54:11 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@
 # include "textures.h"
 
 // Configurations
-# define WINDOW_X 400
-# define WINDOW_Y 200
+# define WINDOW_X 1600
+# define WINDOW_Y 900
 
 # define SHADE	0.6
 # define MINI_START_X 5
