@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:17:10 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/14 19:31:26 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/15 21:15:25 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 /*
 init_player_angles: sets the player's initial angles in degrees.
-I think we should write everything depending in our DEFINES
-Projection plane X instead of 320.0
 */
 void	init_player_angles(t_player *player, char direction)
 {
@@ -31,7 +29,6 @@ void	init_player_angles(t_player *player, char direction)
 	player->angle_end = player->middle_fov_angle - 30;
 	if (player->angle_end < 0)
 		player->angle_end += 360;
-	player->subsequent_angle = FOV / PROJ_PLANE_X;
 }
 
 /*

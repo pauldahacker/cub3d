@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 20:26:41 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/14 20:28:36 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/15 21:13:52 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	check_coordinates_in_map(t_vars *vars, t_block current)
 //If the ray is facing up, we check the walls with reference the upper left one
 //else, we check the walls with reference the lower right one
 //if the configuration is not set in ascending diagonal like above, we return 1
-int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
+static int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
 {
 	char	**map;
 
@@ -66,7 +66,7 @@ int	wall_not_in_ascending_diagonal(t_vars *vars, t_block current)
 //same for the descending diagonal
 //if upper right wall as reference
 //else lower left wall as reference
-int	wall_not_in_descending_diagonal(t_vars *vars, t_block current)
+static int	wall_not_in_descending_diagonal(t_vars *vars, t_block current)
 {
 	char	**map;
 
@@ -95,6 +95,9 @@ int	wall_not_in_descending_diagonal(t_vars *vars, t_block current)
 	return (1);
 }
 
+//in the while loop, if the wall is not in diagonal, the ray continue 
+//his trajectory, returning 1
+//else, it stops, returning 1
 int	wall_not_in_diagonal(t_vars *vars, t_block current)
 {
 	if (wall_not_in_descending_diagonal(vars, current) == 1

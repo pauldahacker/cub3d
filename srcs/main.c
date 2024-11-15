@@ -6,12 +6,11 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:24:48 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/14 19:43:39 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/15 20:43:33 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
-#include "mlx.h"
 
 void	init_keys(t_vars *vars)
 {
@@ -68,13 +67,11 @@ void	init_all_textures(t_vars *vars)
 	vars->south_tex = init_texture(vars, vars->game->south_path);
 	vars->west_tex = init_texture(vars, vars->game->west_path);
 	vars->east_tex = init_texture(vars, vars->game->east_path);
-	vars->game->player->pos_x = (vars->game->player->pos_x + 0.5) * BLOCK_SIZE;
-	vars->game->player->pos_y = (vars->game->player->pos_y + 0.5) * BLOCK_SIZE;
 }
 
 int	main(int argc, char **argv)
 {
-	t_vars		vars;
+	t_vars	vars;
 
 	vars.game = parse(argc, argv);
 	vars.mlx_ptr = mlx_init();
@@ -84,12 +81,15 @@ int	main(int argc, char **argv)
 	if (!vars.win_ptr)
 		return (free(vars.mlx_ptr), EXIT_FAILURE);
 	init_all_textures(&vars);
+	vars.game->player->pos_x = (vars.game->player->pos_x + 0.5) * BLOCK_SIZE;
+	vars.game->player->pos_y = (vars.game->player->pos_y + 0.5) * BLOCK_SIZE;
 	vars.data.img = mlx_new_image(vars.mlx_ptr, WINDOW_X, WINDOW_Y);
 	vars.data.addr = mlx_get_data_addr(vars.data.img, &(vars.data.bpp),
 			&(vars.data.line_length), &(vars.data.endian));
 	init_keys(&vars);
 	draw_every_ray(&vars);
 	draw_minimap(&vars, vars.game);
+	mlx_put_image_to_window(vars.mlx_ptr, vars.win_ptr, vars.data.img, 0, 0);
 	mlx_hook(vars.win_ptr, X_EVENT_KEY_PRESS, 1L << 0, &on_keypress, &vars);
 	mlx_hook(vars.win_ptr, X_EVENT_KEY_RELEASE, 1L << 1, &on_keyrelease, &vars);
 	mlx_hook(vars.win_ptr, X_EVENT_DESTROY, 0, &on_destroy, &vars);

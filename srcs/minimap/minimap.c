@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:56:54 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/12 17:01:15 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/15 20:40:09 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,5 +140,4 @@ void	draw_minimap(t_vars *vars, t_game *game)
 	}
 	draw_minimap_fov(vars, game);
 	draw_minimap_player(*vars, game);
-	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }

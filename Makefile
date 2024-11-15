@@ -6,7 +6,7 @@
 #    By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/13 16:39:49 by simarcha          #+#    #+#              #
-#    Updated: 2024/11/14 20:28:11 by simarcha         ###   ########.fr        #
+#    Updated: 2024/11/15 21:19:48 by simarcha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -103,3 +103,17 @@ fclean:				clean
 re:					fclean all
 
 .PHONY:				all clean fclean re
+
+#MINILIB
+# ifeq ($(UNAME), Darwin)
+# 	MINILIB_DIR = ./mlx_macOS
+# 	MINILIB_ARCHIVE = $(MINILIB_DIR)/libmlx.a
+# 	MINILIB_FLAGS = -Lmlx -lmlx -lm -framework OpenGL -framework AppKit
+# 	INCLUDES = -I./headers -Imlx
+# else ifeq ($(UNAME), Linux)
+# 	MINILIB_DIR = ./mlx
+# 	MINILIB_ARCHIVE = $(MINILIB_DIR)/libmlx_Linux.a
+# 	MINILIB_FLAGS = -Lmlx -lmlx -lm -L/usr/lib/X11 -lXext -lX11
+# 	INCLUDES = -I./headers -I./usr/include -Imlx
+# 	LINK_FLAGS = -ldl -lm -lpthread
+# endif
