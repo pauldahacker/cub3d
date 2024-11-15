@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   movement_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-masc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:41:13 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/11/04 15:41:15 by pde-masc         ###   ########.fr       */
+/*   Updated: 2024/11/15 21:14:56 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
+//this file check if the player's position reached a wall and can't longer walk
 static int	is_in_wall(t_game *game, double pos_x, double pos_y)
 {
 	double	x;

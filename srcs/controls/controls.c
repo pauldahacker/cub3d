@@ -73,5 +73,6 @@ int	update_player(t_vars *vars)
 		on_rotate_right(vars, ROTATE_SPEED);
 	draw_every_ray(vars);
 	draw_minimap(vars, vars->game);
+	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 	return (0);
 }

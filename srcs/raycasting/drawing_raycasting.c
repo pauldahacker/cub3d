@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 20:20:19 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/14 19:45:16 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/15 21:17:53 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,10 @@ static double	calculate_projected_wall_height(t_vars *vars)
 	double		projected_wall_height;
 	t_player	*player;
 
-	actual_wall_height = BLOCK_SIZE;
 	player = vars->game->player;
+	actual_wall_height = BLOCK_SIZE;
 	projected_wall_height = (actual_wall_height / player->distance_to_wall)
 		* player->proj_plan.distance_player_pplan;
-	projected_wall_height = round(projected_wall_height);
 	return (projected_wall_height);
 }
 
@@ -74,7 +73,7 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 	set_calculus_projection_plan(&player->proj_plan,
 		player->projected_wall_height);
 	proj_plan = player->proj_plan;
-	while (*x < WINDOW_X)
+	if (*x < WINDOW_X)
 	{
 		*y = 0;
 		while (*y < WINDOW_Y)
@@ -89,8 +88,6 @@ static void	draw_raycasting(t_vars *vars, int *x, int *y)
 			(*y)++;
 		}
 		(*x)++;
-		if (*x % proj_plan.length_column == 0)
-			break ;
 	}
 }
 
@@ -116,6 +113,7 @@ void	draw_every_ray(t_vars *vars)
 
 	player = vars->game->player;
 	player->ray_angle = player->angle_start;
+	player->subsequent_angle = FOV / PROJ_PLANE_X;
 	if (player->angle_end >= 300.0)
 		player->angle_end -= 360.0;
 	set_data_projection_plan(vars);
@@ -130,5 +128,4 @@ void	draw_every_ray(t_vars *vars)
 	}
 	if (player->angle_end <= 0)
 		player->angle_end += 360.0;
-	mlx_put_image_to_window(vars->mlx_ptr, vars->win_ptr, vars->data.img, 0, 0);
 }

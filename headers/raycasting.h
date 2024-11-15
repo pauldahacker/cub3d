@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 12:00:14 by simarcha          #+#    #+#             */
-/*   Updated: 2024/11/14 20:10:30 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/15 21:16:57 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ typedef struct s_block
 int			ray_facing_up(double angle);
 int			ray_facing_right(double angle);
 int			check_coordinates_in_map(t_vars *vars, t_block current);
-int			wall_not_in_ascending_diagonal(t_vars *vars, t_block current);
 
 //horizontal_instersection.c
 t_block		horizontal_point_crossing_wall(t_vars *vars);
@@ -67,6 +66,7 @@ t_block		return_intersection(t_vars *vars, double angle);
 //draw_wall.c
 void		draw_every_ray(t_vars *vars);
 
+//checking_calculating_next_point.c
 int			wall_not_in_diagonal(t_vars *vars, t_block current);
 
 #endif
