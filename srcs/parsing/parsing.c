@@ -6,7 +6,7 @@
 /*   By: simarcha <simarcha@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 13:20:44 by pde-masc          #+#    #+#             */
-/*   Updated: 2024/10/09 19:49:31 by simarcha         ###   ########.fr       */
+/*   Updated: 2024/11/20 12:53:10 by simarcha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,7 @@ t_game	*init_game(void)
 
 /*
 destroy_game: frees game.
+//we free every texture to avoid leaks
 */
 void	destroy_game(t_game *game)
 {
