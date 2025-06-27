@@ -126,11 +126,11 @@ We close the file.
 
 _**(3)**_
 Once the map content has been added, we can check if the map is playable.  
-**Flood-filling:**  
-Starting at the player position, it marks the current element in the map as VISITED if **it is not a wall and not already visited**.  
-Then it moves north, south, east and west and repeats.  
-If the current position is a wall, return.  
-If the current position is at the border and is a floor, the map is not closed.  
+ **Flood-filling:**  
+  Starting at the player position, it marks the current element in the map as VISITED if **it is not a wall and not already visited**.  
+  Then it moves north, south, east and west and repeats.  
+  If the current position is a wall, return.  
+  If the current position is at the border and is a floor, the map is not closed.  
 
 
 ## Raycasting Implementation
