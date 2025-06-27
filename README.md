@@ -8,8 +8,9 @@ A 3D raycasting engine inspired by Wolfenstein 3D, implemented in C using the ML
 - [Installation](#installation)
 - [Usage](#usage)
 - [Map Format](#map-format)
-- [Map Format](#parsing)
+- [Parsing](#parsing)
 - [Raycasting Implementation](#raycasting-implementation)
+- [Minimap](#minimap)
 - [Project Structure](#project-structure)
 - [Technical Details](#technical-details)
 
@@ -89,38 +90,45 @@ C 122,141,153               # Ceiling color (RGB)
 
 ## Parsing
 
+```
 PARSING LOGIC:
 
-(0) Quick file-check for correct extension and readable file.  
-(1) Using get_next_line2, we open and read the file a first time to add
-	the textures, colors and the map dimensions in a t_game structure.
-	ALL texture and color formatting errors are handled here:
-		- Correct identifiers for textures and colors.
-		- Openable paths for textures.
-		- Correct formatting for colors (r,g,b with 0 <= (r,g,b) <= 255).
-		- Empty lines between every type of element are ok.
-		- Textures and colors can be listed then read in any order.
-		- Spaces between each element's information are ok.
-		- No repeated identifiers.
-		- No missing elements.
-		- No unkown identifiers or elements.
-		- Textures and colors must come before the map content.
-	The following map specifics are checked:
-		- Lines between the textures/colors and game map are empty.
-		- Map content consists of only {0,1,N,S,W,E} or spaces.
-		- There is only one player.
-		- No empty lines within the map content.
-		- No unknown element(s) found in the map.
+(0)	Quick file-check for correct extension and readable file.  
+(1)	Using **get_next_line2**, we open and read the file a first time to add  
+	the **textures, colors and the map dimensions** in a t_game structure.  
+	**ALL texture and color formatting errors are handled here:**  
+		- Correct identifiers for textures and colors.  
+		- Openable paths for textures.  
+		- Correct formatting for colors (r,g,b with 0 <= (r,g,b) <= 255).  
+		- Empty lines between every type of element are ok.  
+		- Textures and colors can be listed then read in any order.  
+		- Spaces between each element's information are ok.  
+		- No repeated identifiers.  
+		- No missing elements.  
+		- No unkown identifiers or elements.  
+		- Textures and colors must come before the map content.  
+	The following map specifics are checked:  
+		- Lines between the textures/colors and game map are empty.  
+		- Map content consists of only {0,1,N,S,W,E} or spaces.  
+		- There is only one player.  
+		- No empty lines within the map content.  
+		- No unknown element(s) found in the map.  
 	If an error is found before the end of file, everything is destroyed,
 	the file is closed, and the program stops here.
 	If no error is found after the end of file, we close the file.
-(2) After finding the map dimensions in (1), we can allocate the right amount 
+(2)	After finding the map dimensions in (1), we can allocate the right amount 
 	of memory for the map.
 	Using get_next_line2, we open and read the file a second time to add
 	the map content in the t_game structure.
 	We close the file.
-(3) Once the map content has been added, we can check if the map is playable.
-	Flood-filling.
+(3) 	Once the map content has been added, we can check if the map is playable.
+		**Flood-filling:**
+ 		Starting at the player position, it marks the current element in the map
+		as VISITED if **it is not a wall and not already visited**.
+  		Then it moves north, south, east and west and repeats.
+		If the current position is a wall, return.
+		If the current position is at the border and is a floor, the map is not closed.
+```
 
 ## Raycasting Implementation
 
@@ -304,6 +312,8 @@ static void draw_raycasting(t_vars *vars, int *x, int *y)
 #### Projection Plane
 - **Distance to Projection Plane**: `(PROJ_PLANE_X/2) / tan(FOV/2)`
 - **Wall Height Formula**: `(actual_height / distance) * projection_distance`
+
+## Minimap
 
 ## Project Structure
 
