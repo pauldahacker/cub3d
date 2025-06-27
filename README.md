@@ -328,8 +328,11 @@ The **update_player** function is called everytime the player moves, or looks ar
 
 The 2D minimap consists of:
  - a background that does not change, it depends only on the parsed .cub map.
+   We loop through the map and apply **draw_minimap_tile** on each tile of the map.
  - a FOV (Field Of View) that depends only on the values retrieved from simon's raycasting (which depend on the position/orientation).
- - the player
+   We use the function called **draw_minimap_fov**.
+ - the player representation depends on his position in the map. We need to define the player's width and height, so that collisions are properly handled and accurate with raycasting.
+   We use the function called **draw_minimap_player**.
 
 ```
 draw_minimap: draws the complete minimap.
@@ -337,6 +340,13 @@ Loops through the initial map, and uses draw_minimap_tile for each element
 of the map to draw the map without the player or the FOV.
 Adds the FOV using draw_minimap_fov.
 Adds the player using draw_minimap_player.
+```
+```
+draw_minimap_tile: Draws a single tile in minimap.
+It draws a size_x * size_y tile representing a floor or a wall
+depending on the position and the background color of the map.
+If it's a floor, draw a (sixe_x * size_y) tile contrasting with the ceiling color.
+If it's a wall, draw a (sixe_x * size_y) tile opposite to the color used above.
 ```
 ```
 draw_minimap_player: Draws the player on the minimap.
@@ -359,8 +369,6 @@ a wall on the map. However, its coordinates are scaled BLOCK_SIZE times.
 So for each subsequent angle, the result of return_intersection is scaled back
 to the original map dimensions, then re-scaled to the minimap dimensions.
 ```
-
-## Music
 
 ## Project Structure
 
