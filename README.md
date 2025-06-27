@@ -90,6 +90,7 @@ C 122,141,153               # Ceiling color (RGB)
 ## Parsing
 
 PARSING LOGIC:
+
 (0) Quick file-check for correct extension and readable file.
 
 (1) Using get_next_line2, we open and read the file a first time to add
