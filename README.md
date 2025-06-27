@@ -96,9 +96,9 @@ _**(0)**_
 Quick file-check for correct extension and readable file.
 
 _**(1)**_  
-Using **get_next_line2**, we open and read the file a first time to add  
-the **textures, colors and the map dimensions** in a t_game structure.  
-**ALL texture and color formatting errors are handled here:**  
+Using **get_next_line2**, we open and read the file a first time to add the **textures, colors and the map dimensions** in a t_game structure.  
+**ALL texture and color formatting errors are handled here:**
+```
  - Correct identifiers for textures and colors.  
  - Openable paths for textures.  
  - Correct formatting for colors (r,g,b with 0 <= (r,g,b) <= 255).  
@@ -109,13 +109,15 @@ the **textures, colors and the map dimensions** in a t_game structure.
  - No missing elements.  
  - No unkown identifiers or elements.  
  - Textures and colors must come before the map content.
-
+```
 **The following map specifics are checked:**  
+```
  - Lines between the textures/colors and game map are empty.  
  - Map content consists of only {0,1,N,S,W,E} or spaces.  
  - There is only one player.  
  - No empty lines within the map content.  
- - No unknown element(s) found in the map.  
+ - No unknown element(s) found in the map.
+```
 If an error is found before the end of file, everything is destroyed, the file is closed, and the program stops here.  
 If no error is found after the end of file, we close the file.
  
@@ -127,7 +129,7 @@ We close the file.
 _**(3)**_
 Once the map content has been added, we can check if the map is playable.  
 ```
-**Flood-filling:**  
+Flood-filling:
 Starting at the player position, it marks the current element in the map as VISITED if **it is not a wall and not already visited**.  
 Then it moves north, south, east and west and repeats.  
 If the current position is a wall, return.  
