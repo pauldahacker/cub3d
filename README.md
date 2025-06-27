@@ -87,7 +87,7 @@ C 122,141,153               # Ceiling color (RGB)
 ```
 
 
-***PART 1 (SIMON)***
+## ***PART 1 (SIMON)***
 
 ## Raycasting Implementation
 
