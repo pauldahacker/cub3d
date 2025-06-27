@@ -91,8 +91,7 @@ C 122,141,153               # Ceiling color (RGB)
 
 PARSING LOGIC:
 
-(0) Quick file-check for correct extension and readable file.
-
+(0) Quick file-check for correct extension and readable file.  
 (1) Using get_next_line2, we open and read the file a first time to add
 	the textures, colors and the map dimensions in a t_game structure.
 	ALL texture and color formatting errors are handled here:
