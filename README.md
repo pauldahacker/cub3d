@@ -8,6 +8,8 @@ A 3D raycasting engine inspired by Wolfenstein 3D, implemented in C using the ML
 - [Installation](#installation)
 - [Usage](#usage)
 - [Map Format](#map-format)
+
+- [PART 1 (SIMON)](#part-1-(simon))
 - [Raycasting Implementation](#raycasting-implementation)
 - [Project Structure](#project-structure)
 - [Technical Details](#technical-details)
@@ -85,6 +87,8 @@ C 122,141,153               # Ceiling color (RGB)
 1N1000001000000000001       # N = Player spawn facing North
 111111111111111111111
 ```
+
+## PART 1 (SIMON)
 
 ## Raycasting Implementation
 
