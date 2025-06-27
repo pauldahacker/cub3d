@@ -108,7 +108,8 @@ the **textures, colors and the map dimensions** in a t_game structure.
  - No repeated identifiers.  
  - No missing elements.  
  - No unkown identifiers or elements.  
- - Textures and colors must come before the map content.  
+ - Textures and colors must come before the map content.
+
 **The following map specifics are checked:**  
  - Lines between the textures/colors and game map are empty.  
  - Map content consists of only {0,1,N,S,W,E} or spaces.  
