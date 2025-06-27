@@ -90,7 +90,6 @@ C 122,141,153               # Ceiling color (RGB)
 
 ## Parsing
 
-```
 PARSING LOGIC:
 
 (0)	Quick file-check for correct extension and readable file.  
@@ -128,7 +127,6 @@ PARSING LOGIC:
   		Then it moves north, south, east and west and repeats.
 		If the current position is a wall, return.
 		If the current position is at the border and is a floor, the map is not closed.
-```
 
 ## Raycasting Implementation
 
