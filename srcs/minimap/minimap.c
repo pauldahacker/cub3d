@@ -51,9 +51,9 @@ void	draw_minimap_fov(t_vars *vars, t_game *game)
 /*
 draw_minimap_tile: Draws a single tile in minimap.
 It draws a size_x * size_y tile representing a floor or a wall
-depending on the position in the map.
-If it's a floor, draw a (sixe_x * size_y) BLUE tile.
-If it's a wall, draw a (sixe_x * size_y) BROWN tile.
+depending on the position and the background color of the map.
+If it's a floor, draw a (sixe_x * size_y) tile contrasting with the ceiling color.
+If it's a wall, draw a (sixe_x * size_y) tile opposite to the color used above.
 */
 void	draw_minimap_tile(t_vars vars, t_game *game, int x, int y)
 {
