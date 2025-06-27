@@ -122,7 +122,7 @@ If an error is found before the end of file, everything is destroyed, the file i
 If no error is found after the end of file, we close the file.
  
 _**(2)**_  
-After finding the map dimensions in (1), we can allocate the right amount of memory for the map.  
+After finding the map dimensions in _**(1)**_, we can allocate the right amount of memory for the map.  
 Using get_next_line2, we open and read the file a second time to add the map content in the t_game structure.  
 We close the file.
 
@@ -149,7 +149,7 @@ The raycasting engine is the core of this project. Here's a detailed explanation
 - **Ray Angle Increment**: `FOV / WINDOW_X` degrees between rays
 
 #### Player Structure
-```c
+```
 typedef struct raycasting
 {
     double pos_x;                    // Player X position in pixels
@@ -321,6 +321,46 @@ static void draw_raycasting(t_vars *vars, int *x, int *y)
 - **Wall Height Formula**: `(actual_height / distance) * projection_distance`
 
 ## Minimap
+
+**draw_minimap** is called once at the start of the program, then everytime **update_player** is called.
+
+The **update_player** function is called everytime the player moves, or looks around.
+
+The 2D minimap consists of:
+ - a background that does not change, it depends only on the parsed .cub map.
+ - a FOV (Field Of View) that depends only on the values retrieved from simon's raycasting (which depend on the position/orientation).
+ - the player
+
+```
+draw_minimap: draws the complete minimap.
+Loops through the initial map, and uses draw_minimap_tile for each element
+of the map to draw the map without the player or the FOV.
+Adds the FOV using draw_minimap_fov.
+Adds the player using draw_minimap_player.
+```
+```
+draw_minimap_player: Draws the player on the minimap.
+It draws a (size_x / 2) * (size_y / 2) contrasting tile representing the player.
+These dimensions are equal to 1/2 of a wall or floor tile. Decreasing its size
+allows the player to move more freely in tight spaces.
+Since player's starting position is set as the center of the starting tile,
+We have to make the loop start at:
+The scaled starting x minus a 1/4 of size_x (i.e. 1/2 of player width)
+The scaled starting y minus a 1/4 of size_y (i.e. 1/2 of player height)
+```
+```
+draw_minimap_fov: Draws the FOV on the minimap.
+It uses the same loop logic as draw_every_ray to draw the FOV in 2D.
+That is, for each subsequent angle between angle_start and angle_end, it 
+draws a line at that angle until it hits the closest wall in that direction.
+To draw the line, it scales the result of return_intersection.
+FYI: return_intersection returns a point representing the intersection with
+a wall on the map. However, its coordinates are scaled BLOCK_SIZE times.
+So for each subsequent angle, the result of return_intersection is scaled back
+to the original map dimensions, then re-scaled to the minimap dimensions.
+```
+
+## Music
 
 ## Project Structure
 
