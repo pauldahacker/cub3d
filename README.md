@@ -2,6 +2,10 @@
 
 A 3D raycasting engine inspired by Wolfenstein 3D, implemented in C using the MLX graphics library. This project creates a first-person perspective 3D environment from a 2D map using raycasting techniques.
 
+<p align="center">
+  <img src="assets/example.gif" alt="Cub3D demo" width="600"/>
+</p>
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
